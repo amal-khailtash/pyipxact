@@ -99,6 +99,7 @@ uv-lock:
   # XML_SCHEMAS_ROOT := http://www.accellera.org/XMLSchema
   XML_SCHEMAS_ROOT := ../submodules/accellera-schemas
 
+.PHONY: generate-bindings
 generate-bindings:
 	@rm -rf src/org
 #

@@ -1,4 +1,4 @@
-# pyipxact - Accellera IP-XACT Python Binding
+# pyipxact - Accellera SPIRIT/IP-XACT Python Bindings
 
 Moving to xsData[^1] instead of PyXB[^2] that provides a cleaner Pythong interface using dataclasses.
 
@@ -35,7 +35,9 @@ src/
                     └── power
 ```
 
+
 # Examples
+
 
 
 # References
