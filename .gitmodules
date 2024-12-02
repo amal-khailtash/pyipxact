@@ -1,3 +1,5 @@
 [submodule "schemas"]
 	path = submodules/accellera-schemas
 	url = https://github.com/amal-khailtash/accellera-schemas
+	ignore = dirty
+	tag = v1.0.0

@@ -1,0 +1,38 @@
+[project]
+name = "pyipxact"
+version = "0.1.0"
+description = "Accellera Python IP-XACT XSD Bindings"
+readme = "README.md"
+authors = [
+    { name = "Amal Khailtash", email = "amal.khailtash@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+]
+
+# [tool.setuptools.packages.find]
+
+# [project.scripts]
+# pyipxact = "pyipxact.cli:main"
+
+[tool.hatch.build.targets.sdist]
+# include = []
+exclude = [
+    ".ruff_cache/",
+    ".uv_cache/",
+    "PyXB/",
+    "test-*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/org"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.3",
+    "xsdata[cli,lxml,soap]>=24.11",
+]
