@@ -17,6 +17,7 @@ class AbstractorPortType(PortType):
 
     arrays: Any = field(
         init=False,
+        default=None,
         metadata={
             "type": "Ignore",
         },

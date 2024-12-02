@@ -1,19 +1,27 @@
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Any
+
+from org.accellera.spirit.v1685_2009.tgi.array import Array
 
 __NAMESPACE__ = "http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5"
 
 
 @dataclass(slots=True)
-class NonNegativeIntegerArrayType:
+class NonNegativeIntegerArrayType(Array):
     class Meta:
         name = "nonNegativeIntegerArrayType"
 
-    array_type: Optional[str] = field(
+    any_element: Any = field(
+        init=False,
         default=None,
         metadata={
-            "name": "arrayType",
-            "type": "Attribute",
-            "namespace": "http://schemas.xmlsoap.org/soap/encoding/",
+            "type": "Ignore",
+        },
+    )
+    other_attributes: Any = field(
+        init=False,
+        default=None,
+        metadata={
+            "type": "Ignore",
         },
     )

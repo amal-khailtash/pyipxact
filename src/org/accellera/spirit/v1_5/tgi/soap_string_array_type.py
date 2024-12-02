@@ -1,19 +1,27 @@
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Any
+
+from org.accellera.spirit.v1_5.tgi.array import Array
 
 __NAMESPACE__ = "http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5"
 
 
 @dataclass(slots=True)
-class SoapStringArrayType:
+class SoapStringArrayType(Array):
     class Meta:
         name = "soapStringArrayType"
 
-    array_type: Optional[str] = field(
+    any_element: Any = field(
+        init=False,
         default=None,
         metadata={
-            "name": "arrayType",
-            "type": "Attribute",
-            "namespace": "http://schemas.xmlsoap.org/soap/encoding/",
+            "type": "Ignore",
+        },
+    )
+    other_attributes: Any = field(
+        init=False,
+        default=None,
+        metadata={
+            "type": "Ignore",
         },
     )

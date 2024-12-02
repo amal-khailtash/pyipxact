@@ -20,12 +20,14 @@ class AbstractorPortWireType(PortWireType):
 
     constraint_sets: Any = field(
         init=False,
+        default=None,
         metadata={
             "type": "Ignore",
         },
     )
     power_constraints: Any = field(
         init=False,
+        default=None,
         metadata={
             "type": "Ignore",
         },
