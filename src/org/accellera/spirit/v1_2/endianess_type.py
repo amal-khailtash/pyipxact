@@ -1,0 +1,12 @@
+from enum import Enum
+
+__NAMESPACE__ = "http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2"
+
+
+class EndianessType(Enum):
+    """
+    Specifies the data storage as "big" or "little" endian.
+    """
+
+    BIG = "big"
+    LITTLE = "little"
