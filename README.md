@@ -7,30 +7,32 @@ Old PyXB version has been moved to `PyXB` directory.
 
 # Directory Structure
 
+Different Python bindings for Accellera Spirit and Accellera versions are generated under org.accellera.* namespace.
+
 ```
 src/
 └── org
-    ├── accellera
-    │   ├── ipxact
-    │   │   ├── v1685_2014
-    │   │   └── v1685_2022
-    │   │       ├── tgi
-    │   │       └── ve
-    │   └── spirit
-    │       ├── v1_0
-    │       ├── v1_1
-    │       ├── v1_2
-    │       ├── v1_4
-    │       │   └── tgi
-    │       ├── v1_5
-    │       │   └── tgi
-    │       └── 1685-2009
-    │           ├── tgi
-    │           └── ve
-    │               ├── ams
-    │               ├── core
-    │               ├── pdp
-    │               └── power
+    └── accellera
+        ├── ipxact
+        │   ├── v1685_2014
+        │   └── v1685_2022
+        │       ├── tgi
+        │       └── ve
+        └── spirit
+            ├── v1_0
+            ├── v1_1
+            ├── v1_2
+            ├── v1_4
+            │   └── tgi
+            ├── v1_5
+            │   └── tgi
+            └── 1685-2009
+                ├── tgi
+                └── ve
+                    ├── ams
+                    ├── core
+                    ├── pdp
+                    └── power
 ```
 
 # Examples
