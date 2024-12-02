@@ -1,4 +1,4 @@
-# /home/amal/work/Amal/github.com/python-ip-xact/src/ipxact/v1685_2014.py
+# accellera/ipxact/v1685_2014.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:55b012395bb7324482553a00707a2638eda11d61
 # Generated 2016-11-15 00:27:21.485584 by PyXB version 1.2.5 using Python 3.5.2.final.0
@@ -1023,7 +1023,7 @@ _module_typeBindings.STD_ANON_15 = STD_ANON_15
 class simpleBitSteeringExpression (pyxb.binding.basis.STD_union):
 
     """Indicates whether bit steering should be used to map this interface onto a bus of different data width.
-            
+
   Values are "on", "off" (defaults to "off")."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'simpleBitSteeringExpression')
@@ -1065,89 +1065,89 @@ class CTD_ANON (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busType uses Python identifier busType
     __busType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busType'), 'busType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 146, 4), )
 
-    
+
     busType = property(__busType.value, __busType.set, None, 'Reference to the busDefinition that this abstractionDefinition implements.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}extends uses Python identifier extends
     __extends = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'extends'), 'extends', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014extends', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 151, 4), )
 
-    
+
     extends = property(__extends.value, __extends.set, None, 'Optional name of abstraction type that this abstraction definition is compatible with. This abstraction definition may change the definitions of ports in the existing abstraction definition and add new ports, the ports in the original abstraction are not deleted but may be marked illegal to disallow their use.\n\t\t\t\tThis abstraction definition may only extend another abstraction definition if the bus type of this abstraction definition extends the bus type of the extended abstraction definition')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}ports uses Python identifier ports
     __ports = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ports'), 'ports', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014ports', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 157, 4), )
 
-    
+
     ports = property(__ports.value, __ports.set, None, 'This is a list of logical ports defined by the bus.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -1180,18 +1180,18 @@ class CTD_ANON_ (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}port uses Python identifier port
     __port = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'port'), 'port', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON__httpwww_accellera_orgXMLSchemaIPXACT1685_2014port', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 163, 7), )
 
-    
+
     port = property(__port.value, __port.set, None, None)
 
     _ElementMap.update({
         __port.name() : __port
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_ = CTD_ANON_
 
@@ -1207,61 +1207,61 @@ class CTD_ANON_2 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}logicalName uses Python identifier logicalName
     __logicalName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalName'), 'logicalName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014logicalName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 167, 10), )
 
-    
+
     logicalName = property(__logicalName.value, __logicalName.set, None, 'The assigned name of this port in bus specifications.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wire uses Python identifier wire
     __wire = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'wire'), 'wire', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014wire', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 178, 11), )
 
-    
+
     wire = property(__wire.value, __wire.set, None, 'A port that carries logic or an array of logic values')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transactional uses Python identifier transactional
     __transactional = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transactional'), 'transactional', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transactional', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 258, 11), )
 
-    
+
     transactional = property(__transactional.value, __transactional.set, None, 'A port that carries complex information modeled at a high level of abstraction.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_2_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -1290,46 +1290,46 @@ class CTD_ANON_3 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}qualifier uses Python identifier qualifier
     __qualifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'qualifier'), 'qualifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014qualifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 184, 14), )
 
-    
+
     qualifier = property(__qualifier.value, __qualifier.set, None, 'The type of information this port carries A wire port can carry both address and data, but may not mix this with a clock or reset')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onSystem uses Python identifier onSystem
     __onSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSystem'), 'onSystem', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onSystem', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 215, 14), )
 
-    
+
     onSystem = property(__onSystem.value, __onSystem.set, None, 'Defines constraints for this port when present in a system bus interface with a matching group name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onMaster uses Python identifier onMaster
     __onMaster = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onMaster'), 'onMaster', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onMaster', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 231, 14), )
 
-    
+
     onMaster = property(__onMaster.value, __onMaster.set, None, 'Defines constraints for this port when present in a master bus interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onSlave uses Python identifier onSlave
     __onSlave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSlave'), 'onSlave', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onSlave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 239, 14), )
 
-    
+
     onSlave = property(__onSlave.value, __onSlave.set, None, 'Defines constraints for this port when present in a slave bus interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}defaultValue uses Python identifier defaultValue
     __defaultValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultValue'), 'defaultValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014defaultValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 248, 15), )
 
-    
+
     defaultValue = property(__defaultValue.value, __defaultValue.set, None, 'Indicates the default value for this wire port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}requiresDriver uses Python identifier requiresDriver
     __requiresDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'requiresDriver'), 'requiresDriver', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_3_httpwww_accellera_orgXMLSchemaIPXACT1685_2014requiresDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 99, 1), )
 
-    
+
     requiresDriver = property(__requiresDriver.value, __requiresDriver.set, None, 'Specifies if a port requires a driver. Default is false. The attribute driverType can further qualify what type of driver is required. Undefined behaviour if direction is not input or inout. Driver type any indicates that any unspecified type of driver must be connected')
 
     _ElementMap.update({
@@ -1341,7 +1341,7 @@ class CTD_ANON_3 (pyxb.binding.basis.complexTypeDefinition):
         __requiresDriver.name() : __requiresDriver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_3 = CTD_ANON_3
 
@@ -1357,32 +1357,32 @@ class CTD_ANON_4 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isAddress uses Python identifier isAddress
     __isAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isAddress'), 'isAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_4_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 191, 18), )
 
-    
+
     isAddress = property(__isAddress.value, __isAddress.set, None, 'If this element is present, the port contains address information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isData uses Python identifier isData
     __isData = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isData'), 'isData', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_4_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isData', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 196, 18), )
 
-    
+
     isData = property(__isData.value, __isData.set, None, 'If this element is present, the port contains data information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isClock uses Python identifier isClock
     __isClock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isClock'), 'isClock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_4_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isClock', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 202, 17), )
 
-    
+
     isClock = property(__isClock.value, __isClock.set, None, 'If this element is present, the port contains only clock information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isReset uses Python identifier isReset
     __isReset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isReset'), 'isReset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_4_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isReset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 207, 17), )
 
-    
+
     isReset = property(__isReset.value, __isReset.set, None, 'Is this element is present, the port contains only reset information.')
 
     _ElementMap.update({
@@ -1392,7 +1392,7 @@ class CTD_ANON_4 (pyxb.binding.basis.complexTypeDefinition):
         __isReset.name() : __isReset
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_4 = CTD_ANON_4
 
@@ -1408,54 +1408,54 @@ class CTD_ANON_5 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 115, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Number of bits required to represent this port. Absence of this element indicates unconstrained number of bits, i.e. the component will define the number of bits in this port. The logical numbering of the port starts at 0 to width-1.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 120, 3), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this port is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}modeConstraints uses Python identifier modeConstraints
     __modeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'modeConstraints'), 'modeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014modeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 126, 4), )
 
-    
+
     modeConstraints = property(__modeConstraints.value, __modeConstraints.set, None, "Specifies default constraints for the enclosing wire type port. If the mirroredModeConstraints element is not defined, then these constraints applied to this port when it appears in a 'mode' bus interface or a mirrored-'mode' bus interface. Otherwise they only apply when the port appears in a 'mode' bus interface.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredModeConstraints uses Python identifier mirroredModeConstraints
     __mirroredModeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredModeConstraints'), 'mirroredModeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredModeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 131, 4), )
 
-    
+
     mirroredModeConstraints = property(__mirroredModeConstraints.value, __mirroredModeConstraints.set, None, "Specifies default constraints for the enclosing wire type port when it appears in a mirrored-'mode' bus interface. ")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 221, 17), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Used to group system ports into different groups within a common bus.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_5_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -1483,39 +1483,39 @@ class CTD_ANON_6 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_6_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_6_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 115, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Number of bits required to represent this port. Absence of this element indicates unconstrained number of bits, i.e. the component will define the number of bits in this port. The logical numbering of the port starts at 0 to width-1.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_6_httpwww_accellera_orgXMLSchemaIPXACT1685_2014direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 120, 3), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this port is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}modeConstraints uses Python identifier modeConstraints
     __modeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'modeConstraints'), 'modeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_6_httpwww_accellera_orgXMLSchemaIPXACT1685_2014modeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 126, 4), )
 
-    
+
     modeConstraints = property(__modeConstraints.value, __modeConstraints.set, None, "Specifies default constraints for the enclosing wire type port. If the mirroredModeConstraints element is not defined, then these constraints applied to this port when it appears in a 'mode' bus interface or a mirrored-'mode' bus interface. Otherwise they only apply when the port appears in a 'mode' bus interface.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredModeConstraints uses Python identifier mirroredModeConstraints
     __mirroredModeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredModeConstraints'), 'mirroredModeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_6_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredModeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 131, 4), )
 
-    
+
     mirroredModeConstraints = property(__mirroredModeConstraints.value, __mirroredModeConstraints.set, None, "Specifies default constraints for the enclosing wire type port when it appears in a mirrored-'mode' bus interface. ")
 
     _ElementMap.update({
@@ -1526,7 +1526,7 @@ class CTD_ANON_6 (pyxb.binding.basis.complexTypeDefinition):
         __mirroredModeConstraints.name() : __mirroredModeConstraints
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_6 = CTD_ANON_6
 
@@ -1542,39 +1542,39 @@ class CTD_ANON_7 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_7_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_7_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 115, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Number of bits required to represent this port. Absence of this element indicates unconstrained number of bits, i.e. the component will define the number of bits in this port. The logical numbering of the port starts at 0 to width-1.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_7_httpwww_accellera_orgXMLSchemaIPXACT1685_2014direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 120, 3), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this port is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}modeConstraints uses Python identifier modeConstraints
     __modeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'modeConstraints'), 'modeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_7_httpwww_accellera_orgXMLSchemaIPXACT1685_2014modeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 126, 4), )
 
-    
+
     modeConstraints = property(__modeConstraints.value, __modeConstraints.set, None, "Specifies default constraints for the enclosing wire type port. If the mirroredModeConstraints element is not defined, then these constraints applied to this port when it appears in a 'mode' bus interface or a mirrored-'mode' bus interface. Otherwise they only apply when the port appears in a 'mode' bus interface.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredModeConstraints uses Python identifier mirroredModeConstraints
     __mirroredModeConstraints = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredModeConstraints'), 'mirroredModeConstraints', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_7_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredModeConstraints', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 131, 4), )
 
-    
+
     mirroredModeConstraints = property(__mirroredModeConstraints.value, __mirroredModeConstraints.set, None, "Specifies default constraints for the enclosing wire type port when it appears in a mirrored-'mode' bus interface. ")
 
     _ElementMap.update({
@@ -1585,7 +1585,7 @@ class CTD_ANON_7 (pyxb.binding.basis.complexTypeDefinition):
         __mirroredModeConstraints.name() : __mirroredModeConstraints
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_7 = CTD_ANON_7
 
@@ -1601,32 +1601,32 @@ class CTD_ANON_8 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}qualifier uses Python identifier qualifier
     __qualifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'qualifier'), 'qualifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_8_httpwww_accellera_orgXMLSchemaIPXACT1685_2014qualifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 264, 14), )
 
-    
+
     qualifier = property(__qualifier.value, __qualifier.set, None, 'The type of information this port carries A transactional port can carry both address and data information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onSystem uses Python identifier onSystem
     __onSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSystem'), 'onSystem', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_8_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onSystem', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 283, 14), )
 
-    
+
     onSystem = property(__onSystem.value, __onSystem.set, None, 'Defines constraints for this port when present in a system bus interface with a matching group name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onMaster uses Python identifier onMaster
     __onMaster = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onMaster'), 'onMaster', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_8_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onMaster', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 299, 14), )
 
-    
+
     onMaster = property(__onMaster.value, __onMaster.set, None, 'Defines constraints for this port when present in a master bus interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}onSlave uses Python identifier onSlave
     __onSlave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSlave'), 'onSlave', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_8_httpwww_accellera_orgXMLSchemaIPXACT1685_2014onSlave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 307, 14), )
 
-    
+
     onSlave = property(__onSlave.value, __onSlave.set, None, 'Defines constraints for this port when present in a slave bus interface.')
 
     _ElementMap.update({
@@ -1636,7 +1636,7 @@ class CTD_ANON_8 (pyxb.binding.basis.complexTypeDefinition):
         __onSlave.name() : __onSlave
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_8 = CTD_ANON_8
 
@@ -1652,18 +1652,18 @@ class CTD_ANON_9 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isAddress uses Python identifier isAddress
     __isAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isAddress'), 'isAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_9_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 270, 17), )
 
-    
+
     isAddress = property(__isAddress.value, __isAddress.set, None, 'If this element is present, the port contains address information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isData uses Python identifier isData
     __isData = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isData'), 'isData', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_9_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isData', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 275, 17), )
 
-    
+
     isData = property(__isData.value, __isData.set, None, 'If this element is present, the port contains data information.')
 
     _ElementMap.update({
@@ -1671,7 +1671,7 @@ class CTD_ANON_9 (pyxb.binding.basis.complexTypeDefinition):
         __isData.name() : __isData
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_9 = CTD_ANON_9
 
@@ -1687,54 +1687,54 @@ class CTD_ANON_10 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}initiative uses Python identifier initiative
     __initiative = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'initiative'), 'initiative', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014initiative', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 84, 3), )
 
-    
+
     initiative = property(__initiative.value, __initiative.set, None, 'If this element is present, the type of access is restricted to the specified value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busWidth uses Python identifier busWidth
     __busWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busWidth'), 'busWidth', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 97, 3), )
 
-    
+
     busWidth = property(__busWidth.value, __busWidth.set, None, 'If this element is present, the width must match')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 289, 17), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Used to group system ports into different groups within a common bus.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}protocol uses Python identifier protocol
     __protocol = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'protocol'), 'protocol', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014protocol', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 157, 1), )
 
-    
+
     protocol = property(__protocol.value, __protocol.set, None, 'defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}kind uses Python identifier kind
     __kind = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'kind'), 'kind', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_accellera_orgXMLSchemaIPXACT1685_2014kind', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 191, 1), )
 
-    
+
     kind = property(__kind.value, __kind.set, None, 'Defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_10_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -1762,39 +1762,39 @@ class CTD_ANON_11 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_11_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}initiative uses Python identifier initiative
     __initiative = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'initiative'), 'initiative', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_11_httpwww_accellera_orgXMLSchemaIPXACT1685_2014initiative', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 84, 3), )
 
-    
+
     initiative = property(__initiative.value, __initiative.set, None, 'If this element is present, the type of access is restricted to the specified value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busWidth uses Python identifier busWidth
     __busWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busWidth'), 'busWidth', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_11_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 97, 3), )
 
-    
+
     busWidth = property(__busWidth.value, __busWidth.set, None, 'If this element is present, the width must match')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}protocol uses Python identifier protocol
     __protocol = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'protocol'), 'protocol', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_11_httpwww_accellera_orgXMLSchemaIPXACT1685_2014protocol', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 157, 1), )
 
-    
+
     protocol = property(__protocol.value, __protocol.set, None, 'defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}kind uses Python identifier kind
     __kind = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'kind'), 'kind', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_11_httpwww_accellera_orgXMLSchemaIPXACT1685_2014kind', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 191, 1), )
 
-    
+
     kind = property(__kind.value, __kind.set, None, 'Defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
     _ElementMap.update({
@@ -1805,7 +1805,7 @@ class CTD_ANON_11 (pyxb.binding.basis.complexTypeDefinition):
         __kind.name() : __kind
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_11 = CTD_ANON_11
 
@@ -1821,39 +1821,39 @@ class CTD_ANON_12 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}presence uses Python identifier presence
     __presence = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'presence'), 'presence', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_12_httpwww_accellera_orgXMLSchemaIPXACT1685_2014presence', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 70, 1), )
 
-    
+
     presence = property(__presence.value, __presence.set, None, "If this element is present, the\n            existance of the port is controlled by the specified\n            value. valid values are 'illegal', 'required' and\n            'optional'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}initiative uses Python identifier initiative
     __initiative = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'initiative'), 'initiative', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_12_httpwww_accellera_orgXMLSchemaIPXACT1685_2014initiative', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 84, 3), )
 
-    
+
     initiative = property(__initiative.value, __initiative.set, None, 'If this element is present, the type of access is restricted to the specified value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busWidth uses Python identifier busWidth
     __busWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busWidth'), 'busWidth', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_12_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractionDefinition.xsd', 97, 3), )
 
-    
+
     busWidth = property(__busWidth.value, __busWidth.set, None, 'If this element is present, the width must match')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}protocol uses Python identifier protocol
     __protocol = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'protocol'), 'protocol', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_12_httpwww_accellera_orgXMLSchemaIPXACT1685_2014protocol', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 157, 1), )
 
-    
+
     protocol = property(__protocol.value, __protocol.set, None, 'defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}kind uses Python identifier kind
     __kind = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'kind'), 'kind', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_12_httpwww_accellera_orgXMLSchemaIPXACT1685_2014kind', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 191, 1), )
 
-    
+
     kind = property(__kind.value, __kind.set, None, 'Defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
     _ElementMap.update({
@@ -1864,7 +1864,7 @@ class CTD_ANON_12 (pyxb.binding.basis.complexTypeDefinition):
         __kind.name() : __kind
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_12 = CTD_ANON_12
 
@@ -1880,117 +1880,117 @@ class abstractorType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorMode uses Python identifier abstractorMode
     __abstractorMode = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorMode'), 'abstractorMode', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorMode', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 64, 3), )
 
-    
+
     abstractorMode = property(__abstractorMode.value, __abstractorMode.set, None, 'Define the mode for the interfaces on this abstractor. \n\nFor master the first interface connects to the master, the second connects to the mirroredMaster\n\nFor slave the first interface connects to the mirroredSlave the second connects to the slave\n\nFor direct the first interface connects to the master, the second connects to the slave\n\nFor system the first interface connects to the system, the second connects to the mirroredSystem. For system the group attribute is required')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busType uses Python identifier busType
     __busType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busType'), 'busType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 88, 3), )
 
-    
+
     busType = property(__busType.value, __busType.set, None, 'The bus type of both interfaces. Refers to bus definition using vendor, library, name, version attributes.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorInterfaces uses Python identifier abstractorInterfaces
     __abstractorInterfaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorInterfaces'), 'abstractorInterfaces', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorInterfaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 93, 3), )
 
-    
+
     abstractorInterfaces = property(__abstractorInterfaces.value, __abstractorInterfaces.set, None, 'The interfaces supported by this abstractor')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}model uses Python identifier model
     __model = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'model'), 'model', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014model', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 107, 3), )
 
-    
+
     model = property(__model.value, __model.set, None, 'Model information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}choices uses Python identifier choices
     __choices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choices'), 'choices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014choices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 95, 1), )
 
-    
+
     choices = property(__choices.value, __choices.set, None, 'Choices used by elements with an attribute ipxact:choiceRef.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSets uses Python identifier fileSets
     __fileSets = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSets'), 'fileSets', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSets', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 337, 4), )
 
-    
+
     fileSets = property(__fileSets.value, __fileSets.set, None, 'List of file sets associated with component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorGenerators uses Python identifier abstractorGenerators
     __abstractorGenerators = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorGenerators'), 'abstractorGenerators', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorGenerators', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 219, 1), )
 
-    
+
     abstractorGenerators = property(__abstractorGenerators.value, __abstractorGenerators.set, None, 'List of abstractor generators.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2028,18 +2028,18 @@ class CTD_ANON_13 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorInterface uses Python identifier abstractorInterface
     __abstractorInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorInterface'), 'abstractorInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_13_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 99, 6), )
 
-    
+
     abstractorInterface = property(__abstractorInterface.value, __abstractorInterface.set, None, 'An abstractor must have exactly 2 Interfaces.')
 
     _ElementMap.update({
         __abstractorInterface.name() : __abstractorInterface
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_13 = CTD_ANON_13
 
@@ -2055,18 +2055,18 @@ class CTD_ANON_14 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}choice uses Python identifier choice
     __choice = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choice'), 'choice', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_14_httpwww_accellera_orgXMLSchemaIPXACT1685_2014choice', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 101, 4), )
 
-    
+
     choice = property(__choice.value, __choice.set, None, 'Non-empty set of legal values for a elements with an attribute ipxact:choiceRef.')
 
     _ElementMap.update({
         __choice.name() : __choice
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_14 = CTD_ANON_14
 
@@ -2082,26 +2082,26 @@ class CTD_ANON_15 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_15_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 107, 7), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Choice key, available for reference by the ipxact:choiceRef attribute.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}enumeration uses Python identifier enumeration
     __enumeration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enumeration'), 'enumeration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_15_httpwww_accellera_orgXMLSchemaIPXACT1685_2014enumeration', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 112, 7), )
 
-    
+
     enumeration = property(__enumeration.value, __enumeration.set, None, 'One possible value of ipxact:choice')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_15_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2125,117 +2125,117 @@ class CTD_ANON_16 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}directConnection uses Python identifier directConnection
     __directConnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'directConnection'), 'directConnection', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014directConnection', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 71, 4), )
 
-    
+
     directConnection = property(__directConnection.value, __directConnection.set, None, 'This element indicates that a master interface may be directly connected to a slave interface (under certain conditions) for busses of this type.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}broadcast uses Python identifier broadcast
     __broadcast = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'broadcast'), 'broadcast', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014broadcast', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 76, 4), )
 
-    
+
     broadcast = property(__broadcast.value, __broadcast.set, None, "This element indicates that this bus definition supports 'broadcast' mode. This means that it is legal to make one-to-many interface connections.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isAddressable uses Python identifier isAddressable
     __isAddressable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isAddressable'), 'isAddressable', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isAddressable', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 81, 4), )
 
-    
+
     isAddressable = property(__isAddressable.value, __isAddressable.set, None, 'If true, indicates that this is an addressable bus.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}extends uses Python identifier extends
     __extends = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'extends'), 'extends', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014extends', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 86, 4), )
 
-    
+
     extends = property(__extends.value, __extends.set, None, 'Optional name of bus type that this bus definition is compatible with. This bus definition may change the definitions in the existing bus definition')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}maxMasters uses Python identifier maxMasters
     __maxMasters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxMasters'), 'maxMasters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014maxMasters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 91, 4), )
 
-    
+
     maxMasters = property(__maxMasters.value, __maxMasters.set, None, 'Indicates the maximum number of masters this bus supports.  If this element is not present, the number of masters allowed is unbounded. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}maxSlaves uses Python identifier maxSlaves
     __maxSlaves = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxSlaves'), 'maxSlaves', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014maxSlaves', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 96, 4), )
 
-    
+
     maxSlaves = property(__maxSlaves.value, __maxSlaves.set, None, 'Indicates the maximum number of slaves this bus supports.  If the element is not present, the number of slaves allowed is unbounded.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}systemGroupNames uses Python identifier systemGroupNames
     __systemGroupNames = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'systemGroupNames'), 'systemGroupNames', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014systemGroupNames', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 101, 4), )
 
-    
+
     systemGroupNames = property(__systemGroupNames.value, __systemGroupNames.set, None, 'Indicates the list of system group names that are defined for this bus definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_16_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2272,18 +2272,18 @@ class CTD_ANON_17 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}systemGroupName uses Python identifier systemGroupName
     __systemGroupName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'systemGroupName'), 'systemGroupName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_17_httpwww_accellera_orgXMLSchemaIPXACT1685_2014systemGroupName', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busDefinition.xsd', 107, 7), )
 
-    
+
     systemGroupName = property(__systemGroupName.value, __systemGroupName.set, None, 'Indicates the name of a system group defined for this bus definition.')
 
     _ElementMap.update({
         __systemGroupName.name() : __systemGroupName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_17 = CTD_ANON_17
 
@@ -2299,16 +2299,16 @@ class CTD_ANON_18 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_18_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -2327,16 +2327,16 @@ class CTD_ANON_19 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.NMTOKEN
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_19_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -2355,18 +2355,18 @@ class CTD_ANON_20 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busInterface uses Python identifier busInterface
     __busInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterface'), 'busInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_20_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 110, 1), )
 
-    
+
     busInterface = property(__busInterface.value, __busInterface.set, None, 'Describes one of the bus interfaces supported by this component.')
 
     _ElementMap.update({
         __busInterface.name() : __busInterface
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_20 = CTD_ANON_20
 
@@ -2382,137 +2382,137 @@ class busInterfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bitsInLau uses Python identifier bitsInLau
     __bitsInLau = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitsInLau'), 'bitsInLau', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bitsInLau', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 96, 1), )
 
-    
+
     bitsInLau = property(__bitsInLau.value, __bitsInLau.set, None, 'The number of bits in the least addressable unit. The default is byte addressable (8 bits).')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busType uses Python identifier busType
     __busType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busType'), 'busType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 132, 3), )
 
-    
+
     busType = property(__busType.value, __busType.set, None, 'The bus type of this interface. Refers to bus definition using vendor, library, name, version attributes along with any configurable element values needed to configure this interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}connectionRequired uses Python identifier connectionRequired
     __connectionRequired = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'connectionRequired'), 'connectionRequired', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014connectionRequired', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 143, 3), )
 
-    
+
     connectionRequired = property(__connectionRequired.value, __connectionRequired.set, None, 'Indicates whether a connection to this interface is required for proper component functionality.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bitSteering uses Python identifier bitSteering
     __bitSteering = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitSteering'), 'bitSteering', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bitSteering', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 149, 3), )
 
-    
+
     bitSteering = property(__bitSteering.value, __bitSteering.set, None, 'Indicates whether bit steering should be used to map this interface onto a bus of different data width.\n\nValues are "on", "off" (defaults to "off").')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}endianness uses Python identifier endianness
     __endianness = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'endianness'), 'endianness', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014endianness', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 156, 3), )
 
-    
+
     endianness = property(__endianness.value, __endianness.set, None, "'big': means the most significant element of any multi-element  data field is stored at the lowest memory address. 'little' means the least significant element of any multi-element data field is stored at the lowest memory address. If this element is not present the default is 'little' endian.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}master uses Python identifier master
     __master = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'master'), 'master', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014master', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 261, 3), )
 
-    
+
     master = property(__master.value, __master.set, None, 'If this element is present, the bus interface can serve as a master.  This element encapsulates additional information related to its role as master.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}slave uses Python identifier slave
     __slave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'slave'), 'slave', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014slave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 291, 3), )
 
-    
+
     slave = property(__slave.value, __slave.set, None, 'If this element is present, the bus interface can serve as a slave.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}system uses Python identifier system
     __system = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'system'), 'system', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014system', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 322, 3), )
 
-    
+
     system = property(__system.value, __system.set, None, 'If this element is present, the bus interface is a system interface, neither master nor slave, with a specific function on the bus.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredSlave uses Python identifier mirroredSlave
     __mirroredSlave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredSlave'), 'mirroredSlave', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredSlave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 332, 3), )
 
-    
+
     mirroredSlave = property(__mirroredSlave.value, __mirroredSlave.set, None, 'If this element is present, the bus interface represents a mirrored slave interface. All directional constraints on ports are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredMaster uses Python identifier mirroredMaster
     __mirroredMaster = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredMaster'), 'mirroredMaster', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredMaster', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 372, 3), )
 
-    
+
     mirroredMaster = property(__mirroredMaster.value, __mirroredMaster.set, None, 'If this element is present, the bus interface represents a mirrored master interface. All directional constraints on ports are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mirroredSystem uses Python identifier mirroredSystem
     __mirroredSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredSystem'), 'mirroredSystem', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mirroredSystem', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 378, 3), )
 
-    
+
     mirroredSystem = property(__mirroredSystem.value, __mirroredSystem.set, None, 'If this element is present, the bus interface represents a mirrored system interface. All directional constraints on ports are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitor uses Python identifier monitor
     __monitor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'monitor'), 'monitor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014monitor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 388, 3), )
 
-    
+
     monitor = property(__monitor.value, __monitor.set, None, 'Indicates that this is a (passive) monitor interface. All of the ports in the interface must be inputs. The type of interface to be monitored is specified with the required interfaceType attribute. The ipxact:group element must be specified if monitoring a system interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractionTypes uses Python identifier abstractionTypes
     __abstractionTypes = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractionTypes'), 'abstractionTypes', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractionTypes', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 545, 1), )
 
-    
+
     abstractionTypes = property(__abstractionTypes.value, __abstractionTypes.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_busInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
@@ -2538,7 +2538,7 @@ class busInterfaceType (pyxb.binding.basis.complexTypeDefinition):
         __isPresent.name() : __isPresent
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.busInterfaceType = busInterfaceType
 Namespace.addCategoryObject('typeBinding', 'busInterfaceType', busInterfaceType)
@@ -2555,18 +2555,18 @@ class CTD_ANON_21 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}channel uses Python identifier channel
     __channel = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'channel'), 'channel', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_21_httpwww_accellera_orgXMLSchemaIPXACT1685_2014channel', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 177, 4), )
 
-    
+
     channel = property(__channel.value, __channel.set, None, 'Defines a set of mirrored interfaces of this component that are connected to one another.')
 
     _ElementMap.update({
         __channel.name() : __channel
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_21 = CTD_ANON_21
 
@@ -2582,47 +2582,47 @@ class CTD_ANON_22 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busInterfaceRef uses Python identifier busInterfaceRef
     __busInterfaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterfaceRef'), 'busInterfaceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busInterfaceRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 185, 7), )
 
-    
+
     busInterfaceRef = property(__busInterfaceRef.value, __busInterfaceRef.set, None, 'Contains the name of one of the bus interfaces that is part of this channel. The ordering of the references may be important to the design environment.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_22_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2649,26 +2649,26 @@ class CTD_ANON_23 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}localName uses Python identifier localName
     __localName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'localName'), 'localName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_23_httpwww_accellera_orgXMLSchemaIPXACT1685_2014localName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 191, 10), )
 
-    
+
     localName = property(__localName.value, __localName.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_23_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_23_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2692,18 +2692,18 @@ class CTD_ANON_24 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}remapState uses Python identifier remapState
     __remapState = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapState'), 'remapState', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_24_httpwww_accellera_orgXMLSchemaIPXACT1685_2014remapState', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 214, 4), )
 
-    
+
     remapState = property(__remapState.value, __remapState.set, None, 'Contains a list of ports and values in remapPort and a list of registers and values that when all evaluate to true which tell the decoder to enter this remap state. The name attribute identifies the name of the state. If a list of remapPorts and/or remapRegisters is not defined then the condition for that state cannot be defined.')
 
     _ElementMap.update({
         __remapState.name() : __remapState
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_24 = CTD_ANON_24
 
@@ -2719,32 +2719,32 @@ class CTD_ANON_25 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}remapPorts uses Python identifier remapPorts
     __remapPorts = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapPorts'), 'remapPorts', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_25_httpwww_accellera_orgXMLSchemaIPXACT1685_2014remapPorts', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 221, 7), )
 
-    
+
     remapPorts = property(__remapPorts.value, __remapPorts.set, None, 'List of ports and their values that shall invoke this remap state.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_25_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_25_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_25_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
     _ElementMap.update({
@@ -2754,7 +2754,7 @@ class CTD_ANON_25 (pyxb.binding.basis.complexTypeDefinition):
         __description.name() : __description
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_25 = CTD_ANON_25
 
@@ -2770,18 +2770,18 @@ class CTD_ANON_26 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}remapPort uses Python identifier remapPort
     __remapPort = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapPort'), 'remapPort', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_26_httpwww_accellera_orgXMLSchemaIPXACT1685_2014remapPort', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 227, 10), )
 
-    
+
     remapPort = property(__remapPort.value, __remapPort.set, None, 'Contains the name and value of a port on the component, the value indicates the logic value which this port must take to effect the remapping. The portMapRef attribute stores the name of the port which takes that value.')
 
     _ElementMap.update({
         __remapPort.name() : __remapPort
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_26 = CTD_ANON_26
 
@@ -2797,18 +2797,18 @@ class CTD_ANON_27 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_27_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressSpaceRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 267, 6), )
 
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'If this master connects to an addressable bus, this element references the address space it maps to.')
 
     _ElementMap.update({
         __addressSpaceRef.name() : __addressSpaceRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_27 = CTD_ANON_27
 
@@ -2824,25 +2824,25 @@ class CTD_ANON_28 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSetRefGroup uses Python identifier fileSetRefGroup
     __fileSetRefGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRefGroup'), 'fileSetRefGroup', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_28_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSetRefGroup', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 301, 6), )
 
-    
+
     fileSetRefGroup = property(__fileSetRefGroup.value, __fileSetRefGroup.set, None, 'This reference is used to point the filesets that are associated with this slave port.\n\nDepending on the slave port function, there may be completely different software drivers associated with the different ports. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transparentBridge uses Python identifier transparentBridge
     __transparentBridge = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transparentBridge'), 'transparentBridge', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_28_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transparentBridge', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 416, 1), )
 
-    
+
     transparentBridge = property(__transparentBridge.value, __transparentBridge.set, None, 'If this element is present, it indicates that the bus interface provides a transparent bridge to another master bus interface on the same component.  It has a masterRef attribute which contains the name of the other bus interface.\n\nAny slave interface can bridge to multiple master interfaces, and multiple slave interfaces can bridge to the same master interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}memoryMapRef uses Python identifier memoryMapRef
     __memoryMapRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMapRef'), 'memoryMapRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_28_httpwww_accellera_orgXMLSchemaIPXACT1685_2014memoryMapRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 522, 1), )
 
-    
+
     memoryMapRef = property(__memoryMapRef.value, __memoryMapRef.set, None, 'References the memory map. The name of the memory map is kept in its memoryMapRef attribute.')
 
     _ElementMap.update({
@@ -2851,7 +2851,7 @@ class CTD_ANON_28 (pyxb.binding.basis.complexTypeDefinition):
         __memoryMapRef.name() : __memoryMapRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_28 = CTD_ANON_28
 
@@ -2869,26 +2869,26 @@ Depending on the slave port function, there may be completely different software
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_29_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 309, 9), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Abritray name assigned to the collections of fileSets.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_29_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 309, 4), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_29_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -2912,18 +2912,18 @@ class CTD_ANON_30 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_30_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 166, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more ports in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_30 = CTD_ANON_30
 
@@ -2939,18 +2939,18 @@ class CTD_ANON_31 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddresses uses Python identifier baseAddresses
     __baseAddresses = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddresses'), 'baseAddresses', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_31_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddresses', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 338, 6), )
 
-    
+
     baseAddresses = property(__baseAddresses.value, __baseAddresses.set, None, 'Represents a set of remap base addresses.')
 
     _ElementMap.update({
         __baseAddresses.name() : __baseAddresses
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_31 = CTD_ANON_31
 
@@ -2966,18 +2966,18 @@ class CTD_ANON_32 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}remapAddress uses Python identifier remapAddress
     __remapAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapAddress'), 'remapAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_32_httpwww_accellera_orgXMLSchemaIPXACT1685_2014remapAddress', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 344, 9), )
 
-    
+
     remapAddress = property(__remapAddress.value, __remapAddress.set, None, 'Base of an address block, expressed as the number of bitsInLAU from the containing busInterface. The state attribute indicates the name of the remap state for which this address is valid.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_32_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 361, 9), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of mirrored slave, expressed as the number of bitsInLAU from the containing busInterface. ')
 
     _ElementMap.update({
@@ -2985,7 +2985,7 @@ class CTD_ANON_32 (pyxb.binding.basis.complexTypeDefinition):
         __range.name() : __range
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_32 = CTD_ANON_32
 
@@ -3002,10 +3002,10 @@ class CTD_ANON_33 (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_33 = CTD_ANON_33
 
@@ -3021,18 +3021,18 @@ class CTD_ANON_34 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_34_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 166, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more ports in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_34 = CTD_ANON_34
 
@@ -3050,27 +3050,27 @@ Any slave interface can bridge to multiple master interfaces, and multiple slave
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_35_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_35_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'masterRef'), 'masterRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_35_masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 426, 3)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 426, 3)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'The name of the master bus interface to which this interface bridges.')
 
     _ElementMap.update({
@@ -3094,18 +3094,18 @@ class CTD_ANON_36 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_36_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 166, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more ports in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_36 = CTD_ANON_36
 
@@ -3121,18 +3121,18 @@ class CTD_ANON_37 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_37_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 166, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more ports in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_37 = CTD_ANON_37
 
@@ -3148,46 +3148,46 @@ class abstractorBusInterfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractionTypes uses Python identifier abstractionTypes
     __abstractionTypes = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractionTypes'), 'abstractionTypes', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractionTypes', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 545, 1), )
 
-    
+
     abstractionTypes = property(__abstractionTypes.value, __abstractionTypes.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorBusInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
@@ -3200,7 +3200,7 @@ class abstractorBusInterfaceType (pyxb.binding.basis.complexTypeDefinition):
         __description.name() : __description
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.abstractorBusInterfaceType = abstractorBusInterfaceType
 Namespace.addCategoryObject('typeBinding', 'abstractorBusInterfaceType', abstractorBusInterfaceType)
@@ -3217,18 +3217,18 @@ class CTD_ANON_38 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indirectInterface uses Python identifier indirectInterface
     __indirectInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indirectInterface'), 'indirectInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_38_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indirectInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 493, 1), )
 
-    
+
     indirectInterface = property(__indirectInterface.value, __indirectInterface.set, None, 'Describes one of the bus interfaces supported by this component.')
 
     _ElementMap.update({
         __indirectInterface.name() : __indirectInterface
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_38 = CTD_ANON_38
 
@@ -3244,81 +3244,81 @@ class indirectInterfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bitsInLau uses Python identifier bitsInLau
     __bitsInLau = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitsInLau'), 'bitsInLau', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bitsInLau', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 96, 1), )
 
-    
+
     bitsInLau = property(__bitsInLau.value, __bitsInLau.set, None, 'The number of bits in the least addressable unit. The default is byte addressable (8 bits).')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transparentBridge uses Python identifier transparentBridge
     __transparentBridge = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transparentBridge'), 'transparentBridge', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transparentBridge', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 416, 1), )
 
-    
+
     transparentBridge = property(__transparentBridge.value, __transparentBridge.set, None, 'If this element is present, it indicates that the bus interface provides a transparent bridge to another master bus interface on the same component.  It has a masterRef attribute which contains the name of the other bus interface.\n\nAny slave interface can bridge to multiple master interfaces, and multiple slave interfaces can bridge to the same master interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}memoryMapRef uses Python identifier memoryMapRef
     __memoryMapRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMapRef'), 'memoryMapRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014memoryMapRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 517, 4), )
 
-    
+
     memoryMapRef = property(__memoryMapRef.value, __memoryMapRef.set, None, 'A reference to a memoryMap. This memoryMap is indirectly accessible through this interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}endianness uses Python identifier endianness
     __endianness = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'endianness'), 'endianness', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014endianness', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 525, 3), )
 
-    
+
     endianness = property(__endianness.value, __endianness.set, None, "'big': means the most significant element of any multi-element  data field is stored at the lowest memory address. 'little' means the least significant element of any multi-element data field is stored at the lowest memory address. If this element is not present the default is 'little' endian.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indirectAddressRef uses Python identifier indirectAddressRef
     __indirectAddressRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indirectAddressRef'), 'indirectAddressRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indirectAddressRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 535, 1), )
 
-    
+
     indirectAddressRef = property(__indirectAddressRef.value, __indirectAddressRef.set, None, 'A reference to a field used for addressing the indirectly accessible memoryMap.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indirectDataRef uses Python identifier indirectDataRef
     __indirectDataRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indirectDataRef'), 'indirectDataRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indirectDataRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 540, 1), )
 
-    
+
     indirectDataRef = property(__indirectDataRef.value, __indirectDataRef.set, None, 'A reference to a field used for read/write access to the indirectly accessible memoryMap.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indirectInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=pyxb.binding.content.Wildcard.NC_any)
@@ -3336,7 +3336,7 @@ class indirectInterfaceType (pyxb.binding.basis.complexTypeDefinition):
         __description.name() : __description
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.indirectInterfaceType = indirectInterfaceType
 Namespace.addCategoryObject('typeBinding', 'indirectInterfaceType', indirectInterfaceType)
@@ -3353,18 +3353,18 @@ class CTD_ANON_39 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractionType uses Python identifier abstractionType
     __abstractionType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractionType'), 'abstractionType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_39_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractionType', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 548, 4), )
 
-    
+
     abstractionType = property(__abstractionType.value, __abstractionType.set, None, 'The abstraction type/level of this interface. Refers to abstraction definition using vendor, library, name, version attributes along with any configurable element values needed to configure this abstraction. Bus definition can be found through a reference in this file.')
 
     _ElementMap.update({
         __abstractionType.name() : __abstractionType
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_39 = CTD_ANON_39
 
@@ -3380,33 +3380,33 @@ class CTD_ANON_40 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_40_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 101, 1), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractionRef uses Python identifier abstractionRef
     __abstractionRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractionRef'), 'abstractionRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_40_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractionRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 559, 7), )
 
-    
+
     abstractionRef = property(__abstractionRef.value, __abstractionRef.set, None, 'Provides the VLNV of the abstraction type.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portMaps uses Python identifier portMaps
     __portMaps = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'portMaps'), 'portMaps', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_40_httpwww_accellera_orgXMLSchemaIPXACT1685_2014portMaps', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 564, 7), )
 
-    
+
     portMaps = property(__portMaps.value, __portMaps.set, None, 'Listing of maps between component ports and bus ports.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_40_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -3431,18 +3431,18 @@ class CTD_ANON_41 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portMap uses Python identifier portMap
     __portMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'portMap'), 'portMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_41_httpwww_accellera_orgXMLSchemaIPXACT1685_2014portMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 570, 10), )
 
-    
+
     portMap = property(__portMap.value, __portMap.set, None, "Maps a component's port to a port in a bus description. This is the logical to physical mapping. The logical pin comes from the bus interface and the physical pin from the component.")
 
     _ElementMap.update({
         __portMap.name() : __portMap
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_41 = CTD_ANON_41
 
@@ -3458,55 +3458,55 @@ class CTD_ANON_42 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}logicalPort uses Python identifier logicalPort
     __logicalPort = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalPort'), 'logicalPort', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_accellera_orgXMLSchemaIPXACT1685_2014logicalPort', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 577, 13), )
 
-    
+
     logicalPort = property(__logicalPort.value, __logicalPort.set, None, 'Logical port from abstraction definition')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}physicalPort uses Python identifier physicalPort
     __physicalPort = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'physicalPort'), 'physicalPort', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_accellera_orgXMLSchemaIPXACT1685_2014physicalPort', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 593, 14), )
 
-    
+
     physicalPort = property(__physicalPort.value, __physicalPort.set, None, 'Physical port from this component')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}logicalTieOff uses Python identifier logicalTieOff
     __logicalTieOff = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalTieOff'), 'logicalTieOff', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_accellera_orgXMLSchemaIPXACT1685_2014logicalTieOff', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 608, 14), )
 
-    
+
     logicalTieOff = property(__logicalTieOff.value, __logicalTieOff.set, None, 'Identifies a value to tie this logical port to.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isInformative uses Python identifier isInformative
     __isInformative = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isInformative'), 'isInformative', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isInformative', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 614, 13), )
 
-    
+
     isInformative = property(__isInformative.value, __isInformative.set, None, 'When true, indicates that this portMap element is for information purpose only.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute invert uses Python identifier invert
     __invert = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'invert'), 'invert', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_42_invert', pyxb.binding.datatypes.anySimpleType, unicode_default='false')
     __invert._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 621, 12)
     __invert._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 621, 12)
-    
+
     invert = property(__invert.value, __invert.set, None, 'Indicates that the connection between the logical and physical ports should include an inversion.')
 
     _ElementMap.update({
@@ -3534,18 +3534,18 @@ class CTD_ANON_43 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_43_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 583, 16), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Bus port name as specified inside the abstraction definition')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_43_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 549, 1), )
 
-    
+
     range = property(__range.value, __range.set, None, 'Left and right bound of a reference into a vector.')
 
     _ElementMap.update({
@@ -3553,7 +3553,7 @@ class CTD_ANON_43 (pyxb.binding.basis.complexTypeDefinition):
         __range.name() : __range
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_43 = CTD_ANON_43
 
@@ -3569,18 +3569,18 @@ class CTD_ANON_44 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_44_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 599, 17), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Component port name as specified inside the model port section')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}partSelect uses Python identifier partSelect
     __partSelect = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'partSelect'), 'partSelect', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_44_httpwww_accellera_orgXMLSchemaIPXACT1685_2014partSelect', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 560, 1), )
 
-    
+
     partSelect = property(__partSelect.value, __partSelect.set, None, 'Bit range definition.')
 
     _ElementMap.update({
@@ -3588,7 +3588,7 @@ class CTD_ANON_44 (pyxb.binding.basis.complexTypeDefinition):
         __partSelect.name() : __partSelect
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_44 = CTD_ANON_44
 
@@ -3604,18 +3604,18 @@ class ipxactFilesType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}ipxactFile uses Python identifier ipxactFile
     __ipxactFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ipxactFile'), 'ipxactFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_ipxactFilesType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014ipxactFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 62, 3), )
 
-    
+
     ipxactFile = property(__ipxactFile.value, __ipxactFile.set, None, None)
 
     _ElementMap.update({
         __ipxactFile.name() : __ipxactFile
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.ipxactFilesType = ipxactFilesType
 Namespace.addCategoryObject('typeBinding', 'ipxactFilesType', ipxactFilesType)
@@ -3632,102 +3632,102 @@ class CTD_ANON_45 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}catalogs uses Python identifier catalogs
     __catalogs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'catalogs'), 'catalogs', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014catalogs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 83, 5), )
 
-    
+
     catalogs = property(__catalogs.value, __catalogs.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busDefinitions uses Python identifier busDefinitions
     __busDefinitions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busDefinitions'), 'busDefinitions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busDefinitions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 86, 5), )
 
-    
+
     busDefinitions = property(__busDefinitions.value, __busDefinitions.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractionDefinitions uses Python identifier abstractionDefinitions
     __abstractionDefinitions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractionDefinitions'), 'abstractionDefinitions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractionDefinitions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 89, 5), )
 
-    
+
     abstractionDefinitions = property(__abstractionDefinitions.value, __abstractionDefinitions.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}components uses Python identifier components
     __components = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'components'), 'components', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014components', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 92, 5), )
 
-    
+
     components = property(__components.value, __components.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractors uses Python identifier abstractors
     __abstractors = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractors'), 'abstractors', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractors', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 95, 5), )
 
-    
+
     abstractors = property(__abstractors.value, __abstractors.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designs uses Python identifier designs
     __designs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designs'), 'designs', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 98, 5), )
 
-    
+
     designs = property(__designs.value, __designs.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designConfigurations uses Python identifier designConfigurations
     __designConfigurations = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designConfigurations'), 'designConfigurations', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designConfigurations', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 101, 5), )
 
-    
+
     designConfigurations = property(__designConfigurations.value, __designConfigurations.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorChains uses Python identifier generatorChains
     __generatorChains = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorChains'), 'generatorChains', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorChains', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 104, 5), )
 
-    
+
     generatorChains = property(__generatorChains.value, __generatorChains.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_45_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
     _ElementMap.update({
@@ -3747,7 +3747,7 @@ class CTD_ANON_45 (pyxb.binding.basis.complexTypeDefinition):
         __version.name() : __version
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_45 = CTD_ANON_45
 
@@ -3763,32 +3763,32 @@ class ipxactFileType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vlnv uses Python identifier vlnv
     __vlnv = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vlnv'), 'vlnv', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_ipxactFileType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vlnv', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 112, 3), )
 
-    
+
     vlnv = property(__vlnv.value, __vlnv.set, None, 'VLNV of the IP-XACT file being cataloged.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_ipxactFileType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/catalog.xsd', 117, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Name of the IP-XACT file being cataloged.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_ipxactFileType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_ipxactFileType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
     _ElementMap.update({
@@ -3798,7 +3798,7 @@ class ipxactFileType (pyxb.binding.basis.complexTypeDefinition):
         __description.name() : __description
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.ipxactFileType = ipxactFileType
 Namespace.addCategoryObject('typeBinding', 'ipxactFileType', ipxactFileType)
@@ -3815,40 +3815,40 @@ class CTD_ANON_46 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assert uses Python identifier assert_
     __assert = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assert'), 'assert_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_46_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assert', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 93, 4), )
 
-    
+
     assert_ = property(__assert.value, __assert.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_46_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_46_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_46_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_46_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -3874,18 +3874,18 @@ class CTD_ANON_47 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertion uses Python identifier assertion
     __assertion = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertion'), 'assertion', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_47_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertion', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 86, 1), )
 
-    
+
     assertion = property(__assertion.value, __assertion.set, None, 'Provides an expression for describing valid parameter value settings.  If a assertion assert expression evaluates false, the name, displayName and/or description can be used to communicate the assertion failure.')
 
     _ElementMap.update({
         __assertion.name() : __assertion
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_47 = CTD_ANON_47
 
@@ -3901,18 +3901,18 @@ class CTD_ANON_48 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_48_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 81, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is specified by the name element.  The value is in the text content of the value element.  This value element supports all configurability attributes.')
 
     _ElementMap.update({
         __parameter.name() : __parameter
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_48 = CTD_ANON_48
 
@@ -3930,10 +3930,10 @@ class CTD_ANON_49 (pyxb.binding.basis.complexTypeDefinition):
     # Base type is pyxb.binding.datatypes.anyType
     _HasWildcardElement = True
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_49 = CTD_ANON_49
 
@@ -3949,41 +3949,41 @@ class leafAccessHandle (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_leafAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 148, 5), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A list of views this accessHandle is applicable to. Note this element is optional, if it is not present the accessHandle applies to all views.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indices uses Python identifier indices
     __indices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indices'), 'indices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_leafAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 160, 3), )
 
-    
+
     indices = property(__indices.value, __indices.set, None, 'For a multi dimensional IP-XACT object, indices can be specified to select the element the accessHandle applies to. This is an index into a multi-dimensional array and follows C-semantics for indexing.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}slices uses Python identifier slices
     __slices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'slices'), 'slices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_leafAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014slices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 174, 3), )
 
-    
+
     slices = property(__slices.value, __slices.set, None, None)
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_leafAccessHandle_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute force uses Python identifier force
     __force = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'force'), 'force', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_leafAccessHandle_force', pyxb.binding.datatypes.boolean, unicode_default='true')
     __force._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 176, 2)
     __force._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 176, 2)
-    
+
     force = property(__force.value, __force.set, None, None)
 
     _ElementMap.update({
@@ -4010,16 +4010,16 @@ class CTD_ANON_50 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_50_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -4038,18 +4038,18 @@ class CTD_ANON_51 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}index uses Python identifier index
     __index = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'index'), 'index', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_51_httpwww_accellera_orgXMLSchemaIPXACT1685_2014index', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 166, 6), )
 
-    
+
     index = property(__index.value, __index.set, None, 'An index into the IP-XACT object.')
 
     _ElementMap.update({
         __index.name() : __index
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_51 = CTD_ANON_51
 
@@ -4065,34 +4065,34 @@ class nonIndexedLeafAccessHandle (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nonIndexedLeafAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 181, 5), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A list of views this accessHandle is applicable to. Note this element is optional, if it is not present the accessHandle applies to all views.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}slices uses Python identifier slices
     __slices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'slices'), 'slices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nonIndexedLeafAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014slices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 193, 3), )
 
-    
+
     slices = property(__slices.value, __slices.set, None, None)
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nonIndexedLeafAccessHandle_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute force uses Python identifier force
     __force = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'force'), 'force', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nonIndexedLeafAccessHandle_force', pyxb.binding.datatypes.boolean, unicode_default='true')
     __force._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 195, 2)
     __force._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 195, 2)
-    
+
     force = property(__force.value, __force.set, None, None)
 
     _ElementMap.update({
@@ -4118,16 +4118,16 @@ class CTD_ANON_52 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_52_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -4146,33 +4146,33 @@ class indexedAccessHandle (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indexedAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 200, 5), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A list of views this accessHandle is applicable to. Note this element is optional, if it is not present the accessHandle applies to all views.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indices uses Python identifier indices
     __indices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indices'), 'indices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indexedAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 212, 3), )
 
-    
+
     indices = property(__indices.value, __indices.set, None, 'For a multi dimensional IP-XACT object, indices can be specified to select the element the accessHandle applies to. This is an index into a multi-dimensional array and follows C-semantics for indexing.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegments uses Python identifier pathSegments
     __pathSegments = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegments'), 'pathSegments', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indexedAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegments', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 226, 3), )
 
-    
+
     pathSegments = property(__pathSegments.value, __pathSegments.set, None, 'An ordered list of pathSegment elements. When concatenated with a desired separator the elements in this form a HDL path for the parent slice into the referenced view.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indexedAccessHandle_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4198,16 +4198,16 @@ class CTD_ANON_53 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_53_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -4226,18 +4226,18 @@ class CTD_ANON_54 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}index uses Python identifier index
     __index = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'index'), 'index', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_54_httpwww_accellera_orgXMLSchemaIPXACT1685_2014index', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 218, 6), )
 
-    
+
     index = property(__index.value, __index.set, None, 'An index into the IP-XACT object.')
 
     _ElementMap.update({
         __index.name() : __index
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_54 = CTD_ANON_54
 
@@ -4253,18 +4253,18 @@ class CTD_ANON_55 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegment uses Python identifier pathSegment
     __pathSegment = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegment'), 'pathSegment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_55_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegment', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 232, 6), )
 
-    
+
     pathSegment = property(__pathSegment.value, __pathSegment.set, None, None)
 
     _ElementMap.update({
         __pathSegment.name() : __pathSegment
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_55 = CTD_ANON_55
 
@@ -4280,26 +4280,26 @@ class simpleAccessHandle (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_simpleAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 241, 5), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A list of views this accessHandle is applicable to. Note this element is optional, if it is not present the accessHandle applies to all views.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegments uses Python identifier pathSegments
     __pathSegments = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegments'), 'pathSegments', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_simpleAccessHandle_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegments', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 253, 3), )
 
-    
+
     pathSegments = property(__pathSegments.value, __pathSegments.set, None, 'An ordered list of pathSegment elements. When concatenated with a desired separator the elements in this form a HDL path for the parent slice into the referenced view.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_simpleAccessHandle_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4324,16 +4324,16 @@ class CTD_ANON_56 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_56_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -4352,18 +4352,18 @@ class CTD_ANON_57 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegment uses Python identifier pathSegment
     __pathSegment = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegment'), 'pathSegment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_57_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegment', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 259, 6), )
 
-    
+
     pathSegment = property(__pathSegment.value, __pathSegment.set, None, None)
 
     _ElementMap.update({
         __pathSegment.name() : __pathSegment
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_57 = CTD_ANON_57
 
@@ -4379,18 +4379,18 @@ class slicesType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}slice uses Python identifier slice
     __slice = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'slice'), 'slice', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_slicesType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014slice', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 271, 3), )
 
-    
+
     slice = property(__slice.value, __slice.set, None, 'The HDL path for a slice of the IP-XACT object.')
 
     _ElementMap.update({
         __slice.name() : __slice
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.slicesType = slicesType
 Namespace.addCategoryObject('typeBinding', 'slicesType', slicesType)
@@ -4407,26 +4407,26 @@ class sliceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegments uses Python identifier pathSegments
     __pathSegments = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegments'), 'pathSegments', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_sliceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegments', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 283, 3), )
 
-    
+
     pathSegments = property(__pathSegments.value, __pathSegments.set, None, 'An ordered list of pathSegment elements. When concatenated with a desired separator the elements in this form a HDL path for the parent slice into the referenced view.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_sliceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 549, 1), )
 
-    
+
     range = property(__range.value, __range.set, None, 'Left and right bound of a reference into a vector.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_sliceType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4451,18 +4451,18 @@ class CTD_ANON_58 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegment uses Python identifier pathSegment
     __pathSegment = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegment'), 'pathSegment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_58_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegment', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 289, 6), )
 
-    
+
     pathSegment = property(__pathSegment.value, __pathSegment.set, None, None)
 
     _ElementMap.update({
         __pathSegment.name() : __pathSegment
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_58 = CTD_ANON_58
 
@@ -4478,26 +4478,26 @@ class pathSegmentType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}pathSegmentName uses Python identifier pathSegmentName
     __pathSegmentName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pathSegmentName'), 'pathSegmentName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_pathSegmentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014pathSegmentName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 306, 3), )
 
-    
+
     pathSegmentName = property(__pathSegmentName.value, __pathSegmentName.set, None, 'One section of a HDL path')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indices uses Python identifier indices
     __indices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indices'), 'indices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_pathSegmentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 311, 3), )
 
-    
+
     indices = property(__indices.value, __indices.set, None, 'Specifies a multi-dimensional index into pathSegementName')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_pathSegmentType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4522,47 +4522,47 @@ class nameValuePairType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 590, 1), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'The value of the parameter.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 600, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_nameValuePairType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4590,18 +4590,18 @@ class CTD_ANON_59 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}right uses Python identifier right
     __right = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_59_httpwww_accellera_orgXMLSchemaIPXACT1685_2014right', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 319, 1), )
 
-    
+
     right = property(__right.value, __right.set, None, 'The optional element right specifies the right boundary.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}left uses Python identifier left
     __left = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_59_httpwww_accellera_orgXMLSchemaIPXACT1685_2014left', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 324, 1), )
 
-    
+
     left = property(__left.value, __left.set, None, 'The optional element left specifies the left boundary.')
 
     _ElementMap.update({
@@ -4609,7 +4609,7 @@ class CTD_ANON_59 (pyxb.binding.basis.complexTypeDefinition):
         __left.name() : __left
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_59 = CTD_ANON_59
 
@@ -4625,18 +4625,18 @@ class CTD_ANON_60 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vector uses Python identifier vector
     __vector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vector'), 'vector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_60_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 528, 1), )
 
-    
+
     vector = property(__vector.value, __vector.set, None, 'Left and right ranges of the vector.')
 
     _ElementMap.update({
         __vector.name() : __vector
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_60 = CTD_ANON_60
 
@@ -4652,18 +4652,18 @@ class CTD_ANON_61 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}right uses Python identifier right
     __right = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_61_httpwww_accellera_orgXMLSchemaIPXACT1685_2014right', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 319, 1), )
 
-    
+
     right = property(__right.value, __right.set, None, 'The optional element right specifies the right boundary.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}left uses Python identifier left
     __left = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_61_httpwww_accellera_orgXMLSchemaIPXACT1685_2014left', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 324, 1), )
 
-    
+
     left = property(__left.value, __left.set, None, 'The optional element left specifies the left boundary.')
 
     _ElementMap.update({
@@ -4671,7 +4671,7 @@ class CTD_ANON_61 (pyxb.binding.basis.complexTypeDefinition):
         __left.name() : __left
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_61 = CTD_ANON_61
 
@@ -4687,18 +4687,18 @@ class CTD_ANON_62 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_62_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 549, 1), )
 
-    
+
     range = property(__range.value, __range.set, None, 'Left and right bound of a reference into a vector.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indices uses Python identifier indices
     __indices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indices'), 'indices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_62_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 568, 5), )
 
-    
+
     indices = property(__indices.value, __indices.set, None, None)
 
     _ElementMap.update({
@@ -4706,7 +4706,7 @@ class CTD_ANON_62 (pyxb.binding.basis.complexTypeDefinition):
         __indices.name() : __indices
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_62 = CTD_ANON_62
 
@@ -4722,18 +4722,18 @@ class configurableArrays (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}array uses Python identifier array
     __array = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'array'), 'array', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableArrays_httpwww_accellera_orgXMLSchemaIPXACT1685_2014array', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 576, 3), )
 
-    
+
     array = property(__array.value, __array.set, None, 'Specific left and right array bounds.')
 
     _ElementMap.update({
         __array.name() : __array
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.configurableArrays = configurableArrays
 Namespace.addCategoryObject('typeBinding', 'configurableArrays', configurableArrays)
@@ -4750,26 +4750,26 @@ class CTD_ANON_63 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}right uses Python identifier right
     __right = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_63_httpwww_accellera_orgXMLSchemaIPXACT1685_2014right', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 319, 1), )
 
-    
+
     right = property(__right.value, __right.set, None, 'The optional element right specifies the right boundary.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}left uses Python identifier left
     __left = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_63_httpwww_accellera_orgXMLSchemaIPXACT1685_2014left', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 324, 1), )
 
-    
+
     left = property(__left.value, __left.set, None, 'The optional element left specifies the left boundary.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_63_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -4793,18 +4793,18 @@ class indicesType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}index uses Python identifier index
     __index = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'index'), 'index', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_indicesType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014index', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 631, 3), )
 
-    
+
     index = property(__index.value, __index.set, None, 'An index into an object in the referenced view.')
 
     _ElementMap.update({
         __index.name() : __index
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.indicesType = indicesType
 Namespace.addCategoryObject('typeBinding', 'indicesType', indicesType)
@@ -4821,166 +4821,166 @@ class componentType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}choices uses Python identifier choices
     __choices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choices'), 'choices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014choices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 95, 1), )
 
-    
+
     choices = property(__choices.value, __choices.set, None, 'Choices used by elements with an attribute ipxact:choiceRef.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busInterfaces uses Python identifier busInterfaces
     __busInterfaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterfaces'), 'busInterfaces', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busInterfaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 115, 1), )
 
-    
+
     busInterfaces = property(__busInterfaces.value, __busInterfaces.set, None, 'A list of bus interfaces supported by this component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}channels uses Python identifier channels
     __channels = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'channels'), 'channels', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014channels', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 171, 1), )
 
-    
+
     channels = property(__channels.value, __channels.set, None, 'Lists all channel connections between mirror interfaces of this component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}remapStates uses Python identifier remapStates
     __remapStates = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapStates'), 'remapStates', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014remapStates', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 208, 1), )
 
-    
+
     remapStates = property(__remapStates.value, __remapStates.set, None, 'Contains a list of remap state names and associated port values')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}indirectInterfaces uses Python identifier indirectInterfaces
     __indirectInterfaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'indirectInterfaces'), 'indirectInterfaces', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014indirectInterfaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 498, 1), )
 
-    
+
     indirectInterfaces = property(__indirectInterfaces.value, __indirectInterfaces.set, None, 'A list of bus interfaces supported by this component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}whiteboxElements uses Python identifier whiteboxElements
     __whiteboxElements = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'whiteboxElements'), 'whiteboxElements', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014whiteboxElements', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 78, 3), )
 
-    
+
     whiteboxElements = property(__whiteboxElements.value, __whiteboxElements.set, None, 'A list of whiteboxElements')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cpus uses Python identifier cpus
     __cpus = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cpus'), 'cpus', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cpus', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 92, 3), )
 
-    
+
     cpus = property(__cpus.value, __cpus.set, None, "cpu's in the component")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}otherClockDrivers uses Python identifier otherClockDrivers
     __otherClockDrivers = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'otherClockDrivers'), 'otherClockDrivers', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014otherClockDrivers', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 128, 3), )
 
-    
+
     otherClockDrivers = property(__otherClockDrivers.value, __otherClockDrivers.set, None, 'Defines a set of clock drivers that are not directly associated with an input port of the component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}resetTypes uses Python identifier resetTypes
     __resetTypes = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'resetTypes'), 'resetTypes', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014resetTypes', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 133, 3), )
 
-    
+
     resetTypes = property(__resetTypes.value, __resetTypes.set, None, 'A list of user defined resetTypes applicable to this component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSets uses Python identifier fileSets
     __fileSets = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSets'), 'fileSets', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSets', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 337, 4), )
 
-    
+
     fileSets = property(__fileSets.value, __fileSets.set, None, 'List of file sets associated with component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentGenerators uses Python identifier componentGenerators
     __componentGenerators = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGenerators'), 'componentGenerators', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentGenerators', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 209, 1), )
 
-    
+
     componentGenerators = property(__componentGenerators.value, __componentGenerators.set, None, 'List of component generators.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressSpaces uses Python identifier addressSpaces
     __addressSpaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaces'), 'addressSpaces', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressSpaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 446, 1), )
 
-    
+
     addressSpaces = property(__addressSpaces.value, __addressSpaces.set, None, 'If this component is a bus master, this lists all the address spaces\ndefined by the component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}memoryMaps uses Python identifier memoryMaps
     __memoryMaps = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMaps'), 'memoryMaps', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014memoryMaps', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 527, 1), )
 
-    
+
     memoryMaps = property(__memoryMaps.value, __memoryMaps.set, None, 'Lists all the slave memory maps defined by the component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}model uses Python identifier model
     __model = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'model'), 'model', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014model', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 327, 1), )
 
-    
+
     model = property(__model.value, __model.set, None, 'Model information.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5025,18 +5025,18 @@ class CTD_ANON_64 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}whiteboxElement uses Python identifier whiteboxElement
     __whiteboxElement = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'whiteboxElement'), 'whiteboxElement', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_64_httpwww_accellera_orgXMLSchemaIPXACT1685_2014whiteboxElement', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 84, 6), )
 
-    
+
     whiteboxElement = property(__whiteboxElement.value, __whiteboxElement.set, None, 'A whiteboxElement is a useful way to identify elements of a component that can not be identified through other means such as internal signals and non-software accessible registers.')
 
     _ElementMap.update({
         __whiteboxElement.name() : __whiteboxElement
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_64 = CTD_ANON_64
 
@@ -5052,18 +5052,18 @@ class CTD_ANON_65 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cpu uses Python identifier cpu
     __cpu = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cpu'), 'cpu', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_65_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cpu', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 98, 6), )
 
-    
+
     cpu = property(__cpu.value, __cpu.set, None, 'Describes a processor in this component.')
 
     _ElementMap.update({
         __cpu.name() : __cpu
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_65 = CTD_ANON_65
 
@@ -5079,61 +5079,61 @@ class CTD_ANON_66 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressSpaceRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 441, 1), )
 
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'References the address space.  The name of the address space is kept in its addressSpaceRef attribute.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_66_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5162,18 +5162,18 @@ class CTD_ANON_67 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}resetType uses Python identifier resetType
     __resetType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'resetType'), 'resetType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_67_httpwww_accellera_orgXMLSchemaIPXACT1685_2014resetType', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 139, 6), )
 
-    
+
     resetType = property(__resetType.value, __resetType.set, None, 'A user defined reset policy')
 
     _ElementMap.update({
         __resetType.name() : __resetType
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_67 = CTD_ANON_67
 
@@ -5189,40 +5189,40 @@ class CTD_ANON_68 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_68_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_68_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_68_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_68_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_68_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5248,68 +5248,68 @@ class whiteboxElementType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}whiteboxType uses Python identifier whiteboxType
     __whiteboxType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'whiteboxType'), 'whiteboxType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014whiteboxType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 324, 3), )
 
-    
+
     whiteboxType = property(__whiteboxType.value, __whiteboxType.set, None, 'Indicates the type of the element. The pin and signal types refer to elements within the HDL description. The register type refers to a register in the memory map. The interface type refers to a group of signals addressed as a single unit.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}driveable uses Python identifier driveable
     __driveable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'driveable'), 'driveable', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014driveable', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/component.xsd', 329, 3), )
 
-    
+
     driveable = property(__driveable.value, __driveable.set, None, 'If true, indicates that the white box element can be driven (e.g. have a new value forced into it).')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5340,18 +5340,18 @@ class otherClocks (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}otherClockDriver uses Python identifier otherClockDriver
     __otherClockDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'otherClockDriver'), 'otherClockDriver', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_otherClocks_httpwww_accellera_orgXMLSchemaIPXACT1685_2014otherClockDriver', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 215, 1), )
 
-    
+
     otherClockDriver = property(__otherClockDriver.value, __otherClockDriver.set, None, 'Describes a clock not directly associated with an input port. The clockSource attribute can be used on these clocks to indicate the actual clock source (e.g. an output port of a clock generator cell).')
 
     _ElementMap.update({
         __otherClockDriver.name() : __otherClockDriver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.otherClocks = otherClocks
 Namespace.addCategoryObject('typeBinding', 'otherClocks', otherClocks)
@@ -5368,18 +5368,18 @@ class CTD_ANON_69 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cellSpecification uses Python identifier cellSpecification
     __cellSpecification = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cellSpecification'), 'cellSpecification', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_69_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cellSpecification', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 138, 4), )
 
-    
+
     cellSpecification = property(__cellSpecification.value, __cellSpecification.set, None, 'Used to provide a generic description of a technology library cell.')
 
     _ElementMap.update({
         __cellSpecification.name() : __cellSpecification
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_69 = CTD_ANON_69
 
@@ -5395,18 +5395,18 @@ class CTD_ANON_70 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cellSpecification uses Python identifier cellSpecification
     __cellSpecification = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cellSpecification'), 'cellSpecification', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_70_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cellSpecification', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 138, 4), )
 
-    
+
     cellSpecification = property(__cellSpecification.value, __cellSpecification.set, None, 'Used to provide a generic description of a technology library cell.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}count uses Python identifier count
     __count = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'count'), 'count', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_70_httpwww_accellera_orgXMLSchemaIPXACT1685_2014count', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 213, 16), )
 
-    
+
     count = property(__count.value, __count.set, None, 'Indicates how many loads of the specified cell are connected. If not present, 3 is assumed.')
 
     _ElementMap.update({
@@ -5414,7 +5414,7 @@ class CTD_ANON_70 (pyxb.binding.basis.complexTypeDefinition):
         __count.name() : __count
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_70 = CTD_ANON_70
 
@@ -5430,69 +5430,69 @@ class CTD_ANON_71 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 334, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}timingConstraint uses Python identifier timingConstraint
     __timingConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'timingConstraint'), 'timingConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014timingConstraint', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 169, 4), )
 
-    
+
     timingConstraint = property(__timingConstraint.value, __timingConstraint.set, None, 'Defines a timing constraint for the associated port. The constraint is relative to the clock specified by the clockName attribute. The clockEdge indicates which clock edge the constraint is associated with (default is rising edge). The delayType attribute can be specified to further refine the constraint.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}driveConstraint uses Python identifier driveConstraint
     __driveConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'driveConstraint'), 'driveConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014driveConstraint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 196, 4), )
 
-    
+
     driveConstraint = property(__driveConstraint.value, __driveConstraint.set, None, 'Defines a constraint indicating how an input is to be driven. The preferred methodology is to specify a library cell in technology independent fashion. The implemention tool should assume that the associated port is driven by the specified cell, or that the drive strength of the input port is indicated by the specified resistance value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}loadConstraint uses Python identifier loadConstraint
     __loadConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'loadConstraint'), 'loadConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014loadConstraint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 206, 4), )
 
-    
+
     loadConstraint = property(__loadConstraint.value, __loadConstraint.set, None, 'Defines a constraint indicating the type of load on an output port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vector uses Python identifier vector
     __vector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vector'), 'vector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vector', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 228, 16), )
 
-    
+
     vector = property(__vector.value, __vector.set, None, 'The optional element vector specify the bits of a vector for which the constraints apply. The vaules of left and right must be within the range of the port. If the vector is not specified then the constraints apply to all the bits of the port.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute constraintSetId uses Python identifier constraintSetId
     __constraintSetId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'constraintSetId'), 'constraintSetId', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_71_constraintSetId', pyxb.binding.datatypes.NMTOKEN, unicode_default='default')
     __constraintSetId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 251, 12)
     __constraintSetId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 251, 12)
-    
+
     constraintSetId = property(__constraintSetId.value, __constraintSetId.set, None, 'Indicates a name for this set of constraints. Constraints are tied to a view using this name in the constraintSetRef element.')
 
     _ElementMap.update({
@@ -5522,18 +5522,18 @@ class CTD_ANON_72 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}left uses Python identifier left
     __left = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_72_httpwww_accellera_orgXMLSchemaIPXACT1685_2014left', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 234, 28), )
 
-    
+
     left = property(__left.value, __left.set, None, 'The optional elements left and right can be used to select a bit-slice of a vector. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}right uses Python identifier right
     __right = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_72_httpwww_accellera_orgXMLSchemaIPXACT1685_2014right', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 239, 28), )
 
-    
+
     right = property(__right.value, __right.set, None, 'The optional elements left and right can be used to select a bit-slice of a vector. ')
 
     _ElementMap.update({
@@ -5541,7 +5541,7 @@ class CTD_ANON_72 (pyxb.binding.basis.complexTypeDefinition):
         __right.name() : __right
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_72 = CTD_ANON_72
 
@@ -5557,18 +5557,18 @@ class CTD_ANON_73 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}constraintSet uses Python identifier constraintSet
     __constraintSet = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'constraintSet'), 'constraintSet', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_73_httpwww_accellera_orgXMLSchemaIPXACT1685_2014constraintSet', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 221, 4), )
 
-    
+
     constraintSet = property(__constraintSet.value, __constraintSet.set, None, 'Defines constraints that apply to a component port. If multiple constraintSet elements are used, each must have a unique value for the constraintSetId attribute.')
 
     _ElementMap.update({
         __constraintSet.name() : __constraintSet
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_73 = CTD_ANON_73
 
@@ -5584,26 +5584,26 @@ class CTD_ANON_74 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_74_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}localName uses Python identifier localName
     __localName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'localName'), 'localName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_74_httpwww_accellera_orgXMLSchemaIPXACT1685_2014localName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 275, 12), )
 
-    
+
     localName = property(__localName.value, __localName.set, None, None)
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_74_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5627,25 +5627,25 @@ class abstractionDefPortConstraintsType (pyxb.binding.basis.complexTypeDefinitio
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}timingConstraint uses Python identifier timingConstraint
     __timingConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'timingConstraint'), 'timingConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractionDefPortConstraintsType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014timingConstraint', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 169, 4), )
 
-    
+
     timingConstraint = property(__timingConstraint.value, __timingConstraint.set, None, 'Defines a timing constraint for the associated port. The constraint is relative to the clock specified by the clockName attribute. The clockEdge indicates which clock edge the constraint is associated with (default is rising edge). The delayType attribute can be specified to further refine the constraint.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}driveConstraint uses Python identifier driveConstraint
     __driveConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'driveConstraint'), 'driveConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractionDefPortConstraintsType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014driveConstraint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 196, 4), )
 
-    
+
     driveConstraint = property(__driveConstraint.value, __driveConstraint.set, None, 'Defines a constraint indicating how an input is to be driven. The preferred methodology is to specify a library cell in technology independent fashion. The implemention tool should assume that the associated port is driven by the specified cell, or that the drive strength of the input port is indicated by the specified resistance value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}loadConstraint uses Python identifier loadConstraint
     __loadConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'loadConstraint'), 'loadConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractionDefPortConstraintsType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014loadConstraint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 206, 4), )
 
-    
+
     loadConstraint = property(__loadConstraint.value, __loadConstraint.set, None, 'Defines a constraint indicating the type of load on an output port.')
 
     _ElementMap.update({
@@ -5654,7 +5654,7 @@ class abstractionDefPortConstraintsType (pyxb.binding.basis.complexTypeDefinitio
         __loadConstraint.name() : __loadConstraint
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.abstractionDefPortConstraintsType = abstractionDefPortConstraintsType
 Namespace.addCategoryObject('typeBinding', 'abstractionDefPortConstraintsType', abstractionDefPortConstraintsType)
@@ -5671,89 +5671,89 @@ class CTD_ANON_75 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstances uses Python identifier componentInstances
     __componentInstances = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstances'), 'componentInstances', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstances', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 148, 1), )
 
-    
+
     componentInstances = property(__componentInstances.value, __componentInstances.set, None, 'Sub instances of internal components.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}adHocConnections uses Python identifier adHocConnections
     __adHocConnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnections'), 'adHocConnections', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014adHocConnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 211, 1), )
 
-    
+
     adHocConnections = property(__adHocConnections.value, __adHocConnections.set, None, 'Defines the set of ad-hoc connections in a design. An ad-hoc connection represents a connection between two component pins which were not connected as a result of interface connections (i.e.the pin to pin connection was made explicitly and is represented explicitly).')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interconnections uses Python identifier interconnections
     __interconnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnections'), 'interconnections', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_accellera_orgXMLSchemaIPXACT1685_2014interconnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 298, 1), )
 
-    
+
     interconnections = property(__interconnections.value, __interconnections.set, None, 'Connections between internal sub components.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_75_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5786,96 +5786,96 @@ class CTD_ANON_76 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designRef uses Python identifier designRef
     __designRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designRef'), 'designRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 62, 4), )
 
-    
+
     designRef = property(__designRef.value, __designRef.set, None, 'The design to which this configuration applies')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorChainConfiguration uses Python identifier generatorChainConfiguration
     __generatorChainConfiguration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorChainConfiguration'), 'generatorChainConfiguration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorChainConfiguration', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 67, 4), )
 
-    
+
     generatorChainConfiguration = property(__generatorChainConfiguration.value, __generatorChainConfiguration.set, None, 'Contains the configurable information associated with a generatorChain and its generators. Note that configurable information for generators associated with components is stored in the design file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interconnectionConfiguration uses Python identifier interconnectionConfiguration
     __interconnectionConfiguration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnectionConfiguration'), 'interconnectionConfiguration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014interconnectionConfiguration', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 72, 4), )
 
-    
+
     interconnectionConfiguration = property(__interconnectionConfiguration.value, __interconnectionConfiguration.set, None, 'Contains the information about the abstractors required to cross between two interfaces at with different abstractionDefs.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewConfiguration uses Python identifier viewConfiguration
     __viewConfiguration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewConfiguration'), 'viewConfiguration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewConfiguration', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 145, 4), )
 
-    
+
     viewConfiguration = property(__viewConfiguration.value, __viewConfiguration.set, None, 'Contains the active views for each instance in the design')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_76_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5909,33 +5909,33 @@ class CTD_ANON_77 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_77_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interconnectionRef uses Python identifier interconnectionRef
     __interconnectionRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnectionRef'), 'interconnectionRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_77_httpwww_accellera_orgXMLSchemaIPXACT1685_2014interconnectionRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 79, 7), )
 
-    
+
     interconnectionRef = property(__interconnectionRef.value, __interconnectionRef.set, None, 'Reference to the interconnection name, monitor interconnection name or possibly a hierConnection interfaceName in a design file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorInstances uses Python identifier abstractorInstances
     __abstractorInstances = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorInstances'), 'abstractorInstances', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_77_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorInstances', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 84, 7), )
 
-    
+
     abstractorInstances = property(__abstractorInstances.value, __abstractorInstances.set, None, "List of abstractor-instances for this interconnection. Multiple abstractor-instances elements may be present for a 1-to-many (broadcast) interconnection. In that case, the optional interfaceRef elements must reference non-overlapping interfaces from the 'many' side of the interconnection.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_77_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -5960,25 +5960,25 @@ class CTD_ANON_78 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_78_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceRef uses Python identifier interfaceRef
     __interfaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interfaceRef'), 'interfaceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_78_httpwww_accellera_orgXMLSchemaIPXACT1685_2014interfaceRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 91, 10), )
 
-    
+
     interfaceRef = property(__interfaceRef.value, __interfaceRef.set, None, 'Defines the broadcast endpoint to which this chain of abstractors applies.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorInstance uses Python identifier abstractorInstance
     __abstractorInstance = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorInstance'), 'abstractorInstance', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_78_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorInstance', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 111, 10), )
 
-    
+
     abstractorInstance = property(__abstractorInstance.value, __abstractorInstance.set, None, 'Element to hold a the abstractor reference, the configuration and viewName. If multiple elements are present then the order is the order in which the abstractors should be chained together.')
 
     _ElementMap.update({
@@ -5987,7 +5987,7 @@ class CTD_ANON_78 (pyxb.binding.basis.complexTypeDefinition):
         __abstractorInstance.name() : __abstractorInstance
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_78 = CTD_ANON_78
 
@@ -6003,27 +6003,27 @@ class CTD_ANON_79 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_79_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'componentRef'), 'componentRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_79_componentRef', pyxb.binding.datatypes.Name, required=True)
     __componentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 99, 12)
     __componentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 99, 12)
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'Reference to a component instance nane.')
 
-    
+
     # Attribute busRef uses Python identifier busRef
     __busRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'busRef'), 'busRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_79_busRef', pyxb.binding.datatypes.Name, required=True)
     __busRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 104, 12)
     __busRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 104, 12)
-    
+
     busRef = property(__busRef.value, __busRef.set, None, 'Reference to a component bus interface name.')
 
     _ElementMap.update({
@@ -6047,47 +6047,47 @@ class CTD_ANON_80 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}instanceName uses Python identifier instanceName
     __instanceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceName'), 'instanceName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_accellera_orgXMLSchemaIPXACT1685_2014instanceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 117, 13), )
 
-    
+
     instanceName = property(__instanceName.value, __instanceName.set, None, 'Instance name for the abstractor')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorRef uses Python identifier abstractorRef
     __abstractorRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorRef'), 'abstractorRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 124, 13), )
 
-    
+
     abstractorRef = property(__abstractorRef.value, __abstractorRef.set, None, 'Abstractor reference')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewName uses Python identifier viewName
     __viewName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewName'), 'viewName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 129, 13), )
 
-    
+
     viewName = property(__viewName.value, __viewName.set, None, 'The name of the active view for this abstractor instance.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_80_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -6114,33 +6114,33 @@ class CTD_ANON_81 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_81_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}view uses Python identifier view
     __view = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'view'), 'view', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_81_httpwww_accellera_orgXMLSchemaIPXACT1685_2014view', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 153, 7), )
 
-    
+
     view = property(__view.value, __view.set, None, 'The selected view for the instance.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}instanceName uses Python identifier instanceName
     __instanceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceName'), 'instanceName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_81_httpwww_accellera_orgXMLSchemaIPXACT1685_2014instanceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 123, 1), )
 
-    
+
     instanceName = property(__instanceName.value, __instanceName.set, None, 'An instance name assigned to subcomponent instances and contained channels, that is unique within the parent component.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_81_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -6165,19 +6165,19 @@ class CTD_ANON_82 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}configurableElementValues uses Python identifier configurableElementValues
     __configurableElementValues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurableElementValues'), 'configurableElementValues', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_82_httpwww_accellera_orgXMLSchemaIPXACT1685_2014configurableElementValues', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 92, 1), )
 
-    
+
     configurableElementValues = property(__configurableElementValues.value, __configurableElementValues.set, None, 'All configuration information for a contained component, generator, generator chain or abstractor instance.')
 
-    
+
     # Attribute viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_82_viewRef', pyxb.binding.datatypes.NMTOKEN, required=True)
     __viewRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 165, 9)
     __viewRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/designConfig.xsd', 165, 9)
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, None)
 
     _ElementMap.update({
@@ -6200,111 +6200,111 @@ class CTD_ANON_83 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 59, 16), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Path to the file or directory. If this path is a relative path, then it is relative to the containing XML file. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isStructural uses Python identifier isStructural
     __isStructural = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isStructural'), 'isStructural', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isStructural', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 66, 15), )
 
-    
+
     isStructural = property(__isStructural.value, __isStructural.set, None, 'Indicates that the current file is purely structural.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isIncludeFile uses Python identifier isIncludeFile
     __isIncludeFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isIncludeFile'), 'isIncludeFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isIncludeFile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 71, 16), )
 
-    
+
     isIncludeFile = property(__isIncludeFile.value, __isIncludeFile.set, None, 'Indicate that the file is include file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}logicalName uses Python identifier logicalName
     __logicalName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalName'), 'logicalName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014logicalName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 87, 16), )
 
-    
+
     logicalName = property(__logicalName.value, __logicalName.set, None, 'Logical name for this file or directory e.g. VHDL library name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}exportedName uses Python identifier exportedName
     __exportedName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'exportedName'), 'exportedName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014exportedName', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 103, 16), )
 
-    
+
     exportedName = property(__exportedName.value, __exportedName.set, None, 'Defines exported names that can be accessed externally, e.g. exported function names from a C source file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}buildCommand uses Python identifier buildCommand
     __buildCommand = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'buildCommand'), 'buildCommand', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014buildCommand', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 115, 16), )
 
-    
+
     buildCommand = property(__buildCommand.value, __buildCommand.set, None, 'Command and flags used to build derived files from the sourceName files. If this element is present, the command and/or flags used to to build the file will override or augment any default builders at a higher level.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}define uses Python identifier define
     __define = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'define'), 'define', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014define', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 156, 16), )
 
-    
+
     define = property(__define.value, __define.set, None, 'Specifies define symbols that are used in the source file.  The ipxact:name element gives the name to be defined and the text content of the ipxact:value element holds the value.  This element supports full configurability.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}imageType uses Python identifier imageType
     __imageType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'imageType'), 'imageType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014imageType', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 161, 16), )
 
-    
+
     imageType = property(__imageType.value, __imageType.set, None, 'Relates the current file to a certain executable image type in the design.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 173, 16), )
 
-    
+
     description = property(__description.value, __description.set, None, 'String for describing this file to users')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014dependency', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 325, 4), )
 
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Specifies a location on which  files or fileSets may be dependent. Typically, this would be a directory that would contain included files.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileType', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 95, 1), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by IP-XACT.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute fileId uses Python identifier fileId
     __fileId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'fileId'), 'fileId', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_83_fileId', pyxb.binding.datatypes.token)
     __fileId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 180, 12)
     __fileId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 180, 12)
-    
+
     fileId = property(__fileId.value, __fileId.set, None, 'Unique ID for this file, referenced in fileSet/function/fileRef')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
@@ -6341,16 +6341,16 @@ class CTD_ANON_84 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute externalDeclarations uses Python identifier externalDeclarations
     __externalDeclarations = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'externalDeclarations'), 'externalDeclarations', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_84_externalDeclarations', pyxb.binding.datatypes.boolean, unicode_default='false')
     __externalDeclarations._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 78, 32)
     __externalDeclarations._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 78, 32)
-    
+
     externalDeclarations = property(__externalDeclarations.value, __externalDeclarations.set, None, 'the File contains some declarations that are needed in top file')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __externalDeclarations.name() : __externalDeclarations
@@ -6369,16 +6369,16 @@ class CTD_ANON_85 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute default uses Python identifier default
     __default = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'default'), 'default', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_85_default', pyxb.binding.datatypes.boolean, unicode_default='false')
     __default._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 94, 32)
     __default._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 94, 32)
-    
+
     default = property(__default.value, __default.set, None, 'The logical name shall only be used as a default and another process may override this name.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __default.name() : __default
@@ -6397,16 +6397,16 @@ class CTD_ANON_86 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_86_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -6425,32 +6425,32 @@ class CTD_ANON_87 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_87_httpwww_accellera_orgXMLSchemaIPXACT1685_2014command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 121, 28), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Command used to build this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_87_httpwww_accellera_orgXMLSchemaIPXACT1685_2014flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 126, 28), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building this file. If the optional attribute "append" is "true", this string will be appended to any existing flags, otherwise these flags will replace any existing default flags.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_87_httpwww_accellera_orgXMLSchemaIPXACT1685_2014replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 142, 28), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, the value of the sibling element "flags" should replace any default flags specified at a more global level. If this is true and the sibling element "flags" is empty or missing, this has the effect of clearing any default flags.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}targetName uses Python identifier targetName
     __targetName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'targetName'), 'targetName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_87_httpwww_accellera_orgXMLSchemaIPXACT1685_2014targetName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 147, 28), )
 
-    
+
     targetName = property(__targetName.value, __targetName.set, None, 'Pathname to the file that is derived (built) from the source file.')
 
     _ElementMap.update({
@@ -6460,7 +6460,7 @@ class CTD_ANON_87 (pyxb.binding.basis.complexTypeDefinition):
         __targetName.name() : __targetName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_87 = CTD_ANON_87
 
@@ -6476,16 +6476,16 @@ class CTD_ANON_88 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_88_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -6504,77 +6504,77 @@ class CTD_ANON_89 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}languageTools uses Python identifier languageTools
     __languageTools = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'languageTools'), 'languageTools', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014languageTools', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 206, 16), )
 
-    
+
     languageTools = property(__languageTools.value, __languageTools.set, None, 'Default commands and flags for software language tools needed to build the executable image.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSetRefGroup uses Python identifier fileSetRefGroup
     __fileSetRefGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRefGroup'), 'fileSetRefGroup', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSetRefGroup', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 257, 16), )
 
-    
+
     fileSetRefGroup = property(__fileSetRefGroup.value, __fileSetRefGroup.set, None, 'Contains a group of file set references that indicates the set of file sets complying with the tool set of the current executable image.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute imageId uses Python identifier imageId
     __imageId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'imageId'), 'imageId', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_imageId', pyxb.binding.datatypes.token, required=True)
     __imageId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 269, 12)
     __imageId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 269, 12)
-    
+
     imageId = property(__imageId.value, __imageId.set, None, 'Unique ID for the executableImage, referenced in fileSet/function/fileRef')
 
-    
+
     # Attribute imageType uses Python identifier imageType
     __imageType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'imageType'), 'imageType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_89_imageType', pyxb.binding.datatypes.Name)
     __imageType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 274, 12)
     __imageType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 274, 12)
-    
+
     imageType = property(__imageType.value, __imageType.set, None, 'Open element to describe the type of image. The contents is model and/or generator specific.')
 
     _ElementMap.update({
@@ -6605,32 +6605,32 @@ class CTD_ANON_90 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileBuilder uses Python identifier fileBuilder
     __fileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileBuilder'), 'fileBuilder', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_90_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 212, 28), )
 
-    
+
     fileBuilder = property(__fileBuilder.value, __fileBuilder.set, None, 'A generic placeholder for any file builder like compilers and assemblers.  It contains the file types to which the command should be applied, and the flags to be used with that command.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}linker uses Python identifier linker
     __linker = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linker'), 'linker', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_90_httpwww_accellera_orgXMLSchemaIPXACT1685_2014linker', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 245, 30), )
 
-    
+
     linker = property(__linker.value, __linker.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}linkerFlags uses Python identifier linkerFlags
     __linkerFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linkerFlags'), 'linkerFlags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_90_httpwww_accellera_orgXMLSchemaIPXACT1685_2014linkerFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 248, 34), )
 
-    
+
     linkerFlags = property(__linkerFlags.value, __linkerFlags.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}linkerCommandFile uses Python identifier linkerCommandFile
     __linkerCommandFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linkerCommandFile'), 'linkerCommandFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_90_httpwww_accellera_orgXMLSchemaIPXACT1685_2014linkerCommandFile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 282, 4), )
 
-    
+
     linkerCommandFile = property(__linkerCommandFile.value, __linkerCommandFile.set, None, 'Specifies a linker command file.')
 
     _ElementMap.update({
@@ -6640,7 +6640,7 @@ class CTD_ANON_90 (pyxb.binding.basis.complexTypeDefinition):
         __linkerCommandFile.name() : __linkerCommandFile
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_90 = CTD_ANON_90
 
@@ -6656,47 +6656,47 @@ class CTD_ANON_91 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_accellera_orgXMLSchemaIPXACT1685_2014command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 219, 40), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Default command used to build files of the specified fileType. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_accellera_orgXMLSchemaIPXACT1685_2014flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 224, 40), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building files of this type.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_accellera_orgXMLSchemaIPXACT1685_2014replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 229, 40), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, replace any default flags value with the value in the sibling flags element. Otherwise, append the contents of the sibling flags element to any default flags value.\n\nIf the value is true and the "flags" element is empty or missing, this will have the result of clearing any default flags value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 95, 1), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by IP-XACT.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_91_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -6723,18 +6723,18 @@ class CTD_ANON_92 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_92_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 309, 4), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
     _ElementMap.update({
         __fileSetRef.name() : __fileSetRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_92 = CTD_ANON_92
 
@@ -6750,39 +6750,39 @@ class CTD_ANON_93 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_93_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_93_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 288, 16), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Linker command file name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}commandLineSwitch uses Python identifier commandLineSwitch
     __commandLineSwitch = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'commandLineSwitch'), 'commandLineSwitch', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_93_httpwww_accellera_orgXMLSchemaIPXACT1685_2014commandLineSwitch', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 293, 16), )
 
-    
+
     commandLineSwitch = property(__commandLineSwitch.value, __commandLineSwitch.set, None, 'The command line switch to specify the linker command file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}enable uses Python identifier enable
     __enable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enable'), 'enable', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_93_httpwww_accellera_orgXMLSchemaIPXACT1685_2014enable', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 298, 16), )
 
-    
+
     enable = property(__enable.value, __enable.set, None, 'Specifies whether to generate and enable the linker command file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorRef uses Python identifier generatorRef
     __generatorRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorRef'), 'generatorRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_93_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 491, 4), )
 
-    
+
     generatorRef = property(__generatorRef.value, __generatorRef.set, None, 'A reference to a generator element.')
 
     _ElementMap.update({
@@ -6793,7 +6793,7 @@ class CTD_ANON_93 (pyxb.binding.basis.complexTypeDefinition):
         __generatorRef.name() : __generatorRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_93 = CTD_ANON_93
 
@@ -6809,26 +6809,26 @@ class CTD_ANON_94 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_94_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}localName uses Python identifier localName
     __localName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'localName'), 'localName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_94_httpwww_accellera_orgXMLSchemaIPXACT1685_2014localName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 315, 16), )
 
-    
+
     localName = property(__localName.value, __localName.set, None, 'Refers to a fileSet defined within this description.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_94_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -6852,18 +6852,18 @@ class CTD_ANON_95 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSet uses Python identifier fileSet
     __fileSet = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSet'), 'fileSet', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_95_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSet', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 189, 4), )
 
-    
+
     fileSet = property(__fileSet.value, __fileSet.set, None, 'This element specifies a list of unique pathnames to files and directories. It may also include build instructions for the files. If compilation order is important, e.g. for VHDL files, the files have to be provided in compilation order.')
 
     _ElementMap.update({
         __fileSet.name() : __fileSet
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_95 = CTD_ANON_95
 
@@ -6879,40 +6879,40 @@ class fileBuilderType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileBuilderType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 350, 12), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Default command used to build files of the specified fileType. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileBuilderType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 355, 12), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building files of this type.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileBuilderType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 360, 12), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, replace any default flags value with the value in the sibling flags element. Otherwise, append the contents of the sibling flags element to any default flags value.\n\nIf the value is true and the "flags" element is empty or missing, this will have the result of clearing any default flags value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileBuilderType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 95, 1), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by IP-XACT.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileBuilderType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -6939,75 +6939,75 @@ class fileSetType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}file uses Python identifier file
     __file = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'file'), 'file', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014file', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 53, 4), )
 
-    
+
     file = property(__file.value, __file.set, None, 'IP-XACT reference to a file or directory.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014dependency', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 325, 4), )
 
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Specifies a location on which  files or fileSets may be dependent. Typically, this would be a directory that would contain included files.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 381, 12), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Identifies this filleSet as belonging to a particular group or having a particular purpose. Examples might be "diagnostics", "boot", "application", "interrupt", "deviceDriver", etc.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}defaultFileBuilder uses Python identifier defaultFileBuilder
     __defaultFileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultFileBuilder'), 'defaultFileBuilder', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014defaultFileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 394, 12), )
 
-    
+
     defaultFileBuilder = property(__defaultFileBuilder.value, __defaultFileBuilder.set, None, 'Default command and flags used to build derived files from the sourceName files in this file set.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}function uses Python identifier function
     __function = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'function'), 'function', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014function', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 400, 12), )
 
-    
+
     function = property(__function.value, __function.set, None, 'Generator information if this file set describes a function. For example, this file set may describe diagnostics for which the DE can generate a diagnostics driver.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fileSetType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -7039,16 +7039,16 @@ class CTD_ANON_96 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_96_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -7067,62 +7067,62 @@ class CTD_ANON_97 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}entryPoint uses Python identifier entryPoint
     __entryPoint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'entryPoint'), 'entryPoint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014entryPoint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 406, 24), )
 
-    
+
     entryPoint = property(__entryPoint.value, __entryPoint.set, None, 'Optional name for the function.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileRef uses Python identifier fileRef
     __fileRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileRef'), 'fileRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 411, 24), )
 
-    
+
     fileRef = property(__fileRef.value, __fileRef.set, None, 'A reference to the file that contains the entry point function.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}returnType uses Python identifier returnType
     __returnType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'returnType'), 'returnType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014returnType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 416, 24), )
 
-    
+
     returnType = property(__returnType.value, __returnType.set, None, 'Function return type. Possible values are void and int.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}argument uses Python identifier argument
     __argument = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'argument'), 'argument', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014argument', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 421, 24), )
 
-    
+
     argument = property(__argument.value, __argument.set, None, 'Arguments passed in when the function is called. Arguments are passed in order.\n\nThis is an extension of the name-value pair which includes the data type in the ipxact:dataType attribute.  The argument name is in the ipxact:name element and its value is in the ipxact:value element.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}disabled uses Python identifier disabled
     __disabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'disabled'), 'disabled', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014disabled', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 439, 24), )
 
-    
+
     disabled = property(__disabled.value, __disabled.set, None, 'Specifies if the SW function is enabled. If not present the function is always enabled.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}sourceFile uses Python identifier sourceFile
     __sourceFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'sourceFile'), 'sourceFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_accellera_orgXMLSchemaIPXACT1685_2014sourceFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 444, 24), )
 
-    
+
     sourceFile = property(__sourceFile.value, __sourceFile.set, None, 'Location information for the source file of this function.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute replicate uses Python identifier replicate
     __replicate = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'replicate'), 'replicate', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_97_replicate', pyxb.binding.datatypes.boolean, unicode_default='false')
     __replicate._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 462, 20)
     __replicate._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 462, 20)
-    
+
     replicate = property(__replicate.value, __replicate.set, None, 'If true directs the generator to compile a separate object module for each instance of the component in the design. If false (default) the function will be called with different arguments for each instance.')
 
     _ElementMap.update({
@@ -7151,26 +7151,26 @@ class CTD_ANON_98 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}sourceName uses Python identifier sourceName
     __sourceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'sourceName'), 'sourceName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_98_httpwww_accellera_orgXMLSchemaIPXACT1685_2014sourceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 450, 36), )
 
-    
+
     sourceName = property(__sourceName.value, __sourceName.set, None, 'Source file for the boot load.  Relative names are searched for in the project directory and the source of the component directory.\n    ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_98_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 95, 1), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by IP-XACT.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_98_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -7194,16 +7194,16 @@ class CTD_ANON_99 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_99_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -7223,10 +7223,10 @@ class ipxactURI (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.ipxactURI = ipxactURI
 Namespace.addCategoryObject('typeBinding', 'ipxactURI', ipxactURI)
@@ -7243,118 +7243,118 @@ class CTD_ANON_100 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}choices uses Python identifier choices
     __choices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choices'), 'choices', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014choices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 95, 1), )
 
-    
+
     choices = property(__choices.value, __choices.set, None, 'Choices used by elements with an attribute ipxact:choiceRef.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}assertions uses Python identifier assertions
     __assertions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'assertions'), 'assertions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014assertions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 98, 1), )
 
-    
+
     assertions = property(__assertions.value, __assertions.set, None, 'List of assertions about allowed parameter values.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorChainSelector uses Python identifier generatorChainSelector
     __generatorChainSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorChainSelector'), 'generatorChainSelector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorChainSelector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 59, 5), )
 
-    
+
     generatorChainSelector = property(__generatorChainSelector.value, __generatorChainSelector.set, None, 'Select other generator chain files for inclusion into this chain. The boolean attribute "unique" (default false) specifies that only a single generator is valid in this context. If more that one generator is selected based on the selection criteria, DE will prompt the user to resolve to a single generator.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentGeneratorSelector uses Python identifier componentGeneratorSelector
     __componentGeneratorSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGeneratorSelector'), 'componentGeneratorSelector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentGeneratorSelector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 80, 5), )
 
-    
+
     componentGeneratorSelector = property(__componentGeneratorSelector.value, __componentGeneratorSelector.set, None, 'Selects generators declared in components of the current design for inclusion into this generator chain.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}chainGroup uses Python identifier chainGroup
     __chainGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'chainGroup'), 'chainGroup', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014chainGroup', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 87, 4), )
 
-    
+
     chainGroup = property(__chainGroup.value, __chainGroup.set, None, 'Identifies this generator chain as belonging to the named group. This is used by other generator chains to select this chain for programmatic inclusion.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generator uses Python identifier generator
     __generator = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generator'), 'generator', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generator', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 114, 1), )
 
-    
+
     generator = property(__generator.value, __generator.set, None, 'Specifies a set of generators.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 64, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 69, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this element belongs to.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 74, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_accellera_orgXMLSchemaIPXACT1685_2014version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 79, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, 'Indicates the version of the named element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute hidden uses Python identifier hidden
     __hidden = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'hidden'), 'hidden', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_100_hidden', pyxb.binding.datatypes.boolean, unicode_default='false')
     __hidden._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 106, 3)
     __hidden._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 106, 3)
-    
+
     hidden = property(__hidden.value, __hidden.set, None, 'If this attribute is true then the generator should not be presented to the user, it may be part of a chain and has no useful meaning when invoked standalone.')
 
     _ElementMap.update({
@@ -7391,34 +7391,34 @@ class CTD_ANON_101 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorChainRef uses Python identifier generatorChainRef
     __generatorChainRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorChainRef'), 'generatorChainRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_101_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorChainRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 66, 8), )
 
-    
+
     generatorChainRef = property(__generatorChainRef.value, __generatorChainRef.set, None, 'Select another generator chain using the unique identifier of this generator chain.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}groupSelector uses Python identifier groupSelector
     __groupSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'groupSelector'), 'groupSelector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_101_httpwww_accellera_orgXMLSchemaIPXACT1685_2014groupSelector', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 134, 1), )
 
-    
+
     groupSelector = property(__groupSelector.value, __groupSelector.set, None, 'Specifies a set of group names used to select subsequent generators. The attribute "multipleGroupOperator" specifies the OR or AND selection operator if there is more than one group name (default=OR).')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_101_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute unique uses Python identifier unique
     __unique = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'unique'), 'unique', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_101_unique', pyxb.binding.datatypes.boolean, unicode_default='false')
     __unique._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 72, 7)
     __unique._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 72, 7)
-    
+
     unique = property(__unique.value, __unique.set, None, 'Specifies that only a single generator is valid in this context. If more that one generator is selcted based on the selection criteria, DE will prompt the user to resolve to a single generator.')
 
     _ElementMap.update({
@@ -7443,16 +7443,16 @@ class CTD_ANON_102 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_102_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -7471,16 +7471,16 @@ class CTD_ANON_103 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_103_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -7499,16 +7499,16 @@ class CTD_ANON_104 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_104_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -7527,19 +7527,19 @@ class generatorSelectorType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}groupSelector uses Python identifier groupSelector
     __groupSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'groupSelector'), 'groupSelector', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorSelectorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014groupSelector', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 134, 1), )
 
-    
+
     groupSelector = property(__groupSelector.value, __groupSelector.set, None, 'Specifies a set of group names used to select subsequent generators. The attribute "multipleGroupOperator" specifies the OR or AND selection operator if there is more than one group name (default=OR).')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorSelectorType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -7563,18 +7563,18 @@ class CTD_ANON_105 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentGenerator uses Python identifier componentGenerator
     __componentGenerator = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGenerator'), 'componentGenerator', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_105_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentGenerator', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 124, 1), )
 
-    
+
     componentGenerator = property(__componentGenerator.value, __componentGenerator.set, None, 'Specifies a set of component generators. The scope attribute applies to component generators and specifies whether the generator should be run for each instance of the entity (or module) or just once for all instances of the entity.')
 
     _ElementMap.update({
         __componentGenerator.name() : __componentGenerator
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_105 = CTD_ANON_105
 
@@ -7590,18 +7590,18 @@ class CTD_ANON_106 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}abstractorGenerator uses Python identifier abstractorGenerator
     __abstractorGenerator = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'abstractorGenerator'), 'abstractorGenerator', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_106_httpwww_accellera_orgXMLSchemaIPXACT1685_2014abstractorGenerator', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 129, 1), )
 
-    
+
     abstractorGenerator = property(__abstractorGenerator.value, __abstractorGenerator.set, None, 'Specifies a set of abstractor generators. The scope attribute applies to abstractor generators and specifies whether the generator should be run for each instance of the entity (or module) or just once for all instances of the entity.')
 
     _ElementMap.update({
         __abstractorGenerator.name() : __abstractorGenerator
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_106 = CTD_ANON_106
 
@@ -7617,83 +7617,83 @@ class generatorType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}phase uses Python identifier phase
     __phase = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'phase'), 'phase', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014phase', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 167, 1), )
 
-    
+
     phase = property(__phase.value, __phase.set, None, 'This is an non-negative floating point number that is used to sequence when a generator is run. The generators are run in order starting with zero. There may be multiple generators with the same phase number. In this case, the order should not matter with respect to other generators at the same phase. If no phase number is given the generator will be considered in the "last" phase and these generators will be run in the order in which they are encountered while processing generator elements.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}apiType uses Python identifier apiType
     __apiType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'apiType'), 'apiType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014apiType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 250, 3), )
 
-    
+
     apiType = property(__apiType.value, __apiType.set, None, 'Indicates the type of API used by the generator. Valid value are TGI_2009, TGI_2014_BASE, TGI_2014_EXTENDED, and none. If this element is not present, TGI_2014_BASE is assumed. The type TGI_2009 indicates a generator using the 1685-2009 version of the TGI API. This is not part of the 1685-2014 version of the standard and may not be supported by Design Environments.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transportMethods uses Python identifier transportMethods
     __transportMethods = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transportMethods'), 'transportMethods', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transportMethods', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 262, 3), )
 
-    
+
     transportMethods = property(__transportMethods.value, __transportMethods.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorExe uses Python identifier generatorExe
     __generatorExe = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorExe'), 'generatorExe', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014generatorExe', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 281, 3), )
 
-    
+
     generatorExe = property(__generatorExe.value, __generatorExe.set, None, 'The pathname to the executable file that implements the generator')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute hidden uses Python identifier hidden
     __hidden = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'hidden'), 'hidden', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_generatorType_hidden', pyxb.binding.datatypes.boolean, unicode_default='false')
     __hidden._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 288, 2)
     __hidden._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 288, 2)
-    
+
     hidden = property(__hidden.value, __hidden.set, None, 'If this attribute is true then the generator should not be presented to the user, it may be part of a chain and has no useful meaning when invoked standalone.')
 
     _ElementMap.update({
@@ -7726,19 +7726,19 @@ class CTD_ANON_107 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transportMethod uses Python identifier transportMethod
     __transportMethod = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transportMethod'), 'transportMethod', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_107_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transportMethod', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 265, 6), )
 
-    
+
     transportMethod = property(__transportMethod.value, __transportMethod.set, None, "Defines a SOAP transport protocol other than HTTP which is supported by this generator. The only other currently supported protocol is 'file'.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_107_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -7761,40 +7761,40 @@ class libraryRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_libraryRefType_vendor', pyxb.binding.datatypes.Name, required=True)
     __vendor._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 90, 2)
     __vendor._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 90, 2)
-    
+
     vendor = property(__vendor.value, __vendor.set, None, None)
 
-    
+
     # Attribute library uses Python identifier library
     __library = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_libraryRefType_library', pyxb.binding.datatypes.Name, required=True)
     __library._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 91, 2)
     __library._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 91, 2)
-    
+
     library = property(__library.value, __library.set, None, None)
 
-    
+
     # Attribute name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_libraryRefType_name', pyxb.binding.datatypes.NMTOKEN, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 92, 2)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 92, 2)
-    
+
     name = property(__name.value, __name.set, None, None)
 
-    
+
     # Attribute version uses Python identifier version
     __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_libraryRefType_version', pyxb.binding.datatypes.NMTOKEN, required=True)
     __version._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 93, 2)
     __version._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 93, 2)
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __vendor.name() : __vendor,
@@ -7817,43 +7817,43 @@ class configurableLibraryRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}configurableElementValues uses Python identifier configurableElementValues
     __configurableElementValues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurableElementValues'), 'configurableElementValues', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableLibraryRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014configurableElementValues', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 92, 1), )
 
-    
+
     configurableElementValues = property(__configurableElementValues.value, __configurableElementValues.set, None, 'All configuration information for a contained component, generator, generator chain or abstractor instance.')
 
-    
+
     # Attribute vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'vendor'), 'vendor', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableLibraryRefType_vendor', pyxb.binding.datatypes.Name, required=True)
     __vendor._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 90, 2)
     __vendor._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 90, 2)
-    
+
     vendor = property(__vendor.value, __vendor.set, None, None)
 
-    
+
     # Attribute library uses Python identifier library
     __library = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'library'), 'library', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableLibraryRefType_library', pyxb.binding.datatypes.Name, required=True)
     __library._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 91, 2)
     __library._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 91, 2)
-    
+
     library = property(__library.value, __library.set, None, None)
 
-    
+
     # Attribute name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableLibraryRefType_name', pyxb.binding.datatypes.NMTOKEN, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 92, 2)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 92, 2)
-    
+
     name = property(__name.value, __name.set, None, None)
 
-    
+
     # Attribute version uses Python identifier version
     __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'version'), 'version', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_configurableLibraryRefType_version', pyxb.binding.datatypes.NMTOKEN, required=True)
     __version._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 93, 2)
     __version._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/identifier.xsd', 93, 2)
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
@@ -7880,18 +7880,18 @@ class CTD_ANON_108 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_108_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 115, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_108 = CTD_ANON_108
 
@@ -7907,18 +7907,18 @@ class CTD_ANON_109 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_109_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 138, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_109 = CTD_ANON_109
 
@@ -7934,124 +7934,124 @@ class addressBlockType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 158, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 558, 1), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block, bank, subspace map or address space. Expressed as the number of addressable units from the containing memoryMap or localMemoryMap.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 659, 3), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessible to the block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 667, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'The bit width of a row in the address block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}register uses Python identifier register
     __register = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'register'), 'register', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014register', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 703, 3), )
 
-    
+
     register = property(__register.value, __register.set, None, 'A single register')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}registerFile uses Python identifier registerFile
     __registerFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'registerFile'), 'registerFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014registerFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 984, 1), )
 
-    
+
     registerFile = property(__registerFile.value, __registerFile.set, None, 'A structure of registers and register files')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeIdentifier uses Python identifier typeIdentifier
     __typeIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeIdentifier'), 'typeIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeIdentifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1068, 3), )
 
-    
+
     typeIdentifier = property(__typeIdentifier.value, __typeIdentifier.set, None, 'Identifier name used to indicate that multiple addressBlock elements contain the exact same information except for the elements in the addressBlockInstanceGroup.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBlockType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -8090,18 +8090,18 @@ class CTD_ANON_110 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_110_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 161, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_110 = CTD_ANON_110
 
@@ -8117,27 +8117,27 @@ class addrSpaceRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addrSpaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addrSpaceRefType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addrSpaceRefType_addressSpaceRef', pyxb.binding.datatypes.Name, required=True)
     __addressSpaceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 179, 2)
     __addressSpaceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 179, 2)
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'A reference to a unique address space.')
 
     _ElementMap.update({
@@ -8162,16 +8162,16 @@ class memoryMapRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute memoryMapRef uses Python identifier memoryMapRef
     __memoryMapRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'memoryMapRef'), 'memoryMapRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapRefType_memoryMapRef', pyxb.binding.datatypes.Name, required=True)
     __memoryMapRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 190, 2)
     __memoryMapRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 190, 2)
-    
+
     memoryMapRef = property(__memoryMapRef.value, __memoryMapRef.set, None, 'A reference to a unique memory map.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __memoryMapRef.name() : __memoryMapRef
@@ -8191,18 +8191,18 @@ class CTD_ANON_111 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_111_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 205, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_111 = CTD_ANON_111
 
@@ -8218,18 +8218,18 @@ class CTD_ANON_112 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_112_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 223, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_112 = CTD_ANON_112
 
@@ -8245,110 +8245,110 @@ class bankedBlockType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 238, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 659, 3), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessible to the block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 667, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'The bit width of a row in the address block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}register uses Python identifier register
     __register = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'register'), 'register', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014register', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 703, 3), )
 
-    
+
     register = property(__register.value, __register.set, None, 'A single register')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}registerFile uses Python identifier registerFile
     __registerFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'registerFile'), 'registerFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014registerFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 984, 1), )
 
-    
+
     registerFile = property(__registerFile.value, __registerFile.set, None, 'A structure of registers and register files')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBlockType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -8385,18 +8385,18 @@ class CTD_ANON_113 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_113_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 241, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_113 = CTD_ANON_113
 
@@ -8412,62 +8412,62 @@ class bankedSubspaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 334, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'masterRef'), 'masterRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedSubspaceType_masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 266, 2)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 266, 2)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'For subspaceMap elements, this attribute identifies the master that contains the address space to be mapped.')
 
     _ElementMap.update({
@@ -8497,153 +8497,153 @@ class fieldType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 279, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 287, 3), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, "Offset of this field's bit 0 from bit 0 of the register.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}resets uses Python identifier resets
     __resets = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'resets'), 'resets', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014resets', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 292, 3), )
 
-    
+
     resets = property(__resets.value, __resets.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}enumeratedValues uses Python identifier enumeratedValues
     __enumeratedValues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enumeratedValues'), 'enumeratedValues', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014enumeratedValues', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 815, 1), )
 
-    
+
     enumeratedValues = property(__enumeratedValues.value, __enumeratedValues.set, None, 'Enumerates specific values that can be assigned to the bit field.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}modifiedWriteValue uses Python identifier modifiedWriteValue
     __modifiedWriteValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'modifiedWriteValue'), 'modifiedWriteValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014modifiedWriteValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 895, 3), )
 
-    
+
     modifiedWriteValue = property(__modifiedWriteValue.value, __modifiedWriteValue.set, None, "If present this element describes the modification of field data caused by a write operation. 'oneToClear' means that in a bitwise fashion each write data bit of a one will clear the corresponding bit in the field. 'oneToSet' means that in a bitwise fashion each write data bit of a one will set the corresponding bit in the field.  'oneToToggle' means that in a bitwise fashion each write data bit of a one will toggle the corresponding bit in the field. 'zeroToClear' means that in a bitwise fashion each write data bit of a zero will clear the corresponding bit in the field. 'zeroToSet' means that in a bitwise fashion each write data bit of a zero will set the corresponding bit in the field. 'zeroToToggle' means that in a bitwise fashion each write data bit of a zero will toggle the corresponding bit in the field. 'clear' means any write to this field clears the field. 'set' means any write to the field sets the field. 'modify' means any write to this field may modify that data. If this element is not present the write operation data is written.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}writeValueConstraint uses Python identifier writeValueConstraint
     __writeValueConstraint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'writeValueConstraint'), 'writeValueConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014writeValueConstraint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 907, 3), )
 
-    
+
     writeValueConstraint = property(__writeValueConstraint.value, __writeValueConstraint.set, None, 'The legal values that may be written to a field. If not specified the legal values are not specified.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}readAction uses Python identifier readAction
     __readAction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'readAction'), 'readAction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014readAction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 912, 3), )
 
-    
+
     readAction = property(__readAction.value, __readAction.set, None, "A list of possible actions for a read to set the field after the read. 'clear' means that after a read the field is cleared. 'set' means that after a read the field is set. 'modify' means after a read the field is modified. If not present the field value is not modified after a read.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}testable uses Python identifier testable
     __testable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'testable'), 'testable', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014testable', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 924, 3), )
 
-    
+
     testable = property(__testable.value, __testable.set, None, 'Can the field be tested with an automated register test routine. The presumed value is true if not specified.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}reserved uses Python identifier reserved
     __reserved = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'reserved'), 'reserved', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014reserved', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 948, 3), )
 
-    
+
     reserved = property(__reserved.value, __reserved.set, None, "Indicates that the field should be documented as reserved. The presumed value is 'false' if not present.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeIdentifier uses Python identifier typeIdentifier
     __typeIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeIdentifier'), 'typeIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeIdentifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1032, 3), )
 
-    
+
     typeIdentifier = property(__typeIdentifier.value, __typeIdentifier.set, None, 'Identifier name used to indicate that multiple field elements contain the exact same information for the elements in the fieldDefinitionGroup.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bitWidth uses Python identifier bitWidth
     __bitWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitWidth'), 'bitWidth', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bitWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1037, 3), )
 
-    
+
     bitWidth = property(__bitWidth.value, __bitWidth.set, None, 'Width of the field in bits.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute fieldID uses Python identifier fieldID
     __fieldID = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'fieldID'), 'fieldID', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_fieldType_fieldID', pyxb.binding.datatypes.Name)
     __fieldID._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 308, 3)
     __fieldID._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 308, 3)
-    
+
     fieldID = property(__fieldID.value, __fieldID.set, None, 'A unique identifier within a component for a field.')
 
     _ElementMap.update({
@@ -8686,18 +8686,18 @@ class CTD_ANON_114 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_114_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 282, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_114 = CTD_ANON_114
 
@@ -8713,18 +8713,18 @@ class CTD_ANON_115 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}reset uses Python identifier reset_
     __reset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'reset'), 'reset_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_115_httpwww_accellera_orgXMLSchemaIPXACT1685_2014reset', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1133, 1), )
 
-    
+
     reset_ = property(__reset.value, __reset.set, None, 'Register value at reset.')
 
     _ElementMap.update({
         __reset.name() : __reset
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_115 = CTD_ANON_115
 
@@ -8740,89 +8740,89 @@ class memoryMapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 321, 3), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'Maps in an address subspace from across a bus bridge.  Its masterRef attribute refers by name to the master bus interface on the other side of the bridge.  It must match the masterRef attribute of a bridge element on the slave interface, and that bridge element must be designated as opaque.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}memoryRemap uses Python identifier memoryRemap
     __memoryRemap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryRemap'), 'memoryRemap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014memoryRemap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 336, 3), )
 
-    
+
     memoryRemap = property(__memoryRemap.value, __memoryRemap.set, None, 'Additional memory map elements that are dependent on the component state.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}shared uses Python identifier shared
     __shared = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'shared'), 'shared', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014shared', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 346, 3), )
 
-    
+
     shared = property(__shared.value, __shared.set, None, "When the value is 'yes', the contents of the memoryMap are shared by all the references to this memoryMap, when the value is 'no' the contents of the memoryMap is not shared and when the value is 'undefined' (default) the sharing of the memoryMap is undefined.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 432, 1), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 549, 1), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attribute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressUnitBits uses Python identifier addressUnitBits
     __addressUnitBits = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressUnitBits'), 'addressUnitBits', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressUnitBits', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 563, 1), )
 
-    
+
     addressUnitBits = property(__addressUnitBits.value, __addressUnitBits.set, None, 'The number of data bits in an addressable unit. The default is byte addressable (8 bits).')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryMapType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -8856,69 +8856,69 @@ class memoryRemapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 321, 3), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'Maps in an address subspace from across a bus bridge.  Its masterRef attribute refers by name to the master bus interface on the other side of the bridge.  It must match the masterRef attribute of a bridge element on the slave interface, and that bridge element must be designated as opaque.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 432, 1), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 549, 1), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attribute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute state uses Python identifier state
     __state = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'state'), 'state', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_memoryRemapType_state', pyxb.binding.datatypes.Name, required=True)
     __state._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 364, 2)
     __state._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 364, 2)
-    
+
     state = property(__state.value, __state.set, None, 'State of the component in which the memory map is active.')
 
     _ElementMap.update({
@@ -8949,54 +8949,54 @@ class localMemoryMapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 380, 7), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attribute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 432, 1), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localMemoryMapType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9025,69 +9025,69 @@ class subspaceRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 558, 1), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block, bank, subspace map or address space. Expressed as the number of addressable units from the containing memoryMap or localMemoryMap.')
 
-    
+
     # Attribute masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'masterRef'), 'masterRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 411, 2)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 411, 2)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'For subspaceMap elements, this attribute identifies the master that contains the address space to be mapped.')
 
-    
+
     # Attribute segmentRef uses Python identifier segmentRef
     __segmentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'segmentRef'), 'segmentRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_subspaceRefType_segmentRef', pyxb.binding.datatypes.Name)
     __segmentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 416, 2)
     __segmentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 416, 2)
-    
+
     segmentRef = property(__segmentRef.value, __segmentRef.set, None, 'Refernce to a segment of the addressSpace of the masterRef attribute.')
 
     _ElementMap.update({
@@ -9119,18 +9119,18 @@ defined by the component."""
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressSpace uses Python identifier addressSpace
     __addressSpace = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpace'), 'addressSpace', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_116_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressSpace', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 453, 4), )
 
-    
+
     addressSpace = property(__addressSpace.value, __addressSpace.set, None, 'This defines a logical space, referenced by a bus master.')
 
     _ElementMap.update({
         __addressSpace.name() : __addressSpace
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_116 = CTD_ANON_116
 
@@ -9146,96 +9146,96 @@ class CTD_ANON_117 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}executableImage uses Python identifier executableImage
     __executableImage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'executableImage'), 'executableImage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014executableImage', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 194, 4), )
 
-    
+
     executableImage = property(__executableImage.value, __executableImage.set, None, 'Specifies an executable software image to be loaded into a processors address space. The format of the image is not specified. It could, for example, be an ELF loadfile, or it could be raw binary or ascii hex data for loading directly into a memory model instance.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}segments uses Python identifier segments
     __segments = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'segments'), 'segments', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014segments', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 462, 7), )
 
-    
+
     segments = property(__segments.value, __segments.set, None, 'Address segments withing an addressSpace ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}localMemoryMap uses Python identifier localMemoryMap
     __localMemoryMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'localMemoryMap'), 'localMemoryMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014localMemoryMap', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 496, 7), )
 
-    
+
     localMemoryMap = property(__localMemoryMap.value, __localMemoryMap.set, None, 'Provides the local memory map of an address space.  Blocks in this memory map are accessable to master interfaces on this component that reference this address space.   They are not accessable to any external master interface.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressUnitBits uses Python identifier addressUnitBits
     __addressUnitBits = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressUnitBits'), 'addressUnitBits', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressUnitBits', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 563, 1), )
 
-    
+
     addressUnitBits = property(__addressUnitBits.value, __addressUnitBits.set, None, 'The number of data bits in an addressable unit. The default is byte addressable (8 bits).')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 659, 3), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessible to the block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_accellera_orgXMLSchemaIPXACT1685_2014width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 667, 3), )
 
-    
+
     width = property(__width.value, __width.set, None, 'The bit width of a row in the address block. The range and the width are related by the following formulas:\n\t\t\t\t\tnumber_of_bits_in_block = ipxact:addressUnitBits * ipxact:range\n\t\t\t\t\tnumber_of_rows_in_block = number_of_bits_in_block / ipxact:width\n\t\t\t\t\t')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_117_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9269,18 +9269,18 @@ class CTD_ANON_118 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}segment uses Python identifier segment
     __segment = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'segment'), 'segment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_118_httpwww_accellera_orgXMLSchemaIPXACT1685_2014segment', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 468, 10), )
 
-    
+
     segment = property(__segment.value, __segment.set, None, 'Address segment withing an addressSpace ')
 
     _ElementMap.update({
         __segment.name() : __segment
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_118 = CTD_ANON_118
 
@@ -9296,61 +9296,61 @@ class CTD_ANON_119 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressOffset uses Python identifier addressOffset
     __addressOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressOffset'), 'addressOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 476, 13), )
 
-    
+
     addressOffset = property(__addressOffset.value, __addressOffset.set, None, 'Address offset of the segment within the containing address space.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 481, 13), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of asegment.  Expressed as the number of addressable units accessible to the segment. \t\t\t\t')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_119_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9379,18 +9379,18 @@ class CTD_ANON_120 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}memoryMap uses Python identifier memoryMap
     __memoryMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMap'), 'memoryMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_120_httpwww_accellera_orgXMLSchemaIPXACT1685_2014memoryMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 533, 4), )
 
-    
+
     memoryMap = property(__memoryMap.value, __memoryMap.set, None, "The set of address blocks a bus slave contributes to the bus' address space.")
 
     _ElementMap.update({
         __memoryMap.name() : __memoryMap
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_120 = CTD_ANON_120
 
@@ -9406,117 +9406,117 @@ class CTD_ANON_121 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 710, 6), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}dim uses Python identifier dim
     __dim = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dim'), 'dim', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014dim', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 718, 6), )
 
-    
+
     dim = property(__dim.value, __dim.set, None, 'Dimensions a register array, the semantics for dim elements are the same as the C language standard for the  layout of memory in multidimensional arrays.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressOffset uses Python identifier addressOffset
     __addressOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressOffset'), 'addressOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 730, 6), )
 
-    
+
     addressOffset = property(__addressOffset.value, __addressOffset.set, None, "Offset from the address block's baseAddress or the containing register file's addressOffset, expressed as the number of addressUnitBits from the containing memoryMap or localMemoryMap.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}alternateRegisters uses Python identifier alternateRegisters
     __alternateRegisters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'alternateRegisters'), 'alternateRegisters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014alternateRegisters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 754, 1), )
 
-    
+
     alternateRegisters = property(__alternateRegisters.value, __alternateRegisters.set, None, 'Alternate definitions for the current register')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeIdentifier uses Python identifier typeIdentifier
     __typeIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeIdentifier'), 'typeIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeIdentifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1083, 3), )
 
-    
+
     typeIdentifier = property(__typeIdentifier.value, __typeIdentifier.set, None, 'Identifier name used to indicate that multiple register elements contain the exact same information for the elements in the registerDefinitionGroup.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}size uses Python identifier size
     __size = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'size'), 'size', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014size', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1088, 3), )
 
-    
+
     size = property(__size.value, __size.set, None, 'Width of the register in bits.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}field uses Python identifier field
     __field = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'field'), 'field', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_accellera_orgXMLSchemaIPXACT1685_2014field', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1096, 4), )
 
-    
+
     field = property(__field.value, __field.set, None, 'Describes individual bit fields within the register.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_121_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9553,18 +9553,18 @@ class CTD_ANON_122 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_122_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 713, 9), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_122 = CTD_ANON_122
 
@@ -9580,18 +9580,18 @@ class CTD_ANON_123 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}alternateRegister uses Python identifier alternateRegister
     __alternateRegister = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'alternateRegister'), 'alternateRegister', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_123_httpwww_accellera_orgXMLSchemaIPXACT1685_2014alternateRegister', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 760, 4), )
 
-    
+
     alternateRegister = property(__alternateRegister.value, __alternateRegister.set, None, 'Alternate definition for the current register')
 
     _ElementMap.update({
         __alternateRegister.name() : __alternateRegister
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_123 = CTD_ANON_123
 
@@ -9607,96 +9607,96 @@ class CTD_ANON_124 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 767, 7), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}alternateGroups uses Python identifier alternateGroups
     __alternateGroups = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'alternateGroups'), 'alternateGroups', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014alternateGroups', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 775, 7), )
 
-    
+
     alternateGroups = property(__alternateGroups.value, __alternateGroups.set, None, 'Defines a list of grouping names that this register description belongs.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeIdentifier uses Python identifier typeIdentifier
     __typeIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeIdentifier'), 'typeIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeIdentifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1113, 3), )
 
-    
+
     typeIdentifier = property(__typeIdentifier.value, __typeIdentifier.set, None, 'Identifier name used to indicate that multiple register elements contain the exact same information for the elements in the alternateRegisterDefinitionGroup.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}field uses Python identifier field
     __field = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'field'), 'field', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_accellera_orgXMLSchemaIPXACT1685_2014field', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1121, 4), )
 
-    
+
     field = property(__field.value, __field.set, None, 'Describes individual bit fields within the register.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_124_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9730,18 +9730,18 @@ class CTD_ANON_125 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_125_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 770, 10), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_125 = CTD_ANON_125
 
@@ -9757,19 +9757,19 @@ class CTD_ANON_126 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}alternateGroup uses Python identifier alternateGroup
     __alternateGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'alternateGroup'), 'alternateGroup', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_126_httpwww_accellera_orgXMLSchemaIPXACT1685_2014alternateGroup', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 781, 10), )
 
-    
+
     alternateGroup = property(__alternateGroup.value, __alternateGroup.set, None, 'Defines a grouping name that this register description belongs.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_126_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -9792,16 +9792,16 @@ class CTD_ANON_127 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_127_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -9820,18 +9820,18 @@ class CTD_ANON_128 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}enumeratedValue uses Python identifier enumeratedValue
     __enumeratedValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enumeratedValue'), 'enumeratedValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_128_httpwww_accellera_orgXMLSchemaIPXACT1685_2014enumeratedValue', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 821, 4), )
 
-    
+
     enumeratedValue = property(__enumeratedValue.value, __enumeratedValue.set, None, 'Enumerates specific values that can be assigned to the bit field. The name of this enumerated value. This may be used as a token in generating code.')
 
     _ElementMap.update({
         __enumeratedValue.name() : __enumeratedValue
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_128 = CTD_ANON_128
 
@@ -9848,10 +9848,10 @@ class valueMaskConfigType (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.valueMaskConfigType = valueMaskConfigType
 Namespace.addCategoryObject('typeBinding', 'valueMaskConfigType', valueMaskConfigType)
@@ -9868,32 +9868,32 @@ class writeValueConstraintType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}writeAsRead uses Python identifier writeAsRead
     __writeAsRead = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'writeAsRead'), 'writeAsRead', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_writeValueConstraintType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014writeAsRead', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 960, 3), )
 
-    
+
     writeAsRead = property(__writeAsRead.value, __writeAsRead.set, None, 'writeAsRead indicates that only a value immediately read before a write is a legal value to be written.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}useEnumeratedValues uses Python identifier useEnumeratedValues
     __useEnumeratedValues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'useEnumeratedValues'), 'useEnumeratedValues', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_writeValueConstraintType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014useEnumeratedValues', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 965, 3), )
 
-    
+
     useEnumeratedValues = property(__useEnumeratedValues.value, __useEnumeratedValues.set, None, 'useEnumeratedValues indicates that only write enumeration value shall be legal values to be written.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_writeValueConstraintType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014minimum', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 971, 4), )
 
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'The minimum legal value that may be written to a field')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_writeValueConstraintType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014maximum', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 976, 4), )
 
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'The maximum legal value that may be written to a field')
 
     _ElementMap.update({
@@ -9903,7 +9903,7 @@ class writeValueConstraintType (pyxb.binding.basis.complexTypeDefinition):
         __maximum.name() : __maximum
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.writeValueConstraintType = writeValueConstraintType
 Namespace.addCategoryObject('typeBinding', 'writeValueConstraintType', writeValueConstraintType)
@@ -9920,103 +9920,103 @@ class CTD_ANON_129 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}register uses Python identifier register
     __register = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'register'), 'register', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014register', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 703, 3), )
 
-    
+
     register = property(__register.value, __register.set, None, 'A single register')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}registerFile uses Python identifier registerFile
     __registerFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'registerFile'), 'registerFile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014registerFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 984, 1), )
 
-    
+
     registerFile = property(__registerFile.value, __registerFile.set, None, 'A structure of registers and register files')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 991, 4), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}dim uses Python identifier dim
     __dim = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dim'), 'dim', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014dim', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 999, 4), )
 
-    
+
     dim = property(__dim.value, __dim.set, None, 'Dimensions a register array, the semantics for dim elements are the same as the C language standard for the  layout of memory in multidimensional arrays.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressOffset uses Python identifier addressOffset
     __addressOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressOffset'), 'addressOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1011, 4), )
 
-    
+
     addressOffset = property(__addressOffset.value, __addressOffset.set, None, "Offset from the address block's baseAddress or the containing register file's addressOffset, expressed as the number of addressUnitBits from the containing memoryMap or localMemoryMap.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeIdentifier uses Python identifier typeIdentifier
     __typeIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeIdentifier'), 'typeIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeIdentifier', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1050, 3), )
 
-    
+
     typeIdentifier = property(__typeIdentifier.value, __typeIdentifier.set, None, 'Identifier name used to indicate that multiple registerFile elements contain the exact same information except for the elements in the registerFileInstanceGroup.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1055, 3), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The range of a register file.  Expressed as the number of addressable units accessible to the block. Specified in units of addressUnitBits.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_129_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -10051,18 +10051,18 @@ class CTD_ANON_130 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_130_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 994, 7), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_130 = CTD_ANON_130
 
@@ -10078,34 +10078,34 @@ class CTD_ANON_131 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_131_httpwww_accellera_orgXMLSchemaIPXACT1685_2014value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1139, 4), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'The value itself.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}mask uses Python identifier mask
     __mask = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mask'), 'mask', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_131_httpwww_accellera_orgXMLSchemaIPXACT1685_2014mask', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1144, 4), )
 
-    
+
     mask = property(__mask.value, __mask.set, None, 'Mask to be anded with the value before comparing to the reset value.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_131_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute resetTypeRef uses Python identifier resetTypeRef
     __resetTypeRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'resetTypeRef'), 'resetTypeRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_131_resetTypeRef', pyxb.binding.datatypes.Name)
     __resetTypeRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1150, 3)
     __resetTypeRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 1150, 3)
-    
+
     resetTypeRef = property(__resetTypeRef.value, __resetTypeRef.set, None, 'Reference to a user defined resetType. Assumed to be HARD if not present.')
 
     _ElementMap.update({
@@ -10130,47 +10130,47 @@ class designInstantiationType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 348, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designRef uses Python identifier designRef
     __designRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designRef'), 'designRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 65, 3), )
 
-    
+
     designRef = property(__designRef.value, __designRef.set, None, 'References an IP-XACT design document (by VLNV) that provides a design for the component.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designInstantiationType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -10198,61 +10198,61 @@ class designConfigurationInstantiationType (pyxb.binding.basis.complexTypeDefini
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 348, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}language uses Python identifier language
     __language = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'language'), 'language', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014language', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 80, 3), )
 
-    
+
     language = property(__language.value, __language.set, None, ' The hardware description language used such as "verilog" or "vhdl". If the attribute "strict" is "true", this value must match the language being generated for the design.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designConfigurationRef uses Python identifier designConfigurationRef
     __designConfigurationRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designConfigurationRef'), 'designConfigurationRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designConfigurationRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 85, 3), )
 
-    
+
     designConfigurationRef = property(__designConfigurationRef.value, __designConfigurationRef.set, None, "References an IP-XACT design configuration document (by VLNV) that provides a configuration for the component's design.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_designConfigurationInstantiationType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -10282,131 +10282,131 @@ class componentInstantiationType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 348, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}constraintSetRef uses Python identifier constraintSetRef
     __constraintSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'constraintSetRef'), 'constraintSetRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014constraintSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 269, 4), )
 
-    
+
     constraintSetRef = property(__constraintSetRef.value, __constraintSetRef.set, None, 'A reference to a set of port constraints.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 309, 4), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isVirtual uses Python identifier isVirtual
     __isVirtual = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isVirtual'), 'isVirtual', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isVirtual', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 101, 3), )
 
-    
+
     isVirtual = property(__isVirtual.value, __isVirtual.set, None, 'When true, indicates that this component should not be netlisted.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}language uses Python identifier language
     __language = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'language'), 'language', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014language', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 106, 3), )
 
-    
+
     language = property(__language.value, __language.set, None, ' The hardware description language used such as "verilog" or "vhdl". If the attribute "strict" is "true", this value must match the language being generated for the design.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}libraryName uses Python identifier libraryName
     __libraryName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'libraryName'), 'libraryName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014libraryName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 111, 3), )
 
-    
+
     libraryName = property(__libraryName.value, __libraryName.set, None, 'A string specifying the library name in which the model should be compiled. If the libraryName element is not present then its value defaults to “work”.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}packageName uses Python identifier packageName
     __packageName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'packageName'), 'packageName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014packageName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 116, 3), )
 
-    
+
     packageName = property(__packageName.value, __packageName.set, None, 'A string describing the VHDL package containing the interface of the model. If the packageName element is not present then its value defaults to the component VLNV name concatenated with postfix “_cmp_pkg” which stands for component package.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}moduleName uses Python identifier moduleName
     __moduleName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'moduleName'), 'moduleName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014moduleName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 121, 3), )
 
-    
+
     moduleName = property(__moduleName.value, __moduleName.set, None, 'A string describing the Verilog, SystemVerilog, or SystemC module name or the VHDL entity name. If the moduleName is not present then its value defaults to the component VLNV name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}architectureName uses Python identifier architectureName
     __architectureName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'architectureName'), 'architectureName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014architectureName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 126, 3), )
 
-    
+
     architectureName = property(__architectureName.value, __architectureName.set, None, 'A string describing the VHDL architecture name. If the architectureName element is not present then its value defaults to “rtl”.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}configurationName uses Python identifier configurationName
     __configurationName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurationName'), 'configurationName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014configurationName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 131, 3), )
 
-    
+
     configurationName = property(__configurationName.value, __configurationName.set, None, 'A string describing the Verilog, SystemVerilog, or VHDL configuration name. If the configurationName element is not present then its value defaults to the design configuration VLNV name of the design configuration associated with the active hierarchical view or, if there is no active hierarchical view, to the component VLNV name concatenated with postfix “_rtl_cfg”.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}moduleParameters uses Python identifier moduleParameters
     __moduleParameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'moduleParameters'), 'moduleParameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014moduleParameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 136, 3), )
 
-    
+
     moduleParameters = property(__moduleParameters.value, __moduleParameters.set, None, 'Model parameter name value pairs container')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}defaultFileBuilder uses Python identifier defaultFileBuilder
     __defaultFileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultFileBuilder'), 'defaultFileBuilder', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014defaultFileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 151, 3), )
 
-    
+
     defaultFileBuilder = property(__defaultFileBuilder.value, __defaultFileBuilder.set, None, 'Default command and flags used to build derived files from the sourceName files in the referenced file sets.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}whiteboxElementRefs uses Python identifier whiteboxElementRefs
     __whiteboxElementRefs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'whiteboxElementRefs'), 'whiteboxElementRefs', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014whiteboxElementRefs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 158, 3), )
 
-    
+
     whiteboxElementRefs = property(__whiteboxElementRefs.value, __whiteboxElementRefs.set, None, ' Container for white box element references.  ')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_componentInstantiationType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -10446,18 +10446,18 @@ class CTD_ANON_132 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}moduleParameter uses Python identifier moduleParameter
     __moduleParameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'moduleParameter'), 'moduleParameter', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_132_httpwww_accellera_orgXMLSchemaIPXACT1685_2014moduleParameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 142, 6), )
 
-    
+
     moduleParameter = property(__moduleParameter.value, __moduleParameter.set, None, 'A module parameter name value pair. The name is given in an attribute. The value is the element value. The dataType (applicable to high level modeling) is given in the dataType attribute. For hardware based models, the name should be identical to the RTL (VHDL generic or Verilog parameter). The usageType attribute indicates how the model parameter is to be used.\n\t\t\t\t\t\t\t\t\t\t')
 
     _ElementMap.update({
         __moduleParameter.name() : __moduleParameter
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_132 = CTD_ANON_132
 
@@ -10473,18 +10473,18 @@ class CTD_ANON_133 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}whiteboxElementRef uses Python identifier whiteboxElementRef
     __whiteboxElementRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'whiteboxElementRef'), 'whiteboxElementRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_133_httpwww_accellera_orgXMLSchemaIPXACT1685_2014whiteboxElementRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 164, 6), )
 
-    
+
     whiteboxElementRef = property(__whiteboxElementRef.value, __whiteboxElementRef.set, None, ' Reference to a white box element which is visible within this view.  ')
 
     _ElementMap.update({
         __whiteboxElementRef.name() : __whiteboxElementRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_133 = CTD_ANON_133
 
@@ -10501,25 +10501,25 @@ class modelType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}views uses Python identifier views
     __views = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'views'), 'views', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_modelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014views', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 202, 3), )
 
-    
+
     views = property(__views.value, __views.set, None, 'Views container')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}instantiations uses Python identifier instantiations
     __instantiations = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instantiations'), 'instantiations', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_modelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014instantiations', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 237, 3), )
 
-    
+
     instantiations = property(__instantiations.value, __instantiations.set, None, 'Instantiations container')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}ports uses Python identifier ports
     __ports = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ports'), 'ports', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_modelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014ports', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 251, 3), )
 
-    
+
     ports = property(__ports.value, __ports.set, None, 'Port container')
 
     _ElementMap.update({
@@ -10528,7 +10528,7 @@ class modelType (pyxb.binding.basis.complexTypeDefinition):
         __ports.name() : __ports
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.modelType = modelType
 Namespace.addCategoryObject('typeBinding', 'modelType', modelType)
@@ -10545,18 +10545,18 @@ class CTD_ANON_134 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}view uses Python identifier view
     __view = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'view'), 'view', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_134_httpwww_accellera_orgXMLSchemaIPXACT1685_2014view', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 208, 6), )
 
-    
+
     view = property(__view.value, __view.set, None, 'Single view of a component')
 
     _ElementMap.update({
         __view.name() : __view
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_134 = CTD_ANON_134
 
@@ -10572,60 +10572,60 @@ class CTD_ANON_135 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 348, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}envIdentifier uses Python identifier envIdentifier
     __envIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'envIdentifier'), 'envIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014envIdentifier', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 216, 9), )
 
-    
+
     envIdentifier = property(__envIdentifier.value, __envIdentifier.set, None, ' Defines the hardware environment in which this view applies. The format of the string is language:tool:vendor_extension, with each piece being optional. The language must be one of the types from ipxact:fileType. The tool values are defined by the Accellera Systems Initiative, and include generic values "*Simulation" and "*Synthesis" to imply any tool of the indicated type. Having more than one envIdentifier indicates that the view applies to multiple environments.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstantiationRef uses Python identifier componentInstantiationRef
     __componentInstantiationRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstantiationRef'), 'componentInstantiationRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstantiationRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 228, 9), )
 
-    
+
     componentInstantiationRef = property(__componentInstantiationRef.value, __componentInstantiationRef.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designInstantiationRef uses Python identifier designInstantiationRef
     __designInstantiationRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designInstantiationRef'), 'designInstantiationRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designInstantiationRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 229, 9), )
 
-    
+
     designInstantiationRef = property(__designInstantiationRef.value, __designInstantiationRef.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designConfigurationInstantiationRef uses Python identifier designConfigurationInstantiationRef
     __designConfigurationInstantiationRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designConfigurationInstantiationRef'), 'designConfigurationInstantiationRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_135_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designConfigurationInstantiationRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 230, 9), )
 
-    
+
     designConfigurationInstantiationRef = property(__designConfigurationInstantiationRef.value, __designConfigurationInstantiationRef.set, None, None)
 
     _ElementMap.update({
@@ -10639,7 +10639,7 @@ class CTD_ANON_135 (pyxb.binding.basis.complexTypeDefinition):
         __designConfigurationInstantiationRef.name() : __designConfigurationInstantiationRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_135 = CTD_ANON_135
 
@@ -10655,25 +10655,25 @@ class CTD_ANON_136 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstantiation uses Python identifier componentInstantiation
     __componentInstantiation = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstantiation'), 'componentInstantiation', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_136_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstantiation', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 179, 3), )
 
-    
+
     componentInstantiation = property(__componentInstantiation.value, __componentInstantiation.set, None, 'Component Instantiation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designInstantiation uses Python identifier designInstantiation
     __designInstantiation = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designInstantiation'), 'designInstantiation', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_136_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designInstantiation', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 184, 3), )
 
-    
+
     designInstantiation = property(__designInstantiation.value, __designInstantiation.set, None, 'Design Instantiation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}designConfigurationInstantiation uses Python identifier designConfigurationInstantiation
     __designConfigurationInstantiation = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designConfigurationInstantiation'), 'designConfigurationInstantiation', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_136_httpwww_accellera_orgXMLSchemaIPXACT1685_2014designConfigurationInstantiation', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 189, 3), )
 
-    
+
     designConfigurationInstantiation = property(__designConfigurationInstantiation.value, __designConfigurationInstantiation.set, None, 'Design Configuration Instantiation')
 
     _ElementMap.update({
@@ -10682,7 +10682,7 @@ class CTD_ANON_136 (pyxb.binding.basis.complexTypeDefinition):
         __designConfigurationInstantiation.name() : __designConfigurationInstantiation
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_136 = CTD_ANON_136
 
@@ -10698,18 +10698,18 @@ class CTD_ANON_137 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}port uses Python identifier port
     __port = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'port'), 'port', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_137_httpwww_accellera_orgXMLSchemaIPXACT1685_2014port', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 452, 1), )
 
-    
+
     port = property(__port.value, __port.set, None, 'Describes port characteristics.')
 
     _ElementMap.update({
         __port.name() : __port
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_137 = CTD_ANON_137
 
@@ -10725,25 +10725,25 @@ class abstractorModelType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}views uses Python identifier views
     __views = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'views'), 'views', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorModelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014views', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 268, 3), )
 
-    
+
     views = property(__views.value, __views.set, None, 'Views container')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}instantiations uses Python identifier instantiations
     __instantiations = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instantiations'), 'instantiations', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorModelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014instantiations', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 301, 3), )
 
-    
+
     instantiations = property(__instantiations.value, __instantiations.set, None, 'Instantiations container')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}ports uses Python identifier ports
     __ports = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ports'), 'ports', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_abstractorModelType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014ports', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 315, 3), )
 
-    
+
     ports = property(__ports.value, __ports.set, None, 'Port container')
 
     _ElementMap.update({
@@ -10752,7 +10752,7 @@ class abstractorModelType (pyxb.binding.basis.complexTypeDefinition):
         __ports.name() : __ports
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.abstractorModelType = abstractorModelType
 Namespace.addCategoryObject('typeBinding', 'abstractorModelType', abstractorModelType)
@@ -10769,18 +10769,18 @@ class CTD_ANON_138 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}view uses Python identifier view
     __view = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'view'), 'view', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_138_httpwww_accellera_orgXMLSchemaIPXACT1685_2014view', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 274, 6), )
 
-    
+
     view = property(__view.value, __view.set, None, 'Single view of an abstracto')
 
     _ElementMap.update({
         __view.name() : __view
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_138 = CTD_ANON_138
 
@@ -10796,46 +10796,46 @@ class CTD_ANON_139 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 348, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}envIdentifier uses Python identifier envIdentifier
     __envIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'envIdentifier'), 'envIdentifier', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014envIdentifier', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 282, 9), )
 
-    
+
     envIdentifier = property(__envIdentifier.value, __envIdentifier.set, None, ' Defines the hardware environment in which this view applies. The format of the string is language:tool:vendor_extension, with each piece being optional. The language must be one of the types from ipxact:fileType. The tool values are defined by the Accellera Systems Initiative, and include generic values "*Simulation" and "*Synthesis" to imply any tool of the indicated type. Having more than one envIdentifier indicates that the view applies to multiple environments.  ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstantiationRef uses Python identifier componentInstantiationRef
     __componentInstantiationRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstantiationRef'), 'componentInstantiationRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_139_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstantiationRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 294, 9), )
 
-    
+
     componentInstantiationRef = property(__componentInstantiationRef.value, __componentInstantiationRef.set, None, None)
 
     _ElementMap.update({
@@ -10847,7 +10847,7 @@ class CTD_ANON_139 (pyxb.binding.basis.complexTypeDefinition):
         __componentInstantiationRef.name() : __componentInstantiationRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_139 = CTD_ANON_139
 
@@ -10863,18 +10863,18 @@ class CTD_ANON_140 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstantiation uses Python identifier componentInstantiation
     __componentInstantiation = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstantiation'), 'componentInstantiation', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_140_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstantiation', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 307, 6), )
 
-    
+
     componentInstantiation = property(__componentInstantiation.value, __componentInstantiation.set, None, 'Component Instantiation')
 
     _ElementMap.update({
         __componentInstantiation.name() : __componentInstantiation
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_140 = CTD_ANON_140
 
@@ -10890,18 +10890,18 @@ class CTD_ANON_141 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}port uses Python identifier port
     __port = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'port'), 'port', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_141_httpwww_accellera_orgXMLSchemaIPXACT1685_2014port', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 321, 6), )
 
-    
+
     port = property(__port.value, __port.set, None, None)
 
     _ElementMap.update({
         __port.name() : __port
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_141 = CTD_ANON_141
 
@@ -10917,34 +10917,34 @@ class whiteboxElementRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}location uses Python identifier location
     __location = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'location'), 'location', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementRefType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014location', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 366, 3), )
 
-    
+
     location = property(__location.value, __location.set, None, 'The contents of each location element can be used to specified one location (HDL Path) through the referenced whiteBoxElement is accessible.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementRefType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_whiteboxElementRefType_name', pyxb.binding.datatypes.Name, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 372, 2)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 372, 2)
-    
+
     name = property(__name.value, __name.set, None, 'Reference to a whiteboxElement defined within this component.  ')
 
     _ElementMap.update({
@@ -10970,16 +10970,16 @@ class languageType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.token
-    
+
     # Attribute strict uses Python identifier strict
     __strict = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'strict'), 'strict', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_languageType_strict', pyxb.binding.datatypes.boolean, unicode_default='false')
     __strict._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 382, 4)
     __strict._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/model.xsd', 382, 4)
-    
+
     strict = property(__strict.value, __strict.set, None, "A value of 'true' indicates that this value must match the language being generated for the design.")
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __strict.name() : __strict
@@ -10999,75 +10999,75 @@ class portType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 362, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wire uses Python identifier wire
     __wire = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'wire'), 'wire', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014wire', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 77, 4), )
 
-    
+
     wire = property(__wire.value, __wire.set, None, 'Defines a port whose type resolves to simple bits.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transactional uses Python identifier transactional
     __transactional = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transactional'), 'transactional', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transactional', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 82, 4), )
 
-    
+
     transactional = property(__transactional.value, __transactional.set, None, 'Defines a port that implements or uses a service that can be implemented with functions or methods.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 89, 3), )
 
-    
+
     access = property(__access.value, __access.set, None, 'Port access characteristics.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}arrays uses Python identifier arrays
     __arrays = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'arrays'), 'arrays', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014arrays', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 567, 1), )
 
-    
+
     arrays = property(__arrays.value, __arrays.set, None, None)
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -11099,18 +11099,18 @@ class CTD_ANON_142 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}protocolType uses Python identifier protocolType
     __protocolType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'protocolType'), 'protocolType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_142_httpwww_accellera_orgXMLSchemaIPXACT1685_2014protocolType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 163, 4), )
 
-    
+
     protocolType = property(__protocolType.value, __protocolType.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}payload uses Python identifier payload
     __payload = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'payload'), 'payload', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_142_httpwww_accellera_orgXMLSchemaIPXACT1685_2014payload', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 214, 1), )
 
-    
+
     payload = property(__payload.value, __payload.set, None, 'defines the structure of data transported by this port')
 
     _ElementMap.update({
@@ -11118,7 +11118,7 @@ class CTD_ANON_142 (pyxb.binding.basis.complexTypeDefinition):
         __payload.name() : __payload
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_142 = CTD_ANON_142
 
@@ -11134,32 +11134,32 @@ class CTD_ANON_143 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_143_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_143_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 220, 4), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Defines the name of the payload. For example: TLM2 or TLM1')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}type uses Python identifier type
     __type = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'type'), 'type', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_143_httpwww_accellera_orgXMLSchemaIPXACT1685_2014type', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 225, 4), )
 
-    
+
     type = property(__type.value, __type.set, None, 'Defines the type of the payload. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}extension uses Python identifier extension
     __extension = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'extension'), 'extension', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_143_httpwww_accellera_orgXMLSchemaIPXACT1685_2014extension', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 236, 4), )
 
-    
+
     extension = property(__extension.value, __extension.set, None, 'Defines the name of the payload extension. If attribute is not specified, it is by default optional.')
 
     _ElementMap.update({
@@ -11169,7 +11169,7 @@ class CTD_ANON_143 (pyxb.binding.basis.complexTypeDefinition):
         __extension.name() : __extension
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_143 = CTD_ANON_143
 
@@ -11185,16 +11185,16 @@ class CTD_ANON_144 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute mandatory uses Python identifier mandatory
     __mandatory = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'mandatory'), 'mandatory', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_144_mandatory', pyxb.binding.datatypes.boolean, unicode_default='false')
     __mandatory._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 243, 8)
     __mandatory._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 243, 8)
-    
+
     mandatory = property(__mandatory.value, __mandatory.set, None, 'True if the payload extension is mandatory.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __mandatory.name() : __mandatory
@@ -11213,18 +11213,18 @@ class CTD_ANON_145 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeParameter uses Python identifier typeParameter
     __typeParameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeParameter'), 'typeParameter', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_145_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeParameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 267, 1), )
 
-    
+
     typeParameter = property(__typeParameter.value, __typeParameter.set, None, 'A typed parameter name value pair. The optional attribute dataType defines the type of the value and the usageType attribute indicates how the parameter is to be used.\n\t\t\t')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}serviceTypeDef uses Python identifier serviceTypeDef
     __serviceTypeDef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'serviceTypeDef'), 'serviceTypeDef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_145_httpwww_accellera_orgXMLSchemaIPXACT1685_2014serviceTypeDef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 324, 1), )
 
-    
+
     serviceTypeDef = property(__serviceTypeDef.value, __serviceTypeDef.set, None, 'Definition of a single service type defintion')
 
     _ElementMap.update({
@@ -11232,7 +11232,7 @@ class CTD_ANON_145 (pyxb.binding.basis.complexTypeDefinition):
         __serviceTypeDef.name() : __serviceTypeDef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_145 = CTD_ANON_145
 
@@ -11248,40 +11248,40 @@ class CTD_ANON_146 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeParameters uses Python identifier typeParameters
     __typeParameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeParameters'), 'typeParameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_146_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeParameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 256, 1), )
 
-    
+
     typeParameters = property(__typeParameters.value, __typeParameters.set, None, 'list of port type parameters (e.g. template or constructor parameters for a systemC port or socket)')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeName uses Python identifier typeName
     __typeName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeName'), 'typeName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_146_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 279, 4), )
 
-    
+
     typeName = property(__typeName.value, __typeName.set, None, 'The name of the port type. Can be any predefined type such sc_port or sc_export in SystemC or any user-defined type such as tlm_port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeDefinition uses Python identifier typeDefinition
     __typeDefinition = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeDefinition'), 'typeDefinition', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_146_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeDefinition', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 295, 4), )
 
-    
+
     typeDefinition = property(__typeDefinition.value, __typeDefinition.set, None, 'Where the definition of the type is contained. For SystemC and SystemVerilog it is the include file containing the type definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_146_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 308, 4), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A reference to a view name in the file for which this type applies.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_146_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -11307,16 +11307,16 @@ class CTD_ANON_147 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute exact uses Python identifier exact
     __exact = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'exact'), 'exact', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_147_exact', pyxb.binding.datatypes.boolean, unicode_default='true')
     __exact._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 286, 8)
     __exact._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 286, 8)
-    
+
     exact = property(__exact.value, __exact.set, None, 'When false, defines that the type is an abstract type that may not be related to an existing type in the language of the referenced view.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __exact.name() : __exact
@@ -11335,16 +11335,16 @@ class CTD_ANON_148 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_148_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -11363,16 +11363,16 @@ class CTD_ANON_149 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.NMTOKEN
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_149_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -11391,33 +11391,33 @@ class CTD_ANON_150 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeParameters uses Python identifier typeParameters
     __typeParameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeParameters'), 'typeParameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_150_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeParameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 256, 1), )
 
-    
+
     typeParameters = property(__typeParameters.value, __typeParameters.set, None, 'list of port type parameters (e.g. template or constructor parameters for a systemC port or socket)')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeName uses Python identifier typeName
     __typeName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeName'), 'typeName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_150_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 330, 4), )
 
-    
+
     typeName = property(__typeName.value, __typeName.set, None, 'The name of the service type. Can be any predefined type such as booean or integer or any user-defined type such as addr_type or data_type.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeDefinition uses Python identifier typeDefinition
     __typeDefinition = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeDefinition'), 'typeDefinition', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_150_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeDefinition', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 347, 4), )
 
-    
+
     typeDefinition = property(__typeDefinition.value, __typeDefinition.set, None, 'Where the definition of the type is contained if the type if not part of the language. For SystemC and SystemVerilog it is the include file containing the type definition.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_150_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -11442,16 +11442,16 @@ class CTD_ANON_151 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute implicit uses Python identifier implicit
     __implicit = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'implicit'), 'implicit', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_151_implicit', pyxb.binding.datatypes.boolean, unicode_default='false')
     __implicit._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 337, 8)
     __implicit._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 337, 8)
-    
+
     implicit = property(__implicit.value, __implicit.set, None, 'Defines that the typeName supplied for this service is implicit and a netlister should not declare this service in\na language specific top-level netlist ')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __implicit.name() : __implicit
@@ -11470,16 +11470,16 @@ class CTD_ANON_152 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_152_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -11498,33 +11498,33 @@ class CTD_ANON_153 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeName uses Python identifier typeName
     __typeName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeName'), 'typeName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_153_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 370, 4), )
 
-    
+
     typeName = property(__typeName.value, __typeName.set, None, 'The name of the logic type. Examples could be std_logic, std_ulogic, std_logic_vector, sc_logic, ...')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}typeDefinition uses Python identifier typeDefinition
     __typeDefinition = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'typeDefinition'), 'typeDefinition', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_153_httpwww_accellera_orgXMLSchemaIPXACT1685_2014typeDefinition', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 386, 4), )
 
-    
+
     typeDefinition = property(__typeDefinition.value, __typeDefinition.set, None, 'Where the definition of the type is contained. For std_logic, this is contained in IEEE.std_logic_1164.all. For sc_logic, this is contained in systemc.h. For VHDL this is the library and package as defined by the "used" statement. For SystemC and SystemVerilog it is the include file required. For verilog this is not needed.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}viewRef uses Python identifier viewRef
     __viewRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'viewRef'), 'viewRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_153_httpwww_accellera_orgXMLSchemaIPXACT1685_2014viewRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 398, 4), )
 
-    
+
     viewRef = property(__viewRef.value, __viewRef.set, None, 'A reference to a view name in the file for which this type applies.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_153_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -11549,16 +11549,16 @@ class CTD_ANON_154 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute constrained uses Python identifier constrained
     __constrained = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'constrained'), 'constrained', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_154_constrained', pyxb.binding.datatypes.boolean, unicode_default='false')
     __constrained._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 377, 8)
     __constrained._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 377, 8)
-    
+
     constrained = property(__constrained.value, __constrained.set, None, 'Defines that the type for the port has constrainted the number of bits in the vector')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __constrained.name() : __constrained
@@ -11577,16 +11577,16 @@ class CTD_ANON_155 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_155_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -11605,16 +11605,16 @@ class CTD_ANON_156 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.NMTOKEN
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_156_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -11633,18 +11633,18 @@ class CTD_ANON_157 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}serviceTypeDef uses Python identifier serviceTypeDef
     __serviceTypeDef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'serviceTypeDef'), 'serviceTypeDef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_157_httpwww_accellera_orgXMLSchemaIPXACT1685_2014serviceTypeDef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 324, 1), )
 
-    
+
     serviceTypeDef = property(__serviceTypeDef.value, __serviceTypeDef.set, None, 'Definition of a single service type defintion')
 
     _ElementMap.update({
         __serviceTypeDef.name() : __serviceTypeDef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_157 = CTD_ANON_157
 
@@ -11660,18 +11660,18 @@ class CTD_ANON_158 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wireTypeDef uses Python identifier wireTypeDef
     __wireTypeDef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'wireTypeDef'), 'wireTypeDef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_158_httpwww_accellera_orgXMLSchemaIPXACT1685_2014wireTypeDef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 364, 1), )
 
-    
+
     wireTypeDef = property(__wireTypeDef.value, __wireTypeDef.set, None, 'Definition of a single wire type defintion that can relate to multiple views.')
 
     _ElementMap.update({
         __wireTypeDef.name() : __wireTypeDef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_158 = CTD_ANON_158
 
@@ -11687,18 +11687,18 @@ class CTD_ANON_159 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transTypeDef uses Python identifier transTypeDef
     __transTypeDef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transTypeDef'), 'transTypeDef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_159_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transTypeDef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 273, 1), )
 
-    
+
     transTypeDef = property(__transTypeDef.value, __transTypeDef.set, None, 'Definition of a single transactional type defintion')
 
     _ElementMap.update({
         __transTypeDef.name() : __transTypeDef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_159 = CTD_ANON_159
 
@@ -11714,47 +11714,47 @@ class portWireType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vectors uses Python identifier vectors
     __vectors = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vectors'), 'vectors', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vectors', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 539, 1), )
 
-    
+
     vectors = property(__vectors.value, __vectors.set, None, 'Vectored information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}constraintSets uses Python identifier constraintSets
     __constraintSets = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'constraintSets'), 'constraintSets', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014constraintSets', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 259, 4), )
 
-    
+
     constraintSets = property(__constraintSets.value, __constraintSets.set, None, 'List of constraintSet elements for a component port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wireTypeDefs uses Python identifier wireTypeDefs
     __wireTypeDefs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'wireTypeDefs'), 'wireTypeDefs', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014wireTypeDefs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 424, 1), )
 
-    
+
     wireTypeDefs = property(__wireTypeDefs.value, __wireTypeDefs.set, None, 'The group of wire type definitions. If no match to a viewName is found then the default language types are to be used. See the User Guide for these default types.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 462, 3), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, "The direction of a wire style port. The basic directions for a port are 'in' for input ports, 'out' for output port and 'inout' for bidirectional and tristate ports. \nA value of 'phantom' is also allowed and define a port that exist on the IP-XACT component but not on the HDL model.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}drivers uses Python identifier drivers
     __drivers = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'drivers'), 'drivers', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014drivers', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 135, 1), )
 
-    
+
     drivers = property(__drivers.value, __drivers.set, None, 'Container for wire port driver elements.')
 
-    
+
     # Attribute allLogicalDirectionsAllowed uses Python identifier allLogicalDirectionsAllowed
     __allLogicalDirectionsAllowed = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'allLogicalDirectionsAllowed'), 'allLogicalDirectionsAllowed', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portWireType_allLogicalDirectionsAllowed', pyxb.binding.datatypes.boolean, unicode_default='false')
     __allLogicalDirectionsAllowed._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 473, 2)
     __allLogicalDirectionsAllowed._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 473, 2)
-    
+
     allLogicalDirectionsAllowed = property(__allLogicalDirectionsAllowed.value, __allLogicalDirectionsAllowed.set, None, 'True if logical ports with different directions from the physical port direction may be mapped onto this port. Forbidden for phantom ports, which always allow logical ports with all direction value to be mapped onto the physical port. Also ignored for inout ports, since any logical port maybe mapped to a physical inout port.            \t')
 
     _ElementMap.update({
@@ -11782,54 +11782,54 @@ class portTransactionalType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}initiative uses Python identifier initiative
     __initiative = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'initiative'), 'initiative', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014initiative', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 147, 1), )
 
-    
+
     initiative = property(__initiative.value, __initiative.set, None, 'If this element is present, the type of access is restricted to the specified value.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}busWidth uses Python identifier busWidth
     __busWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busWidth'), 'busWidth', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014busWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 152, 1), )
 
-    
+
     busWidth = property(__busWidth.value, __busWidth.set, None, 'defines the bus size in bits. This can be the result of an expression.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}protocol uses Python identifier protocol
     __protocol = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'protocol'), 'protocol', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014protocol', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 157, 1), )
 
-    
+
     protocol = property(__protocol.value, __protocol.set, None, 'defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}kind uses Python identifier kind
     __kind = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'kind'), 'kind', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014kind', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 191, 1), )
 
-    
+
     kind = property(__kind.value, __kind.set, None, 'Defines the protocol type. Defaults to tlm_base_protocol_type for TLM sockets')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transTypeDefs uses Python identifier transTypeDefs
     __transTypeDefs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transTypeDefs'), 'transTypeDefs', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014transTypeDefs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 438, 1), )
 
-    
+
     transTypeDefs = property(__transTypeDefs.value, __transTypeDefs.set, None, 'The group of transactional type definitions. If no match to a viewName is found then the default language types are to be used. See the User Guide for these default types.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}connection uses Python identifier connection
     __connection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'connection'), 'connection', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014connection', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 509, 3), )
 
-    
+
     connection = property(__connection.value, __connection.set, None, 'Bounds number of legal connections.')
 
-    
+
     # Attribute allLogicalInitiativesAllowed uses Python identifier allLogicalInitiativesAllowed
     __allLogicalInitiativesAllowed = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'allLogicalInitiativesAllowed'), 'allLogicalInitiativesAllowed', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portTransactionalType_allLogicalInitiativesAllowed', pyxb.binding.datatypes.boolean, unicode_default='false')
     __allLogicalInitiativesAllowed._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 529, 2)
     __allLogicalInitiativesAllowed._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 529, 2)
-    
+
     allLogicalInitiativesAllowed = property(__allLogicalInitiativesAllowed.value, __allLogicalInitiativesAllowed.set, None, 'True if logical ports with different initiatives from the physical port initiative may be mapped onto this port. Forbidden for phantom ports, which always allow logical ports with all initiatives value to be mapped onto the physical port. Also ignored for "both" ports, since any logical port may be mapped to a physical "both" port.\n\t\t\t\t')
 
     _ElementMap.update({
@@ -11858,18 +11858,18 @@ class CTD_ANON_160 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}maxConnections uses Python identifier maxConnections
     __maxConnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxConnections'), 'maxConnections', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_160_httpwww_accellera_orgXMLSchemaIPXACT1685_2014maxConnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 515, 6), )
 
-    
+
     maxConnections = property(__maxConnections.value, __maxConnections.set, None, 'Indicates the maximum number of connections this port supports. If this element is not present or set to 0 it implies an unbounded number of allowed connections.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}minConnections uses Python identifier minConnections
     __minConnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'minConnections'), 'minConnections', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_160_httpwww_accellera_orgXMLSchemaIPXACT1685_2014minConnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 520, 6), )
 
-    
+
     minConnections = property(__minConnections.value, __minConnections.set, None, 'Indicates the minimum number of connections this port supports. If this element is not present, the minimum number of allowed connections is 1.')
 
     _ElementMap.update({
@@ -11877,7 +11877,7 @@ class CTD_ANON_160 (pyxb.binding.basis.complexTypeDefinition):
         __minConnections.name() : __minConnections
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_160 = CTD_ANON_160
 
@@ -11893,18 +11893,18 @@ class portAccessType_ (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portAccessType uses Python identifier portAccessType
     __portAccessType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'portAccessType'), 'portAccessType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portAccessType__httpwww_accellera_orgXMLSchemaIPXACT1685_2014portAccessType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 209, 1), )
 
-    
+
     portAccessType = property(__portAccessType.value, __portAccessType.set, None, "Indicates how a netlister accesses a port. 'ref' means accessed by reference (default) and 'ptr' means accessed by pointer.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portAccessType__httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 558, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
     _ElementMap.update({
@@ -11912,7 +11912,7 @@ class portAccessType_ (pyxb.binding.basis.complexTypeDefinition):
         __accessHandles.name() : __accessHandles
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.portAccessType_ = portAccessType_
 Namespace.addCategoryObject('typeBinding', 'portAccessType', portAccessType_)
@@ -11929,18 +11929,18 @@ class CTD_ANON_161 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandle uses Python identifier accessHandle
     __accessHandle = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandle'), 'accessHandle', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_161_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandle', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 561, 6), )
 
-    
+
     accessHandle = property(__accessHandle.value, __accessHandle.set, None, None)
 
     _ElementMap.update({
         __accessHandle.name() : __accessHandle
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_161 = CTD_ANON_161
 
@@ -11956,25 +11956,25 @@ class CTD_ANON_162 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}singleShotOffset uses Python identifier singleShotOffset
     __singleShotOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotOffset'), 'singleShotOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_162_httpwww_accellera_orgXMLSchemaIPXACT1685_2014singleShotOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 81, 4), )
 
-    
+
     singleShotOffset = property(__singleShotOffset.value, __singleShotOffset.set, None, 'Time in nanoseconds until start of one-shot.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}singleShotValue uses Python identifier singleShotValue
     __singleShotValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotValue'), 'singleShotValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_162_httpwww_accellera_orgXMLSchemaIPXACT1685_2014singleShotValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 86, 4), )
 
-    
+
     singleShotValue = property(__singleShotValue.value, __singleShotValue.set, None, 'Value of port after first  edge of one-shot.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}singleShotDuration uses Python identifier singleShotDuration
     __singleShotDuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotDuration'), 'singleShotDuration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_162_httpwww_accellera_orgXMLSchemaIPXACT1685_2014singleShotDuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 91, 4), )
 
-    
+
     singleShotDuration = property(__singleShotDuration.value, __singleShotDuration.set, None, 'Duration in nanoseconds of the one shot.')
 
     _ElementMap.update({
@@ -11983,7 +11983,7 @@ class CTD_ANON_162 (pyxb.binding.basis.complexTypeDefinition):
         __singleShotDuration.name() : __singleShotDuration
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_162 = CTD_ANON_162
 
@@ -11999,32 +11999,32 @@ class driverType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_driverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 549, 1), )
 
-    
+
     range = property(__range.value, __range.set, None, 'Left and right bound of a reference into a vector.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}defaultValue uses Python identifier defaultValue
     __defaultValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultValue'), 'defaultValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_driverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014defaultValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 54, 1), )
 
-    
+
     defaultValue = property(__defaultValue.value, __defaultValue.set, None, 'Default value for a wire port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriver uses Python identifier clockDriver
     __clockDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockDriver'), 'clockDriver', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_driverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014clockDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 59, 1), )
 
-    
+
     clockDriver = property(__clockDriver.value, __clockDriver.set, None, 'Describes a driven clock port. ')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}singleShotDriver uses Python identifier singleShotDriver
     __singleShotDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotDriver'), 'singleShotDriver', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_driverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014singleShotDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 75, 1), )
 
-    
+
     singleShotDriver = property(__singleShotDriver.value, __singleShotDriver.set, None, 'Describes a driven one-shot port.')
 
     _ElementMap.update({
@@ -12034,7 +12034,7 @@ class driverType (pyxb.binding.basis.complexTypeDefinition):
         __singleShotDriver.name() : __singleShotDriver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.driverType = driverType
 Namespace.addCategoryObject('typeBinding', 'driverType', driverType)
@@ -12051,18 +12051,18 @@ class CTD_ANON_163 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}driver uses Python identifier driver
     __driver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'driver'), 'driver', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_163_httpwww_accellera_orgXMLSchemaIPXACT1685_2014driver', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 149, 1), )
 
-    
+
     driver = property(__driver.value, __driver.set, None, 'Wire port driver element.')
 
     _ElementMap.update({
         __driver.name() : __driver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_163 = CTD_ANON_163
 
@@ -12078,40 +12078,40 @@ class clockDriverType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPeriod uses Python identifier clockPeriod
     __clockPeriod = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPeriod'), 'clockPeriod', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_clockDriverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014clockPeriod', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 171, 3), )
 
-    
+
     clockPeriod = property(__clockPeriod.value, __clockPeriod.set, None, 'Clock period in units defined by the units attribute. Default is nanoseconds.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseOffset uses Python identifier clockPulseOffset
     __clockPulseOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseOffset'), 'clockPulseOffset', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_clockDriverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014clockPulseOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 183, 3), )
 
-    
+
     clockPulseOffset = property(__clockPulseOffset.value, __clockPulseOffset.set, None, 'Time until first pulse. Units are defined by the units attribute. Default is nanoseconds.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseValue uses Python identifier clockPulseValue
     __clockPulseValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseValue'), 'clockPulseValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_clockDriverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014clockPulseValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 195, 3), )
 
-    
+
     clockPulseValue = property(__clockPulseValue.value, __clockPulseValue.set, None, 'Value of port after first clock edge.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseDuration uses Python identifier clockPulseDuration
     __clockPulseDuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseDuration'), 'clockPulseDuration', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_clockDriverType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014clockPulseDuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 200, 3), )
 
-    
+
     clockPulseDuration = property(__clockPulseDuration.value, __clockPulseDuration.set, None, 'Duration of first state in cycle. Units are defined by the units attribute. Default is nanoseconds.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_clockDriverType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -12138,18 +12138,18 @@ class CTD_ANON_164 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}configurableElementValue uses Python identifier configurableElementValue
     __configurableElementValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurableElementValue'), 'configurableElementValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_164_httpwww_accellera_orgXMLSchemaIPXACT1685_2014configurableElementValue', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 106, 1), )
 
-    
+
     configurableElementValue = property(__configurableElementValue.value, __configurableElementValue.set, None, 'Describes the content of a configurable element. The required referenceId attribute refers to the ID attribute of the configurable element.')
 
     _ElementMap.update({
         __configurableElementValue.name() : __configurableElementValue
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_164 = CTD_ANON_164
 
@@ -12165,54 +12165,54 @@ class CTD_ANON_165 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}instanceName uses Python identifier instanceName
     __instanceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceName'), 'instanceName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014instanceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 123, 1), )
 
-    
+
     instanceName = property(__instanceName.value, __instanceName.set, None, 'An instance name assigned to subcomponent instances and contained channels, that is unique within the parent component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 138, 4), )
 
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'References a component to be found in an external library.  The four attributes define the VLNV of the referenced element.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_165_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -12240,18 +12240,18 @@ class CTD_ANON_166 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}componentInstance uses Python identifier componentInstance
     __componentInstance = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstance'), 'componentInstance', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_166_httpwww_accellera_orgXMLSchemaIPXACT1685_2014componentInstance', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 128, 1), )
 
-    
+
     componentInstance = property(__componentInstance.value, __componentInstance.set, None, 'Component instance element.  The instance name is contained in the unique-value instanceName attribute.')
 
     _ElementMap.update({
         __componentInstance.name() : __componentInstance
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_166 = CTD_ANON_166
 
@@ -12267,61 +12267,61 @@ class CTD_ANON_167 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 362, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}tiedValue uses Python identifier tiedValue
     __tiedValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'tiedValue'), 'tiedValue', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014tiedValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 166, 4), )
 
-    
+
     tiedValue = property(__tiedValue.value, __tiedValue.set, None, 'The logic value of this connection. The value can be an unsigned longint expression or open or default. Only valid for ports of style wire.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portReferences uses Python identifier portReferences
     __portReferences = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'portReferences'), 'portReferences', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_accellera_orgXMLSchemaIPXACT1685_2014portReferences', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 171, 4), )
 
-    
+
     portReferences = property(__portReferences.value, __portReferences.set, None, 'Liist of internal and external port references involved in the adhocConnection')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_167_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -12350,18 +12350,18 @@ class CTD_ANON_168 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}internalPortReference uses Python identifier internalPortReference
     __internalPortReference = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'internalPortReference'), 'internalPortReference', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_168_httpwww_accellera_orgXMLSchemaIPXACT1685_2014internalPortReference', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 178, 8), )
 
-    
+
     internalPortReference = property(__internalPortReference.value, __internalPortReference.set, None, 'Defines a reference to a port on a component contained within the design.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}externalPortReference uses Python identifier externalPortReference
     __externalPortReference = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'externalPortReference'), 'externalPortReference', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_168_httpwww_accellera_orgXMLSchemaIPXACT1685_2014externalPortReference', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 359, 1), )
 
-    
+
     externalPortReference = property(__externalPortReference.value, __externalPortReference.set, None, None)
 
     _ElementMap.update({
@@ -12369,7 +12369,7 @@ class CTD_ANON_168 (pyxb.binding.basis.complexTypeDefinition):
         __externalPortReference.name() : __externalPortReference
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_168 = CTD_ANON_168
 
@@ -12385,18 +12385,18 @@ class CTD_ANON_169 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}adHocConnection uses Python identifier adHocConnection
     __adHocConnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnection'), 'adHocConnection', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_169_httpwww_accellera_orgXMLSchemaIPXACT1685_2014adHocConnection', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 158, 1), )
 
-    
+
     adHocConnection = property(__adHocConnection.value, __adHocConnection.set, None, 'Represents an ad-hoc connection between component ports.')
 
     _ElementMap.update({
         __adHocConnection.name() : __adHocConnection
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_169 = CTD_ANON_169
 
@@ -12412,61 +12412,61 @@ class CTD_ANON_170 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}hierInterface uses Python identifier hierInterface
     __hierInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hierInterface'), 'hierInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014hierInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 239, 6), )
 
-    
+
     hierInterface = property(__hierInterface.value, __hierInterface.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}activeInterface uses Python identifier activeInterface
     __activeInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'activeInterface'), 'activeInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_accellera_orgXMLSchemaIPXACT1685_2014activeInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 373, 1), )
 
-    
+
     activeInterface = property(__activeInterface.value, __activeInterface.set, None, None)
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_170_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
@@ -12497,46 +12497,46 @@ An active interface can be connected to unlimited number of monitor interfaces."
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitoredActiveInterface uses Python identifier monitoredActiveInterface
     __monitoredActiveInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'monitoredActiveInterface'), 'monitoredActiveInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014monitoredActiveInterface', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 272, 4), )
 
-    
+
     monitoredActiveInterface = property(__monitoredActiveInterface.value, __monitoredActiveInterface.set, None, 'Describes an active interface of the design that all the monitors will be connected to.\n\nThe componentRef and busRef attributes indicate the instance name and bus interface name. The optional path attribute indicates the hierarchical instance name path to the component.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitorInterface uses Python identifier monitorInterface
     __monitorInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'monitorInterface'), 'monitorInterface', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_171_httpwww_accellera_orgXMLSchemaIPXACT1685_2014monitorInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 279, 4), )
 
-    
+
     monitorInterface = property(__monitorInterface.value, __monitorInterface.set, None, 'Describes a list of monitor interfaces that are connected to the single active interface.\n\nThe componentRef and busRef attributes indicate the instance name and bus interface name. The optional path attribute indicates the hierarchical instance name path to the component.')
 
     _ElementMap.update({
@@ -12548,7 +12548,7 @@ An active interface can be connected to unlimited number of monitor interfaces."
         __monitorInterface.name() : __monitorInterface
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_171 = CTD_ANON_171
 
@@ -12564,18 +12564,18 @@ class CTD_ANON_172 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interconnection uses Python identifier interconnection
     __interconnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnection'), 'interconnection', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_172_httpwww_accellera_orgXMLSchemaIPXACT1685_2014interconnection', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 221, 1), )
 
-    
+
     interconnection = property(__interconnection.value, __interconnection.set, None, 'Describes a connection between two active (not monitor) busInterfaces.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitorInterconnection uses Python identifier monitorInterconnection
     __monitorInterconnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'monitorInterconnection'), 'monitorInterconnection', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_172_httpwww_accellera_orgXMLSchemaIPXACT1685_2014monitorInterconnection', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 262, 1), )
 
-    
+
     monitorInterconnection = property(__monitorInterconnection.value, __monitorInterconnection.set, None, 'Describes a connection from the interface of one component to any number of monitor interfaces in the design.\n\nAn active interface can be connected to unlimited number of monitor interfaces.')
 
     _ElementMap.update({
@@ -12583,7 +12583,7 @@ class CTD_ANON_172 (pyxb.binding.basis.complexTypeDefinition):
         __monitorInterconnection.name() : __monitorInterconnection
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_172 = CTD_ANON_172
 
@@ -12599,32 +12599,32 @@ class interfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_interfaceType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'componentRef'), 'componentRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_interfaceType_componentRef', pyxb.binding.datatypes.Name, required=True)
     __componentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 313, 2)
     __componentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 313, 2)
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'Reference to a component instance name.')
 
-    
+
     # Attribute busRef uses Python identifier busRef
     __busRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'busRef'), 'busRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_interfaceType_busRef', pyxb.binding.datatypes.Name, required=True)
     __busRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 318, 2)
     __busRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 318, 2)
-    
+
     busRef = property(__busRef.value, __busRef.set, None, 'Reference to the components  bus interface')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -12646,41 +12646,41 @@ class hierInterfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterfaceType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute busRef uses Python identifier busRef
     __busRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'busRef'), 'busRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterfaceType_busRef', pyxb.binding.datatypes.Name, required=True)
     __busRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 334, 2)
     __busRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 334, 2)
-    
+
     busRef = property(__busRef.value, __busRef.set, None, 'Reference to the components  bus interface')
 
     _ElementMap.update({
@@ -12707,25 +12707,25 @@ class CTD_ANON_173 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}excludePort uses Python identifier excludePort
     __excludePort = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'excludePort'), 'excludePort', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_173_httpwww_accellera_orgXMLSchemaIPXACT1685_2014excludePort', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 386, 9), )
 
-    
+
     excludePort = property(__excludePort.value, __excludePort.set, None, 'The name of a physical port to be excluded from the interface based connection.')
 
     _ElementMap.update({
         __excludePort.name() : __excludePort
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_173 = CTD_ANON_173
 
 
 # Complex type [anonymous] with content type SIMPLE
 class CTD_ANON_174 (pyxb.binding.basis.complexTypeDefinition):
-    """Define the mode for the interfaces on this abstractor. 
+    """Define the mode for the interfaces on this abstractor.
 
 For master the first interface connects to the master, the second connects to the mirroredMaster
 
@@ -12742,16 +12742,16 @@ For system the first interface connects to the system, the second connects to th
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is abstractorModeType
-    
+
     # Attribute group uses Python identifier group
     __group = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_174_group', pyxb.binding.datatypes.Name)
     __group._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 79, 7)
     __group._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/abstractor.xsd', 79, 7)
-    
+
     group = property(__group.value, __group.set, None, 'Define the system group if the mode is set to system')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __group.name() : __group
@@ -12770,26 +12770,26 @@ class CTD_ANON_175 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portIndex uses Python identifier portIndex
     __portIndex = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'portIndex'), 'portIndex', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_175_httpwww_accellera_orgXMLSchemaIPXACT1685_2014portIndex', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 233, 13), )
 
-    
+
     portIndex = property(__portIndex.value, __portIndex.set, None, 'Index for a vectored type port. Must be a number between left and right for the port.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_175_httpwww_accellera_orgXMLSchemaIPXACT1685_2014value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 238, 13), )
 
-    
+
     value_ = property(__value.value, __value.set, None, None)
 
-    
+
     # Attribute portRef uses Python identifier portRef
     __portRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'portRef'), 'portRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_175_portRef', _module_typeBindings.portName, required=True)
     __portRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 240, 12)
     __portRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 240, 12)
-    
+
     portRef = property(__portRef.value, __portRef.set, None, "This attribute identifies a signal on the component which affects the component's memory layout ")
 
     _ElementMap.update({
@@ -12813,24 +12813,24 @@ class CTD_ANON_176 (addrSpaceRefType):
     _ElementMap = addrSpaceRefType._ElementMap.copy()
     _AttributeMap = addrSpaceRefType._AttributeMap.copy()
     # Base type is addrSpaceRefType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_176_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 278, 11), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address space.')
 
-    
+
     # Element isPresent ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addrSpaceRefType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addrSpaceRefType
-    
+
     # Attribute addressSpaceRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addrSpaceRefType
     _ElementMap.update({
         __baseAddress.name() : __baseAddress
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_176 = CTD_ANON_176
 
@@ -12846,19 +12846,19 @@ class CTD_ANON_177 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_177_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 166, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more ports in the corresonding bus definition.')
 
-    
+
     # Attribute interfaceMode uses Python identifier interfaceMode
     __interfaceMode = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'interfaceMode'), 'interfaceMode', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_177_interfaceMode', _module_typeBindings.STD_ANON_2, required=True)
     __interfaceMode._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 400, 5)
     __interfaceMode._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 400, 5)
-    
+
     interfaceMode = property(__interfaceMode.value, __interfaceMode.set, None, None)
 
     _ElementMap.update({
@@ -12881,141 +12881,141 @@ class parameterBaseType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}arrays uses Python identifier arrays
     __arrays = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'arrays'), 'arrays', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014arrays', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 378, 3), )
 
-    
+
     arrays = property(__arrays.value, __arrays.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 379, 3), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'The value of the parameter.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vectors uses Python identifier vectors
     __vectors = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vectors'), 'vectors', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vectors', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 539, 1), )
 
-    
+
     vectors = property(__vectors.value, __vectors.set, None, 'Vectored information.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 600, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Attribute parameterId uses Python identifier parameterId
     __parameterId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'parameterId'), 'parameterId', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_parameterId', pyxb.binding.datatypes.Name)
     __parameterId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 386, 2)
     __parameterId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 386, 2)
-    
+
     parameterId = property(__parameterId.value, __parameterId.set, None, 'ID attribute for uniquely identifying a parameter within its document. Attribute is used to refer to this from a configurable element.')
 
-    
+
     # Attribute prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'prompt'), 'prompt', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 391, 2)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 391, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'choiceRef'), 'choiceRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 396, 2)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 396, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties, refers the choice element enumerating the values to choose from.')
 
-    
+
     # Attribute order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'order'), 'order', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 401, 2)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 401, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'configGroups'), 'configGroups', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 406, 2)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 406, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be grouped together.  Configurable properties with matching values for this attribute are contained in the same group. The format of this attribute is a string. There is no semantic meaning to this attribute.')
 
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 411, 2)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 411, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed. Only valid for the types: byte, shortint, int, longint, shortreal and real. The type of this value is the same as the type of the parameter-value, which is specified by the parameter-type attribute.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 416, 2)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 416, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed. Only valid for the types: byte, shortint, int, longint, shortreal and real. The type of this value is the same as the type of the parameter-value, which is specified by the parameter-type attribute.')
 
-    
+
     # Attribute type uses Python identifier type
     __type = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'type'), 'type', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_type', _module_typeBindings.formatType, unicode_default='string')
     __type._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 421, 2)
     __type._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 421, 2)
-    
+
     type = property(__type.value, __type.set, None, 'Specifies the type of the value of the parameter. A parameter of type byte is resolved to an 8-bit integer value, shortint is resolved to a 16-bit integer value, int is resolved to a 32-bit integer value, longint is resolved to a 64-bit integer value, shortreal is resolved to a 32-bit floating point value, real is resolved to a 64-bit floating point value, bit is by default resolved to a one bit value, unless a vector size has been specified and the string type is resolved to a string value.')
 
-    
+
     # Attribute sign uses Python identifier sign
     __sign = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'sign'), 'sign', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_sign', _module_typeBindings.signType)
     __sign._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 426, 2)
     __sign._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 426, 2)
-    
+
     sign = property(__sign.value, __sign.set, None, 'Specify the signedness explicitly. The data types byte, shortint, int, longint default to signed. The data type bit defaults to unsigned. When setting this values for the data types string, real and shortreal the setting is ignored.')
 
-    
+
     # Attribute prefix uses Python identifier prefix
     __prefix = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'prefix'), 'prefix', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_prefix', _module_typeBindings.STD_ANON_4)
     __prefix._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 431, 2)
     __prefix._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 431, 2)
-    
+
     prefix = property(__prefix.value, __prefix.set, None, 'Defines the prefix that precedes the unit of a value. The prefix is not applied to the value (e.g. in calculations).')
 
-    
+
     # Attribute unit uses Python identifier unit
     __unit = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'unit'), 'unit', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterBaseType_unit', _module_typeBindings.STD_ANON_5)
     __unit._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 460, 2)
     __unit._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 460, 2)
-    
+
     unit = property(__unit.value, __unit.set, None, 'Defines the unit of the value.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
@@ -13056,26 +13056,26 @@ class CTD_ANON_178 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cellFunction uses Python identifier cellFunction
     __cellFunction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cellFunction'), 'cellFunction', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_178_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cellFunction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 144, 16), )
 
-    
+
     cellFunction = property(__cellFunction.value, __cellFunction.set, None, 'Defines a technology library cell in library independent fashion, based on specification of a cell function and strength.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}cellClass uses Python identifier cellClass
     __cellClass = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cellClass'), 'cellClass', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_178_httpwww_accellera_orgXMLSchemaIPXACT1685_2014cellClass', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 156, 16), )
 
-    
+
     cellClass = property(__cellClass.value, __cellClass.set, None, 'Defines a technology library cell in library independent fashion, based on specification of a cell class and strength.')
 
-    
+
     # Attribute cellStrength uses Python identifier cellStrength
     __cellStrength = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'cellStrength'), 'cellStrength', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_178_cellStrength', _module_typeBindings.cellStrengthValueType)
     __cellStrength._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 162, 12)
     __cellStrength._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 162, 12)
-    
+
     cellStrength = property(__cellStrength.value, __cellStrength.set, None, 'Indicates the desired strength of the specified cell.')
 
     _ElementMap.update({
@@ -13099,16 +13099,16 @@ class CTD_ANON_179 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is cellFunctionValueType
-    
+
     # Attribute other uses Python identifier other
     __other = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'other'), 'other', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_179_other', pyxb.binding.datatypes.token)
     __other._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 151, 20)
     __other._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 151, 20)
-    
+
     other = property(__other.value, __other.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __other.name() : __other
@@ -13127,40 +13127,40 @@ class CTD_ANON_180 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is delayPercentageType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_180_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute clockEdge uses Python identifier clockEdge
     __clockEdge = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'clockEdge'), 'clockEdge', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_180_clockEdge', _module_typeBindings.edgeValueType)
     __clockEdge._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 176, 20)
     __clockEdge._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 176, 20)
-    
+
     clockEdge = property(__clockEdge.value, __clockEdge.set, None, 'Indicates the clock edge that a timing constraint is relative to.')
 
-    
+
     # Attribute delayType uses Python identifier delayType
     __delayType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'delayType'), 'delayType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_180_delayType', _module_typeBindings.delayValueType)
     __delayType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 181, 20)
     __delayType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 181, 20)
-    
+
     delayType = property(__delayType.value, __delayType.set, None, 'Indicates the type of delay in a timing constraint - minimum or maximum.')
 
-    
+
     # Attribute clockName uses Python identifier clockName
     __clockName = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'clockName'), 'clockName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_180_clockName', _module_typeBindings.portName, required=True)
     __clockName._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 186, 20)
     __clockName._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/constraints.xsd', 186, 20)
-    
+
     clockName = property(__clockName.value, __clockName.set, None, 'Indicates the name of the clock to which this constraint applies.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -13182,16 +13182,16 @@ class CTD_ANON_181 (ipxactURI):
     _ElementMap = ipxactURI._ElementMap.copy()
     _AttributeMap = ipxactURI._AttributeMap.copy()
     # Base type is ipxactURI
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_181_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -13212,28 +13212,28 @@ This is an extension of the name-value pair which includes the data type in the 
     _ElementMap = nameValuePairType._ElementMap.copy()
     _AttributeMap = nameValuePairType._AttributeMap.copy()
     # Base type is nameValuePairType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Element value_ ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}nameValuePairType
-    
+
     # Attribute dataType uses Python identifier dataType
     __dataType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'dataType'), 'dataType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_182_dataType', _module_typeBindings.dataTypeType, required=True)
     __dataType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 430, 40)
     __dataType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 430, 40)
-    
+
     dataType = property(__dataType.value, __dataType.set, None, 'The data type of the argument as pertains to the language. Example: "int", "double", "char *".')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __dataType.name() : __dataType
@@ -13252,24 +13252,24 @@ class CTD_ANON_183 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is simpleFileType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_183_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute user uses Python identifier user
     __user = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'user'), 'user', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_183_user', pyxb.binding.datatypes.string)
     __user._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 102, 8)
     __user._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/fileType.xsd', 102, 8)
-    
+
     user = property(__user.value, __user.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -13289,33 +13289,33 @@ class CTD_ANON_184 (generatorType):
     _ElementMap = generatorType._ElementMap.copy()
     _AttributeMap = generatorType._AttributeMap.copy()
     # Base type is generatorType
-    
+
     # Element parameters ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element phase ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}phase) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element apiType ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}apiType) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element transportMethods ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transportMethods) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element generatorExe ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorExe) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Attribute hidden inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_184 = CTD_ANON_184
 
@@ -13331,27 +13331,27 @@ class CTD_ANON_185 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_185_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 140, 4), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Specifies a generator group name or a generator chain group name to be selected for inclusion in the generator chain.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_185_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute multipleGroupSelectionOperator uses Python identifier multipleGroupSelectionOperator
     __multipleGroupSelectionOperator = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'multipleGroupSelectionOperator'), 'multipleGroupSelectionOperator', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_185_multipleGroupSelectionOperator', _module_typeBindings.STD_ANON_7, unicode_default='or')
     __multipleGroupSelectionOperator._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 153, 3)
     __multipleGroupSelectionOperator._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 153, 3)
-    
+
     multipleGroupSelectionOperator = property(__multipleGroupSelectionOperator.value, __multipleGroupSelectionOperator.set, None, 'Specifies the OR or AND selection operator if there is more than one group name.')
 
     _ElementMap.update({
@@ -13375,42 +13375,42 @@ class instanceGeneratorType (generatorType):
     _ElementMap = generatorType._ElementMap.copy()
     _AttributeMap = generatorType._AttributeMap.copy()
     # Base type is generatorType
-    
+
     # Element parameters ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element phase ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}phase) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_instanceGeneratorType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014group', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 176, 5), )
 
-    
+
     group = property(__group.value, __group.set, None, 'An identifier to specify the generator group. This is used by generator chains for selecting which generators to run.')
 
-    
+
     # Element apiType ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}apiType) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element transportMethods ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transportMethods) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Element generatorExe ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorExe) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
-    
+
     # Attribute scope uses Python identifier scope
     __scope = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'scope'), 'scope', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_instanceGeneratorType_scope', _module_typeBindings.STD_ANON_8, unicode_default='instance')
     __scope._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 189, 4)
     __scope._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/generator.xsd', 189, 4)
-    
+
     scope = property(__scope.value, __scope.set, None, 'The scope attribute applies to component generators and specifies whether the generator should be run for each instance of the entity (or module) or just once for all instances of the entity.')
 
-    
+
     # Attribute hidden inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}generatorType
     _ElementMap.update({
         __group.name() : __group
@@ -13433,16 +13433,16 @@ class CTD_ANON_186 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is apiType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_186_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -13461,16 +13461,16 @@ class CTD_ANON_187 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is transportMethodType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_187_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -13489,118 +13489,118 @@ class addressBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 112, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 558, 1), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block, bank, subspace map or address space. Expressed as the number of addressable units from the containing memoryMap or localMemoryMap.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 594, 4), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 603, 4), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 612, 4), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'A subspace map within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'bankAlignment'), 'bankAlignment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_addressBankType_bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 122, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 122, 2)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, "Describes whether this bank's blocks are aligned in 'parallel' or 'serial'.")
 
     _ElementMap.update({
@@ -13638,111 +13638,111 @@ class localAddressBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 135, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 558, 1), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block, bank, subspace map or address space. Expressed as the number of addressable units from the containing memoryMap or localMemoryMap.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 629, 4), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 638, 4), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'bankAlignment'), 'bankAlignment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localAddressBankType_bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 145, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 145, 2)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, "Describes whether this bank's blocks are aligned in 'parallel' or 'serial'.")
 
     _ElementMap.update({
@@ -13779,111 +13779,111 @@ class bankedBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 202, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 594, 4), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 603, 4), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 612, 4), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'A subspace map within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'bankAlignment'), 'bankAlignment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_bankedBankType_bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 211, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 211, 2)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, None)
 
     _ElementMap.update({
@@ -13920,104 +13920,104 @@ class localBankedBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 108, 1), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'A collection of parameters and associated value assertions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}accessHandles uses Python identifier accessHandles
     __accessHandles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessHandles'), 'accessHandles', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014accessHandles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 220, 3), )
 
-    
+
     accessHandles = property(__accessHandles.value, __accessHandles.set, None, None)
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 422, 1), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 427, 1), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address bank, address block, register or field.  Possible values are 'read-write', 'read-only',  'write-only', 'writeOnce' and 'read-writeOnce'. If not specified the value is inherited from the containing object.")
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 629, 4), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 638, 4), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 684, 3), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'bankAlignment'), 'bankAlignment', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_localBankedBankType_bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 229, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 229, 2)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, None)
 
     _ElementMap.update({
@@ -14053,55 +14053,55 @@ class CTD_ANON_188 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_accellera_orgXMLSchemaIPXACT1685_2014name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 137, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Unique name')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName uses Python identifier displayName
     __displayName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayName'), 'displayName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_accellera_orgXMLSchemaIPXACT1685_2014displayName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 609, 1), )
 
-    
+
     displayName = property(__displayName.value, __displayName.set, None, 'Element name for display purposes. Typically a few words providing a more detailed and/or user-friendly name than the ipxact:name.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_accellera_orgXMLSchemaIPXACT1685_2014value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 828, 7), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'Enumerated bit field value.')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute usage uses Python identifier usage
     __usage = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'usage'), 'usage', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_188_usage', _module_typeBindings.STD_ANON_9, unicode_default='read-write')
     __usage._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 835, 6)
     __usage._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 835, 6)
-    
+
     usage = property(__usage.value, __usage.set, None, "Usage for the enumeration. 'read' for a software read access. 'write' for a software write access. 'read-write' for a software read or write access.")
 
     _ElementMap.update({
@@ -14129,16 +14129,16 @@ class CTD_ANON_189 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is modifiedWriteValueType
-    
+
     # Attribute modify uses Python identifier modify
     __modify = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'modify'), 'modify', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_189_modify', pyxb.binding.datatypes.Name)
     __modify._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 902, 7)
     __modify._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 902, 7)
-    
+
     modify = property(__modify.value, __modify.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __modify.name() : __modify
@@ -14157,16 +14157,16 @@ class CTD_ANON_190 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is readActionType
-    
+
     # Attribute modify uses Python identifier modify
     __modify = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'modify'), 'modify', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_190_modify', pyxb.binding.datatypes.Name)
     __modify._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 919, 7)
     __modify._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 919, 7)
-    
+
     modify = property(__modify.value, __modify.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __modify.name() : __modify
@@ -14185,16 +14185,16 @@ class CTD_ANON_191 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute testConstraint uses Python identifier testConstraint
     __testConstraint = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'testConstraint'), 'testConstraint', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_191_testConstraint', _module_typeBindings.STD_ANON_10, unicode_default='unconstrained')
     __testConstraint._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 931, 7)
     __testConstraint._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/memoryMap.xsd', 931, 7)
-    
+
     testConstraint = property(__testConstraint.value, __testConstraint.set, None, "Constraint for an automated register test routine. 'unconstrained' (default) means may read and write all legal values. 'restore' means may read and write legal values but the value must be restored to the initially read value before accessing another register. 'writeAsRead' has limitations on testability where only the value read before a write may be written to the field. 'readOnly' has limitations on testability where values may only be read from the field.")
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __testConstraint.name() : __testConstraint
@@ -14213,16 +14213,16 @@ class CTD_ANON_192 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is envIdentifierType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_192_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -14241,16 +14241,16 @@ class CTD_ANON_193 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is envIdentifierType
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_193_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -14269,34 +14269,34 @@ class abstractorPortType (portType):
     _ElementMap = portType._ElementMap.copy()
     _AttributeMap = portType._AttributeMap.copy()
     # Base type is portType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element isPresent ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element wire ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wire) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element transactional ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}transactional) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Element access ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}access) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portType
-    
+
     # Attribute id is restricted from parent
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_portType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -14316,16 +14316,16 @@ class CTD_ANON_194 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is protocolTypeType
-    
+
     # Attribute custom uses Python identifier custom
     __custom = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'custom'), 'custom', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_194_custom', pyxb.binding.datatypes.string)
     __custom._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 167, 8)
     __custom._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 167, 8)
-    
+
     custom = property(__custom.value, __custom.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __custom.name() : __custom
@@ -14344,16 +14344,16 @@ class CTD_ANON_195 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is kindType
-    
+
     # Attribute custom uses Python identifier custom
     __custom = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'custom'), 'custom', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_195_custom', pyxb.binding.datatypes.string)
     __custom._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 198, 5)
     __custom._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/port.xsd', 198, 5)
-    
+
     custom = property(__custom.value, __custom.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __custom.name() : __custom
@@ -14372,21 +14372,21 @@ class abstractorPortWireType (portWireType):
     _ElementMap = portWireType._ElementMap.copy()
     _AttributeMap = portWireType._AttributeMap.copy()
     # Base type is portWireType
-    
+
     # Element vectors ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vectors) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portWireType
-    
+
     # Element wireTypeDefs ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}wireTypeDefs) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portWireType
-    
+
     # Element direction ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}direction) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portWireType
-    
+
     # Element drivers ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}drivers) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portWireType
-    
+
     # Attribute allLogicalDirectionsAllowed inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}portWireType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.abstractorPortWireType = abstractorPortWireType
 Namespace.addCategoryObject('typeBinding', 'abstractorPortWireType', abstractorPortWireType)
@@ -14403,26 +14403,26 @@ class CTD_ANON_196 (clockDriverType):
     _ElementMap = clockDriverType._ElementMap.copy()
     _AttributeMap = clockDriverType._AttributeMap.copy()
     # Base type is clockDriverType
-    
+
     # Element clockPeriod ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPeriod) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseOffset ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseOffset) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseValue ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseValue) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseDuration ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseDuration) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Attribute clockName uses Python identifier clockName
     __clockName = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'clockName'), 'clockName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_196_clockName', pyxb.binding.datatypes.string)
     __clockName._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 66, 5)
     __clockName._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 66, 5)
-    
+
     clockName = property(__clockName.value, __clockName.set, None, 'Indicates the name of the cllock. If not specified the name is assumed to be the name of the containing port. ')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __clockName.name() : __clockName
@@ -14441,16 +14441,16 @@ class CTD_ANON_197 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute driverType uses Python identifier driverType
     __driverType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'driverType'), 'driverType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_197_driverType', _module_typeBindings.STD_ANON_12, unicode_default='any')
     __driverType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 106, 5)
     __driverType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 106, 5)
-    
+
     driverType = property(__driverType.value, __driverType.set, None, 'Defines the type of driver that is required. The default is any type of driver. The 2 other options are a clock type driver or a singleshot type driver.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __driverType.name() : __driverType
@@ -14469,34 +14469,34 @@ class CTD_ANON_198 (clockDriverType):
     _ElementMap = clockDriverType._ElementMap.copy()
     _AttributeMap = clockDriverType._AttributeMap.copy()
     # Base type is clockDriverType
-    
+
     # Element clockPeriod ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPeriod) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseOffset ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseOffset) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseValue ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseValue) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Element clockPulseDuration ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockPulseDuration) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}clockDriverType
-    
+
     # Attribute clockName uses Python identifier clockName
     __clockName = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'clockName'), 'clockName', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_198_clockName', pyxb.binding.datatypes.Name, required=True)
     __clockName._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 222, 5)
     __clockName._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 222, 5)
-    
+
     clockName = property(__clockName.value, __clockName.set, None, 'Indicates the name of the clock.')
 
-    
+
     # Attribute clockSource uses Python identifier clockSource
     __clockSource = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'clockSource'), 'clockSource', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_198_clockSource', pyxb.binding.datatypes.string)
     __clockSource._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 227, 5)
     __clockSource._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 227, 5)
-    
+
     clockSource = property(__clockSource.value, __clockSource.set, None, 'Indicates the name of the actual clock source (e.g. an output pin of a clock generator cell).')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __clockName.name() : __clockName,
@@ -14518,10 +14518,10 @@ class complexBaseExpression (pyxb.binding.basis.complexTypeDefinition):
     # Base type is simpleBaseExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.complexBaseExpression = complexBaseExpression
 Namespace.addCategoryObject('typeBinding', 'complexBaseExpression', complexBaseExpression)
@@ -14538,42 +14538,42 @@ class CTD_ANON_199 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}partSelect uses Python identifier partSelect
     __partSelect = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'partSelect'), 'partSelect', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_199_httpwww_accellera_orgXMLSchemaIPXACT1685_2014partSelect', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 560, 1), )
 
-    
+
     partSelect = property(__partSelect.value, __partSelect.set, None, 'Bit range definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_199_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_199_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'componentRef'), 'componentRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_199_componentRef', pyxb.binding.datatypes.Name, required=True)
     __componentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 187, 10)
     __componentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 187, 10)
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'A reference to the instanceName element of a component in this design.')
 
-    
+
     # Attribute portRef uses Python identifier portRef
     __portRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'portRef'), 'portRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_199_portRef', _module_typeBindings.portName, required=True)
     __portRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 192, 10)
     __portRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 192, 10)
-    
+
     portRef = property(__portRef.value, __portRef.set, None, 'A port on the on the referenced component from componentRef.')
 
     _ElementMap.update({
@@ -14599,22 +14599,22 @@ class hierInterface (interfaceType):
     _ElementMap = interfaceType._ElementMap.copy()
     _AttributeMap = interfaceType._AttributeMap.copy()
     # Base type is interfaceType
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute path uses Python identifier path
     __path = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'path'), 'path', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_hierInterface_path', _module_typeBindings.instancePath)
     __path._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 254, 4)
     __path._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 254, 4)
-    
+
     path = property(__path.value, __path.set, None, 'A decending hierarchical (slash separated - example x/y/z) path to the component instance containing the specified component instance in componentRef. If not specified the componentRef instance shall exist in the current design. ')
 
-    
+
     # Attribute componentRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute busRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __path.name() : __path
@@ -14634,32 +14634,32 @@ class monitorInterfaceType (interfaceType):
     _ElementMap = interfaceType._ElementMap.copy()
     _AttributeMap = interfaceType._AttributeMap.copy()
     # Base type is interfaceType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_monitorInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_monitorInterfaceType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute componentRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute busRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute path uses Python identifier path
     __path = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'path'), 'path', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_monitorInterfaceType_path', pyxb.binding.datatypes.anySimpleType)
     __path._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 351, 4)
     __path._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 351, 4)
-    
+
     path = property(__path.value, __path.set, None, 'A decending hierarchical (slash separated - example x/y/z) path to the component instance containing the specified component instance in componentRef. If not specified the componentRef instance shall exist in the current design. ')
 
     _ElementMap.update({
@@ -14684,34 +14684,34 @@ class CTD_ANON_200 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}partSelect uses Python identifier partSelect
     __partSelect = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'partSelect'), 'partSelect', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_200_httpwww_accellera_orgXMLSchemaIPXACT1685_2014partSelect', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 560, 1), )
 
-    
+
     partSelect = property(__partSelect.value, __partSelect.set, None, 'Bit range definition.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_200_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_200_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute portRef uses Python identifier portRef
     __portRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'portRef'), 'portRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_200_portRef', _module_typeBindings.portName, required=True)
     __portRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 365, 3)
     __portRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 365, 3)
-    
+
     portRef = property(__portRef.value, __portRef.set, None, 'A port on the on the referenced component from componentRef.')
 
     _ElementMap.update({
@@ -14736,39 +14736,39 @@ class CTD_ANON_201 (interfaceType):
     _ElementMap = interfaceType._ElementMap.copy()
     _AttributeMap = interfaceType._AttributeMap.copy()
     # Base type is interfaceType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_201_httpwww_accellera_orgXMLSchemaIPXACT1685_2014vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 118, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_201_httpwww_accellera_orgXMLSchemaIPXACT1685_2014description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 614, 1), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Full description string, typically for documentation')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_201_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}excludePorts uses Python identifier excludePorts
     __excludePorts = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'excludePorts'), 'excludePorts', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_201_httpwww_accellera_orgXMLSchemaIPXACT1685_2014excludePorts', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 380, 6), )
 
-    
+
     excludePorts = property(__excludePorts.value, __excludePorts.set, None, 'The list of physical ports to be excluded from an interface based connection. Analogous to the removing the port map element for the named ports.')
 
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute componentRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute busRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
     _ElementMap.update({
         __vendorExtensions.name() : __vendorExtensions,
@@ -14777,7 +14777,7 @@ class CTD_ANON_201 (interfaceType):
         __excludePorts.name() : __excludePorts
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_201 = CTD_ANON_201
 
@@ -14793,16 +14793,16 @@ class CTD_ANON_202 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is portName
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_202_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -14821,33 +14821,33 @@ class CTD_ANON_203 (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_203_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute text uses Python identifier text
     __text = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'text'), 'text', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_203_text', pyxb.binding.datatypes.string)
     __text._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 119, 11)
     __text._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 119, 11)
-    
+
     text = property(__text.value, __text.set, None, 'When specified, displayed in place of the ipxact:enumeration value ')
 
-    
+
     # Attribute help uses Python identifier help
     __help = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'help'), 'help', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_203_help', pyxb.binding.datatypes.string)
     __help._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 124, 11)
     __help._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 124, 11)
-    
+
     help = property(__help.value, __help.set, None, 'Text that may be displayed if the user requests help about the meaning of an element')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -14868,53 +14868,53 @@ class parameterType (parameterBaseType):
     _ElementMap = parameterBaseType._ElementMap.copy()
     _AttributeMap = parameterBaseType._AttributeMap.copy()
     # Base type is parameterBaseType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element arrays ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}arrays) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element value_ ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element vectors ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vectors) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute parameterId inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute prompt inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute choiceRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute order inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute configGroups inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute type inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute sign inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute prefix inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute unit inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'resolve'), 'resolve', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_parameterType_resolve', _module_typeBindings.STD_ANON_6, unicode_default='immediate')
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 487, 4)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 487, 4)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value can be configured.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __resolve.name() : __resolve
@@ -14934,25 +14934,25 @@ class unsignedLongintExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedLongintExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 58, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 58, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a unsigend longint value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedLongintExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 63, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 63, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to an unsigend longint value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -14973,25 +14973,25 @@ class unsignedPositiveLongintExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedPositiveLongintExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 78, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 78, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a positive unsigned longint value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedPositiveLongintExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 83, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 83, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a positive unsigned longint value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15012,25 +15012,25 @@ class signedLongintExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_signedLongintExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 98, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 98, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a signed longint value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_signedLongintExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 103, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 103, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a signed longint value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15051,25 +15051,25 @@ class unsignedIntExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedIntExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 118, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 118, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to an unsiged int value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedIntExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 123, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 123, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a unsigned int value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15090,25 +15090,25 @@ class unsignedPositiveIntExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedPositiveIntExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 138, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 138, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to an unsiged int value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_unsignedPositiveIntExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 143, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 143, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a unsigned int value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15129,25 +15129,25 @@ class signedIntExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_signedIntExpression_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 158, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 158, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a long value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_signedIntExpression_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 163, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 163, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a long value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15168,25 +15168,25 @@ class realExpression (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_realExpression_minimum', pyxb.binding.datatypes.double)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 178, 12)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 178, 12)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a real value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_realExpression_maximum', pyxb.binding.datatypes.double)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 183, 12)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/simpleTypes.xsd', 183, 12)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a real value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,
@@ -15209,10 +15209,10 @@ class stringExpression (complexBaseExpression):
     # Base type is complexBaseExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.stringExpression = stringExpression
 Namespace.addCategoryObject('typeBinding', 'stringExpression', stringExpression)
@@ -15231,10 +15231,10 @@ class stringURIExpression (complexBaseExpression):
     # Base type is complexBaseExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.stringURIExpression = stringURIExpression
 Namespace.addCategoryObject('typeBinding', 'stringURIExpression', stringURIExpression)
@@ -15253,10 +15253,10 @@ class unsignedBitExpression (complexBaseExpression):
     # Base type is complexBaseExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.unsignedBitExpression = unsignedBitExpression
 Namespace.addCategoryObject('typeBinding', 'unsignedBitExpression', unsignedBitExpression)
@@ -15275,10 +15275,10 @@ class unsignedBitVectorExpression (complexBaseExpression):
     # Base type is complexBaseExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.unsignedBitVectorExpression = unsignedBitVectorExpression
 Namespace.addCategoryObject('typeBinding', 'unsignedBitVectorExpression', unsignedBitVectorExpression)
@@ -15295,25 +15295,25 @@ class CTD_ANON_204 (complexBaseExpression):
     _ElementMap = complexBaseExpression._ElementMap.copy()
     _AttributeMap = complexBaseExpression._AttributeMap.copy()
     # Base type is complexBaseExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_204_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute referenceId uses Python identifier referenceId
     __referenceId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'referenceId'), 'referenceId', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_204_referenceId', pyxb.binding.datatypes.Name, required=True)
     __referenceId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 113, 5)
     __referenceId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 113, 5)
-    
+
     referenceId = property(__referenceId.value, __referenceId.set, None, 'Refers to the ID attribute of the configurable element.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -15335,30 +15335,30 @@ The componentRef and busRef attributes indicate the instance name and bus interf
     _ElementMap = monitorInterfaceType._ElementMap.copy()
     _AttributeMap = monitorInterfaceType._AttributeMap.copy()
     # Base type is monitorInterfaceType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitorInterfaceType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitorInterfaceType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_205_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute id inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute componentRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute busRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}interfaceType
-    
+
     # Attribute path inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}monitorInterfaceType
     _ElementMap.update({
         __isPresent.name() : __isPresent
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_205 = CTD_ANON_205
 
@@ -15374,29 +15374,29 @@ class CTD_ANON_206 (unsignedLongintExpression):
     _ElementMap = unsignedLongintExpression._ElementMap.copy()
     _AttributeMap = unsignedLongintExpression._AttributeMap.copy()
     # Base type is unsignedLongintExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_206_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute state uses Python identifier state
     __state = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'state'), 'state', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_206_state', pyxb.binding.datatypes.string)
     __state._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 351, 13)
     __state._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/busInterface.xsd', 351, 13)
-    
+
     state = property(__state.value, __state.set, None, 'Name of the state in which this remapped address range is valid')
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -15416,66 +15416,66 @@ class moduleParameterType (parameterType):
     _ElementMap = parameterType._ElementMap.copy()
     _AttributeMap = parameterType._AttributeMap.copy()
     # Base type is parameterType
-    
+
     # Element vendorExtensions ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vendorExtensions) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element arrays ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}arrays) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element value_ ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}value) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element vectors ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}vectors) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element name ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}name) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element displayName ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}displayName) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element description ({http://www.accellera.org/XMLSchema/IPXACT/1685-2014}description) inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Element {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}isPresent uses Python identifier isPresent
     __isPresent = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isPresent'), 'isPresent', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_moduleParameterType_httpwww_accellera_orgXMLSchemaIPXACT1685_2014isPresent', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 619, 1), )
 
-    
+
     isPresent = property(__isPresent.value, __isPresent.set, None, 'Expression that determines whether the enclosing element should be treated as present (expression evaluates to "true") or disregarded (expression evalutes to "false")')
 
-    
+
     # Attribute dataType uses Python identifier dataType
     __dataType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'dataType'), 'dataType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_moduleParameterType_dataType', pyxb.binding.datatypes.string)
     __dataType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 62, 4)
     __dataType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 62, 4)
-    
+
     dataType = property(__dataType.value, __dataType.set, None, 'The data type of the argument as pertains to the language. Example: "int", "double", "char *".')
 
-    
+
     # Attribute usageType uses Python identifier usageType
     __usageType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'usageType'), 'usageType', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_moduleParameterType_usageType', _module_typeBindings.STD_ANON_3, unicode_default='nontyped')
     __usageType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 67, 4)
     __usageType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/commonStructures.xsd', 67, 4)
-    
+
     usageType = property(__usageType.value, __usageType.set, None, "Indicates the type of the module parameter. Legal values are defined in the attribute enumeration list. Default value is 'nontyped'.")
 
-    
+
     # Attribute parameterId inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute prompt inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute choiceRef inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute order inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute configGroups inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute type inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute sign inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute prefix inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute unit inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterBaseType
-    
+
     # Attribute resolve inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}parameterType
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
@@ -15500,17 +15500,17 @@ class CTD_ANON_207 (stringExpression):
     _ElementMap = stringExpression._ElementMap.copy()
     _AttributeMap = stringExpression._AttributeMap.copy()
     # Base type is stringExpression
-    
+
     # Attribute append uses Python identifier append_
     __append = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'append'), 'append_', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_207_append', pyxb.binding.datatypes.boolean)
     __append._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 133, 44)
     __append._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/file.xsd', 133, 44)
-    
+
     append_ = property(__append.value, __append.set, None, '"true" indicates that the flags shall be appended to any existing flags, "false"indicates these flags will replace any existing default flags.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __append.name() : __append
@@ -15529,21 +15529,21 @@ class CTD_ANON_208 (unsignedLongintExpression):
     _ElementMap = unsignedLongintExpression._ElementMap.copy()
     _AttributeMap = unsignedLongintExpression._AttributeMap.copy()
     # Base type is unsignedLongintExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_208_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -15562,21 +15562,21 @@ class CTD_ANON_209 (unsignedLongintExpression):
     _ElementMap = unsignedLongintExpression._ElementMap.copy()
     _AttributeMap = unsignedLongintExpression._AttributeMap.copy()
     # Base type is unsignedLongintExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_209_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}unsignedLongintExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -15595,25 +15595,25 @@ class isResetType (unsignedBitExpression):
     _ElementMap = unsignedBitExpression._ElementMap.copy()
     _AttributeMap = unsignedBitExpression._AttributeMap.copy()
     # Base type is unsignedBitExpression
-    
+
     # Attribute {http://www.w3.org/XML/1998/namespace}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(pyxb.namespace.XML, 'id'), 'id', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_isResetType_httpwww_w3_orgXML1998namespaceid', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = None
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/autoConfigure.xsd', 93, 2)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute resetTypeRef uses Python identifier resetTypeRef
     __resetTypeRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'resetTypeRef'), 'resetTypeRef', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_isResetType_resetTypeRef', pyxb.binding.datatypes.Name)
     __resetTypeRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 160, 4)
     __resetTypeRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 160, 4)
-    
+
     resetTypeRef = property(__resetTypeRef.value, __resetTypeRef.set, None, 'Reference to a user defined resetType. Assumed to be HARD if not present.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id,
@@ -15634,21 +15634,21 @@ class CTD_ANON_210 (realExpression):
     _ElementMap = realExpression._ElementMap.copy()
     _AttributeMap = realExpression._AttributeMap.copy()
     # Base type is realExpression
-    
+
     # Attribute units uses Python identifier units
     __units = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'units'), 'units', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_210_units', _module_typeBindings.delayValueUnitType, unicode_default='ns')
     __units._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 178, 7)
     __units._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 178, 7)
-    
+
     units = property(__units.value, __units.set, None, None)
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __units.name() : __units
@@ -15667,21 +15667,21 @@ class CTD_ANON_211 (realExpression):
     _ElementMap = realExpression._ElementMap.copy()
     _AttributeMap = realExpression._AttributeMap.copy()
     # Base type is realExpression
-    
+
     # Attribute units uses Python identifier units
     __units = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'units'), 'units', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_211_units', _module_typeBindings.delayValueUnitType, unicode_default='ns')
     __units._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 190, 7)
     __units._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 190, 7)
-    
+
     units = property(__units.value, __units.set, None, None)
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __units.name() : __units
@@ -15700,21 +15700,21 @@ class CTD_ANON_212 (realExpression):
     _ElementMap = realExpression._ElementMap.copy()
     _AttributeMap = realExpression._AttributeMap.copy()
     # Base type is realExpression
-    
+
     # Attribute units uses Python identifier units
     __units = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'units'), 'units', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_CTD_ANON_212_units', _module_typeBindings.delayValueUnitType, unicode_default='ns')
     __units._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 207, 7)
     __units._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/signalDrivers.xsd', 207, 7)
-    
+
     units = property(__units.value, __units.set, None, None)
 
-    
+
     # Attribute minimum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
-    
+
     # Attribute maximum inherited from {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}realExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __units.name() : __units
@@ -15725,7 +15725,7 @@ _module_typeBindings.CTD_ANON_212 = CTD_ANON_212
 # Complex type {http://www.accellera.org/XMLSchema/IPXACT/1685-2014}complexBitSteeringExpression with content type SIMPLE
 class complexBitSteeringExpression (pyxb.binding.basis.complexTypeDefinition):
     """Indicates whether bit steering should be used to map this interface onto a bus of different data width.
-            
+
   Values are "on", "off" or an expression which resolves to an unsigned-bit where a '1' indicates "on" and a '0' indicates "off" (defaults to "off")."""
     _TypeDefinition = simpleBitSteeringExpression
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_SIMPLE
@@ -15737,10 +15737,10 @@ class complexBitSteeringExpression (pyxb.binding.basis.complexTypeDefinition):
     # Base type is simpleBitSteeringExpression
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.complexBitSteeringExpression = complexBitSteeringExpression
 Namespace.addCategoryObject('typeBinding', 'complexBitSteeringExpression', complexBitSteeringExpression)
@@ -15757,25 +15757,25 @@ class complexTiedValueType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is simpleTiedValueType
-    
+
     # Attribute minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'minimum'), 'minimum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_complexTiedValueType_minimum', pyxb.binding.datatypes.int)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 62, 4)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 62, 4)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a long value, this indicates the minimum value allowed.')
 
-    
+
     # Attribute maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'maximum'), 'maximum', '__httpwww_accellera_orgXMLSchemaIPXACT1685_2014_complexTiedValueType_maximum', pyxb.binding.datatypes.int)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 67, 4)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/IPXACT/1685-2014/subInstances.xsd', 67, 4)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For elements which can be specified using expression which are supposed to be resolved to a long value, this indicates the maximum value allowed.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.accellera.org/XMLSchema/IPXACT/1685-2014'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __minimum.name() : __minimum,

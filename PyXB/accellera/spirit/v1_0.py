@@ -1,4 +1,4 @@
-# /home/amal/work/Amal/github.com/python-ip-xact/src/spirit/v1_0.py
+# accellera/spirit/v1_0.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:b6527470c75df5d826af8fd751f38a6c56cad0b2
 # Generated 2016-11-15 00:26:33.713499 by PyXB version 1.2.5 using Python 3.5.2.final.0
@@ -587,18 +587,18 @@ class CTD_ANON (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choice uses Python identifier choice
     __choice = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choice'), 'choice', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choice', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 216, 4), )
 
-    
+
     choice = property(__choice.value, __choice.set, None, 'Non-empty set of legal values for a user defined property of type spirit:formatType="choice" .')
 
     _ElementMap.update({
         __choice.name() : __choice
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON = CTD_ANON
 
@@ -614,18 +614,18 @@ class CTD_ANON_ (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 222, 7), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Choice key, available for reference by the spirit:choiceRef attribute of user defined properties of type spirit:formatType="choice".')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}enumeration uses Python identifier enumeration
     __enumeration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enumeration'), 'enumeration', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0enumeration', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 227, 7), )
 
-    
+
     enumeration = property(__enumeration.value, __enumeration.set, None, 'A possible value of spirit:choice')
 
     _ElementMap.update({
@@ -633,7 +633,7 @@ class CTD_ANON_ (pyxb.binding.basis.complexTypeDefinition):
         __enumeration.name() : __enumeration
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_ = CTD_ANON_
 
@@ -649,24 +649,24 @@ class CTD_ANON_2 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}text uses Python identifier text
     __text = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'text'), 'text', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_2_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0text', pyxb.binding.datatypes.string)
     __text._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 234, 11)
     __text._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 234, 11)
-    
+
     text = property(__text.value, __text.set, None, 'When specified, displayed in place of the spirit:enumeration value ')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}help uses Python identifier help
     __help = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'help'), 'help', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_2_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0help', pyxb.binding.datatypes.string)
     __help._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 239, 11)
     __help._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 239, 11)
-    
+
     help = property(__help.value, __help.set, None, 'Text that may be displayed if the user requests help about the meaning of an element')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __text.name() : __text,
@@ -686,81 +686,81 @@ class CTD_ANON_3 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choices uses Python identifier choices
     __choices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choices'), 'choices', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 210, 1), )
 
-    
+
     choices = property(__choices.value, __choices.set, None, 'Choices used by user defined properties of spirit:formatType ="choice"')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}directConnection uses Python identifier directConnection
     __directConnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'directConnection'), 'directConnection', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0directConnection', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 81, 8), )
 
-    
+
     directConnection = property(__directConnection.value, __directConnection.set, None, 'When present this element indicates that a master interface may be directly connected to a slave interface (under certain conditions) for busses of this type.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}extends uses Python identifier extends
     __extends = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'extends'), 'extends', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0extends', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 86, 8), )
 
-    
+
     extends = property(__extends.value, __extends.set, None, 'Optional name of bus type that this bus definition is compatible with. This bus definition may change the definitions of signals in the existing bus definition and add new signals, the signals in the original bus are not deleted but may be marked illegal to disallow their use.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maxMasters uses Python identifier maxMasters
     __maxMasters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxMasters'), 'maxMasters', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maxMasters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 91, 8), )
 
-    
+
     maxMasters = property(__maxMasters.value, __maxMasters.set, None, 'Indicates the maximum number of masters this bus supports.  Default value of zero means unbounded. ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maxSlaves uses Python identifier maxSlaves
     __maxSlaves = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxSlaves'), 'maxSlaves', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maxSlaves', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 96, 8), )
 
-    
+
     maxSlaves = property(__maxSlaves.value, __maxSlaves.set, None, 'Indicates the maximum number of slaves this bus supports.  Default value of zero means unbounded.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signals uses Python identifier signals
     __signals = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signals'), 'signals', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signals', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 101, 8), )
 
-    
+
     signals = property(__signals.value, __signals.set, None, 'This is a list of logical signals defined by the bus.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 26, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 31, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this component belongs to.  Note that a physical library may contain components from multiple logical libraries.  Logical libraries are displayes in component browser.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 36, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  Must match the root name of the XML file and the directory name it or its version directory belongs to.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_3_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 58, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
@@ -777,7 +777,7 @@ class CTD_ANON_3 (pyxb.binding.basis.complexTypeDefinition):
         __version.name() : __version
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_3 = CTD_ANON_3
 
@@ -793,18 +793,18 @@ class CTD_ANON_4 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signal uses Python identifier signal
     __signal = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signal'), 'signal', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_4_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signal', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 107, 14), )
 
-    
+
     signal = property(__signal.value, __signal.set, None, None)
 
     _ElementMap.update({
         __signal.name() : __signal
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_4 = CTD_ANON_4
 
@@ -820,81 +820,81 @@ class CTD_ANON_5 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}logicalName uses Python identifier logicalName
     __logicalName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalName'), 'logicalName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0logicalName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 110, 20), )
 
-    
+
     logicalName = property(__logicalName.value, __logicalName.set, None, 'The assigned name of this signal in bus specifications.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}isAddress uses Python identifier isAddress
     __isAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isAddress'), 'isAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0isAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 116, 22), )
 
-    
+
     isAddress = property(__isAddress.value, __isAddress.set, None, 'If this element is present, the signal contains address information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}isData uses Python identifier isData
     __isData = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isData'), 'isData', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0isData', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 121, 22), )
 
-    
+
     isData = property(__isData.value, __isData.set, None, 'If this element is present, the signal contains data information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}isClock uses Python identifier isClock
     __isClock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isClock'), 'isClock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0isClock', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 126, 22), )
 
-    
+
     isClock = property(__isClock.value, __isClock.set, None, 'If this element is present, the signal contains clock information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}isReset uses Python identifier isReset
     __isReset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'isReset'), 'isReset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0isReset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 131, 22), )
 
-    
+
     isReset = property(__isReset.value, __isReset.set, None, 'Is this element is present, the signal contains reset information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}onSystem uses Python identifier onSystem
     __onSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSystem'), 'onSystem', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0onSystem', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 138, 20), )
 
-    
+
     onSystem = property(__onSystem.value, __onSystem.set, None, 'Defines constraints for this signal when present in a system bus interface with a matching group name.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}onMaster uses Python identifier onMaster
     __onMaster = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onMaster'), 'onMaster', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0onMaster', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 153, 20), )
 
-    
+
     onMaster = property(__onMaster.value, __onMaster.set, None, 'Defines constraints for this signal when present in a master bus interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}onSlave uses Python identifier onSlave
     __onSlave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'onSlave'), 'onSlave', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0onSlave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 161, 20), )
 
-    
+
     onSlave = property(__onSlave.value, __onSlave.set, None, 'Defines constraints for this signal when present in a slave bus interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}defaultValue uses Python identifier defaultValue
     __defaultValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultValue'), 'defaultValue', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0defaultValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 169, 20), )
 
-    
+
     defaultValue = property(__defaultValue.value, __defaultValue.set, None, 'Default value for the signal when used as an input and it ends up  being unconnected. Ignored for signals that require a singleShot or clock type driver. This value may be overridden by a defaultValue on a component pin.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}requiresDriver uses Python identifier requiresDriver
     __requiresDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'requiresDriver'), 'requiresDriver', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_5_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0requiresDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 125, 1), )
 
-    
+
     requiresDriver = property(__requiresDriver.value, __requiresDriver.set, None, 'Specifies if a signal requires a driver. Default is false. The attribute driverType can further qualify what type of driver is required. Undefined behaviour if direction is not input or inout. Driver type any indicates that any unspecified type of driver must be connected')
 
     _ElementMap.update({
@@ -911,7 +911,7 @@ class CTD_ANON_5 (pyxb.binding.basis.complexTypeDefinition):
         __requiresDriver.name() : __requiresDriver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_5 = CTD_ANON_5
 
@@ -927,25 +927,25 @@ class CTD_ANON_6 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitWidth uses Python identifier bitWidth
     __bitWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitWidth'), 'bitWidth', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_6_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 46, 6), )
 
-    
+
     bitWidth = property(__bitWidth.value, __bitWidth.set, None, 'Number of bits required to represent this signal. Absence of this element indicates unconstrained number of bits, i.e. the component will define th enumber of bits in this signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_6_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 51, 6), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this signal is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_6_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 144, 26), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Used to group system signals into different groups within a common bus.')
 
     _ElementMap.update({
@@ -954,7 +954,7 @@ class CTD_ANON_6 (pyxb.binding.basis.complexTypeDefinition):
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_6 = CTD_ANON_6
 
@@ -970,18 +970,18 @@ class CTD_ANON_7 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitWidth uses Python identifier bitWidth
     __bitWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitWidth'), 'bitWidth', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_7_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 46, 6), )
 
-    
+
     bitWidth = property(__bitWidth.value, __bitWidth.set, None, 'Number of bits required to represent this signal. Absence of this element indicates unconstrained number of bits, i.e. the component will define th enumber of bits in this signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_7_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 51, 6), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this signal is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
     _ElementMap.update({
@@ -989,7 +989,7 @@ class CTD_ANON_7 (pyxb.binding.basis.complexTypeDefinition):
         __direction.name() : __direction
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_7 = CTD_ANON_7
 
@@ -1005,18 +1005,18 @@ class CTD_ANON_8 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitWidth uses Python identifier bitWidth
     __bitWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitWidth'), 'bitWidth', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_8_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 46, 6), )
 
-    
+
     bitWidth = property(__bitWidth.value, __bitWidth.set, None, 'Number of bits required to represent this signal. Absence of this element indicates unconstrained number of bits, i.e. the component will define th enumber of bits in this signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_8_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 51, 6), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, 'If this element is present, the direction of this signal is restricted to the specified value. The direction is relative to the non-mirrored interface.')
 
     _ElementMap.update({
@@ -1024,7 +1024,7 @@ class CTD_ANON_8 (pyxb.binding.basis.complexTypeDefinition):
         __direction.name() : __direction
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_8 = CTD_ANON_8
 
@@ -1040,18 +1040,18 @@ class CTD_ANON_9 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}strength uses Python identifier strength
     __strength = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'strength'), 'strength', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_9_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0strength', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 28, 6), )
 
-    
+
     strength = property(__strength.value, __strength.set, None, 'The strength of the signal. "strong" (default) or "weak"')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_9_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busDefinition.xsd', 177, 28), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'The value of a signal. 1 or 0 for single bit signals, unsigned numeric otherwise.')
 
     _ElementMap.update({
@@ -1059,7 +1059,7 @@ class CTD_ANON_9 (pyxb.binding.basis.complexTypeDefinition):
         __value.name() : __value
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_9 = CTD_ANON_9
 
@@ -1075,18 +1075,18 @@ class CTD_ANON_10 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busInterface uses Python identifier busInterface
     __busInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterface'), 'busInterface', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_10_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busInterface', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 32, 1), )
 
-    
+
     busInterface = property(__busInterface.value, __busInterface.set, None, 'Describes one of the bus interfaces supported by this component.')
 
     _ElementMap.update({
         __busInterface.name() : __busInterface
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_10 = CTD_ANON_10
 
@@ -1102,109 +1102,109 @@ class busInterfaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 49, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Uniquely names this bus interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busType uses Python identifier busType
     __busType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busType'), 'busType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 54, 3), )
 
-    
+
     busType = property(__busType.value, __busType.set, None, 'The bus type of this interface.  Refers to a bus description using vendor, library and name attributes.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}master uses Python identifier master
     __master = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'master'), 'master', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0master', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 60, 4), )
 
-    
+
     master = property(__master.value, __master.set, None, 'If this element is present, the bus interface can serve as a master.  This element encapsulates additional information related to its role as master.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}slave uses Python identifier slave
     __slave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'slave'), 'slave', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0slave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 87, 4), )
 
-    
+
     slave = property(__slave.value, __slave.set, None, 'If this element is present, the bus interface can serve as a slave.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}system uses Python identifier system
     __system = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'system'), 'system', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0system', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 120, 4), )
 
-    
+
     system = property(__system.value, __system.set, None, 'If this element is present, the bus interface is a system interface, neither master nor slave, with a specific function on the bus.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}mirroredSlave uses Python identifier mirroredSlave
     __mirroredSlave = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredSlave'), 'mirroredSlave', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0mirroredSlave', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 130, 4), )
 
-    
+
     mirroredSlave = property(__mirroredSlave.value, __mirroredSlave.set, None, 'If this element is present, the bus interface represents a mirrored slave interface. All directional constraints on signals are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}mirroredMaster uses Python identifier mirroredMaster
     __mirroredMaster = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredMaster'), 'mirroredMaster', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0mirroredMaster', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 174, 4), )
 
-    
+
     mirroredMaster = property(__mirroredMaster.value, __mirroredMaster.set, None, 'If this element is present, the bus interface represents a mirrored master interface. All directional constraints on signals are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}mirroredSystem uses Python identifier mirroredSystem
     __mirroredSystem = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mirroredSystem'), 'mirroredSystem', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0mirroredSystem', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 180, 4), )
 
-    
+
     mirroredSystem = property(__mirroredSystem.value, __mirroredSystem.set, None, 'If this element is present, the bus interface represents a mirrored system interface. All directional constraints on signals are reversed relative to the specification in the bus definition.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}exportedInterface uses Python identifier exportedInterface
     __exportedInterface = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'exportedInterface'), 'exportedInterface', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0exportedInterface', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 190, 4), )
 
-    
+
     exportedInterface = property(__exportedInterface.value, __exportedInterface.set, None, 'If this element is present, this interface represents an interface being exported from a sub-component. The type of interface (master, slave, ...) should be obtained from the sub-component interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}connection uses Python identifier connection
     __connection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'connection'), 'connection', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0connection', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 210, 3), )
 
-    
+
     connection = property(__connection.value, __connection.set, None, 'Directs how a bus interface is connected when the component is added to a design already containing a bus owner.\n\nDefault behavior is "explicit".')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signalMap uses Python identifier signalMap
     __signalMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signalMap'), 'signalMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signalMap', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 231, 3), )
 
-    
+
     signalMap = property(__signalMap.value, __signalMap.set, None, 'Maps component signals to bus signals.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}index uses Python identifier index
     __index = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'index'), 'index', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0index', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 256, 3), )
 
-    
+
     index = property(__index.value, __index.set, None, "Master or slave index of this bus interface's connection on a bus.  Only used on indexed buses.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitSteering uses Python identifier bitSteering
     __bitSteering = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitSteering'), 'bitSteering', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitSteering', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 269, 3), )
 
-    
+
     bitSteering = property(__bitSteering.value, __bitSteering.set, None, 'Indicates whether bit steering should be used to map this interface onto a bus of different data width.\n\nValues are "on", "off" or "default".')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configurators uses Python identifier configurators
     __configurators = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurators'), 'configurators', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_busInterfaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configurators', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurator.xsd', 23, 1), )
 
-    
+
     configurators = property(__configurators.value, __configurators.set, None, "Set of configurators on a configurable object. The contents of this container element are undefined for version 1.0 of the SPIRIT schema. It is expected that the contents will be defined when the tight generator interface is available. In this release only 'default' configurators are supported.")
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
@@ -1226,7 +1226,7 @@ class busInterfaceType (pyxb.binding.basis.complexTypeDefinition):
         __configurators.name() : __configurators
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.busInterfaceType = busInterfaceType
 Namespace.addCategoryObject('typeBinding', 'busInterfaceType', busInterfaceType)
@@ -1243,18 +1243,18 @@ class CTD_ANON_11 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_11_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressSpaceRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 66, 7), )
 
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'If this master connects to an addressable bus, this element references the address space  it maps to.  It has an addressSpaceRef attribute which is an addrSpaceID key ref.')
 
     _ElementMap.update({
         __addressSpaceRef.name() : __addressSpaceRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_11 = CTD_ANON_11
 
@@ -1270,25 +1270,25 @@ class CTD_ANON_12 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bridge uses Python identifier bridge
     __bridge = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bridge'), 'bridge', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_12_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bridge', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 94, 7), )
 
-    
+
     bridge = property(__bridge.value, __bridge.set, None, 'If this element is present, it indicates that the bus interface provides a bridge to another master bus interface on the same component.  It has a masterRef attribute which contains the name of the other bus interface.  It also has an opaque attribute to indicate that the bus bridge is opaque.\n\nAny slave interface can bridge to multiple master interfaces, and multiple slave interfaces can bridge to the same master interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetRefGroup uses Python identifier fileSetRefGroup
     __fileSetRefGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRefGroup'), 'fileSetRefGroup', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_12_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetRefGroup', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 109, 7), )
 
-    
+
     fileSetRefGroup = property(__fileSetRefGroup.value, __fileSetRefGroup.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapRef uses Python identifier memoryMapRef
     __memoryMapRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMapRef'), 'memoryMapRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_12_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0memoryMapRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 318, 2), )
 
-    
+
     memoryMapRef = property(__memoryMapRef.value, __memoryMapRef.set, None, 'References the memory map. The name of the memory map is kept in its memoryMapRef attribute.')
 
     _ElementMap.update({
@@ -1297,7 +1297,7 @@ class CTD_ANON_12 (pyxb.binding.basis.complexTypeDefinition):
         __memoryMapRef.name() : __memoryMapRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_12 = CTD_ANON_12
 
@@ -1315,24 +1315,24 @@ Any slave interface can bridge to multiple master interfaces, and multiple slave
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'masterRef'), 'masterRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_13_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 101, 9)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 101, 9)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'The name of the master bus interface to which this interface bridges.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}opaque uses Python identifier opaque
     __opaque = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'opaque'), 'opaque', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_13_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0opaque', pyxb.binding.datatypes.boolean)
     __opaque._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 106, 9)
     __opaque._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 106, 9)
-    
+
     opaque = property(__opaque.value, __opaque.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __masterRef.name() : __masterRef,
@@ -1352,18 +1352,18 @@ class CTD_ANON_14 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_14_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 112, 10), )
 
-    
+
     group = property(__group.value, __group.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_14_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 302, 1), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
     _ElementMap.update({
@@ -1371,7 +1371,7 @@ class CTD_ANON_14 (pyxb.binding.basis.complexTypeDefinition):
         __fileSetRef.name() : __fileSetRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_14 = CTD_ANON_14
 
@@ -1387,18 +1387,18 @@ class CTD_ANON_15 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_15_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 292, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more signals in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_15 = CTD_ANON_15
 
@@ -1414,18 +1414,18 @@ class CTD_ANON_16 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}baseAddresses uses Python identifier baseAddresses
     __baseAddresses = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddresses'), 'baseAddresses', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_16_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0baseAddresses', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 136, 7), )
 
-    
+
     baseAddresses = property(__baseAddresses.value, __baseAddresses.set, None, 'Represents a set of remap base addresses.')
 
     _ElementMap.update({
         __baseAddresses.name() : __baseAddresses
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_16 = CTD_ANON_16
 
@@ -1441,18 +1441,18 @@ class CTD_ANON_17 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}remapAddress uses Python identifier remapAddress
     __remapAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapAddress'), 'remapAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_17_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0remapAddress', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 142, 10), )
 
-    
+
     remapAddress = property(__remapAddress.value, __remapAddress.set, None, 'Base of an address block. The state attribute indicates the name of the remap state for which this address is valid.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_17_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 156, 10), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of mirrored slave. ')
 
     _ElementMap.update({
@@ -1460,7 +1460,7 @@ class CTD_ANON_17 (pyxb.binding.basis.complexTypeDefinition):
         __range.name() : __range
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_17 = CTD_ANON_17
 
@@ -1477,10 +1477,10 @@ class CTD_ANON_18 (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_18 = CTD_ANON_18
 
@@ -1496,18 +1496,18 @@ class CTD_ANON_19 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_19_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 292, 1), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Indicates which system interface is being mirrored. Name must match a group name present on one or more signals in the corresonding bus definition.')
 
     _ElementMap.update({
         __group.name() : __group
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_19 = CTD_ANON_19
 
@@ -1523,18 +1523,18 @@ class CTD_ANON_20 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_20_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 196, 7), )
 
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'Indicates name of the sub-component  containing the interface being exported. ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interfaceRef uses Python identifier interfaceRef
     __interfaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interfaceRef'), 'interfaceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_20_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interfaceRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 201, 7), )
 
-    
+
     interfaceRef = property(__interfaceRef.value, __interfaceRef.set, None, 'Indicates the name of the sub-component bus interface being exported.')
 
     _ElementMap.update({
@@ -1542,7 +1542,7 @@ class CTD_ANON_20 (pyxb.binding.basis.complexTypeDefinition):
         __interfaceRef.name() : __interfaceRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_20 = CTD_ANON_20
 
@@ -1558,18 +1558,18 @@ class CTD_ANON_21 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signalName uses Python identifier signalName
     __signalName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signalName'), 'signalName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_21_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signalName', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 237, 6), )
 
-    
+
     signalName = property(__signalName.value, __signalName.set, None, "Maps a component's signal to a signal in a bus description. The text content of this element identifies a signal on this component bu its signal name.  The busSignal attribute names the corresponding signal in the bus definition.\n\nThe optional attributes left and right can be used to select a bit-slice of a signal vector to map to the bus interface. ")
 
     _ElementMap.update({
         __signalName.name() : __signalName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_21 = CTD_ANON_21
 
@@ -1587,32 +1587,32 @@ The optional attributes left and right can be used to select a bit-slice of a si
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.token
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busSignal uses Python identifier busSignal
     __busSignal = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'busSignal'), 'busSignal', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_22_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busSignal', pyxb.binding.datatypes.Name, required=True)
     __busSignal._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 246, 10)
     __busSignal._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 246, 10)
-    
+
     busSignal = property(__busSignal.value, __busSignal.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}left uses Python identifier left
     __left = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_22_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0left', pyxb.binding.datatypes.nonNegativeInteger)
     __left._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 247, 10)
     __left._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 247, 10)
-    
+
     left = property(__left.value, __left.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}right uses Python identifier right
     __right = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_22_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0right', pyxb.binding.datatypes.nonNegativeInteger)
     __right._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 248, 10)
     __right._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 248, 10)
-    
+
     right = property(__right.value, __right.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __busSignal.name() : __busSignal,
@@ -1633,18 +1633,18 @@ class CTD_ANON_23 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}channel uses Python identifier channel
     __channel = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'channel'), 'channel', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_23_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0channel', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 303, 4), )
 
-    
+
     channel = property(__channel.value, __channel.set, None, 'Defines a set of mirrored interfaces of this component that are connected to one another.')
 
     _ElementMap.update({
         __channel.name() : __channel
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_23 = CTD_ANON_23
 
@@ -1660,25 +1660,25 @@ class CTD_ANON_24 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maxMasters uses Python identifier maxMasters
     __maxMasters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxMasters'), 'maxMasters', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_24_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maxMasters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 309, 7), )
 
-    
+
     maxMasters = property(__maxMasters.value, __maxMasters.set, None, 'Overrides the maxMasters value in the bus definition if this number is more restrictive.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maxSlaves uses Python identifier maxSlaves
     __maxSlaves = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'maxSlaves'), 'maxSlaves', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_24_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maxSlaves', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 314, 7), )
 
-    
+
     maxSlaves = property(__maxSlaves.value, __maxSlaves.set, None, 'Overrides the maxSlaves value in the bus definition if this number is more restrictive.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busInterfaceRef uses Python identifier busInterfaceRef
     __busInterfaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterfaceRef'), 'busInterfaceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_24_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busInterfaceRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 319, 7), )
 
-    
+
     busInterfaceRef = property(__busInterfaceRef.value, __busInterfaceRef.set, None, 'Contains the name of one of the bus interfaces that is part of this channel.')
 
     _ElementMap.update({
@@ -1687,7 +1687,7 @@ class CTD_ANON_24 (pyxb.binding.basis.complexTypeDefinition):
         __busInterfaceRef.name() : __busInterfaceRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_24 = CTD_ANON_24
 
@@ -1703,18 +1703,18 @@ class CTD_ANON_25 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}remapState uses Python identifier remapState
     __remapState = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapState'), 'remapState', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_25_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0remapState', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 340, 4), )
 
-    
+
     remapState = property(__remapState.value, __remapState.set, None, 'Contains a list of signals and values which tell the decoder to enter this remap state. The name attribute identifies the name of the state')
 
     _ElementMap.update({
         __remapState.name() : __remapState
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_25 = CTD_ANON_25
 
@@ -1730,19 +1730,19 @@ class CTD_ANON_26 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}remapSignal uses Python identifier remapSignal
     __remapSignal = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapSignal'), 'remapSignal', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_26_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0remapSignal', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 346, 7), )
 
-    
+
     remapSignal = property(__remapSignal.value, __remapSignal.set, None, 'Contains the name and value of a signal on the component, the value indicates the logic value which this signal must take to effect the remapping. The id attribute stores the name of the signal which takes that value.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_26_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.string, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 363, 6)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 363, 6)
-    
+
     name = property(__name.value, __name.set, None, 'Stores the name of the state')
 
     _ElementMap.update({
@@ -1765,16 +1765,16 @@ class CTD_ANON_27 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_27_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.NMTOKEN, required=True)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 353, 11)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 353, 11)
-    
+
     id = property(__id.value, __id.set, None, "This attribute identifies a signal on the component which affects the component's memory layout")
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -1793,16 +1793,16 @@ class persistentDataType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_persistentDataType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID, required=True)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 73, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __id.name() : __id
@@ -1824,10 +1824,10 @@ class CTD_ANON_28 (pyxb.binding.basis.complexTypeDefinition):
     # Base type is pyxb.binding.datatypes.anyType
     _HasWildcardElement = True
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_28 = CTD_ANON_28
 
@@ -1843,137 +1843,137 @@ class componentType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choices uses Python identifier choices
     __choices = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'choices'), 'choices', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choices', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 210, 1), )
 
-    
+
     choices = property(__choices.value, __choices.set, None, 'Choices used by user defined properties of spirit:formatType ="choice"')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busInterfaces uses Python identifier busInterfaces
     __busInterfaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busInterfaces'), 'busInterfaces', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busInterfaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 37, 1), )
 
-    
+
     busInterfaces = property(__busInterfaces.value, __busInterfaces.set, None, 'A list of bus interfaces supported by this component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}channels uses Python identifier channels
     __channels = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'channels'), 'channels', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0channels', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 297, 1), )
 
-    
+
     channels = property(__channels.value, __channels.set, None, 'Lists all channel connections between mirror interfaces of this component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}remapStates uses Python identifier remapStates
     __remapStates = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'remapStates'), 'remapStates', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0remapStates', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 334, 1), )
 
-    
+
     remapStates = property(__remapStates.value, __remapStates.set, None, 'Contains a list of remap state names and associated signal values')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}cpus uses Python identifier cpus
     __cpus = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cpus'), 'cpus', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0cpus', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/component.xsd', 50, 3), )
 
-    
+
     cpus = property(__cpus.value, __cpus.set, None, "cpu's in the component")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configurators uses Python identifier configurators
     __configurators = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurators'), 'configurators', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configurators', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurator.xsd', 23, 1), )
 
-    
+
     configurators = property(__configurators.value, __configurators.set, None, "Set of configurators on a configurable object. The contents of this container element are undefined for version 1.0 of the SPIRIT schema. It is expected that the contents will be defined when the tight generator interface is available. In this release only 'default' configurators are supported.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSets uses Python identifier fileSets
     __fileSets = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSets'), 'fileSets', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSets', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 312, 1), )
 
-    
+
     fileSets = property(__fileSets.value, __fileSets.set, None, 'List of file sets associated with component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentGenerators uses Python identifier componentGenerators
     __componentGenerators = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGenerators'), 'componentGenerators', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentGenerators', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 157, 1), )
 
-    
+
     componentGenerators = property(__componentGenerators.value, __componentGenerators.set, None, 'List of component generators.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 26, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 31, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this component belongs to.  Note that a physical library may contain components from multiple logical libraries.  Logical libraries are displayes in component browser.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 36, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  Must match the root name of the XML file and the directory name it or its version directory belongs to.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 58, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressSpaces uses Python identifier addressSpaces
     __addressSpaces = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaces'), 'addressSpaces', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressSpaces', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 269, 2), )
 
-    
+
     addressSpaces = property(__addressSpaces.value, __addressSpaces.set, None, 'If this component is a bus master, this lists all the address spaces\ndefined by the component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMaps uses Python identifier memoryMaps
     __memoryMaps = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMaps'), 'memoryMaps', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0memoryMaps', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 323, 2), )
 
-    
+
     memoryMaps = property(__memoryMaps.value, __memoryMaps.set, None, 'Lists all the slave memory maps defined by the component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}hwModel uses Python identifier hwModel
     __hwModel = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hwModel'), 'hwModel', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0hwModel', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 101, 1), )
 
-    
+
     hwModel = property(__hwModel.value, __hwModel.set, None, 'Hardware model information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentInstances uses Python identifier componentInstances
     __componentInstances = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstances'), 'componentInstances', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentInstances', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 68, 1), )
 
-    
+
     componentInstances = property(__componentInstances.value, __componentInstances.set, None, 'Sub instances of internal components.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnections uses Python identifier interconnections
     __interconnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnections'), 'interconnections', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_componentType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 131, 1), )
 
-    
+
     interconnections = property(__interconnections.value, __interconnections.set, None, 'Connections between internal sub components.')
 
     _ElementMap.update({
@@ -1998,7 +1998,7 @@ class componentType (pyxb.binding.basis.complexTypeDefinition):
         __interconnections.name() : __interconnections
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.componentType = componentType
 Namespace.addCategoryObject('typeBinding', 'componentType', componentType)
@@ -2015,18 +2015,18 @@ class CTD_ANON_29 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}cpu uses Python identifier cpu
     __cpu = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'cpu'), 'cpu', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_29_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0cpu', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/component.xsd', 56, 6), )
 
-    
+
     cpu = property(__cpu.value, __cpu.set, None, 'Describes a processor in this component.')
 
     _ElementMap.update({
         __cpu.name() : __cpu
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_29 = CTD_ANON_29
 
@@ -2042,32 +2042,32 @@ class CTD_ANON_30 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_30_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_30_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_30_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/component.xsd', 62, 9), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the cpu instance relative to the platform core.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_30_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressSpaceRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 264, 2), )
 
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'References the address space.  The name of the address space is kept in its addressSpaceRef attribute.')
 
     _ElementMap.update({
@@ -2077,7 +2077,7 @@ class CTD_ANON_30 (pyxb.binding.basis.complexTypeDefinition):
         __addressSpaceRef.name() : __addressSpaceRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_30 = CTD_ANON_30
 
@@ -2096,10 +2096,10 @@ class CTD_ANON_31 (pyxb.binding.basis.complexTypeDefinition):
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=pyxb.binding.content.Wildcard.NC_any)
     _HasWildcardElement = True
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_31 = CTD_ANON_31
 
@@ -2115,60 +2115,60 @@ class CTD_ANON_32 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 26, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 31, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this component belongs to.  Note that a physical library may contain components from multiple logical libraries.  Logical libraries are displayes in component browser.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 36, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  Must match the root name of the XML file and the directory name it or its version directory belongs to.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 49, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentInstances uses Python identifier componentInstances
     __componentInstances = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstances'), 'componentInstances', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentInstances', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 68, 1), )
 
-    
+
     componentInstances = property(__componentInstances.value, __componentInstances.set, None, 'Sub instances of internal components.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}adHocConnections uses Python identifier adHocConnections
     __adHocConnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnections'), 'adHocConnections', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0adHocConnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 108, 1), )
 
-    
+
     adHocConnections = property(__adHocConnections.value, __adHocConnections.set, None, 'Defines the set of ad-hoc connections in a design. An ad-hoc connection represents a connection between two component pins which were not connected as a result of interface connections (i.e.the pin to pin connection was made explicitly and is represented explicitly).')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnections uses Python identifier interconnections
     __interconnections = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnections'), 'interconnections', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_32_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnections', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 131, 1), )
 
-    
+
     interconnections = property(__interconnections.value, __interconnections.set, None, 'Connections between internal sub components.')
 
     _ElementMap.update({
@@ -2182,7 +2182,7 @@ class CTD_ANON_32 (pyxb.binding.basis.complexTypeDefinition):
         __interconnections.name() : __interconnections
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_32 = CTD_ANON_32
 
@@ -2198,82 +2198,82 @@ class CTD_ANON_33 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 30, 4), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Path to the file or directory.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}logicalName uses Python identifier logicalName
     __logicalName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'logicalName'), 'logicalName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0logicalName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 43, 4), )
 
-    
+
     logicalName = property(__logicalName.value, __logicalName.set, None, 'Logical name for this file or directory e.g. VHDL library name.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}exportedName uses Python identifier exportedName
     __exportedName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'exportedName'), 'exportedName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0exportedName', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 55, 4), )
 
-    
+
     exportedName = property(__exportedName.value, __exportedName.set, None, 'Defines exported names that can be accessed externally, e.g. exported function names from a C source file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}buildCommand uses Python identifier buildCommand
     __buildCommand = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'buildCommand'), 'buildCommand', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0buildCommand', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 60, 4), )
 
-    
+
     buildCommand = property(__buildCommand.value, __buildCommand.set, None, 'Command and flags used to build derived files from the sourceName files. If this element is present, the command and/or flags used to to build the file will override or augment any default builders at a higher level.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}define uses Python identifier define
     __define = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'define'), 'define', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0define', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 119, 4), )
 
-    
+
     define = property(__define.value, __define.set, None, 'Specifies define symbols that are used in the source file.  The spirit:name attribute gives the name to be defined and the text content of the element holds the value.  This element supports full configurability.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}imageType uses Python identifier imageType
     __imageType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'imageType'), 'imageType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0imageType', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 124, 4), )
 
-    
+
     imageType = property(__imageType.value, __imageType.set, None, 'Relates the current file to a certain executable image type in the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 307, 1), )
 
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Specifies a location on which  files or fileSets may be dependent. Typically, this would be a directory that would contain included files.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 27, 3), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by SPIRIT.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}userFileType uses Python identifier userFileType
     __userFileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'userFileType'), 'userFileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0userFileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 59, 3), )
 
-    
+
     userFileType = property(__userFileType.value, __userFileType.set, None, 'Free form file type, not - yet - known by SPIRIT .')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileId uses Python identifier fileId
     __fileId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'fileId'), 'fileId', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_33_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileId', pyxb.binding.datatypes.ID)
     __fileId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 131, 3)
     __fileId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 131, 3)
-    
+
     fileId = property(__fileId.value, __fileId.set, None, None)
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
@@ -2306,16 +2306,16 @@ class CTD_ANON_34 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.Name
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}default uses Python identifier default
     __default = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'default'), 'default', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_34_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0default', pyxb.binding.datatypes.string)
     __default._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 50, 8)
     __default._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 50, 8)
-    
+
     default = property(__default.value, __default.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __default.name() : __default
@@ -2334,32 +2334,32 @@ class CTD_ANON_35 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_35_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 66, 7), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Command used to build this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_35_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 78, 7), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building this file. If the optional attribute "append" is "true", this string will be appended to any existing flags, otherwise these flags will replace any existing default flags.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_35_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 91, 7), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, the value of the sibling element "flags" should replace any default flags specified at a more global level. If this is true and the sibling element "flags" is empty or missing, this has the effect of clearing any default flags.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}targetName uses Python identifier targetName
     __targetName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'targetName'), 'targetName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_35_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0targetName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 103, 7), )
 
-    
+
     targetName = property(__targetName.value, __targetName.set, None, 'Pathname to the file that is derived (built) from the source file.')
 
     _ElementMap.update({
@@ -2369,7 +2369,7 @@ class CTD_ANON_35 (pyxb.binding.basis.complexTypeDefinition):
         __targetName.name() : __targetName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_35 = CTD_ANON_35
 
@@ -2385,55 +2385,55 @@ class CTD_ANON_36 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 146, 4), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Name of the executable image file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}languageTools uses Python identifier languageTools
     __languageTools = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'languageTools'), 'languageTools', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0languageTools', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 163, 4), )
 
-    
+
     languageTools = property(__languageTools.value, __languageTools.set, None, 'Default commands and flags for software language tools needed to build the executable image.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetRefGroup uses Python identifier fileSetRefGroup
     __fileSetRefGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRefGroup'), 'fileSetRefGroup', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetRefGroup', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 286, 4), )
 
-    
+
     fileSetRefGroup = property(__fileSetRefGroup.value, __fileSetRefGroup.set, None, 'Contains a group of file set references that indicates the set of file sets complying with the tool set of the current executable image.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID, required=True)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 298, 3)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 298, 3)
-    
+
     id = property(__id.value, __id.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}imageType uses Python identifier imageType
     __imageType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'imageType'), 'imageType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_36_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0imageType', pyxb.binding.datatypes.Name)
     __imageType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 299, 3)
     __imageType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 299, 3)
-    
+
     imageType = property(__imageType.value, __imageType.set, None, None)
 
     _ElementMap.update({
@@ -2461,32 +2461,32 @@ class CTD_ANON_37 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileBuilder uses Python identifier fileBuilder
     __fileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileBuilder'), 'fileBuilder', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_37_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 169, 7), )
 
-    
+
     fileBuilder = property(__fileBuilder.value, __fileBuilder.set, None, 'A generic placeholder for any file builder like compilers and assemblers.  It contains the file types to which the command should be applied, and the flags to be used with that command.  ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}linker uses Python identifier linker
     __linker = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linker'), 'linker', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_37_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0linker', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 218, 7), )
 
-    
+
     linker = property(__linker.value, __linker.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}linkerFlags uses Python identifier linkerFlags
     __linkerFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linkerFlags'), 'linkerFlags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_37_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0linkerFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 227, 7), )
 
-    
+
     linkerFlags = property(__linkerFlags.value, __linkerFlags.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}linkerCommandFile uses Python identifier linkerCommandFile
     __linkerCommandFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'linkerCommandFile'), 'linkerCommandFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_37_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0linkerCommandFile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 236, 7), )
 
-    
+
     linkerCommandFile = property(__linkerCommandFile.value, __linkerCommandFile.set, None, 'Specifies a linker command file.')
 
     _ElementMap.update({
@@ -2496,7 +2496,7 @@ class CTD_ANON_37 (pyxb.binding.basis.complexTypeDefinition):
         __linkerCommandFile.name() : __linkerCommandFile
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_37 = CTD_ANON_37
 
@@ -2512,46 +2512,46 @@ class CTD_ANON_38 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 176, 10), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Default command used to build files of the specified fileType. ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 188, 10), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building files of this type.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 200, 10), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, replace any default flags value with the value in the sibling flags element. Otherwise, append the contents of the sibling flags element to any default flags value.\n\nIf the value is true and the "flags" element is empty or missing, this will have the result of clearing any default flags value.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 27, 3), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by SPIRIT.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}userFileType uses Python identifier userFileType
     __userFileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'userFileType'), 'userFileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_38_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0userFileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 59, 3), )
 
-    
+
     userFileType = property(__userFileType.value, __userFileType.set, None, 'Free form file type, not - yet - known by SPIRIT .')
 
     _ElementMap.update({
@@ -2563,7 +2563,7 @@ class CTD_ANON_38 (pyxb.binding.basis.complexTypeDefinition):
         __userFileType.name() : __userFileType
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_38 = CTD_ANON_38
 
@@ -2579,39 +2579,39 @@ class CTD_ANON_39 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_39_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 242, 10), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Linker command file name.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}commandLineSwitch uses Python identifier commandLineSwitch
     __commandLineSwitch = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'commandLineSwitch'), 'commandLineSwitch', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_39_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0commandLineSwitch', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 254, 10), )
 
-    
+
     commandLineSwitch = property(__commandLineSwitch.value, __commandLineSwitch.set, None, 'The command line switch to specify the linker command file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}enable uses Python identifier enable
     __enable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enable'), 'enable', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_39_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0enable', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 266, 10), )
 
-    
+
     enable = property(__enable.value, __enable.set, None, 'Specifies whether to generate and enable the linker command file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorRef uses Python identifier generatorRef
     __generatorRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generatorRef'), 'generatorRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_39_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0generatorRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 480, 1), )
 
-    
+
     generatorRef = property(__generatorRef.value, __generatorRef.set, None, 'A reference to a generator element.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configuratorRef uses Python identifier configuratorRef
     __configuratorRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configuratorRef'), 'configuratorRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_39_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configuratorRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 485, 1), )
 
-    
+
     configuratorRef = property(__configuratorRef.value, __configuratorRef.set, None, 'A reference to a configurator element.')
 
     _ElementMap.update({
@@ -2622,7 +2622,7 @@ class CTD_ANON_39 (pyxb.binding.basis.complexTypeDefinition):
         __configuratorRef.name() : __configuratorRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_39 = CTD_ANON_39
 
@@ -2638,18 +2638,18 @@ class CTD_ANON_40 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_40_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 302, 1), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
     _ElementMap.update({
         __fileSetRef.name() : __fileSetRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_40 = CTD_ANON_40
 
@@ -2665,18 +2665,18 @@ class CTD_ANON_41 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSet uses Python identifier fileSet
     __fileSet = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSet'), 'fileSet', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_41_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSet', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 135, 1), )
 
-    
+
     fileSet = property(__fileSet.value, __fileSet.set, None, 'This element specifies a list of unique pathnames to files and directories. It may also include build instructions for the files. If compilation order is important, e.g. for VHDL files, the files have to be provided in compilation order.')
 
     _ElementMap.update({
         __fileSet.name() : __fileSet
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_41 = CTD_ANON_41
 
@@ -2692,39 +2692,39 @@ class fileBuilderType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}command uses Python identifier command
     __command = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'command'), 'command', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileBuilderType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0command', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 325, 3), )
 
-    
+
     command = property(__command.value, __command.set, None, 'Default command used to build files of the specified fileType. ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}flags uses Python identifier flags
     __flags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'flags'), 'flags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileBuilderType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0flags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 337, 3), )
 
-    
+
     flags = property(__flags.value, __flags.set, None, 'Flags given to the build command when building files of this type.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}replaceDefaultFlags uses Python identifier replaceDefaultFlags
     __replaceDefaultFlags = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'replaceDefaultFlags'), 'replaceDefaultFlags', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileBuilderType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0replaceDefaultFlags', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 349, 3), )
 
-    
+
     replaceDefaultFlags = property(__replaceDefaultFlags.value, __replaceDefaultFlags.set, None, 'If true, replace any default flags value with the value in the sibling flags element. Otherwise, append the contents of the sibling flags element to any default flags value.\n\nIf the value is true and the "flags" element is empty or missing, this will have the result of clearing any default flags value.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileBuilderType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 27, 3), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by SPIRIT.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}userFileType uses Python identifier userFileType
     __userFileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'userFileType'), 'userFileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileBuilderType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0userFileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 59, 3), )
 
-    
+
     userFileType = property(__userFileType.value, __userFileType.set, None, 'Free form file type, not - yet - known by SPIRIT .')
 
     _ElementMap.update({
@@ -2735,7 +2735,7 @@ class fileBuilderType (pyxb.binding.basis.complexTypeDefinition):
         __userFileType.name() : __userFileType
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.fileBuilderType = fileBuilderType
 Namespace.addCategoryObject('typeBinding', 'fileBuilderType', fileBuilderType)
@@ -2752,61 +2752,61 @@ class fileSetType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}file uses Python identifier file
     __file = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'file'), 'file', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0file', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 24, 1), )
 
-    
+
     file = property(__file.value, __file.set, None, 'SPIRIT reference to a file or directory.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 307, 1), )
 
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Specifies a location on which  files or fileSets may be dependent. Typically, this would be a directory that would contain included files.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}owner uses Python identifier owner
     __owner = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'owner'), 'owner', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0owner', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 367, 3), )
 
-    
+
     owner = property(__owner.value, __owner.set, None, 'Specifies the original owner of the fileSet, used when importing fileSets from other components, as in Hierarchical components, to allow the parent component to correctly locate files imported from subcomponents')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 372, 3), )
 
-    
+
     group = property(__group.value, __group.set, None, 'Identifies this filleSet as belonging to a particular group or having a particular purpose. Examples might be "diagnostics", "boot", "application", "interrupt", "deviceDriver", etc.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}defaultFileBuilder uses Python identifier defaultFileBuilder
     __defaultFileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultFileBuilder'), 'defaultFileBuilder', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0defaultFileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 378, 3), )
 
-    
+
     defaultFileBuilder = property(__defaultFileBuilder.value, __defaultFileBuilder.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}swFunction uses Python identifier swFunction
     __swFunction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'swFunction'), 'swFunction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0swFunction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 380, 3), )
 
-    
+
     swFunction = property(__swFunction.value, __swFunction.set, None, 'Generator information if this file set describes a sw function. For example, this file set may describe diagnostics for which the DE can generate a diagnostics driver.\n\nThe boolean attribute "replicate", if true (default is false), directs the generator to compile a separate object module for each instance of the component in the design. Otherwise the single function will be called with different arguments for each instance (e.g. baseAddress).')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetId uses Python identifier fileSetId
     __fileSetId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'fileSetId'), 'fileSetId', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fileSetType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetId', pyxb.binding.datatypes.NMTOKEN, required=True)
     __fileSetId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 457, 2)
     __fileSetId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 457, 2)
-    
+
     fileSetId = property(__fileSetId.value, __fileSetId.set, None, None)
 
     _ElementMap.update({
@@ -2838,54 +2838,54 @@ The boolean attribute "replicate", if true (default is false), directs the gener
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}entryPoint uses Python identifier entryPoint
     __entryPoint = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'entryPoint'), 'entryPoint', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0entryPoint', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 388, 6), )
 
-    
+
     entryPoint = property(__entryPoint.value, __entryPoint.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileRef uses Python identifier fileRef
     __fileRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileRef'), 'fileRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 389, 6), )
 
-    
+
     fileRef = property(__fileRef.value, __fileRef.set, None, 'A reference to the file that contains the entry point function.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}returnType uses Python identifier returnType
     __returnType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'returnType'), 'returnType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0returnType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 394, 6), )
 
-    
+
     returnType = property(__returnType.value, __returnType.set, None, 'Function return type. See the enumerations.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}argument uses Python identifier argument
     __argument = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'argument'), 'argument', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0argument', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 405, 6), )
 
-    
+
     argument = property(__argument.value, __argument.set, None, 'Arguments passed in when the function is called. Arguments are passed in order.\n\nThis is an extension of the name-value pair which includes the data type in the spirit:dataType attribute.  The argument name is in the spirit:name attribute and its value is in the text content of the element.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}enabled uses Python identifier enabled
     __enabled = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'enabled'), 'enabled', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0enabled', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 419, 6), )
 
-    
+
     enabled = property(__enabled.value, __enabled.set, None, 'Specifies if the SW function is enabled. Default is true.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}sourceFile uses Python identifier sourceFile
     __sourceFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'sourceFile'), 'sourceFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0sourceFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 431, 6), )
 
-    
+
     sourceFile = property(__sourceFile.value, __sourceFile.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}replicate uses Python identifier replicate
     __replicate = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'replicate'), 'replicate', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_42_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0replicate', pyxb.binding.datatypes.boolean)
     __replicate._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 452, 5)
     __replicate._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 452, 5)
-    
+
     replicate = property(__replicate.value, __replicate.set, None, None)
 
     _ElementMap.update({
@@ -2913,25 +2913,25 @@ class CTD_ANON_43 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}sourceName uses Python identifier sourceName
     __sourceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'sourceName'), 'sourceName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_43_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0sourceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 434, 9), )
 
-    
+
     sourceName = property(__sourceName.value, __sourceName.set, None, 'Source file for the boot load.  Relative names are searched for in the project directory and the source of the component directory.\n    ')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileType uses Python identifier fileType
     __fileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileType'), 'fileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_43_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 27, 3), )
 
-    
+
     fileType = property(__fileType.value, __fileType.set, None, 'Enumerated file types known by SPIRIT.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}userFileType uses Python identifier userFileType
     __userFileType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'userFileType'), 'userFileType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_43_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0userFileType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/fileType.xsd', 59, 3), )
 
-    
+
     userFileType = property(__userFileType.value, __userFileType.set, None, 'Free form file type, not - yet - known by SPIRIT .')
 
     _ElementMap.update({
@@ -2940,7 +2940,7 @@ class CTD_ANON_43 (pyxb.binding.basis.complexTypeDefinition):
         __userFileType.name() : __userFileType
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_43 = CTD_ANON_43
 
@@ -2956,74 +2956,74 @@ class CTD_ANON_44 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileGeneratorSelector uses Python identifier fileGeneratorSelector
     __fileGeneratorSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileGeneratorSelector'), 'fileGeneratorSelector', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileGeneratorSelector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 29, 5), )
 
-    
+
     fileGeneratorSelector = property(__fileGeneratorSelector.value, __fileGeneratorSelector.set, None, 'Select other generator chain files for inclusion into this chain. The boolean attribute "unique" (default false) specifies that only a single generator is valid in this context. If more that one generator is selcted based on the selection criteria, DE will prompt the user to resolve to a single generator.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentGeneratorSelector uses Python identifier componentGeneratorSelector
     __componentGeneratorSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGeneratorSelector'), 'componentGeneratorSelector', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentGeneratorSelector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 45, 5), )
 
-    
+
     componentGeneratorSelector = property(__componentGeneratorSelector.value, __componentGeneratorSelector.set, None, 'Selects generators declared in component description files of the current design for inclusion into this generator chain.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busGeneratorSelector uses Python identifier busGeneratorSelector
     __busGeneratorSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busGeneratorSelector'), 'busGeneratorSelector', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busGeneratorSelector', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 50, 5), )
 
-    
+
     busGeneratorSelector = property(__busGeneratorSelector.value, __busGeneratorSelector.set, None, 'Selects generators declared in bus definition files of the current design for inclusion into this generator chain.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}chainGroup uses Python identifier chainGroup
     __chainGroup = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'chainGroup'), 'chainGroup', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0chainGroup', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 57, 4), )
 
-    
+
     chainGroup = property(__chainGroup.value, __chainGroup.set, None, 'Identifies this generator chain as belonging to the named group. This is used by other generator chains to select this chain for programmatic inclusion.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generator uses Python identifier generator
     __generator = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'generator'), 'generator', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0generator', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 66, 1), )
 
-    
+
     generator = property(__generator.value, __generator.set, None, 'Specifies a set of generators.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 26, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 31, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this component belongs to.  Note that a physical library may contain components from multiple logical libraries.  Logical libraries are displayes in component browser.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 36, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  Must match the root name of the XML file and the directory name it or its version directory belongs to.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_44_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 58, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
@@ -3039,7 +3039,7 @@ class CTD_ANON_44 (pyxb.binding.basis.complexTypeDefinition):
         __version.name() : __version
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_44 = CTD_ANON_44
 
@@ -3055,26 +3055,26 @@ class CTD_ANON_45 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileName uses Python identifier fileName
     __fileName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileName'), 'fileName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_45_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 36, 8), )
 
-    
+
     fileName = property(__fileName.value, __fileName.set, None, 'Select another generator chain using the unique identifier of this generator chain.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}groupSelector uses Python identifier groupSelector
     __groupSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'groupSelector'), 'groupSelector', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_45_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0groupSelector', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 88, 1), )
 
-    
+
     groupSelector = property(__groupSelector.value, __groupSelector.set, None, 'Specifies a set of group names used to select subsequent generators. The attribute "multipleGroupOperator" specifies the OR or AND selection operator if there is more than one group name (default=OR).')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}unique uses Python identifier unique
     __unique = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'unique'), 'unique', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_45_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0unique', pyxb.binding.datatypes.boolean, unicode_default='true')
     __unique._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 42, 7)
     __unique._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 42, 7)
-    
+
     unique = property(__unique.value, __unique.set, None, None)
 
     _ElementMap.update({
@@ -3098,18 +3098,18 @@ class generatorSelectorType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}groupSelector uses Python identifier groupSelector
     __groupSelector = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'groupSelector'), 'groupSelector', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorSelectorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0groupSelector', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 88, 1), )
 
-    
+
     groupSelector = property(__groupSelector.value, __groupSelector.set, None, 'Specifies a set of group names used to select subsequent generators. The attribute "multipleGroupOperator" specifies the OR or AND selection operator if there is more than one group name (default=OR).')
 
     _ElementMap.update({
         __groupSelector.name() : __groupSelector
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.generatorSelectorType = generatorSelectorType
 Namespace.addCategoryObject('typeBinding', 'generatorSelectorType', generatorSelectorType)
@@ -3126,18 +3126,18 @@ class CTD_ANON_46 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentGenerator uses Python identifier componentGenerator
     __componentGenerator = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentGenerator'), 'componentGenerator', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_46_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentGenerator', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 76, 1), )
 
-    
+
     componentGenerator = property(__componentGenerator.value, __componentGenerator.set, None, 'Specifies a set of component generators. The scope attribute applies to component generators and specifies whether the generator should be run for each instance of the entity (or module) or just once for all instances of the entity.')
 
     _ElementMap.update({
         __componentGenerator.name() : __componentGenerator
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_46 = CTD_ANON_46
 
@@ -3153,46 +3153,46 @@ class generatorType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}phase uses Python identifier phase
     __phase = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'phase'), 'phase', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0phase', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 116, 1), )
 
-    
+
     phase = property(__phase.value, __phase.set, None, 'This is an non-negative floating point number that is used to sequence when a generator is run. The generators are run in order starting with zero. There may be multiple generators with the same phase number. In this case, the order should not matter with respect to other generators at the same phase. If no phase number is given the generator will be considered in the "last" phase and these generators will be run in the order in which they are encountered while processing generator elements.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 172, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of this generator.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}accessType uses Python identifier accessType
     __accessType = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'accessType'), 'accessType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0accessType', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 179, 3), )
 
-    
+
     accessType = property(__accessType.value, __accessType.set, None, 'Identifies the special requirements that this generator may place up on the DE.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}looseGeneratorExe uses Python identifier looseGeneratorExe
     __looseGeneratorExe = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'looseGeneratorExe'), 'looseGeneratorExe', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_generatorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0looseGeneratorExe', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 227, 3), )
 
-    
+
     looseGeneratorExe = property(__looseGeneratorExe.value, __looseGeneratorExe.set, None, 'The pathname to the executable file that implements the loose generator')
 
     _ElementMap.update({
@@ -3204,7 +3204,7 @@ class generatorType (pyxb.binding.basis.complexTypeDefinition):
         __looseGeneratorExe.name() : __looseGeneratorExe
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.generatorType = generatorType
 Namespace.addCategoryObject('typeBinding', 'generatorType', generatorType)
@@ -3221,32 +3221,32 @@ class CTD_ANON_47 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}readOnly uses Python identifier readOnly
     __readOnly = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'readOnly'), 'readOnly', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_47_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0readOnly', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 185, 6), )
 
-    
+
     readOnly = property(__readOnly.value, __readOnly.set, None, 'If true then this generator will not make changes to the  design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}hierarchical uses Python identifier hierarchical
     __hierarchical = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hierarchical'), 'hierarchical', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_47_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0hierarchical', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 190, 6), )
 
-    
+
     hierarchical = property(__hierarchical.value, __hierarchical.set, None, 'If true then this generator is capable of running in a hierarchical manner and so the DE must ensure that all lower levels of hierarchy are also made available')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceRequired uses Python identifier instanceRequired
     __instanceRequired = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceRequired'), 'instanceRequired', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_47_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0instanceRequired', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 195, 6), )
 
-    
+
     instanceRequired = property(__instanceRequired.value, __instanceRequired.set, None, 'If true then the generator operates on designated instances, not the whole design. The DE must capture the instances to be operated on.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subsetOnly uses Python identifier subsetOnly
     __subsetOnly = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subsetOnly'), 'subsetOnly', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_47_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subsetOnly', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 200, 6), )
 
-    
+
     subsetOnly = property(__subsetOnly.value, __subsetOnly.set, None, 'If present then this generator only needs a subset of the design information.')
 
     _ElementMap.update({
@@ -3256,7 +3256,7 @@ class CTD_ANON_47 (pyxb.binding.basis.complexTypeDefinition):
         __subsetOnly.name() : __subsetOnly
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_47 = CTD_ANON_47
 
@@ -3272,25 +3272,25 @@ class CTD_ANON_48 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}designFile uses Python identifier designFile
     __designFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designFile'), 'designFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_48_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0designFile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 206, 9), )
 
-    
+
     designFile = property(__designFile.value, __designFile.set, None, 'If true then the generator only needs to look at design information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentDefs uses Python identifier componentDefs
     __componentDefs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentDefs'), 'componentDefs', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_48_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentDefs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 211, 9), )
 
-    
+
     componentDefs = property(__componentDefs.value, __componentDefs.set, None, 'If true then the generator only needs to look at component related information.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busDefs uses Python identifier busDefs
     __busDefs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busDefs'), 'busDefs', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_48_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busDefs', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 216, 9), )
 
-    
+
     busDefs = property(__busDefs.value, __busDefs.set, None, 'If true then the generator only needs to look at bus definition information.')
 
     _ElementMap.update({
@@ -3299,7 +3299,7 @@ class CTD_ANON_48 (pyxb.binding.basis.complexTypeDefinition):
         __busDefs.name() : __busDefs
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_48 = CTD_ANON_48
 
@@ -3315,40 +3315,40 @@ class libraryRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_libraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', pyxb.binding.datatypes.Name, required=True)
     __vendor._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 65, 2)
     __vendor._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 65, 2)
-    
+
     vendor = property(__vendor.value, __vendor.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_libraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', pyxb.binding.datatypes.Name, required=True)
     __library._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 66, 2)
     __library._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 66, 2)
-    
+
     library = property(__library.value, __library.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_libraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.NMTOKEN, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 67, 2)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 67, 2)
-    
+
     name = property(__name.value, __name.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_libraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', pyxb.binding.datatypes.NMTOKEN)
     __version._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 68, 2)
     __version._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 68, 2)
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __vendor.name() : __vendor,
@@ -3371,40 +3371,40 @@ class resolvedLibraryRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_resolvedLibraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', pyxb.binding.datatypes.Name, required=True)
     __vendor._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 65, 2)
     __vendor._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 65, 2)
-    
+
     vendor = property(__vendor.value, __vendor.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_resolvedLibraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', pyxb.binding.datatypes.Name, required=True)
     __library._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 66, 2)
     __library._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 66, 2)
-    
+
     library = property(__library.value, __library.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_resolvedLibraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.NMTOKEN, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 67, 2)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 67, 2)
-    
+
     name = property(__name.value, __name.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_resolvedLibraryRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', pyxb.binding.datatypes.NMTOKEN)
     __version._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 68, 2)
     __version._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 68, 2)
-    
+
     version = property(__version.value, __version.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __vendor.name() : __vendor,
@@ -3427,32 +3427,32 @@ class CTD_ANON_49 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentChanges uses Python identifier componentChanges
     __componentChanges = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentChanges'), 'componentChanges', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_49_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentChanges', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 52, 4), )
 
-    
+
     componentChanges = property(__componentChanges.value, __componentChanges.set, None, 'List of changes affecting components in the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnectionChanges uses Python identifier interconnectionChanges
     __interconnectionChanges = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnectionChanges'), 'interconnectionChanges', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_49_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnectionChanges', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 89, 4), )
 
-    
+
     interconnectionChanges = property(__interconnectionChanges.value, __interconnectionChanges.set, None, 'List of changes affecting interconnections in the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}adHocConnectionChanges uses Python identifier adHocConnectionChanges
     __adHocConnectionChanges = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnectionChanges'), 'adHocConnectionChanges', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_49_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0adHocConnectionChanges', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 106, 4), )
 
-    
+
     adHocConnectionChanges = property(__adHocConnectionChanges.value, __adHocConnectionChanges.set, None, 'List of changes affecting ad-hoc connections in the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensionChanges uses Python identifier vendorExtensionChanges
     __vendorExtensionChanges = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensionChanges'), 'vendorExtensionChanges', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_49_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensionChanges', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 150, 4), )
 
-    
+
     vendorExtensionChanges = property(__vendorExtensionChanges.value, __vendorExtensionChanges.set, None, 'List of changes affecting vendor defined extensions in the design.')
 
     _ElementMap.update({
@@ -3462,7 +3462,7 @@ class CTD_ANON_49 (pyxb.binding.basis.complexTypeDefinition):
         __vendorExtensionChanges.name() : __vendorExtensionChanges
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_49 = CTD_ANON_49
 
@@ -3478,18 +3478,18 @@ class CTD_ANON_50 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentChange uses Python identifier componentChange
     __componentChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentChange'), 'componentChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_50_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentChange', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 58, 7), )
 
-    
+
     componentChange = property(__componentChange.value, __componentChange.set, None, None)
 
     _ElementMap.update({
         __componentChange.name() : __componentChange
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_50 = CTD_ANON_50
 
@@ -3505,39 +3505,39 @@ class CTD_ANON_51 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addRemRepChange uses Python identifier addRemRepChange
     __addRemRepChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addRemRepChange'), 'addRemRepChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_51_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addRemRepChange', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 23, 1), )
 
-    
+
     addRemRepChange = property(__addRemRepChange.value, __addRemRepChange.set, None, 'Indicates whether the alteration is an addition, removal or a replacement')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentFileName uses Python identifier componentFileName
     __componentFileName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentFileName'), 'componentFileName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_51_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentFileName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 63, 10), )
 
-    
+
     componentFileName = property(__componentFileName.value, __componentFileName.set, None, 'This is the file containing the component definition. Required only if the alteration is an addition or a replacement. Should be an absolute filename so that the DE may copy it.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subComponents uses Python identifier subComponents
     __subComponents = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subComponents'), 'subComponents', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_51_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subComponents', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 68, 10), )
 
-    
+
     subComponents = property(__subComponents.value, __subComponents.set, None, "Required only for hierarchical components. Holds the hierarchical component's sub-component definition files.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configuration uses Python identifier configuration
     __configuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configuration'), 'configuration', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_51_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 23, 1), )
 
-    
+
     configuration = property(__configuration.value, __configuration.set, None, 'All configuration information for a contained component or channel instance.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceName uses Python identifier instanceName
     __instanceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceName'), 'instanceName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_51_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0instanceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 47, 1), )
 
-    
+
     instanceName = property(__instanceName.value, __instanceName.set, None, 'An instance name assigned to subcomponent instances and contained channels, that is unique within the parent component.')
 
     _ElementMap.update({
@@ -3548,7 +3548,7 @@ class CTD_ANON_51 (pyxb.binding.basis.complexTypeDefinition):
         __instanceName.name() : __instanceName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_51 = CTD_ANON_51
 
@@ -3564,18 +3564,18 @@ class CTD_ANON_52 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subComponentFileName uses Python identifier subComponentFileName
     __subComponentFileName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subComponentFileName'), 'subComponentFileName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_52_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subComponentFileName', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 74, 13), )
 
-    
+
     subComponentFileName = property(__subComponentFileName.value, __subComponentFileName.set, None, 'Path to definitions of components and channels instanced in hierarchical component definition.')
 
     _ElementMap.update({
         __subComponentFileName.name() : __subComponentFileName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_52 = CTD_ANON_52
 
@@ -3591,18 +3591,18 @@ class CTD_ANON_53 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnectionChange uses Python identifier interconnectionChange
     __interconnectionChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnectionChange'), 'interconnectionChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_53_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnectionChange', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 95, 7), )
 
-    
+
     interconnectionChange = property(__interconnectionChange.value, __interconnectionChange.set, None, None)
 
     _ElementMap.update({
         __interconnectionChange.name() : __interconnectionChange
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_53 = CTD_ANON_53
 
@@ -3618,18 +3618,18 @@ class CTD_ANON_54 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addRemChange uses Python identifier addRemChange
     __addRemChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addRemChange'), 'addRemChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_54_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addRemChange', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 35, 1), )
 
-    
+
     addRemChange = property(__addRemChange.value, __addRemChange.set, None, 'Indicates whether the alteration is an addition or a removal')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnection uses Python identifier interconnection
     __interconnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnection'), 'interconnection', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_54_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnection', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 118, 1), )
 
-    
+
     interconnection = property(__interconnection.value, __interconnection.set, None, 'Describes a connection from the interace of one comonent to the interface of another component through its attributes.\n\n The component1Ref and busInterface1Ref attributes indicate the instance name and bus interface name of one end of the connection. The component2Ref and busInterface2Ref attributes indicate the instance name and bus interface name of the other end of he connection. ')
 
     _ElementMap.update({
@@ -3637,7 +3637,7 @@ class CTD_ANON_54 (pyxb.binding.basis.complexTypeDefinition):
         __interconnection.name() : __interconnection
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_54 = CTD_ANON_54
 
@@ -3653,18 +3653,18 @@ class CTD_ANON_55 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}adHocConnectionChange uses Python identifier adHocConnectionChange
     __adHocConnectionChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnectionChange'), 'adHocConnectionChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_55_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0adHocConnectionChange', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 112, 7), )
 
-    
+
     adHocConnectionChange = property(__adHocConnectionChange.value, __adHocConnectionChange.set, None, None)
 
     _ElementMap.update({
         __adHocConnectionChange.name() : __adHocConnectionChange
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_55 = CTD_ANON_55
 
@@ -3680,32 +3680,32 @@ class CTD_ANON_56 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addRemChange uses Python identifier addRemChange
     __addRemChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addRemChange'), 'addRemChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_56_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addRemChange', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 35, 1), )
 
-    
+
     addRemChange = property(__addRemChange.value, __addRemChange.set, None, 'Indicates whether the alteration is an addition or a removal')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_56_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 116, 10), )
 
-    
+
     name = property(__name.value, __name.set, None, 'This is the name of the ad-hoc connection to modify')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}export uses Python identifier export
     __export = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'export'), 'export', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_56_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0export', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 121, 10), )
 
-    
+
     export = property(__export.value, __export.set, None, 'Specifies whether this ad-hoc connection will be exported out of the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}pinReference uses Python identifier pinReference
     __pinReference = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pinReference'), 'pinReference', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_56_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0pinReference', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 133, 10), )
 
-    
+
     pinReference = property(__pinReference.value, __pinReference.set, None, 'Indicates the signal on the component which is being connected by this ad-hoc connection')
 
     _ElementMap.update({
@@ -3715,7 +3715,7 @@ class CTD_ANON_56 (pyxb.binding.basis.complexTypeDefinition):
         __pinReference.name() : __pinReference
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_56 = CTD_ANON_56
 
@@ -3731,40 +3731,40 @@ class CTD_ANON_57 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_57_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', pyxb.binding.datatypes.Name, required=True)
     __componentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 138, 12)
     __componentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 138, 12)
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signalRef uses Python identifier signalRef
     __signalRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'signalRef'), 'signalRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_57_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signalRef', pyxb.binding.datatypes.Name, required=True)
     __signalRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 139, 12)
     __signalRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 139, 12)
-    
+
     signalRef = property(__signalRef.value, __signalRef.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}left uses Python identifier left
     __left = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_57_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0left', pyxb.binding.datatypes.nonNegativeInteger)
     __left._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 140, 12)
     __left._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 140, 12)
-    
+
     left = property(__left.value, __left.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}right uses Python identifier right
     __right = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_57_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0right', pyxb.binding.datatypes.nonNegativeInteger)
     __right._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 141, 12)
     __right._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 141, 12)
-    
+
     right = property(__right.value, __right.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __componentRef.name() : __componentRef,
@@ -3786,18 +3786,18 @@ class CTD_ANON_58 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensionChange uses Python identifier vendorExtensionChange
     __vendorExtensionChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensionChange'), 'vendorExtensionChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_58_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensionChange', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 156, 7), )
 
-    
+
     vendorExtensionChange = property(__vendorExtensionChange.value, __vendorExtensionChange.set, None, None)
 
     _ElementMap.update({
         __vendorExtensionChange.name() : __vendorExtensionChange
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_58 = CTD_ANON_58
 
@@ -3813,18 +3813,18 @@ class CTD_ANON_59 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_59_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addRemChange uses Python identifier addRemChange
     __addRemChange = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addRemChange'), 'addRemChange', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_59_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addRemChange', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorChanges.xsd', 35, 1), )
 
-    
+
     addRemChange = property(__addRemChange.value, __addRemChange.set, None, 'Indicates whether the alteration is an addition or a removal')
 
     _ElementMap.update({
@@ -3832,7 +3832,7 @@ class CTD_ANON_59 (pyxb.binding.basis.complexTypeDefinition):
         __addRemChange.name() : __addRemChange
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_59 = CTD_ANON_59
 
@@ -3848,53 +3848,53 @@ class CTD_ANON_60 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}designFile uses Python identifier designFile
     __designFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'designFile'), 'designFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0designFile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 30, 4), )
 
-    
+
     designFile = property(__designFile.value, __designFile.set, None, 'Path to description of top level design')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busDefinitionFiles uses Python identifier busDefinitionFiles
     __busDefinitionFiles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busDefinitionFiles'), 'busDefinitionFiles', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busDefinitionFiles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 35, 4), )
 
-    
+
     busDefinitionFiles = property(__busDefinitionFiles.value, __busDefinitionFiles.set, None, 'The list of bus definition files currently in use within the design')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentDefinitionFiles uses Python identifier componentDefinitionFiles
     __componentDefinitionFiles = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentDefinitionFiles'), 'componentDefinitionFiles', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentDefinitionFiles', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 49, 4), )
 
-    
+
     componentDefinitionFiles = property(__componentDefinitionFiles.value, __componentDefinitionFiles.set, None, 'The list of component definition files currently needed to define all the components within the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameters uses Python identifier parameters
     __parameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameters'), 'parameters', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 70, 4), )
 
-    
+
     parameters = property(__parameters.value, __parameters.set, None, 'List of values of configurable settings for this generator invocation')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}selectedInstances uses Python identifier selectedInstances
     __selectedInstances = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'selectedInstances'), 'selectedInstances', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0selectedInstances', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 80, 4), )
 
-    
+
     selectedInstances = property(__selectedInstances.value, __selectedInstances.set, None, 'The list of instances to be worked upon by the generator, no instances selected indicates whole design')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}phaseNumber uses Python identifier phaseNumber
     __phaseNumber = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'phaseNumber'), 'phaseNumber', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0phaseNumber', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 94, 4), )
 
-    
+
     phaseNumber = property(__phaseNumber.value, __phaseNumber.set, None, 'The non-negative floating point phase number associated with this generator invocation')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}groupName uses Python identifier groupName
     __groupName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'groupName'), 'groupName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_60_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0groupName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 99, 4), )
 
-    
+
     groupName = property(__groupName.value, __groupName.set, None, 'The generator group name associated with this generator invocation')
 
     _ElementMap.update({
@@ -3907,7 +3907,7 @@ class CTD_ANON_60 (pyxb.binding.basis.complexTypeDefinition):
         __groupName.name() : __groupName
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_60 = CTD_ANON_60
 
@@ -3923,18 +3923,18 @@ class CTD_ANON_61 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busDefinitionFile uses Python identifier busDefinitionFile
     __busDefinitionFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'busDefinitionFile'), 'busDefinitionFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_61_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busDefinitionFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 41, 7), )
 
-    
+
     busDefinitionFile = property(__busDefinitionFile.value, __busDefinitionFile.set, None, 'Path to a bus definition file used within design. Attributes VLNV used to indicate which bus definition this file represents.')
 
     _ElementMap.update({
         __busDefinitionFile.name() : __busDefinitionFile
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_61 = CTD_ANON_61
 
@@ -3950,18 +3950,18 @@ class CTD_ANON_62 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentDefinitionFile uses Python identifier componentDefinitionFile
     __componentDefinitionFile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentDefinitionFile'), 'componentDefinitionFile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_62_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentDefinitionFile', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 55, 7), )
 
-    
+
     componentDefinitionFile = property(__componentDefinitionFile.value, __componentDefinitionFile.set, None, 'Path to component definition file. This component definition is the component definition as it appears in the DE; i.e. after having been transformed by any PMD info, and including any instance specific settings such as parameter values. The instanceRef attribute is the name of the instance that this file describes.')
 
     _ElementMap.update({
         __componentDefinitionFile.name() : __componentDefinitionFile
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_62 = CTD_ANON_62
 
@@ -3977,16 +3977,16 @@ class CTD_ANON_63 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceRef uses Python identifier instanceRef
     __instanceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'instanceRef'), 'instanceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_63_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0instanceRef', pyxb.binding.datatypes.string, required=True)
     __instanceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 60, 9)
     __instanceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 60, 9)
-    
+
     instanceRef = property(__instanceRef.value, __instanceRef.set, None, 'Reference handle for this component definition')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __instanceRef.name() : __instanceRef
@@ -4005,18 +4005,18 @@ class CTD_ANON_64 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_64_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
     _ElementMap.update({
         __parameter.name() : __parameter
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_64 = CTD_ANON_64
 
@@ -4032,18 +4032,18 @@ class CTD_ANON_65 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}selectedInstance uses Python identifier selectedInstance
     __selectedInstance = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'selectedInstance'), 'selectedInstance', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_65_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0selectedInstance', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/looseGeneratorInvocation.xsd', 86, 7), )
 
-    
+
     selectedInstance = property(__selectedInstance.value, __selectedInstance.set, None, 'Instance name of selected instance that the generator is expected to work upon. This may be a hierarchical instance name.')
 
     _ElementMap.update({
         __selectedInstance.name() : __selectedInstance
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_65 = CTD_ANON_65
 
@@ -4059,82 +4059,82 @@ class addressBlockType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 249, 2), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile, default to false when not present.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 351, 2), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 364, 2), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, 'Base bit offset of an address block.  If not included, it is assumed to be 0.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 431, 6), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessable to the block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 443, 6), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Bit width of an address block.  If zero or absent and this is part of a slave memory map, the width is assumed to be the data width of the slave interface.  It this is part of a local memory map, a missing width is assumed to be the effective width of the address space.  If this is part of an address space definition, a missing width is assumed to be the widest data signal of all bus interfaces that reference this address space.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 464, 6), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 471, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any additional parameters needed to describe this address block to the generators.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}register uses Python identifier register
     __register = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'register'), 'register', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0register', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 483, 6), )
 
-    
+
     register = property(__register.value, __register.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.Name)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 97, 4)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 97, 4)
-    
+
     name = property(__name.value, __name.set, None, None)
 
     _ElementMap.update({
@@ -4167,16 +4167,16 @@ class addrSpaceRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressSpaceRef uses Python identifier addressSpaceRef
     __addressSpaceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'addressSpaceRef'), 'addressSpaceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addrSpaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressSpaceRef', pyxb.binding.datatypes.Name, required=True)
     __addressSpaceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 64, 2)
     __addressSpaceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 103, 4)
-    
+
     addressSpaceRef = property(__addressSpaceRef.value, __addressSpaceRef.set, None, 'A reference to a unique address space.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __addressSpaceRef.name() : __addressSpaceRef
@@ -4196,16 +4196,16 @@ class memoryMapRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapRef uses Python identifier memoryMapRef
     __memoryMapRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'memoryMapRef'), 'memoryMapRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0memoryMapRef', pyxb.binding.datatypes.Name, required=True)
     __memoryMapRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 69, 2)
     __memoryMapRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 109, 4)
-    
+
     memoryMapRef = property(__memoryMapRef.value, __memoryMapRef.set, None, 'A reference to a unique memory map.')
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __memoryMapRef.name() : __memoryMapRef
@@ -4225,60 +4225,60 @@ class bankedBlockType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 249, 2), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile, default to false when not present.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 431, 6), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessable to the block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 443, 6), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Bit width of an address block.  If zero or absent and this is part of a slave memory map, the width is assumed to be the data width of the slave interface.  It this is part of a local memory map, a missing width is assumed to be the effective width of the address space.  If this is part of an address space definition, a missing width is assumed to be the widest data signal of all bus interfaces that reference this address space.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 464, 6), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 471, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any additional parameters needed to describe this address block to the generators.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}register uses Python identifier register
     __register = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'register'), 'register', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBlockType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0register', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 483, 6), )
 
-    
+
     register = property(__register.value, __register.set, None, None)
 
     _ElementMap.update({
@@ -4292,7 +4292,7 @@ class bankedBlockType (pyxb.binding.basis.complexTypeDefinition):
         __register.name() : __register
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.bankedBlockType = bankedBlockType
 Namespace.addCategoryObject('typeBinding', 'bankedBlockType', bankedBlockType)
@@ -4309,26 +4309,26 @@ class bankedSubspaceType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedSubspaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedSubspaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 132, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any parameters that may apply to the subspace reference.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'masterRef'), 'masterRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedSubspaceType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 79, 2)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 139, 4)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'For subspaceMap elements, this attribute identifies the master that contains the address space to be mapped.')
 
     _ElementMap.update({
@@ -4353,60 +4353,60 @@ class fieldType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 143, 6), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Field name.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 148, 6), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, "Offset of this field's lsb from bit 0 of the register.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitWidth uses Python identifier bitWidth
     __bitWidth = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitWidth'), 'bitWidth', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitWidth', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 153, 6), )
 
-    
+
     bitWidth = property(__bitWidth.value, __bitWidth.set, None, 'Width of the field in bits.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 159, 6), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Bit field description.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}values uses Python identifier values
     __values = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'values'), 'values', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0values', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 164, 6), )
 
-    
+
     values = property(__values.value, __values.set, None, 'Enumerates specific values that can be assigned to the bit field.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_fieldType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
     _ElementMap.update({
@@ -4420,7 +4420,7 @@ class fieldType (pyxb.binding.basis.complexTypeDefinition):
         __access.name() : __access
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.fieldType = fieldType
 Namespace.addCategoryObject('typeBinding', 'fieldType', fieldType)
@@ -4437,25 +4437,25 @@ class CTD_ANON_66 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_66_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 170, 12), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'Enumerated bit field value.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_66_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 175, 12), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Description of a bit field value.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_66_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 180, 12), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of this enumerated value. This may be used as a token in generating code.')
 
     _ElementMap.update({
@@ -4464,7 +4464,7 @@ class CTD_ANON_66 (pyxb.binding.basis.complexTypeDefinition):
         __name.name() : __name
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_66 = CTD_ANON_66
 
@@ -4480,39 +4480,39 @@ class memoryMapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 196, 6), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'Maps in an address subspace from accross a bus bridge.  Its masterRef attribute refers by name to the master bus interface on the other side of the bridge.  It must match the masterRef attribute of a bridge element on the slave interface, and that bridge element must be designated as opaque.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 208, 6), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Memory map name, unique within the component. Put into a group to avoid making it a top level element')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryRemap uses Python identifier memoryRemap
     __memoryRemap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryRemap'), 'memoryRemap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0memoryRemap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 214, 6), )
 
-    
+
     memoryRemap = property(__memoryRemap.value, __memoryRemap.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 259, 2), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 346, 2), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attibute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
     _ElementMap.update({
@@ -4523,7 +4523,7 @@ class memoryMapType (pyxb.binding.basis.complexTypeDefinition):
         __bank.name() : __bank
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.memoryMapType = memoryMapType
 Namespace.addCategoryObject('typeBinding', 'memoryMapType', memoryMapType)
@@ -4540,33 +4540,33 @@ class memoryRemapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryRemapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 196, 6), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'Maps in an address subspace from accross a bus bridge.  Its masterRef attribute refers by name to the master bus interface on the other side of the bridge.  It must match the masterRef attribute of a bridge element on the slave interface, and that bridge element must be designated as opaque.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryRemapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 259, 2), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryRemapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 346, 2), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attibute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}state uses Python identifier state
     __state = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'state'), 'state', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_memoryRemapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0state', pyxb.binding.datatypes.string, required=True)
     __state._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 222, 4)
     __state._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 222, 4)
-    
+
     state = property(__state.value, __state.set, None, 'State of the component in which the memory map is active.')
 
     _ElementMap.update({
@@ -4592,25 +4592,25 @@ class localMemoryMapType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_localMemoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 196, 6), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, 'Maps in an address subspace from accross a bus bridge.  Its masterRef attribute refers by name to the master bus interface on the other side of the bridge.  It must match the masterRef attribute of a bridge element on the slave interface, and that bridge element must be designated as opaque.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_localMemoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 259, 2), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'This is a single contiguous block of memory inside a memory map.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_localMemoryMapType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 346, 2), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, "Represents a bank of memory made up of address blocks or other banks.  It has a bankAlignment attibute indicating whether its blocks are aligned in 'parallel' (occupying adjacent bit fields) or 'serial' (occupying contiguous addresses). Its child blocks do not contain addresses or bit offsets.")
 
     _ElementMap.update({
@@ -4619,7 +4619,7 @@ class localMemoryMapType (pyxb.binding.basis.complexTypeDefinition):
         __bank.name() : __bank
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.localMemoryMapType = localMemoryMapType
 Namespace.addCategoryObject('typeBinding', 'localMemoryMapType', localMemoryMapType)
@@ -4636,40 +4636,40 @@ class subspaceRefType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_subspaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_subspaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 240, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any parameters that may apply to the subspace reference.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_subspaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 351, 2), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_subspaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 364, 2), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, 'Base bit offset of an address block.  If not included, it is assumed to be 0.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}masterRef uses Python identifier masterRef
     __masterRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'masterRef'), 'masterRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_subspaceRefType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0masterRef', pyxb.binding.datatypes.Name, required=True)
     __masterRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 79, 2)
     __masterRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 247, 4)
-    
+
     masterRef = property(__masterRef.value, __masterRef.set, None, 'For subspaceMap elements, this attribute identifies the master that contains the address space to be mapped.')
 
     _ElementMap.update({
@@ -4697,18 +4697,18 @@ defined by the component."""
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressSpace uses Python identifier addressSpace
     __addressSpace = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressSpace'), 'addressSpace', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_67_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressSpace', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 276, 8), )
 
-    
+
     addressSpace = property(__addressSpace.value, __addressSpace.set, None, 'This defines a logical space, referenced by a bus master.')
 
     _ElementMap.update({
         __addressSpace.name() : __addressSpace
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_67 = CTD_ANON_67
 
@@ -4724,67 +4724,67 @@ class CTD_ANON_68 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}executableImage uses Python identifier executableImage
     __executableImage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'executableImage'), 'executableImage', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0executableImage', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 140, 1), )
 
-    
+
     executableImage = property(__executableImage.value, __executableImage.set, None, 'Specifies an executable software image to be loaded into a processors address space. The format of the image is not specified. It could, for example, be an ELF loadfile, or it could be raw binary or ascii hex data for loading directly into a memory model instance.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 282, 14), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the address space.  Unique within the model.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}endianness uses Python identifier endianness
     __endianness = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'endianness'), 'endianness', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0endianness', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 289, 14), )
 
-    
+
     endianness = property(__endianness.value, __endianness.set, None, 'Specifies the data storage as "big" or "little" endian.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}localMemoryMap uses Python identifier localMemoryMap
     __localMemoryMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'localMemoryMap'), 'localMemoryMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0localMemoryMap', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 301, 14), )
 
-    
+
     localMemoryMap = property(__localMemoryMap.value, __localMemoryMap.set, None, 'Provides the local memory map of an address space.  Blocks in this memory map are accessable to master interfaces on this component that reference this address space.   They are not accessable to any external master interface.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 306, 14), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Data specific to this address space.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitsInLau uses Python identifier bitsInLau
     __bitsInLau = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitsInLau'), 'bitsInLau', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitsInLau', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 376, 2), )
 
-    
+
     bitsInLau = property(__bitsInLau.value, __bitsInLau.set, None, 'The number of bits in the least addressable unit. The default is byte addressable (8 bits).')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}range uses Python identifier range
     __range = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'range'), 'range', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0range', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 431, 6), )
 
-    
+
     range = property(__range.value, __range.set, None, 'The address range of an address block.  Expressed as the number of addressable units accessable to the block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}width uses Python identifier width
     __width = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'width'), 'width', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_68_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0width', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 443, 6), )
 
-    
+
     width = property(__width.value, __width.set, None, 'Bit width of an address block.  If zero or absent and this is part of a slave memory map, the width is assumed to be the data width of the slave interface.  It this is part of a local memory map, a missing width is assumed to be the effective width of the address space.  If this is part of an address space definition, a missing width is assumed to be the widest data signal of all bus interfaces that reference this address space.')
 
     _ElementMap.update({
@@ -4799,7 +4799,7 @@ class CTD_ANON_68 (pyxb.binding.basis.complexTypeDefinition):
         __width.name() : __width
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_68 = CTD_ANON_68
 
@@ -4815,18 +4815,18 @@ class CTD_ANON_69 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMap uses Python identifier memoryMap
     __memoryMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'memoryMap'), 'memoryMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_69_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0memoryMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 329, 8), )
 
-    
+
     memoryMap = property(__memoryMap.value, __memoryMap.set, None, "The set of address blocks a bus slave contributes to the bus' address space.")
 
     _ElementMap.update({
         __memoryMap.name() : __memoryMap
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_69 = CTD_ANON_69
 
@@ -4842,88 +4842,88 @@ class CTD_ANON_70 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 249, 2), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile, default to false when not present.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 486, 12), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Register name.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dim uses Python identifier dim
     __dim = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dim'), 'dim', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dim', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 491, 12), )
 
-    
+
     dim = property(__dim.value, __dim.set, None, 'Dimensions a register array.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressOffset uses Python identifier addressOffset
     __addressOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressOffset'), 'addressOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 496, 12), )
 
-    
+
     addressOffset = property(__addressOffset.value, __addressOffset.set, None, 'Offset from baseAddress.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}size uses Python identifier size
     __size = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'size'), 'size', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0size', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 501, 12), )
 
-    
+
     size = property(__size.value, __size.set, None, 'Size in bits.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 508, 12), )
 
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Indicates that this register has a dependency on the setting of another register.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resetValue uses Python identifier resetValue
     __resetValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'resetValue'), 'resetValue', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resetValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 537, 12), )
 
-    
+
     resetValue = property(__resetValue.value, __resetValue.set, None, 'Register value at reset.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}field uses Python identifier field
     __field = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'field'), 'field', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0field', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 542, 12), )
 
-    
+
     field = property(__field.value, __field.set, None, 'Describes individual bit fields within the register.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}description uses Python identifier description
     __description = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'description'), 'description', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_70_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0description', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 547, 12), )
 
-    
+
     description = property(__description.value, __description.set, None, 'Register description')
 
     _ElementMap.update({
@@ -4941,7 +4941,7 @@ class CTD_ANON_70 (pyxb.binding.basis.complexTypeDefinition):
         __description.name() : __description
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_70 = CTD_ANON_70
 
@@ -4957,32 +4957,32 @@ class CTD_ANON_71 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}registerRef uses Python identifier registerRef
     __registerRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'registerRef'), 'registerRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_71_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0registerRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 514, 18), )
 
-    
+
     registerRef = property(__registerRef.value, __registerRef.set, None, 'The name of the register that enables this register.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fieldRef uses Python identifier fieldRef
     __fieldRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fieldRef'), 'fieldRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_71_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fieldRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 519, 18), )
 
-    
+
     fieldRef = property(__fieldRef.value, __fieldRef.set, None, 'Name of the field within the register that enables this register.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_71_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 524, 18), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'Value that the enabling field must be set to to enable this register.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}mask uses Python identifier mask
     __mask = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'mask'), 'mask', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_71_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0mask', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 529, 18), )
 
-    
+
     mask = property(__mask.value, __mask.set, None, 'Mask to be anded with the value of the enabling field or register before comparing to the dependency value.')
 
     _ElementMap.update({
@@ -4992,7 +4992,7 @@ class CTD_ANON_71 (pyxb.binding.basis.complexTypeDefinition):
         __mask.name() : __mask
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_71 = CTD_ANON_71
 
@@ -5008,60 +5008,60 @@ class viewType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 59, 1), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'A name value pair.  The name is in given by the name attribute.  The value is in the text content of the element.  This element supports all configurability attributes.  It also supports a cross reference attribute which allows it to be associated with other elements in the document through an XPath expression.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}fileSetRef uses Python identifier fileSetRef
     __fileSetRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'fileSetRef'), 'fileSetRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0fileSetRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 302, 1), )
 
-    
+
     fileSetRef = property(__fileSetRef.value, __fileSetRef.set, None, 'A reference to a fileSet.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 26, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Name of the view. Must be unique within a component')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}envIdentifier uses Python identifier envIdentifier
     __envIdentifier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'envIdentifier'), 'envIdentifier', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0envIdentifier', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 31, 3), )
 
-    
+
     envIdentifier = property(__envIdentifier.value, __envIdentifier.set, None, 'This is a string such as "ModelsimVerilog", used to uniquely identify the hardware environment. More than one indicates that the same information applies to multiple environments.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}language uses Python identifier language
     __language = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'language'), 'language', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0language', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 36, 3), )
 
-    
+
     language = property(__language.value, __language.set, None, 'The hardware description language used such as "verilog" or "vhdl". If the attribute "strict" is "true", this value must match the language being generated for the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}modelName uses Python identifier modelName
     __modelName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'modelName'), 'modelName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0modelName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 48, 3), )
 
-    
+
     modelName = property(__modelName.value, __modelName.set, None, 'HDL-specific name to identify the model.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}defaultFileBuilder uses Python identifier defaultFileBuilder
     __defaultFileBuilder = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultFileBuilder'), 'defaultFileBuilder', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_viewType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0defaultFileBuilder', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 53, 3), )
 
-    
+
     defaultFileBuilder = property(__defaultFileBuilder.value, __defaultFileBuilder.set, None, None)
 
     _ElementMap.update({
@@ -5075,7 +5075,7 @@ class viewType (pyxb.binding.basis.complexTypeDefinition):
         __defaultFileBuilder.name() : __defaultFileBuilder
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.viewType = viewType
 Namespace.addCategoryObject('typeBinding', 'viewType', viewType)
@@ -5092,16 +5092,16 @@ class CTD_ANON_72 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.token
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}strict uses Python identifier strict
     __strict = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'strict'), 'strict', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_72_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0strict', pyxb.binding.datatypes.boolean)
     __strict._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 43, 7)
     __strict._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 43, 7)
-    
+
     strict = property(__strict.value, __strict.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __strict.name() : __strict
@@ -5120,32 +5120,32 @@ class hwModelType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_hwModelType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}views uses Python identifier views
     __views = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'views'), 'views', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_hwModelType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0views', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 64, 3), )
 
-    
+
     views = property(__views.value, __views.set, None, 'View container')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signals uses Python identifier signals
     __signals = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signals'), 'signals', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_hwModelType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signals', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 74, 3), )
 
-    
+
     signals = property(__signals.value, __signals.set, None, 'Signal container')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}hwParameters uses Python identifier hwParameters
     __hwParameters = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hwParameters'), 'hwParameters', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_hwModelType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0hwParameters', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 84, 3), )
 
-    
+
     hwParameters = property(__hwParameters.value, __hwParameters.set, None, 'Hardware parameter name value pairs container')
 
     _ElementMap.update({
@@ -5155,7 +5155,7 @@ class hwModelType (pyxb.binding.basis.complexTypeDefinition):
         __hwParameters.name() : __hwParameters
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.hwModelType = hwModelType
 Namespace.addCategoryObject('typeBinding', 'hwModelType', hwModelType)
@@ -5172,18 +5172,18 @@ class CTD_ANON_73 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}view uses Python identifier view
     __view = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'view'), 'view', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_73_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0view', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 70, 6), )
 
-    
+
     view = property(__view.value, __view.set, None, None)
 
     _ElementMap.update({
         __view.name() : __view
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_73 = CTD_ANON_73
 
@@ -5199,18 +5199,18 @@ class CTD_ANON_74 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signal uses Python identifier signal
     __signal = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'signal'), 'signal', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_74_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signal', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 95, 1), )
 
-    
+
     signal = property(__signal.value, __signal.set, None, 'Describes signal charateristics.')
 
     _ElementMap.update({
         __signal.name() : __signal
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_74 = CTD_ANON_74
 
@@ -5226,18 +5226,18 @@ class CTD_ANON_75 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}hwParameter uses Python identifier hwParameter
     __hwParameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hwParameter'), 'hwParameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_75_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0hwParameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/model.xsd', 90, 6), )
 
-    
+
     hwParameter = property(__hwParameter.value, __hwParameter.set, None, 'A hardware parameter name value pair.  The name is given in an attribute.  The value is the element value. The dataType (applicable to high level modeling) is given in the dataType attribute. The name should be identical to the RTL (VHDL generic or Verilog parameter)')
 
     _ElementMap.update({
         __hwParameter.name() : __hwParameter
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_75 = CTD_ANON_75
 
@@ -5253,53 +5253,53 @@ class CTD_ANON_76 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendor uses Python identifier vendor
     __vendor = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendor'), 'vendor', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendor', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 26, 3), )
 
-    
+
     vendor = property(__vendor.value, __vendor.set, None, 'Name of the vendor who supplies this file.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}library uses Python identifier library
     __library = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'library'), 'library', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0library', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 31, 3), )
 
-    
+
     library = property(__library.value, __library.set, None, 'Name of the logical library this component belongs to.  Note that a physical library may contain components from multiple logical libraries.  Logical libraries are displayes in component browser.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 36, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the object.  Must match the root name of the XML file and the directory name it or its version directory belongs to.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}version uses Python identifier version
     __version = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'version'), 'version', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0version', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/identifier.xsd', 49, 3), )
 
-    
+
     version = property(__version.value, __version.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}appliesTo uses Python identifier appliesTo
     __appliesTo = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'appliesTo'), 'appliesTo', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0appliesTo', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 31, 4), )
 
-    
+
     appliesTo = property(__appliesTo.value, __appliesTo.set, None, 'Defines the components that this pmd applies to. When the user tries to add any of those components, this pmd will be applied.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependsOn uses Python identifier dependsOn
     __dependsOn = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'dependsOn'), 'dependsOn', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependsOn', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 63, 4), )
 
-    
+
     dependsOn = property(__dependsOn.value, __dependsOn.set, None, 'Defines the components that  must exist in the current design for this pmd to apply. The pmd will only apply if an instance of each components declared in this list exists in the design. If the list is empty then this pmd file will apply unconditionaly.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}transformer uses Python identifier transformer
     __transformer = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'transformer'), 'transformer', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_76_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0transformer', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 77, 4), )
 
-    
+
     transformer = property(__transformer.value, __transformer.set, None, 'The transformer element contains references to the actual code that will make the transformation. If there are multiple elements, they will be applied in sequence. i.e., the affected component document will pass through a pipeline of transformers with each child element representing a step in a pipeline.')
 
     _ElementMap.update({
@@ -5312,7 +5312,7 @@ class CTD_ANON_76 (pyxb.binding.basis.complexTypeDefinition):
         __transformer.name() : __transformer
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_76 = CTD_ANON_76
 
@@ -5328,18 +5328,18 @@ class CTD_ANON_77 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_77_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 37, 7), )
 
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'A vendor-library-name-version identifier used to refer to components.')
 
     _ElementMap.update({
         __componentRef.name() : __componentRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_77 = CTD_ANON_77
 
@@ -5355,18 +5355,18 @@ class CTD_ANON_78 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_78_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 69, 7), )
 
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'A vendor-library-name-version identifier used to refer to components.')
 
     _ElementMap.update({
         __componentRef.name() : __componentRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_78 = CTD_ANON_78
 
@@ -5382,18 +5382,18 @@ class CTD_ANON_79 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}xslt uses Python identifier xslt
     __xslt = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'xslt'), 'xslt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_79_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0xslt', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 83, 7), )
 
-    
+
     xslt = property(__xslt.value, __xslt.set, None, 'An XSLT transformer that will transform the document based on rules defined in the xsl file mentioned here.')
 
     _ElementMap.update({
         __xslt.name() : __xslt
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_79 = CTD_ANON_79
 
@@ -5409,18 +5409,18 @@ class CTD_ANON_80 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}styleSheet uses Python identifier styleSheet
     __styleSheet = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'styleSheet'), 'styleSheet', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_80_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0styleSheet', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 89, 10), )
 
-    
+
     styleSheet = property(__styleSheet.value, __styleSheet.set, None, 'The relative path to the xsl stylesheet to be used for transformation.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_80_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 94, 10), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Parameters to be passed to the xslt stylesheet at run time.')
 
     _ElementMap.update({
@@ -5428,7 +5428,7 @@ class CTD_ANON_80 (pyxb.binding.basis.complexTypeDefinition):
         __parameter.name() : __parameter
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_80 = CTD_ANON_80
 
@@ -5444,67 +5444,67 @@ class signalType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 35, 3), )
 
-    
+
     name = property(__name.value, __name.set, None, 'The name of the signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 40, 3), )
 
-    
+
     direction = property(__direction.value, __direction.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}left uses Python identifier left
     __left = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0left', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 46, 4), )
 
-    
+
     left = property(__left.value, __left.set, None, 'Left vector bound.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}right uses Python identifier right
     __right = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0right', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 58, 4), )
 
-    
+
     right = property(__right.value, __right.set, None, 'Right vector bound.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}defaultValue uses Python identifier defaultValue
     __defaultValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'defaultValue'), 'defaultValue', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0defaultValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 72, 4), )
 
-    
+
     defaultValue = property(__defaultValue.value, __defaultValue.set, None, 'The initial or default value on the signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}export uses Python identifier export
     __export = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'export'), 'export', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0export', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signal.xsd', 80, 3), )
 
-    
+
     export = property(__export.value, __export.set, None, 'Specifies whether a signal is to be exported out of the module.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}clockDriver uses Python identifier clockDriver
     __clockDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockDriver'), 'clockDriver', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0clockDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 23, 1), )
 
-    
+
     clockDriver = property(__clockDriver.value, __clockDriver.set, None, 'Describes a driven clock signal.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}singleShotDriver uses Python identifier singleShotDriver
     __singleShotDriver = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotDriver'), 'singleShotDriver', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0singleShotDriver', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 80, 1), )
 
-    
+
     singleShotDriver = property(__singleShotDriver.value, __singleShotDriver.set, None, 'Describes a driven one-shot signal.')
 
     _ElementMap.update({
@@ -5519,7 +5519,7 @@ class signalType (pyxb.binding.basis.complexTypeDefinition):
         __singleShotDriver.name() : __singleShotDriver
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.signalType = signalType
 Namespace.addCategoryObject('typeBinding', 'signalType', signalType)
@@ -5536,32 +5536,32 @@ class CTD_ANON_81 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}clockPeriod uses Python identifier clockPeriod
     __clockPeriod = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPeriod'), 'clockPeriod', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_81_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0clockPeriod', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 29, 4), )
 
-    
+
     clockPeriod = property(__clockPeriod.value, __clockPeriod.set, None, 'Clock period in nanoseconds')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}clockPulseOffset uses Python identifier clockPulseOffset
     __clockPulseOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseOffset'), 'clockPulseOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_81_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0clockPulseOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 41, 4), )
 
-    
+
     clockPulseOffset = property(__clockPulseOffset.value, __clockPulseOffset.set, None, 'Time in nanoseconds until first pulse.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}clockPulseValue uses Python identifier clockPulseValue
     __clockPulseValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseValue'), 'clockPulseValue', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_81_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0clockPulseValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 53, 4), )
 
-    
+
     clockPulseValue = property(__clockPulseValue.value, __clockPulseValue.set, None, 'Value of signal after first clock edge.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}clockPulseDuration uses Python identifier clockPulseDuration
     __clockPulseDuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'clockPulseDuration'), 'clockPulseDuration', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_81_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0clockPulseDuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 65, 4), )
 
-    
+
     clockPulseDuration = property(__clockPulseDuration.value, __clockPulseDuration.set, None, 'Duration in nanoseconds of first state in cycle.')
 
     _ElementMap.update({
@@ -5571,7 +5571,7 @@ class CTD_ANON_81 (pyxb.binding.basis.complexTypeDefinition):
         __clockPulseDuration.name() : __clockPulseDuration
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_81 = CTD_ANON_81
 
@@ -5587,25 +5587,25 @@ class CTD_ANON_82 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}singleShotOffset uses Python identifier singleShotOffset
     __singleShotOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotOffset'), 'singleShotOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_82_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0singleShotOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 86, 4), )
 
-    
+
     singleShotOffset = property(__singleShotOffset.value, __singleShotOffset.set, None, 'Time in nanoseconds until start of one-shot.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}singleShotValue uses Python identifier singleShotValue
     __singleShotValue = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotValue'), 'singleShotValue', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_82_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0singleShotValue', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 98, 4), )
 
-    
+
     singleShotValue = property(__singleShotValue.value, __singleShotValue.set, None, 'Value of signal after first  edge of one-shot.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}singleShotDuration uses Python identifier singleShotDuration
     __singleShotDuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'singleShotDuration'), 'singleShotDuration', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_82_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0singleShotDuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 110, 4), )
 
-    
+
     singleShotDuration = property(__singleShotDuration.value, __singleShotDuration.set, None, 'Duration in nanoseconds of the one shot.')
 
     _ElementMap.update({
@@ -5614,7 +5614,7 @@ class CTD_ANON_82 (pyxb.binding.basis.complexTypeDefinition):
         __singleShotDuration.name() : __singleShotDuration
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_82 = CTD_ANON_82
 
@@ -5630,18 +5630,18 @@ class signalValueType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}value uses Python identifier value_
     __value = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'value'), 'value_', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalValueType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0value', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 166, 1), )
 
-    
+
     value_ = property(__value.value, __value.set, None, 'The value of a signal.  1 or 0 for single bit signals, unsigned numeric otherwise.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}strength uses Python identifier strength
     __strength = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'strength'), 'strength', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_signalValueType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0strength', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 178, 1), )
 
-    
+
     strength = property(__strength.value, __strength.set, None, 'The strength of the signal.  "strong" (default) or "weak".')
 
     _ElementMap.update({
@@ -5649,7 +5649,7 @@ class signalValueType (pyxb.binding.basis.complexTypeDefinition):
         __strength.name() : __strength
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.signalValueType = signalValueType
 Namespace.addCategoryObject('typeBinding', 'signalValueType', signalValueType)
@@ -5666,18 +5666,18 @@ class CTD_ANON_83 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configurableElement uses Python identifier configurableElement
     __configurableElement = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configurableElement'), 'configurableElement', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_83_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configurableElement', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 33, 1), )
 
-    
+
     configurableElement = property(__configurableElement.value, __configurableElement.set, None, 'Describes the configurable content of an element in the instance.  May contain text and/or child elements.\n\nThe required referenceId attribute refers to the ID attribute of the configurable element.')
 
     _ElementMap.update({
         __configurableElement.name() : __configurableElement
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_83 = CTD_ANON_83
 
@@ -5693,25 +5693,25 @@ class CTD_ANON_84 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configuration uses Python identifier configuration
     __configuration = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'configuration'), 'configuration', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_84_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configuration', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 23, 1), )
 
-    
+
     configuration = property(__configuration.value, __configuration.set, None, 'All configuration information for a contained component or channel instance.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceName uses Python identifier instanceName
     __instanceName = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'instanceName'), 'instanceName', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_84_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0instanceName', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 47, 1), )
 
-    
+
     instanceName = property(__instanceName.value, __instanceName.set, None, 'An instance name assigned to subcomponent instances and contained channels, that is unique within the parent component.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_84_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 59, 4), )
 
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, 'References a component to be found in an external library.  The name attribute gives the name of the component and the version attribute speicifies which version of the component to use.')
 
     _ElementMap.update({
@@ -5720,7 +5720,7 @@ class CTD_ANON_84 (pyxb.binding.basis.complexTypeDefinition):
         __componentRef.name() : __componentRef
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_84 = CTD_ANON_84
 
@@ -5736,18 +5736,18 @@ class CTD_ANON_85 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentInstance uses Python identifier componentInstance
     __componentInstance = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'componentInstance'), 'componentInstance', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_85_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentInstance', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 52, 1), )
 
-    
+
     componentInstance = property(__componentInstance.value, __componentInstance.set, None, 'Component instance element.  The instance name is contained in the unique-value instanceName attribute.')
 
     _ElementMap.update({
         __componentInstance.name() : __componentInstance
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_85 = CTD_ANON_85
 
@@ -5763,26 +5763,26 @@ class CTD_ANON_86 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}export uses Python identifier export
     __export = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'export'), 'export', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_86_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0export', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 84, 4), )
 
-    
+
     export = property(__export.value, __export.set, None, 'Specifies whether this ad-hoc connection will be exported out of the design.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}pinReference uses Python identifier pinReference
     __pinReference = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'pinReference'), 'pinReference', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_86_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0pinReference', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 96, 4), )
 
-    
+
     pinReference = property(__pinReference.value, __pinReference.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_86_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.string)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 105, 3)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 105, 3)
-    
+
     name = property(__name.value, __name.set, None, None)
 
     _ElementMap.update({
@@ -5806,40 +5806,40 @@ class CTD_ANON_87 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}componentRef uses Python identifier componentRef
     __componentRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'componentRef'), 'componentRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_87_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0componentRef', pyxb.binding.datatypes.Name, required=True)
     __componentRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 98, 6)
     __componentRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 98, 6)
-    
+
     componentRef = property(__componentRef.value, __componentRef.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}signalRef uses Python identifier signalRef
     __signalRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'signalRef'), 'signalRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_87_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0signalRef', pyxb.binding.datatypes.Name, required=True)
     __signalRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 99, 6)
     __signalRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 99, 6)
-    
+
     signalRef = property(__signalRef.value, __signalRef.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}left uses Python identifier left
     __left = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'left'), 'left', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_87_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0left', pyxb.binding.datatypes.nonNegativeInteger)
     __left._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 100, 6)
     __left._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 100, 6)
-    
+
     left = property(__left.value, __left.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}right uses Python identifier right
     __right = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'right'), 'right', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_87_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0right', pyxb.binding.datatypes.nonNegativeInteger)
     __right._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 101, 6)
     __right._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 101, 6)
-    
+
     right = property(__right.value, __right.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __componentRef.name() : __componentRef,
@@ -5861,18 +5861,18 @@ class CTD_ANON_88 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}adHocConnection uses Python identifier adHocConnection
     __adHocConnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'adHocConnection'), 'adHocConnection', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_88_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0adHocConnection', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 78, 1), )
 
-    
+
     adHocConnection = property(__adHocConnection.value, __adHocConnection.set, None, 'Represents an ad-hoc connection between component pins.')
 
     _ElementMap.update({
         __adHocConnection.name() : __adHocConnection
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_88 = CTD_ANON_88
 
@@ -5890,40 +5890,40 @@ class CTD_ANON_89 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}component1Ref uses Python identifier component1Ref
     __component1Ref = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'component1Ref'), 'component1Ref', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_89_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0component1Ref', pyxb.binding.datatypes.Name, required=True)
     __component1Ref._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 125, 3)
     __component1Ref._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 125, 3)
-    
+
     component1Ref = property(__component1Ref.value, __component1Ref.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busInterface1Ref uses Python identifier busInterface1Ref
     __busInterface1Ref = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'busInterface1Ref'), 'busInterface1Ref', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_89_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busInterface1Ref', pyxb.binding.datatypes.Name, required=True)
     __busInterface1Ref._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 126, 3)
     __busInterface1Ref._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 126, 3)
-    
+
     busInterface1Ref = property(__busInterface1Ref.value, __busInterface1Ref.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}component2Ref uses Python identifier component2Ref
     __component2Ref = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'component2Ref'), 'component2Ref', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_89_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0component2Ref', pyxb.binding.datatypes.Name, required=True)
     __component2Ref._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 127, 3)
     __component2Ref._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 127, 3)
-    
+
     component2Ref = property(__component2Ref.value, __component2Ref.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}busInterface2Ref uses Python identifier busInterface2Ref
     __busInterface2Ref = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'busInterface2Ref'), 'busInterface2Ref', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_89_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0busInterface2Ref', pyxb.binding.datatypes.Name, required=True)
     __busInterface2Ref._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 128, 3)
     __busInterface2Ref._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 128, 3)
-    
+
     busInterface2Ref = property(__busInterface2Ref.value, __busInterface2Ref.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __component1Ref.name() : __component1Ref,
@@ -5945,18 +5945,18 @@ class CTD_ANON_90 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}interconnection uses Python identifier interconnection
     __interconnection = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'interconnection'), 'interconnection', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_90_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0interconnection', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 118, 1), )
 
-    
+
     interconnection = property(__interconnection.value, __interconnection.set, None, 'Describes a connection from the interace of one comonent to the interface of another component through its attributes.\n\n The component1Ref and busInterface1Ref attributes indicate the instance name and bus interface name of one end of the connection. The component2Ref and busInterface2Ref attributes indicate the instance name and bus interface name of the other end of he connection. ')
 
     _ElementMap.update({
         __interconnection.name() : __interconnection
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_90 = CTD_ANON_90
 
@@ -5972,28 +5972,28 @@ class CTD_ANON_91 (addrSpaceRefType):
     _ElementMap = addrSpaceRefType._ElementMap.copy()
     _AttributeMap = addrSpaceRefType._AttributeMap.copy()
     # Base type is addrSpaceRefType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_91_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 351, 2), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_91_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 364, 2), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, 'Base bit offset of an address block.  If not included, it is assumed to be 0.')
 
-    
+
     # Attribute addressSpaceRef inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addrSpaceRefType
     _ElementMap.update({
         __baseAddress.name() : __baseAddress,
         __bitOffset.name() : __bitOffset
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_91 = CTD_ANON_91
 
@@ -6009,121 +6009,121 @@ class CTD_ANON_92 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string, unicode_default='Base Address:')
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 150, 14)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}state uses Python identifier state
     __state = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'state'), 'state', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0state', pyxb.binding.datatypes.string)
     __state._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 151, 14)
     __state._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 151, 14)
-    
+
     state = property(__state.value, __state.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_92_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -6155,113 +6155,113 @@ class CTD_ANON_93 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_93_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -6292,113 +6292,113 @@ class CTD_ANON_94 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.nonNegativeInteger
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string, unicode_default='Connection Index:')
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/busInterface.xsd', 264, 7)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_94_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -6431,113 +6431,113 @@ Values are "on", "off" or "default"."""
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is bitSteeringType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_95_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -6570,129 +6570,129 @@ Supports configurability attributes and a cross reference XPath expression."""
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', pyxb.binding.datatypes.string, required=True)
     __name._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 30, 4)
     __name._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 30, 4)
-    
+
     name = property(__name.value, __name.set, None, 'The name in a name-value pair.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}crossRef uses Python identifier crossRef
     __crossRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'crossRef'), 'crossRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0crossRef', pyxb.binding.datatypes.string)
     __crossRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 35, 4)
     __crossRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 35, 4)
-    
+
     crossRef = property(__crossRef.value, __crossRef.set, None, None)
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValuePairType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -6726,113 +6726,113 @@ class CTD_ANON_96 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_96_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -6863,113 +6863,113 @@ class CTD_ANON_97 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_97_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7000,121 +7000,121 @@ class CTD_ANON_98 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}append uses Python identifier append_
     __append = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'append'), 'append_', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_98_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0append', pyxb.binding.datatypes.boolean)
     __append._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 85, 11)
     __append._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 85, 11)
-    
+
     append_ = property(__append.value, __append.set, None, None)
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7146,113 +7146,113 @@ class CTD_ANON_99 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_99_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7283,113 +7283,113 @@ class CTD_ANON_100 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_100_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7420,113 +7420,113 @@ class CTD_ANON_101 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_101_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7557,113 +7557,113 @@ class CTD_ANON_102 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_102_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7694,113 +7694,113 @@ class CTD_ANON_103 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_103_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7833,113 +7833,113 @@ If the value is true and the "flags" element is empty or missing, this will have
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_104_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -7970,113 +7970,113 @@ class CTD_ANON_105 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_105_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8107,113 +8107,113 @@ class CTD_ANON_106 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_106_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8244,113 +8244,113 @@ class CTD_ANON_107 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_107_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8381,113 +8381,113 @@ class CTD_ANON_108 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_108_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8518,113 +8518,113 @@ class CTD_ANON_109 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='bool')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 130, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 144, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_109_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8655,113 +8655,113 @@ class CTD_ANON_110 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_110_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8792,113 +8792,113 @@ class CTD_ANON_111 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.string
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_111_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -8931,113 +8931,113 @@ If the value is true and the "flags" element is empty or missing, this will have
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_112_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -9068,113 +9068,113 @@ class CTD_ANON_113 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='bool')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 130, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 144, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_113_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -9206,113 +9206,113 @@ class CTD_ANON_114 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritURI
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_114_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -9343,23 +9343,23 @@ class CTD_ANON_115 (generatorType):
     _ElementMap = generatorType._ElementMap.copy()
     _AttributeMap = generatorType._AttributeMap.copy()
     # Base type is generatorType
-    
+
     # Element parameter ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element vendorExtensions ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element phase ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}phase) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element name ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element accessType ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}accessType) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element looseGeneratorExe ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}looseGeneratorExe) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_115 = CTD_ANON_115
 
@@ -9375,19 +9375,19 @@ class CTD_ANON_116 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name uses Python identifier name
     __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_116_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0name', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 94, 4), )
 
-    
+
     name = property(__name.value, __name.set, None, 'Name used to select a generator or generator chain.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}multipleGroupSelectionOperator uses Python identifier multipleGroupSelectionOperator
     __multipleGroupSelectionOperator = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'multipleGroupSelectionOperator'), 'multipleGroupSelectionOperator', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_116_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0multipleGroupSelectionOperator', _module_typeBindings.STD_ANON_7, unicode_default='or')
     __multipleGroupSelectionOperator._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 100, 3)
     __multipleGroupSelectionOperator._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 100, 3)
-    
+
     multipleGroupSelectionOperator = property(__multipleGroupSelectionOperator.value, __multipleGroupSelectionOperator.set, None, None)
 
     _ElementMap.update({
@@ -9410,16 +9410,16 @@ class CTD_ANON_117 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.float
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}scope uses Python identifier scope
     __scope = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'scope'), 'scope', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_117_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0scope', _module_typeBindings.phaseScopeType, unicode_default='global')
     __scope._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 123, 5)
     __scope._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 123, 5)
-    
+
     scope = property(__scope.value, __scope.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __scope.name() : __scope
@@ -9438,31 +9438,31 @@ class instanceGeneratorType (generatorType):
     _ElementMap = generatorType._ElementMap.copy()
     _AttributeMap = generatorType._AttributeMap.copy()
     # Base type is generatorType
-    
+
     # Element parameter ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element vendorExtensions ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element phase ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}phase) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group uses Python identifier group
     __group = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'group'), 'group', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_instanceGeneratorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0group', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 132, 5), )
 
-    
+
     group = property(__group.value, __group.set, None, 'An identifier to specify the generator group. This is used by generator chains for selecting which generators to run.')
 
-    
+
     # Element name ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element accessType ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}accessType) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element looseGeneratorExe ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}looseGeneratorExe) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}scope uses Python identifier scope
     __scope = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'scope'), 'scope', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_instanceGeneratorType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0scope', _module_typeBindings.STD_ANON_8, unicode_default='instance')
     __scope._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 138, 4)
     __scope._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 138, 4)
-    
+
     scope = property(__scope.value, __scope.set, None, 'The scope attribute applies to component generators and specifies whether the generator should be run for each instance of the entity (or module) or just once for all instances of the entity.')
 
     _ElementMap.update({
@@ -9486,113 +9486,113 @@ class CTD_ANON_118 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='bool')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 130, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 144, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_118_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -9623,82 +9623,82 @@ class addressBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 249, 2), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile, default to false when not present.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}baseAddress uses Python identifier baseAddress
     __baseAddress = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'baseAddress'), 'baseAddress', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0baseAddress', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 351, 2), )
 
-    
+
     baseAddress = property(__baseAddress.value, __baseAddress.set, None, 'Base of an address block.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitOffset uses Python identifier bitOffset
     __bitOffset = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitOffset'), 'bitOffset', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitOffset', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 364, 2), )
 
-    
+
     bitOffset = property(__bitOffset.value, __bitOffset.set, None, 'Base bit offset of an address block.  If not included, it is assumed to be 0.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 408, 8), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 413, 8), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 418, 8), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 464, 6), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 471, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any additional parameters needed to describe this address block to the generators.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'bankAlignment'), 'bankAlignment', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_addressBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 74, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 89, 4)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, "Describes whether this bank's blocks are aligned in 'parallel' or 'serial'.")
 
     _ElementMap.update({
@@ -9731,68 +9731,68 @@ class bankedBankType (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions uses Python identifier vendorExtensions
     __vendorExtensions = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'vendorExtensions'), 'vendorExtensions', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0vendorExtensions', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 75, 1), )
 
-    
+
     vendorExtensions = property(__vendorExtensions.value, __vendorExtensions.set, None, 'Container for vendor specific extensions.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}volatile uses Python identifier volatile
     __volatile = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'volatile'), 'volatile', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0volatile', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 249, 2), )
 
-    
+
     volatile = property(__volatile.value, __volatile.set, None, 'Indicates whether the data is volatile, default to false when not present.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}access uses Python identifier access
     __access = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'access'), 'access', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0access', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 254, 2), )
 
-    
+
     access = property(__access.value, __access.set, None, "Indicates the accessibility of the data in the address block.  Possible values are 'read-write', 'read-only' and 'write-only'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock uses Python identifier addressBlock
     __addressBlock = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'addressBlock'), 'addressBlock', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0addressBlock', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 408, 8), )
 
-    
+
     addressBlock = property(__addressBlock.value, __addressBlock.set, None, 'An address block within the bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank uses Python identifier bank
     __bank = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bank'), 'bank', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bank', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 413, 8), )
 
-    
+
     bank = property(__bank.value, __bank.set, None, 'A nested bank of blocks within a bank.  No address information is supplied.')
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap uses Python identifier subspaceMap
     __subspaceMap = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'subspaceMap'), 'subspaceMap', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0subspaceMap', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 418, 8), )
 
-    
+
     subspaceMap = property(__subspaceMap.value, __subspaceMap.set, None, None)
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}usage uses Python identifier usage
     __usage = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'usage'), 'usage', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0usage', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 464, 6), )
 
-    
+
     usage = property(__usage.value, __usage.set, None, "Indicates the usage of this block.  Possible values are 'memory', 'register' and 'reserved'.")
 
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter uses Python identifier parameter
     __parameter = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'parameter'), 'parameter', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0parameter', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 471, 6), )
 
-    
+
     parameter = property(__parameter.value, __parameter.set, None, 'Any additional parameters needed to describe this address block to the generators.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bankAlignment uses Python identifier bankAlignment
     __bankAlignment = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'bankAlignment'), 'bankAlignment', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_bankedBankType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bankAlignment', _module_typeBindings.bankAlignmentType, required=True)
     __bankAlignment._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 74, 2)
     __bankAlignment._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 116, 4)
-    
+
     bankAlignment = property(__bankAlignment.value, __bankAlignment.set, None, "Describes whether this bank's blocks are aligned in 'parallel' or 'serial'.")
 
     _ElementMap.update({
@@ -9823,28 +9823,28 @@ class CTD_ANON_119 (memoryMapType):
     _ElementMap = memoryMapType._ElementMap.copy()
     _AttributeMap = memoryMapType._AttributeMap.copy()
     # Base type is memoryMapType
-    
+
     # Element subspaceMap ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}subspaceMap) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapType
-    
+
     # Element name ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapType
-    
+
     # Element memoryRemap ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryRemap) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapType
-    
+
     # Element addressBlock ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}addressBlock) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapType
-    
+
     # Element bank ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bank) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}memoryMapType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}bitsInLau uses Python identifier bitsInLau
     __bitsInLau = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'bitsInLau'), 'bitsInLau', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_119_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0bitsInLau', True, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 376, 2), )
 
-    
+
     bitsInLau = property(__bitsInLau.value, __bitsInLau.set, None, 'The number of bits in the least addressable unit. The default is byte addressable (8 bits).')
 
     _ElementMap.update({
         __bitsInLau.name() : __bitsInLau
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_119 = CTD_ANON_119
 
@@ -9860,113 +9860,113 @@ class CTD_ANON_120 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string, unicode_default='Base Address:')
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/memoryMap.xsd', 359, 10)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_120_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -9997,113 +9997,113 @@ class CTD_ANON_121 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.integer
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_121_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -10134,113 +10134,113 @@ class CTD_ANON_122 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_122_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -10271,113 +10271,113 @@ class CTD_ANON_123 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.nonNegativeInteger
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_123_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -10408,26 +10408,26 @@ class CTD_ANON_124 (libraryRefType):
     _ElementMap = libraryRefType._ElementMap.copy()
     _AttributeMap = libraryRefType._AttributeMap.copy()
     # Base type is libraryRefType
-    
+
     # Element {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}displayLabel uses Python identifier displayLabel
     __displayLabel = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'displayLabel'), 'displayLabel', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_124_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0displayLabel', False, pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/pmd.xsd', 45, 12), )
 
-    
+
     displayLabel = property(__displayLabel.value, __displayLabel.set, None, "A display label to override the original component's display label if this 3MD will apply.")
 
-    
+
     # Attribute vendor inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}libraryRefType
-    
+
     # Attribute library inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}libraryRefType
-    
+
     # Attribute name inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}libraryRefType
-    
+
     # Attribute version inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}libraryRefType
     _ElementMap.update({
         __displayLabel.name() : __displayLabel
     })
     _AttributeMap.update({
-        
+
     })
 _module_typeBindings.CTD_ANON_124 = CTD_ANON_124
 
@@ -10443,113 +10443,113 @@ class CTD_ANON_125 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.nonNegativeInteger
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_125_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -10580,113 +10580,113 @@ class CTD_ANON_126 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.nonNegativeInteger
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_126_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -10717,113 +10717,113 @@ class CTD_ANON_127 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='bool')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 130, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 144, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_127_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -10854,113 +10854,113 @@ class CTD_ANON_128 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_128_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -10991,113 +10991,113 @@ class CTD_ANON_129 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_129_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -11128,16 +11128,16 @@ class CTD_ANON_130 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}driverType uses Python identifier driverType
     __driverType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'driverType'), 'driverType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_130_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0driverType', _module_typeBindings.STD_ANON_13, unicode_default='any')
     __driverType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 132, 5)
     __driverType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/signalDrivers.xsd', 132, 5)
-    
+
     driverType = property(__driverType.value, __driverType.set, None, None)
 
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __driverType.name() : __driverType
@@ -11156,113 +11156,113 @@ class CTD_ANON_131 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is spiritNumberType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 164, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='long')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 150, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.\n\nThe long.att attribute group sets the default format to "long".')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_131_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __prompt.name() : __prompt,
@@ -11293,113 +11293,113 @@ class CTD_ANON_132 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is strengthType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_132_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -11432,122 +11432,122 @@ The required referenceId attribute refers to the ID attribute of the configurabl
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}referenceId uses Python identifier referenceId
     __referenceId = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'referenceId'), 'referenceId', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_133_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0referenceId', pyxb.binding.datatypes.Name, required=True)
     __referenceId._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 43, 3)
     __referenceId._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/subInstances.xsd', 43, 3)
-    
+
     referenceId = property(__referenceId.value, __referenceId.set, None, None)
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _HasWildcardElement = True
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -11579,113 +11579,113 @@ class CTD_ANON_134 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.boolean
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType, unicode_default='bool')
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 130, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 144, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_134_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -11716,47 +11716,47 @@ class nameValueTypeType (nameValuePairType):
     _ElementMap = nameValuePairType._ElementMap.copy()
     _AttributeMap = nameValuePairType._AttributeMap.copy()
     # Base type is nameValuePairType
-    
+
     # Attribute format inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute prompt inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute minimum inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute maximum inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute rangeType inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute order inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute choiceRef inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute choiceStyle inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute direction inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute configGroups inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute name inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute crossRef inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dataType uses Python identifier dataType
     __dataType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dataType'), 'dataType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_nameValueTypeType_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dataType', pyxb.binding.datatypes.string)
     __dataType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 46, 4)
     __dataType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/commonStructures.xsd', 46, 4)
-    
+
     dataType = property(__dataType.value, __dataType.set, None, 'The data type of the argumen as pertains to the language. Example: "int", "double", "char *".')
 
-    
+
     # Attribute resolve inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute id inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute dependency inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __dataType.name() : __dataType
@@ -11778,47 +11778,47 @@ This is an extension of the name-value pair which includes the data type in the 
     _ElementMap = nameValuePairType._ElementMap.copy()
     _AttributeMap = nameValuePairType._AttributeMap.copy()
     # Base type is nameValuePairType
-    
+
     # Attribute format inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute prompt inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute minimum inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute maximum inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute rangeType inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute order inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute choiceRef inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute choiceStyle inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute direction inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute configGroups inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute name inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute crossRef inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute resolve inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute id inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute dependency inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}nameValuePairType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dataType uses Python identifier dataType
     __dataType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dataType'), 'dataType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_135_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dataType', _module_typeBindings.dataTypeType, required=True)
     __dataType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 414, 10)
     __dataType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/file.xsd', 414, 10)
-    
+
     dataType = property(__dataType.value, __dataType.set, None, None)
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __dataType.name() : __dataType
@@ -11837,32 +11837,32 @@ class CTD_ANON_136 (instanceGeneratorType):
     _ElementMap = instanceGeneratorType._ElementMap.copy()
     _AttributeMap = instanceGeneratorType._AttributeMap.copy()
     # Base type is instanceGeneratorType
-    
+
     # Element parameter ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}parameter) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element vendorExtensions ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}vendorExtensions) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element phase ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}phase) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element group ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}group) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceGeneratorType
-    
+
     # Element name ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}name) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element accessType ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}accessType) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Element looseGeneratorExe ({http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}looseGeneratorExe) inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}generatorType
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}hidden uses Python identifier hidden
     __hidden = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'hidden'), 'hidden', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_136_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0hidden', pyxb.binding.datatypes.boolean, unicode_default='false')
     __hidden._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 83, 5)
     __hidden._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/generator.xsd', 83, 5)
-    
+
     hidden = property(__hidden.value, __hidden.set, None, None)
 
-    
+
     # Attribute scope inherited from {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}instanceGeneratorType
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __hidden.name() : __hidden
@@ -11881,113 +11881,113 @@ class CTD_ANON_137 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is configurableDouble
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_137_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -12018,113 +12018,113 @@ class CTD_ANON_138 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is configurableDouble
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_138_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -12155,113 +12155,113 @@ class CTD_ANON_139 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is configurableDouble
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_139_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -12292,113 +12292,113 @@ class CTD_ANON_140 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is configurableDouble
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_140_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
@@ -12429,113 +12429,113 @@ class CTD_ANON_141 (pyxb.binding.basis.complexTypeDefinition):
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is configurableDouble
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}format uses Python identifier format
     __format = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'format'), 'format', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0format', _module_typeBindings.formatType)
     __format._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 34, 1)
     __format._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 207, 2)
-    
+
     format = property(__format.value, __format.set, None, 'This is a hint to the user interface about the data format to require for user resolved properties.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}prompt uses Python identifier prompt
     __prompt = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'prompt'), 'prompt', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0prompt', pyxb.binding.datatypes.string)
     __prompt._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 39, 1)
     __prompt._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 208, 2)
-    
+
     prompt = property(__prompt.value, __prompt.set, None, 'Provides a string used to prompt the user for user-resolved property values.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}minimum uses Python identifier minimum
     __minimum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'minimum'), 'minimum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0minimum', pyxb.binding.datatypes.string)
     __minimum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 44, 1)
     __minimum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 177, 2)
-    
+
     minimum = property(__minimum.value, __minimum.set, None, 'For user-resolved properties with numeric values, this indicates the minimum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}maximum uses Python identifier maximum
     __maximum = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'maximum'), 'maximum', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0maximum', pyxb.binding.datatypes.string)
     __maximum._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 49, 1)
     __maximum._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 182, 2)
-    
+
     maximum = property(__maximum.value, __maximum.set, None, 'For user-resolved properties with numeric values, this indicates the maximum value allowed.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}rangeType uses Python identifier rangeType
     __rangeType = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'rangeType'), 'rangeType', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0rangeType', _module_typeBindings.rangeTypeType)
     __rangeType._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 66, 1)
     __rangeType._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 187, 2)
-    
+
     rangeType = property(__rangeType.value, __rangeType.set, None, "Indicates the data type of the range attributes (minimum and maximum). For reasons of backward compatibility, this attribute is assumed to have the value 'double' if not present.")
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}order uses Python identifier order
     __order = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'order'), 'order', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0order', pyxb.binding.datatypes.float)
     __order._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 71, 1)
     __order._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 188, 2)
-    
+
     order = property(__order.value, __order.set, None, 'For components with auto-generated configuration forms, the user-resolved properties with order attibutes will be presented in ascending order.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceRef uses Python identifier choiceRef
     __choiceRef = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceRef'), 'choiceRef', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceRef', pyxb.binding.datatypes.Name)
     __choiceRef._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 76, 1)
     __choiceRef._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 193, 2)
-    
+
     choiceRef = property(__choiceRef.value, __choiceRef.set, None, 'For user defined properties with a "choice" format, refers the choice element enumarating the values to choose from.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}choiceStyle uses Python identifier choiceStyle
     __choiceStyle = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'choiceStyle'), 'choiceStyle', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0choiceStyle', _module_typeBindings.STD_ANON)
     __choiceStyle._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 81, 1)
     __choiceStyle._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 198, 2)
-    
+
     choiceStyle = property(__choiceStyle.value, __choiceStyle.set, None, 'For user resolved properties with a "choice" format, this indicates whether the choices should be presented as radio buttons or as a combo box.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}direction uses Python identifier direction
     __direction = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'direction'), 'direction', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0direction', _module_typeBindings.STD_ANON_)
     __direction._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 100, 1)
     __direction._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 199, 2)
-    
+
     direction = property(__direction.value, __direction.set, None, 'For user resolved properties with a "choice" format and a radio button presentation style, this indicates whether the buttons should be aligned horizontally or vertically.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}configGroups uses Python identifier configGroups
     __configGroups = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'configGroups'), 'configGroups', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0configGroups', pyxb.binding.datatypes.NMTOKENS)
     __configGroups._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 119, 1)
     __configGroups._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/autoConfigure.xsd', 200, 2)
-    
+
     configGroups = property(__configGroups.value, __configGroups.set, None, 'Tags configurable properties so that they may be auto-configured by different ui generators.  Can also be applied to top-level uiIcons to designate which auto-configured forms they will be added to.\n\nThis is a white-space delimited list of groups so a property may be configured by more than one configurator.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}resolve uses Python identifier resolve
     __resolve = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'resolve'), 'resolve', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0resolve', _module_typeBindings.resolveType)
     __resolve._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 48, 1)
     __resolve._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 67, 2)
-    
+
     resolve = property(__resolve.value, __resolve.set, None, 'Determines how a property value is resolved.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}id uses Python identifier id
     __id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'id'), 'id', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0id', pyxb.binding.datatypes.ID)
     __id._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 53, 1)
     __id._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 68, 2)
-    
+
     id = property(__id.value, __id.set, None, 'ID attribute for uniquely identifying an element within its document.')
 
-    
+
     # Attribute {http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0}dependency uses Python identifier dependency
     __dependency = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(Namespace, 'dependency'), 'dependency', '__httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0_CTD_ANON_141_httpwww_spiritconsortium_orgXMLSchemaSPIRIT1_0dependency', pyxb.binding.datatypes.string)
     __dependency._DeclarationLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 58, 1)
     __dependency._UseLocation = pyxb.utils.utility.Location('http://www.accellera.org/XMLSchema/SPIRIT/1.0/configurable.xsd', 69, 2)
-    
+
     dependency = property(__dependency.value, __dependency.set, None, 'Required on properties with a resolve = "dependent" attribute.  This is an XPath expression supplying the resultant value in terms of other properties in the component file.')
 
     _AttributeWildcard = pyxb.binding.content.Wildcard(process_contents=pyxb.binding.content.Wildcard.PC_lax, namespace_constraint=(pyxb.binding.content.Wildcard.NC_not, 'http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.0'))
     _ElementMap.update({
-        
+
     })
     _AttributeMap.update({
         __format.name() : __format,
