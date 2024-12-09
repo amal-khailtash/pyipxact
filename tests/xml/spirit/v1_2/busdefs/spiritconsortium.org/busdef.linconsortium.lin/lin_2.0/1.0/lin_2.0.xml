@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// Description : lin.xml LIN bus standard
+// Original Author : SPIRIT Schema Working Group 
+// Version: 1.0 
+// 
+// Copyright 2006-2013 Accellera Systems Initiative 
+// 
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at 
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software 
+// distributed under the License is distributed on an "AS IS" BASIS, 
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and 
+// limitations under the License.
+-->
+<spirit:busDefinition xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2/index.xsd">
+	<spirit:vendor>spiritconsortium.org</spirit:vendor>
+	<spirit:library>busdef.linconsortium.lin</spirit:library>
+	<spirit:name>lin_2.0</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:directConnection>true</spirit:directConnection>
+	<spirit:maxMasters>1</spirit:maxMasters>	
+	<spirit:signals>
+		<spirit:signal>
+			<spirit:logicalName>LIN</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+	</spirit:signals>
+</spirit:busDefinition>

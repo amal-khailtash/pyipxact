@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+// Example bus definition used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document
+-->
+<!-- LINK: abstractionDefinition: see 5.3, Abstraction definition -->
+<ipxact:busDefinition xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.11, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleBusDefinitionExtension</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:description>Example bus definition used in the IP-XACT standard.</ipxact:description>
+    <ipxact:directConnection>true</ipxact:directConnection>
+    <ipxact:broadcast>true</ipxact:broadcast>
+    <ipxact:isAddressable>false</ipxact:isAddressable>
+    <ipxact:extends vendor="accellera.org" library="Sample" name="SampleBusDefinitionBase" version="1.0"/>
+    <ipxact:maxInitiators>1</ipxact:maxInitiators>
+    <ipxact:maxTargets>16</ipxact:maxTargets>
+    <ipxact:systemGroupNames>
+        <ipxact:systemGroupName>SystemSignals</ipxact:systemGroupName>
+    </ipxact:systemGroupNames>
+    <!-- ipxact:parameters - excluded for brevity - see component example -->
+    <!-- ipxact:assertions - excluded for brevity - see component example -->
+    <!-- ipxact:vendorExtensions - excluded for brevity - see component example -->
+</ipxact:busDefinition>

@@ -1,0 +1,7 @@
+
+Accellera IP-XACT IEEE-1685 Bus Definitions
+		
+Copyright 2012 Accellera Systems Initiative
+							
+This directory includes descriptions developed at Accellera
+Systems Initiative by the IP-XACT Technical Committee

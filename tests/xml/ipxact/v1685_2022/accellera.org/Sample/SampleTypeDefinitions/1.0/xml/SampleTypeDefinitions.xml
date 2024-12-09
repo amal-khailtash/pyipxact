@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<!--
+// Example typeDefinitions used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document.
+-->
+<!-- LINK: typeDefinitions: see 9.1, Type definitions -->
+<ipxact:typeDefinitions xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.11, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleTypeDefinitions</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:displayName>Sample Type Definitions</ipxact:displayName>
+    <ipxact:shortDescription>Example typeDefinitions</ipxact:shortDescription>
+    <ipxact:description>Example typeDefinitions used in the IP-XACT standard.</ipxact:description>
+    <ipxact:externalTypeDefinitions>
+        <ipxact:name>fieldAccessTypes</ipxact:name>
+        <ipxact:typeDefinitionsRef vendor="accellera.org" library="Sample" name="FieldAccessPolicyDefinitions" version="1.0"/>
+    </ipxact:externalTypeDefinitions>
+    <ipxact:modes>
+        <ipxact:mode>
+            <ipxact:name>Normal</ipxact:name>
+        </ipxact:mode>
+    </ipxact:modes>
+    <ipxact:views>
+        <ipxact:view>
+            <ipxact:name>RTLview</ipxact:name>
+        </ipxact:view>
+    </ipxact:views>
+    <ipxact:enumerationDefinitions>
+        <!-- LINK: enumerationDefinition: see 9.3, Enumeration definition -->
+        <ipxact:enumerationDefinition>
+            <ipxact:name>setpos</ipxact:name>
+            <ipxact:width>4</ipxact:width>
+            <ipxact:enumeratedValue>
+                <ipxact:name>SetPos0</ipxact:name>
+                <ipxact:value>'h1</ipxact:value>
+            </ipxact:enumeratedValue>
+            <ipxact:enumeratedValue>
+                <ipxact:name>SetPos1</ipxact:name>
+                <ipxact:value>'h2</ipxact:value>
+            </ipxact:enumeratedValue>
+        </ipxact:enumerationDefinition>
+    </ipxact:enumerationDefinitions>
+    <ipxact:fieldDefinitions>
+        <!-- LINK: fieldDefinition: see 9.4, Field definition -->
+        <!-- fieldDefinition with reference to fieldAccessPolicyDefinition -->
+        <ipxact:fieldDefinition>
+            <ipxact:name>status</ipxact:name>
+            <ipxact:bitWidth>4</ipxact:bitWidth>
+            <ipxact:resets>
+                <ipxact:reset resetTypeRef="SOFT">
+                    <ipxact:value>'h0</ipxact:value>
+                    <ipxact:mask>'hf</ipxact:mask>
+                </ipxact:reset>
+            </ipxact:resets>
+            <ipxact:fieldAccessPolicies>
+                <ipxact:fieldAccessPolicy>
+                    <!-- Reference to fieldAccessPolicyDefinition to describe this fieldAccessPolicy -->
+                    <ipxact:fieldAccessPolicyDefinitionRef typeDefinitions="fieldAccessTypes">RC</ipxact:fieldAccessPolicyDefinitionRef>
+                </ipxact:fieldAccessPolicy>
+            </ipxact:fieldAccessPolicies>
+        </ipxact:fieldDefinition>
+        <!-- fieldDefinition with inline fieldAccessPolicy description -->
+        <ipxact:fieldDefinition>
+            <ipxact:name>clr</ipxact:name>
+            <ipxact:bitWidth>1</ipxact:bitWidth>
+            <ipxact:fieldAccessPolicies>
+                <ipxact:fieldAccessPolicy>
+                    <!-- Inline description for this fieldAccessPolicy -->
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+                </ipxact:fieldAccessPolicy>
+            </ipxact:fieldAccessPolicies>
+        </ipxact:fieldDefinition>
+    </ipxact:fieldDefinitions>
+    <ipxact:registerDefinitions>
+        <!-- LINK: registerDefinition: see 9.5, Register definition -->
+        <ipxact:registerDefinition>
+            <ipxact:name>reg</ipxact:name>
+            <ipxact:size>32</ipxact:size>
+            <ipxact:accessPolicies>
+                <ipxact:accessPolicy>
+                    <ipxact:modeRef priority="1">Normal</ipxact:modeRef>
+                    <ipxact:access>read-write</ipxact:access>
+                </ipxact:accessPolicy>
+            </ipxact:accessPolicies>
+            <ipxact:field>
+                <ipxact:name>fld</ipxact:name>
+                <ipxact:accessHandles>
+                    <ipxact:accessHandle>
+                        <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        <ipxact:slices>
+                            <ipxact:slice>
+                                <ipxact:pathSegments>
+                                    <!-- Path segment using $sformatf() and $ipxact_index_value() functions -->
+                                    <!-- to avoid unrolling of multi-dimensional array to describe HDL path -->
+                                    <ipxact:pathSegment>$sformatf("FIELD_%d", $ipxact_index_value(i) * $ipxact_index_value(j))</ipxact:pathSegment>
+                                </ipxact:pathSegments>
+                            </ipxact:slice>
+                        </ipxact:slices>
+                    </ipxact:accessHandle>
+                </ipxact:accessHandles>
+                <ipxact:array>
+                    <ipxact:dim indexVar="i">4</ipxact:dim>
+                    <ipxact:dim indexVar="j">3</ipxact:dim>
+                </ipxact:array>
+                <ipxact:bitOffset>0</ipxact:bitOffset>
+                <ipxact:bitWidth>32</ipxact:bitWidth>
+            </ipxact:field>
+        </ipxact:registerDefinition>
+    </ipxact:registerDefinitions>
+    <ipxact:registerFileDefinitions>
+        <!-- LINK: registerFileDefinition: see 9.6, Register file definition -->
+        <ipxact:registerFileDefinition>
+            <ipxact:name>regfile</ipxact:name>
+            <!-- range is expressed in addressUnitBits which is not defined -->
+            <ipxact:range>'h8</ipxact:range>
+            <ipxact:register>
+                <ipxact:name>reg0</ipxact:name>
+                <!-- addressOffset is expressed in addressUnitBits of the registerFileDefinition -->
+                <ipxact:addressOffset>'h0</ipxact:addressOffset>
+                <ipxact:size>32</ipxact:size>
+                <ipxact:field>
+                    <ipxact:name>fld</ipxact:name>
+                    <ipxact:bitOffset>'h0</ipxact:bitOffset>
+                    <ipxact:bitWidth>32</ipxact:bitWidth>
+                </ipxact:field>
+            </ipxact:register>
+            <ipxact:register>
+                <ipxact:name>reg1</ipxact:name>
+                <ipxact:addressOffset>'h4</ipxact:addressOffset>
+                <ipxact:size>32</ipxact:size>
+                <ipxact:field>
+                    <ipxact:name>fld</ipxact:name>
+                    <ipxact:bitOffset>'h0</ipxact:bitOffset>
+                    <ipxact:bitWidth>32</ipxact:bitWidth>
+                </ipxact:field>
+            </ipxact:register>
+            <ipxact:addressUnitBits>8</ipxact:addressUnitBits>
+        </ipxact:registerFileDefinition>
+    </ipxact:registerFileDefinitions>
+    <ipxact:addressBlockDefinitions>
+        <!-- LINK: addressBlockDefinition: see 9.7, Address block definition -->
+        <ipxact:addressBlockDefinition>
+            <ipxact:name>block</ipxact:name>
+            <!-- range is expressed in addressUnitBits of the addressBlockDefinition -->
+            <ipxact:range>'h1000</ipxact:range>
+            <ipxact:width>32</ipxact:width>
+            <ipxact:addressUnitBits>8</ipxact:addressUnitBits>
+        </ipxact:addressBlockDefinition>
+    </ipxact:addressBlockDefinitions>
+    <ipxact:bankDefinitions>
+        <!-- LINK: bankDefinition: see 9.8, Bank definition -->
+        <ipxact:bankDefinition>
+            <ipxact:name>bank</ipxact:name>
+            <ipxact:addressBlock>
+                <ipxact:name>banked_block</ipxact:name>
+                <!-- range is expressed in addressUnitBits of the bankDefinition -->
+                <ipxact:range>'h1000</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+            </ipxact:addressBlock>
+            <ipxact:bank bankAlignment="parallel">
+                <ipxact:name>banked_bank</ipxact:name>
+                <ipxact:addressBlock>
+                    <ipxact:name>banked_bank_block</ipxact:name>
+                    <ipxact:range>'h1000</ipxact:range>
+                    <ipxact:width>32</ipxact:width>
+                </ipxact:addressBlock>
+            </ipxact:bank>
+            <ipxact:addressUnitBits>8</ipxact:addressUnitBits>
+        </ipxact:bankDefinition>
+    </ipxact:bankDefinitions>
+    <ipxact:memoryMapDefinitions>
+        <!-- LINK: memoryMapDefinition: see 9.9, Memory map definition -->
+        <ipxact:memoryMapDefinition>
+            <ipxact:name>memorymap</ipxact:name>
+            <ipxact:addressBlock>
+                <ipxact:name>memorymap_block</ipxact:name>
+                <!-- baseAddress is expressed in addressUnitBits of the memoryMapDefinition -->
+                <ipxact:baseAddress>'h0</ipxact:baseAddress>
+                <!-- range is expressed in addressUnitBits of the memoryMapDefinition -->
+                <ipxact:range>'h100</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+            </ipxact:addressBlock>
+            <ipxact:addressUnitBits>8</ipxact:addressUnitBits>
+        </ipxact:memoryMapDefinition>
+    </ipxact:memoryMapDefinitions>
+    <ipxact:memoryRemapDefinitions>
+        <!-- LINK: memoryRemapDefinition: see 9.10, Memory remap definition -->
+        <ipxact:memoryRemapDefinition>
+            <ipxact:name>memoryremap</ipxact:name>
+            <ipxact:addressBlock>
+                <ipxact:name>memoryremap_block</ipxact:name>
+                <!-- baseAddress is expressed in addressUnitBits of the memoryRemapDefinition -->
+                <ipxact:baseAddress>'h100</ipxact:baseAddress>
+                <!-- range is expressed in addressUnitBits of the memoryRemapDefinition -->
+                <ipxact:range>'h100</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+            </ipxact:addressBlock>
+        </ipxact:memoryRemapDefinition>
+    </ipxact:memoryRemapDefinitions>
+    <ipxact:resetTypes>
+        <ipxact:resetType>
+            <ipxact:name>SOFT</ipxact:name>
+        </ipxact:resetType>
+    </ipxact:resetTypes>
+</ipxact:typeDefinitions>

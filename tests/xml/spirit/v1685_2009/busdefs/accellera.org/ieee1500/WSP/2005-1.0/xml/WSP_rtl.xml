@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//=============================================================
+//   Filename    : WSP_rtl.xml
+//   Type        : ABSTRACTION DEFINITION
+//   Description : RTL abstraction for WSP
+//   Owner       : Accellera : IP-XACT Best-Practice Working Group   
+//   Contributor : Sylvain Duvillard
+//   Version     : 2005-1.0
+//   Status      : RELEASED
+//                                                             
+//   Copyright (c) 2013 Accellera Systems Initiative Inc. 
+//   1370 Trancas Street #163, Napa, CA 94558, USA
+//   
+//   Licensed under the Apache License, Version 2.0 (the 'License'); 
+//   you may not use this file except in compliance with the License.  
+//   You may obtain a copy of the License at                                            
+//                                                                
+//          http://www.apache.org/licenses/LICENSE-2.0            
+//                                                                
+//   Unless required by applicable law or agreed to in writing, software 
+//   distributed under the License is distributed on an 'AS IS' BASIS, 
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either 
+//   express or implied. See the License for the specific language 
+//   governing permissions and limitations under the License.
+//   
+//   Suggestions for improvements to the provided example 
+//   are welcome. They should be sent to the group's 
+//   email Reflector:
+//   
+//          ip-xact@lists.accellera.org
+//   
+//   The current IP-XACT Technical Committee web page is:
+//   
+//          www.accellera.org/activities/committees/ip-xact
+//   
+//   The current official IP-XACT user Forum is :
+//
+//          http://forums.accellera.org/forum/30-ip-xact/
+//   
+//=============================================================     
+-->
+<spirit:abstractionDefinition xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd">
+  <spirit:vendor>accellera.org</spirit:vendor>
+  <spirit:library>ieee1500</spirit:library>
+  <spirit:name>WSP_rtl</spirit:name>
+  <spirit:version>2005-1.0</spirit:version>
+  <spirit:busType spirit:vendor="accellera.org" spirit:library="ieee1500" spirit:name="WSP" spirit:version="2005-1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>WRCK</spirit:logicalName>
+      <spirit:description>The IEEE 1500 clock.</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isClock>true</spirit:isClock>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>WRSTN</spirit:logicalName>
+      <spirit:description>The IEEE 1500 Active-Low reset.</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isReset>true</spirit:isReset>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>UPDATEWR</spirit:logicalName>
+      <spirit:description>The wrapper terminal used to enable and control an Update operation in the selected IEEE 1500 wrapper register (WR).</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>SHIFTWR</spirit:logicalName>
+      <spirit:description>The wrapper terminal used to enable and control a Shift operation in the selected IEEE 1500 wrapper register (WR).</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>SELECTWIR</spirit:logicalName>
+      <spirit:description>The IEEE 1500 wrapper terminal that determines the selection of a wrapper register (WR). A value of 1 represents selection of the wrapper instruction register (WIR), and a value of 0 represents selection of a wrapper data register (WDR).</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>WSI</spirit:logicalName>
+      <spirit:description>The wrapper serial data input</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isAddress>true</spirit:isAddress>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>WSO</spirit:logicalName>
+      <spirit:description>The wrapper serial data output.</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>AUXCKN</spirit:logicalName>
+      <spirit:description>auxiliary clock (AUXCK): A functional clock that may be used in conjunction with wrapper clock</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>TRANSFERDR</spirit:logicalName>
+      <spirit:description>The IEEE 1500 wrapper terminal provided to enable and control the Transfer operation for the wrapper boundary register (WBR)</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>out</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>optional</spirit:presence>
+          <spirit:width>1</spirit:width>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+  </spirit:ports>
+</spirit:abstractionDefinition>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//=============================================================
+//   Filename    : TLM2GP_tlm.xml
+//   Type        : ABSTRACTION DEFINITION
+//   Description : TLM abstraction for TLM2GP
+//   Owner       : Accellera : IP-XACT Best-Practice Working Group   
+//   Contributor : Jean-Michel Fernandez
+//   Version     : 2011-1.0
+//   Status      : RELEASED
+//                                                             
+//   Copyright (c) 2013 Accellera Systems Initiative Inc. 
+//   1370 Trancas Street #163, Napa, CA 94558, USA
+//   
+//   Licensed under the Apache License, Version 2.0 (the 'License'); 
+//   you may not use this file except in compliance with the License.  
+//   You may obtain a copy of the License at                                            
+//                                                                
+//          http://www.apache.org/licenses/LICENSE-2.0            
+//                                                                
+//   Unless required by applicable law or agreed to in writing, software 
+//   distributed under the License is distributed on an 'AS IS' BASIS, 
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either 
+//   express or implied. See the License for the specific language 
+//   governing permissions and limitations under the License.
+//   
+//   Suggestions for improvements to the provided example 
+//   are welcome. They should be sent to the group's 
+//   email Reflector:
+//   
+//          ip-xact@lists.accellera.org
+//   
+//   The current IP-XACT Technical Committee web page is:
+//   
+//          www.accellera.org/activities/committees/ip-xact
+//   
+//   The current official IP-XACT user Forum is :
+//
+//          http://forums.accellera.org/forum/30-ip-xact/
+//   
+//=============================================================     
+-->
+<spirit:abstractionDefinition xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd">
+  <spirit:vendor>accellera.org</spirit:vendor>
+  <spirit:library>ieee1666</spirit:library>
+  <spirit:name>TLM2GP_tlm</spirit:name>
+  <spirit:version>2011-1.0</spirit:version>
+  <spirit:busType spirit:vendor="accellera.org" spirit:library="ieee1666" spirit:name="TLM2GP" spirit:version="2011-1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>TLMSOCKET</spirit:logicalName>
+      <spirit:transactional>
+        <spirit:qualifier>
+          <spirit:isAddress>true</spirit:isAddress>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:presence>required</spirit:presence>
+          <spirit:service>
+            <spirit:initiative>requires</spirit:initiative>
+            <spirit:typeName spirit:implicit="true">tlm_fw_transport_if</spirit:typeName>
+          </spirit:service>
+        </spirit:onMaster>
+        <spirit:onSlave>
+          <spirit:presence>required</spirit:presence>
+          <spirit:service>
+            <spirit:initiative>provides</spirit:initiative>
+            <spirit:typeName spirit:implicit="true">tlm_fw_transport_if</spirit:typeName>
+          </spirit:service>
+        </spirit:onSlave>
+      </spirit:transactional>
+    </spirit:port>
+  </spirit:ports>
+</spirit:abstractionDefinition>

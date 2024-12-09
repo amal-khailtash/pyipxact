@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!--
+// Example abstraction definition used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document. This file represents an RTL abstraction.
+-->
+<!-- LINK: abstractionDefinition: see 5.3, Abstraction definition -->
+<ipxact:abstractionDefinition xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.11, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleAbstractionDefinition_RTL</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:description>Example RTL abstraction definition used in the IP-XACT standard.</ipxact:description>
+    <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinitionExtension" version="1.0"/>
+    <ipxact:ports>
+        <!-- LINK: port: see 5.4, Ports -->
+        <!-- Simple wire port -->
+        <ipxact:port>
+            <ipxact:logicalName>Data</ipxact:logicalName>
+            <ipxact:displayName>Data Bus</ipxact:displayName>
+            <ipxact:shortDescription>The data bus</ipxact:shortDescription>
+            <ipxact:description>This port carries the data</ipxact:description>
+            <ipxact:match>false</ipxact:match>
+            <!-- LINK: wire: see 5.5, Wire ports -->
+            <ipxact:wire>
+                <!-- LINK: qualifier: see 5.6, Qualifiers -->
+                <ipxact:qualifier>
+                    <ipxact:isData>true</ipxact:isData>
+                </ipxact:qualifier>
+                <ipxact:onInitiator>
+                    <!-- LINK: wirePort: see 5.7, Wire port group -->
+                    <ipxact:presence>required</ipxact:presence>
+                    <ipxact:width>dataWidth</ipxact:width>
+                    <ipxact:direction>out</ipxact:direction>
+                    <!-- LINK: modeConstraints: see 5.8, Wire port mode (and mirrored mode) constraints -->
+                    <ipxact:modeConstraints>
+                        <ipxact:timingConstraint clockName="Clk">40</ipxact:timingConstraint>
+                    </ipxact:modeConstraints>
+                </ipxact:onInitiator>
+                <ipxact:onTarget>
+                    <ipxact:width>dataWidth</ipxact:width>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:onTarget>
+                <ipxact:defaultValue>'ff</ipxact:defaultValue>
+            </ipxact:wire>
+            <!-- Link: packets: see 5.11, Packets -->
+            <ipxact:packets>
+                <ipxact:packet>
+                    <ipxact:name>frame</ipxact:name>
+                    <ipxact:endianness>little</ipxact:endianness>
+                    <ipxact:packetFields>
+                        <ipxact:packetField>
+                            <ipxact:name>data_bits</ipxact:name>
+                            <ipxact:width>dataWidth-1</ipxact:width>
+                            <ipxact:qualifier>
+                                <ipxact:isData>true</ipxact:isData>
+                            </ipxact:qualifier>
+                        </ipxact:packetField>
+                        <ipxact:packetField>
+                            <ipxact:name>parity_bit</ipxact:name>
+                            <ipxact:width>1</ipxact:width>
+                        </ipxact:packetField>
+                    </ipxact:packetFields>
+                </ipxact:packet>
+            </ipxact:packets>
+        </ipxact:port>
+        <ipxact:port>
+            <ipxact:logicalName>Address</ipxact:logicalName>
+            <ipxact:displayName>Address Bus</ipxact:displayName>
+            <ipxact:shortDescription>The address bus</ipxact:shortDescription>
+            <ipxact:description>This port carries the address</ipxact:description>
+            <!-- LINK: wire: see 5.5, Wire ports -->
+            <ipxact:wire>
+                <!-- LINK: qualifier: see 5.6, Qualifiers -->
+                <ipxact:qualifier>
+                    <ipxact:isAddress>true</ipxact:isAddress>
+                </ipxact:qualifier>
+                <ipxact:onInitiator>
+                    <!-- LINK: wirePort: see 5.7, Wire port group -->
+                    <ipxact:presence>required</ipxact:presence>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:onInitiator>
+                <ipxact:onTarget>
+                    <ipxact:width>8</ipxact:width>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:onTarget>
+                <ipxact:defaultValue>'ff</ipxact:defaultValue>
+            </ipxact:wire>
+        </ipxact:port>
+        <!-- Simple clock port to show system elements -->
+        <ipxact:port>
+            <ipxact:logicalName>Clk</ipxact:logicalName>
+            <ipxact:wire>
+                <ipxact:qualifier>
+                    <ipxact:isClock>true</ipxact:isClock>
+                </ipxact:qualifier>
+                <ipxact:onSystem>
+                    <ipxact:group>SystemSignals</ipxact:group>
+                    <ipxact:width>1</ipxact:width>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:onSystem>
+                <ipxact:onInitiator>
+                    <ipxact:presence>optional</ipxact:presence>
+                    <ipxact:width>1</ipxact:width>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:onInitiator>
+                <ipxact:onTarget>
+                    <ipxact:presence>optional</ipxact:presence>
+                    <ipxact:width>1</ipxact:width>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:onTarget>
+                <ipxact:requiresDriver driverType="singleShot">true</ipxact:requiresDriver>
+            </ipxact:wire>
+        </ipxact:port>
+    </ipxact:ports>
+    <ipxact:parameters>
+        <ipxact:parameter parameterId="dataWidth" type="int" resolve="generated">
+            <ipxact:name>dataWidth</ipxact:name>
+            <ipxact:description>Number of data bits.</ipxact:description>
+            <ipxact:value>32</ipxact:value>
+        </ipxact:parameter>
+    </ipxact:parameters>
+</ipxact:abstractionDefinition>

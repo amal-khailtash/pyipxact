@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!--
+// Example design used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document.
+-->
+<!-- LINK: design: see 7.1, Design -->
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.11, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleDesign</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <!-- Three instances U1, U2, and U3 -->
+    <ipxact:componentInstances>
+        <!-- LINK: componentInstance: see 7.2, Design component instances -->
+        <ipxact:componentInstance>
+            <ipxact:instanceName>U1</ipxact:instanceName>
+            <ipxact:componentRef vendor="accellera.org" library="Sample" name="SampleComponent" version="1.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="comp_dual_mode">0</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+            <ipxact:powerDomainLinks>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD1</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD2</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+            </ipxact:powerDomainLinks>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>U2</ipxact:instanceName>
+            <ipxact:componentRef vendor="accellera.org" library="Sample" name="SampleComponent" version="1.0"/>
+            <ipxact:powerDomainLinks>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD1</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD2</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+            </ipxact:powerDomainLinks>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>U3</ipxact:instanceName>
+            <ipxact:componentRef vendor="accellera.org" library="Sample" name="SampleComponent" version="1.0"/>
+            <ipxact:powerDomainLinks>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD1</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+                <ipxact:powerDomainLink>
+                    <ipxact:externalPowerDomainReference>PD_top</ipxact:externalPowerDomainReference>
+                    <ipxact:internalPowerDomainReference>PD2</ipxact:internalPowerDomainReference>
+                </ipxact:powerDomainLink>
+            </ipxact:powerDomainLinks>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:interconnections>
+        <!-- Simple initiator to target interface connection -->
+        <!-- LINK: interconnection: see 7.3.1, interconnection -->
+        <ipxact:interconnection>
+            <ipxact:name>TwoIntfs</ipxact:name>
+            <!-- LINK: activeInterface: see 7.4, Active, hierarchical, monitored, and monitor interfaces -->
+            <ipxact:activeInterface componentInstanceRef="U1" busRef="Initiator"/>
+            <ipxact:activeInterface componentInstanceRef="U2" busRef="Target"/>
+        </ipxact:interconnection>
+        <!-- Broadcast interface from a target (one to many connection) -->
+        <ipxact:interconnection>
+            <ipxact:name>BroadcastConnection</ipxact:name>
+            <ipxact:activeInterface componentInstanceRef="U1" busRef="Target"/>
+            <ipxact:hierInterface busRef="Target0"/>
+            <ipxact:hierInterface busRef="Target1"/>
+        </ipxact:interconnection>
+        <!-- Export Initiator interface -->
+        <ipxact:interconnection>
+            <ipxact:name>Export</ipxact:name>
+            <ipxact:activeInterface componentInstanceRef="U3" busRef="Initiator"/>
+            <ipxact:hierInterface busRef="Initiator"/>
+        </ipxact:interconnection>
+        <!-- Export APB interface -->
+        <ipxact:interconnection>
+            <ipxact:name>ExportAPB</ipxact:name>
+            <ipxact:activeInterface componentInstanceRef="U3" busRef="APB"/>
+            <ipxact:hierInterface busRef="APB"/>
+        </ipxact:interconnection>
+        <!-- LINK: monitorInterconnection: 7.3.2 monitorInterconnection -->
+        <!-- Monitor interface connection -->
+        <ipxact:monitorInterconnection>
+            <ipxact:name>MonitorConnection</ipxact:name>
+            <ipxact:monitoredActiveInterface componentInstanceRef="U2" busRef="Target"/>
+            <ipxact:monitorInterface componentInstanceRef="U2" busRef="Monitor"/>
+        </ipxact:monitorInterconnection>
+    </ipxact:interconnections>
+    <ipxact:adHocConnections>
+        <!-- Simple two pin connection. Range not mentioned on anotherPort -->
+        <!-- which implies all bits are connected -->
+        <!-- LINK: adHocConnection: see 7.5, Design ad hoc connections -->
+        <ipxact:adHocConnection>
+            <ipxact:name>SimpleWire</ipxact:name>
+            <ipxact:portReferences>
+                <!-- LINK: internalPortReference: see 7.6, Port references -->
+                <ipxact:internalPortReference componentInstanceRef="U1" portRef="anotherPort"/>
+                <ipxact:internalPortReference componentInstanceRef="U2" portRef="status">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>4</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <!-- Tie input bits to a constant -->
+        <ipxact:adHocConnection>
+            <ipxact:name>TieOff</ipxact:name>
+            <ipxact:tiedValue>3'h2</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentInstanceRef="U2" portRef="anotherPort">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>2</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <!-- Tie output bits to open -->
+        <ipxact:adHocConnection>
+            <ipxact:name>TieOpen</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentInstanceRef="U1" portRef="status"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

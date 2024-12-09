@@ -1,0 +1,1339 @@
+<?xml version="1.0"?>
+<!--
+// Example component used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document.
+-->
+<!-- LINK: component: see 6.1, Component -->
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.10, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleComponent</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:displayName>Sample Component</ipxact:displayName>
+    <ipxact:shortDescription>Example component</ipxact:shortDescription>
+    <ipxact:description>Example component used in the IP-XACT standard.</ipxact:description>
+    <!-- LINK: typeDefinitions: 6.2, Type definitions -->
+    <ipxact:typeDefinitions>
+        <ipxact:externalTypeDefinitions>
+            <ipxact:name>sampleTypes</ipxact:name>
+            <ipxact:typeDefinitionsRef vendor="accellera.org" library="Sample" name="SampleTypeDefinitions" version="1.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="addrBits">16</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:typeDefinitionsRef>
+            <ipxact:viewLinks>
+                <ipxact:viewLink>
+                    <!-- Reference view in external typeDefinitions file -->
+                    <ipxact:externalViewReference viewRef="RTLview"/>
+                    <!-- Reference view in this component -->
+                    <ipxact:viewReference viewRef="RTLview"/>
+                </ipxact:viewLink>
+            </ipxact:viewLinks>
+            <ipxact:modeLinks>
+                <ipxact:modeLink>
+                    <!-- Reference mode in external typeDefinitions file -->
+                    <ipxact:externalModeReference modeRef="Normal"/>
+                    <!-- Reference mode in this component -->
+                    <ipxact:modeReference modeRef="Normal"/>
+                </ipxact:modeLink>
+            </ipxact:modeLinks>
+            <ipxact:resetTypeLinks>
+                <ipxact:resetTypeLink>
+                    <!-- Reference resetType in external typeDefinitions file -->
+                    <ipxact:externalResetTypeReference resetTypeRef="SOFT"/>
+                    <!-- Reference resetType in this component -->
+                    <ipxact:resetTypeReference resetTypeRef="SOFT"/>
+                </ipxact:resetTypeLink>
+            </ipxact:resetTypeLinks>
+        </ipxact:externalTypeDefinitions>
+    </ipxact:typeDefinitions>
+    <!-- LINK: powerDomains: 6.3, Power domains -->
+    <ipxact:powerDomains>
+        <ipxact:powerDomain>
+            <ipxact:name>PD1</ipxact:name>
+            <ipxact:description>Power domain target side</ipxact:description>
+        </ipxact:powerDomain>
+        <ipxact:powerDomain>
+            <ipxact:name>PD2</ipxact:name>
+            <ipxact:description>Power domain initiator side</ipxact:description>
+        </ipxact:powerDomain>
+    </ipxact:powerDomains>
+    <!-- LINK: busInterfaces: 6.7, Bus interfaces -->
+    <ipxact:busInterfaces>
+        <!-- LINK: busInterface: 6.7.1, busInterface -->
+        <!-- Basic initiator interface with both RTL and TLM representations -->
+        <ipxact:busInterface>
+            <ipxact:name>Initiator</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <!-- LINK: abstractionTypes: 6.7.2, Abstraction types -->
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:viewRef>RTLview</ipxact:viewRef>
+                    <ipxact:abstractionRef vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_RTL" version="1.0">
+                        <!-- Configure abstraction to have data width 8 -->
+                        <ipxact:configurableElementValues>
+                            <ipxact:configurableElementValue referenceId="dataWidth">8</ipxact:configurableElementValue>
+                        </ipxact:configurableElementValues>
+                    </ipxact:abstractionRef>
+                    <ipxact:portMaps>
+                        <!-- LINK: portMap: 6.7.3, Port map -->
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Data</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>init_data</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Address</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>init_addr</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <!-- Mapping to clock port included for 'information' only - not for connecting -->
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Clk</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>clk</ipxact:name>
+                            </ipxact:physicalPort>
+                            <ipxact:isInformative>true</ipxact:isInformative>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+                <ipxact:abstractionType>
+                    <ipxact:viewRef>TLMview</ipxact:viewRef>
+                    <ipxact:abstractionRef vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_TLM" version="1.0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Transport</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>init_transaction</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <!-- LINK: interfaceMode: see 6.7.4, Interface modes -->
+            <!-- LINK: initiator: see 6.7.5, Initiator interface -->
+            <ipxact:initiator>
+                <ipxact:addressSpaceRef addressSpaceRef="simpleAddressSpace"/>
+            </ipxact:initiator>
+        </ipxact:busInterface>
+        <!-- Basic target interface with both RTL and TLM representations -->
+        <ipxact:busInterface>
+            <ipxact:name>Target</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:viewRef>RTLview</ipxact:viewRef>
+                    <ipxact:abstractionRef vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_RTL" version="1.0">
+                        <!-- Configure abstraction to have data width 8 -->
+                        <ipxact:configurableElementValues>
+                            <ipxact:configurableElementValue referenceId="dataWidth">8</ipxact:configurableElementValue>
+                        </ipxact:configurableElementValues>
+                    </ipxact:abstractionRef>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Data</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>target_data</ipxact:name>
+                                <ipxact:partSelect>
+                                    <ipxact:range>
+                                        <ipxact:left>7</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:range>
+                                </ipxact:partSelect>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Address</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>target_addr</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <!-- Mapping to clock port included for 'information' only - not for connecting -->
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Clk</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>clk</ipxact:name>
+                            </ipxact:physicalPort>
+                            <ipxact:isInformative>true</ipxact:isInformative>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+                <ipxact:abstractionType>
+                    <ipxact:viewRef>TLMview</ipxact:viewRef>
+                    <ipxact:abstractionRef vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_TLM" version="1.0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>Transport</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>target_transaction</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <!-- LINK: target: see 6.7.6, Target interface -->
+            <ipxact:target>
+                <ipxact:memoryMapRef memoryMapRef="SimpleMapWithBlock"/>
+            </ipxact:target>
+            <!-- This interface must be connected in any containing design -->
+            <ipxact:connectionRequired>true</ipxact:connectionRequired>
+        </ipxact:busInterface>
+        <!-- Interface with port maps of wire ports and structured port -->
+        <ipxact:busInterface>
+            <ipxact:name>APB</ipxact:name>
+            <ipxact:busType vendor="amba.com" library="AMBA4" name="APB4" version="r0p0_0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:abstractionRef vendor="amba.com" library="AMBA4" name="APB4_rtl" version="r0p0_0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PCLK</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>clk</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PRESETn</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>reset</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <!-- Port map with physical port referencing a structured port and subport -->
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PADDR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>addr</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PRDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>rdata</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PWDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>wdata</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PWRITE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>write</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PENABLE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>enable</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PSELx</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>sel</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>ready</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PSLVERR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>slverr</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PPROT</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>prot</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PSTROBE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb</ipxact:name>
+                                <ipxact:subPort>
+                                    <ipxact:name>strb</ipxact:name>
+                                </ipxact:subPort>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <ipxact:target/>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>MirroredInitiator</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <ipxact:mirroredInitiator/>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>MirroredTarget</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <!-- LINK: mirroredTarget: see 6.7.7, Mirrored target interface -->
+            <ipxact:mirroredTarget>
+                <ipxact:baseAddresses>
+                    <ipxact:remapAddresses>
+                        <ipxact:remapAddress>'h40000000</ipxact:remapAddress>
+                    </ipxact:remapAddresses>
+                    <ipxact:range>'h1000</ipxact:range>
+                </ipxact:baseAddresses>
+            </ipxact:mirroredTarget>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>TargetWithTransparentBridge</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <ipxact:target>
+                <ipxact:transparentBridge initiatorRef="Initiator"/>
+            </ipxact:target>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>TargetForSubspaceMap</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <ipxact:target>
+                <ipxact:memoryMapRef memoryMapRef="SimpleMapWithSubspace"/>
+            </ipxact:target>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>Monitor</ipxact:name>
+            <ipxact:busType vendor="accellera.org" library="Sample" name="SampleBusDefinition" version="1.0"/>
+            <ipxact:monitor interfaceMode="target"/>
+        </ipxact:busInterface>
+    </ipxact:busInterfaces>
+    <!-- LINK: indirectInterface: see 6.8, Indirect interfaces -->
+    <ipxact:indirectInterfaces>
+        <ipxact:indirectInterface>
+            <ipxact:name>IndirectMemoryInterface</ipxact:name>
+            <ipxact:indirectAddressRef>
+                <ipxact:memoryMapRef memoryMapRef="SimpleMapWithBlock"/>
+                <ipxact:addressBlockRef addressBlockRef="SimpleAddressBlock"/>
+                <ipxact:registerRef registerRef="IAR"/>
+                <ipxact:fieldRef fieldRef="IAR"/>
+            </ipxact:indirectAddressRef>
+            <ipxact:indirectDataRef>
+                <ipxact:memoryMapRef memoryMapRef="SimpleMapWithBlock"/>
+                <ipxact:addressBlockRef addressBlockRef="SimpleAddressBlock"/>
+                <ipxact:registerRef registerRef="IDR"/>
+                <ipxact:fieldRef fieldRef="IDR"/>
+            </ipxact:indirectDataRef>
+            <ipxact:memoryMapRef>MapForMemory</ipxact:memoryMapRef>
+        </ipxact:indirectInterface>
+    </ipxact:indirectInterfaces>
+    <!-- LINK: channels: see 6.9, Component channels -->
+    <ipxact:channels>
+        <ipxact:channel>
+            <ipxact:name>theChannel</ipxact:name>
+            <ipxact:busInterfaceRef>
+                <ipxact:localName>MirroredInitiator</ipxact:localName>
+            </ipxact:busInterfaceRef>
+            <ipxact:busInterfaceRef>
+                <ipxact:localName>MirroredTarget</ipxact:localName>
+            </ipxact:busInterfaceRef>
+        </ipxact:channel>
+    </ipxact:channels>
+    <!-- LINK: modes: see 6.10, Modes -->
+    <ipxact:modes>
+        <ipxact:mode>
+            <ipxact:name>Boot</ipxact:name>
+            <ipxact:description>Defines the remap state associated with the component at boot time.</ipxact:description>
+        </ipxact:mode>
+        <ipxact:mode>
+            <ipxact:name>Normal</ipxact:name>
+            <ipxact:description>Defines the remap state associated with the component after boot time.</ipxact:description>
+        </ipxact:mode>
+        <ipxact:mode>
+            <ipxact:name>AlternateRegisterGroup</ipxact:name>
+            <ipxact:description>Defines the state associated with alternate registers in this component.</ipxact:description>
+        </ipxact:mode>
+    </ipxact:modes>
+    <!-- LINK: addressSpaces: see 6.11, Address spaces -->
+    <ipxact:addressSpaces>
+        <ipxact:addressSpace>
+            <ipxact:name>simpleAddressSpace</ipxact:name>
+            <ipxact:range>4*(2**30)</ipxact:range>
+            <ipxact:width>32</ipxact:width>
+        </ipxact:addressSpace>
+    </ipxact:addressSpaces>
+    <!-- LINK: memoryMaps: see 6.12, Memory maps -->
+    <ipxact:memoryMaps>
+        <ipxact:memoryMap>
+            <ipxact:name>SimpleMapWithBlock</ipxact:name>
+            <!-- Address block starts at address 0, containing 1024 addressable 8-bit -->
+            <!-- units, organized into larger 32-bit units. -->
+            <!-- LINK: addressBlock: see 6.12.2, Address block -->
+            <ipxact:addressBlock>
+                <ipxact:name>SimpleAddressBlock</ipxact:name>
+                <ipxact:baseAddress>'h0</ipxact:baseAddress>
+                <!-- LINK: addressBlockDefinitionGroup: see 6.12.3, Address block definition group -->
+                <ipxact:range>2**10</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+                <!-- LINK: memoryBlockData: see 6.12.4, memoryBlockData group -->
+                <ipxact:usage>register</ipxact:usage>
+                <ipxact:volatile>false</ipxact:volatile>
+                <ipxact:accessPolicies>
+                    <ipxact:accessPolicy>
+                        <ipxact:access>read-write</ipxact:access>
+                    </ipxact:accessPolicy>
+                </ipxact:accessPolicies>
+                <!-- LINK: registerData: see 6.14.1, Register data -->
+                <!-- LINK: register: see 6.14.2, Register -->
+                <ipxact:register>
+                    <ipxact:name>BasicRegister</ipxact:name>
+                    <ipxact:addressOffset>'h4</ipxact:addressOffset>
+                    <!-- LINK: registerDefinitionGroup: see 6.14.3, Register definition group -->
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:accessPolicies>
+                        <ipxact:accessPolicy>
+                            <ipxact:access>read-writeOnce</ipxact:access>
+                        </ipxact:accessPolicy>
+                    </ipxact:accessPolicies>
+                    <!-- LINK: field: see 6.14.8, Register bit fields -->
+                    <ipxact:field>
+                        <ipxact:name>F1</ipxact:name>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:bitWidth>4</ipxact:bitWidth>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>'h0</ipxact:value>
+                            </ipxact:reset>
+                            <ipxact:reset resetTypeRef="SOFT">
+                                <ipxact:value>'hf</ipxact:value>
+                                <ipxact:mask>'ha</ipxact:mask>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <!-- LINK: fieldDataGroup: see 6.14.9, Field data group -->
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <ipxact:access>writeOnce</ipxact:access>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                        <ipxact:enumeratedValues>
+                            <!-- LINK: enumeratedValue: see 6.14.12, Enumeration values -->
+                            <ipxact:enumeratedValue>
+                                <ipxact:name>SetPos0</ipxact:name>
+                                <ipxact:value>'h1</ipxact:value>
+                            </ipxact:enumeratedValue>
+                            <ipxact:enumeratedValue>
+                                <ipxact:name>SetPos1</ipxact:name>
+                                <ipxact:value>'h2</ipxact:value>
+                            </ipxact:enumeratedValue>
+                        </ipxact:enumeratedValues>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>F2</ipxact:name>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:bitWidth>4</ipxact:bitWidth>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>'h0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+                                <ipxact:readAction>modify</ipxact:readAction>
+                                <ipxact:testable testConstraint="readOnly">true</ipxact:testable>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>F3</ipxact:name>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:aliasOf>
+                            <ipxact:fieldRef fieldRef="F2"/>
+                        </ipxact:aliasOf>
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <ipxact:access>read-only</ipxact:access>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>F4</ipxact:name>
+                        <ipxact:bitOffset>12</ipxact:bitOffset>
+                        <ipxact:bitWidth>4</ipxact:bitWidth>
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <!-- LINK: writeValueConstraint: see 6.14.9, Field data group -->
+                                <ipxact:writeValueConstraint>
+                                    <ipxact:minimum>'h1</ipxact:minimum>
+                                    <ipxact:maximum>'h2</ipxact:maximum>
+                                </ipxact:writeValueConstraint>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>F5</ipxact:name>
+                        <ipxact:bitOffset>16</ipxact:bitOffset>
+                        <ipxact:bitWidth>16</ipxact:bitWidth>
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <ipxact:reserved>true</ipxact:reserved>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>IAR</ipxact:name>
+                    <ipxact:addressOffset>'h8</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:field>
+                        <ipxact:name>IAR</ipxact:name>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:fieldAccessPolicies>
+                            <ipxact:fieldAccessPolicy>
+                                <ipxact:broadcasts>
+                                    <ipxact:broadcastTo>
+                                        <ipxact:memoryMapRef memoryMapRef="SimpleMapWithBlock"/>
+                                        <ipxact:addressBlockRef addressBlockRef="SimpleAddressBlock"/>
+                                        <ipxact:registerRef registerRef="RegisterWithAlternate"/>
+                                        <ipxact:fieldRef fieldRef="F"/>
+                                    </ipxact:broadcastTo>
+                                </ipxact:broadcasts>
+                            </ipxact:fieldAccessPolicy>
+                        </ipxact:fieldAccessPolicies>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>IDR</ipxact:name>
+                    <ipxact:addressOffset>'hc</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:field>
+                        <ipxact:name>IDR</ipxact:name>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>RegisterWithAlternate</ipxact:name>
+                    <ipxact:addressOffset>'h10</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:accessPolicies>
+                        <ipxact:accessPolicy>
+                            <ipxact:access>write-only</ipxact:access>
+                        </ipxact:accessPolicy>
+                    </ipxact:accessPolicies>
+                    <ipxact:field>
+                        <ipxact:name>F</ipxact:name>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                    </ipxact:field>
+                    <ipxact:alternateRegisters>
+                        <!-- LINK: alternateRegister: see 6.14.4, Alternate register -->
+                        <ipxact:alternateRegister>
+                            <ipxact:name>Alternate1</ipxact:name>
+                            <ipxact:modeRef priority="1">AlternateRegisterGroup</ipxact:modeRef>
+                            <!-- LINK: alternateRegisterDefinitionGroup: see 6.14.7, Alternate register definition group -->
+                            <ipxact:accessPolicies>
+                                <ipxact:accessPolicy>
+                                    <ipxact:access>read-only</ipxact:access>
+                                </ipxact:accessPolicy>
+                            </ipxact:accessPolicies>
+                            <ipxact:field>
+                                <ipxact:name>F</ipxact:name>
+                                <ipxact:bitOffset>0</ipxact:bitOffset>
+                                <ipxact:bitWidth>32</ipxact:bitWidth>
+                            </ipxact:field>
+                        </ipxact:alternateRegister>
+                    </ipxact:alternateRegisters>
+                </ipxact:register>
+                <!-- 2 registers combined in a register file array with 32 bit gap -->
+                <!-- LINK: registerFile: see 6.14.6, Register file -->
+                <ipxact:registerFile>
+                    <ipxact:name>RegisterFile</ipxact:name>
+                    <ipxact:array>
+                        <!-- dim element with indexVar attribute -->
+                        <ipxact:dim indexVar="i">8</ipxact:dim>
+                        <!-- registerFile elements offset are 'h10 address unit bits apart -->
+                        <ipxact:stride>'h10</ipxact:stride>
+                    </ipxact:array>
+                    <ipxact:addressOffset>'h200</ipxact:addressOffset>
+                    <ipxact:range>'h8</ipxact:range>
+                    <ipxact:register>
+                        <ipxact:name>RegFileEntry1</ipxact:name>
+                        <!-- Description using escape sequence $ipxact_index_value() -->
+                        <ipxact:description>Description for RegFileEntry1 element $ipxact_index_value(i)</ipxact:description>
+                        <ipxact:addressOffset>'h0</ipxact:addressOffset>
+                        <ipxact:size>32</ipxact:size>
+                        <ipxact:field>
+                            <ipxact:name>MandatoryField</ipxact:name>
+                            <ipxact:bitOffset>0</ipxact:bitOffset>
+                            <ipxact:bitWidth>32</ipxact:bitWidth>
+                        </ipxact:field>
+                    </ipxact:register>
+                    <ipxact:register>
+                        <ipxact:name>RegFileEntry2</ipxact:name>
+                        <ipxact:addressOffset>'h4</ipxact:addressOffset>
+                        <ipxact:size>32</ipxact:size>
+                        <ipxact:field>
+                            <ipxact:name>MandatoryField</ipxact:name>
+                            <ipxact:bitOffset>0</ipxact:bitOffset>
+                            <ipxact:bitWidth>32</ipxact:bitWidth>
+                        </ipxact:field>
+                    </ipxact:register>
+                </ipxact:registerFile>
+            </ipxact:addressBlock>
+            <ipxact:addressUnitBits>8</ipxact:addressUnitBits>
+        </ipxact:memoryMap>
+        <ipxact:memoryMap>
+            <ipxact:name>SimpleMapWithBank</ipxact:name>
+            <!-- Serial bank with two memory blocks of 1 k units of 32-bit data. -->
+            <!-- The only address specified is 'h10000, but this causes address block -->
+            <!-- ram0 and ram1 to be mapped to addresses 'h10000 and 'h11000 respectively. -->
+            <!-- LINK: addressBank: see 6.12.5, Bank -->
+            <ipxact:bank bankAlignment="serial">
+                <ipxact:name>SerialBank</ipxact:name>
+                <ipxact:baseAddress>'h1000</ipxact:baseAddress>
+                <ipxact:addressBlock>
+                    <ipxact:name>ram0</ipxact:name>
+                    <ipxact:range>'h1000</ipxact:range>
+                    <ipxact:width>32</ipxact:width>
+                </ipxact:addressBlock>
+                <ipxact:addressBlock>
+                    <ipxact:name>ram1</ipxact:name>
+                    <ipxact:range>'h1000</ipxact:range>
+                    <ipxact:width>32</ipxact:width>
+                </ipxact:addressBlock>
+            </ipxact:bank>
+        </ipxact:memoryMap>
+        <ipxact:memoryMap>
+            <ipxact:name>SimpleMapWithSubspace</ipxact:name>
+            <!-- Address space from initiator interface 'Initiator' mapped into target interface -->
+            <!-- TargetForSubspaceMap at address 'h10000 -->
+            <!-- LINK: subspaceMap: see 6.12.9, Subspace map -->
+            <ipxact:subspaceMap initiatorRef="Initiator">
+                <ipxact:name>SubSpace</ipxact:name>
+                <ipxact:baseAddress>'h10000</ipxact:baseAddress>
+            </ipxact:subspaceMap>
+        </ipxact:memoryMap>
+        <ipxact:memoryMap>
+            <ipxact:name>MapForMemory</ipxact:name>
+            <ipxact:addressBlock>
+                <ipxact:name>MemoryBlock</ipxact:name>
+                <ipxact:baseAddress>'h0</ipxact:baseAddress>
+                <ipxact:range>2**10</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+                <ipxact:usage>memory</ipxact:usage>
+                <ipxact:accessPolicies>
+                    <ipxact:accessPolicy>
+                        <ipxact:access>read-write</ipxact:access>
+                    </ipxact:accessPolicy>
+                </ipxact:accessPolicies>
+            </ipxact:addressBlock>
+        </ipxact:memoryMap>
+        <ipxact:memoryMap>
+            <ipxact:name>cpuDefn_MemoryMap</ipxact:name>
+            <ipxact:subspaceMap initiatorRef="Initiator">
+                <ipxact:name>simpleAddressSpace_SubspaceMap</ipxact:name>
+                <ipxact:baseAddress>0</ipxact:baseAddress>
+            </ipxact:subspaceMap>
+        </ipxact:memoryMap>
+    </ipxact:memoryMaps>
+    <!-- LINK: model: see 6.15, Model -->
+    <ipxact:model>
+        <ipxact:views>
+            <ipxact:view>
+                <ipxact:name>RTLview</ipxact:name>
+                <ipxact:displayName>RTL View</ipxact:displayName>
+                <ipxact:description>Simple RTL view of a component.</ipxact:description>
+                <ipxact:envIdentifier>:*Synthesis:</ipxact:envIdentifier>
+                <ipxact:componentInstantiationRef>VerilogModel</ipxact:componentInstantiationRef>
+            </ipxact:view>
+            <ipxact:view>
+                <ipxact:name>TLMview</ipxact:name>
+                <ipxact:displayName>TLM View</ipxact:displayName>
+                <ipxact:description>Simple TLM view of a component.</ipxact:description>
+                <ipxact:envIdentifier>:*Simulation:</ipxact:envIdentifier>
+                <ipxact:componentInstantiationRef>TLMModel</ipxact:componentInstantiationRef>
+            </ipxact:view>
+        </ipxact:views>
+        <ipxact:instantiations>
+            <!-- LINK: instantiationsGroup: see 6.15.2, instantiationsGroup -->
+            <!-- LINK: componentInstantiation: see 6.15.3, componentInstantiation -->
+            <ipxact:componentInstantiation>
+                <ipxact:name>VerilogModel</ipxact:name>
+                <ipxact:language>verilog</ipxact:language>
+                <ipxact:moduleName>sample</ipxact:moduleName>
+                <!-- LINK: moduleParameters: see 6.15.6, Module parameters -->
+                <ipxact:moduleParameters>
+                    <ipxact:moduleParameter type="bit">
+                        <ipxact:name>dual_mode_reg_value</ipxact:name>
+                        <ipxact:vectors>
+                            <ipxact:vector>
+                                <ipxact:left>3</ipxact:left>
+                                <ipxact:right>0</ipxact:right>
+                            </ipxact:vector>
+                        </ipxact:vectors>
+                        <ipxact:value>comp_dual_mode?4'hf:4'h0</ipxact:value>
+                    </ipxact:moduleParameter>
+                </ipxact:moduleParameters>
+                <ipxact:fileSetRef>
+                    <ipxact:localName>VerilogFiles</ipxact:localName>
+                </ipxact:fileSetRef>
+            </ipxact:componentInstantiation>
+            <ipxact:componentInstantiation>
+                <ipxact:name>TLMModel</ipxact:name>
+                <ipxact:language>SystemC</ipxact:language>
+                <ipxact:moduleName>sample</ipxact:moduleName>
+                <ipxact:moduleParameters>
+                    <ipxact:moduleParameter type="bit">
+                        <ipxact:name>dual_mode</ipxact:name>
+                        <ipxact:value>comp_dual_mode</ipxact:value>
+                    </ipxact:moduleParameter>
+                    <ipxact:moduleParameter parameterId="vdp" resolve="generated" type="bit">
+                        <ipxact:name>view_dependent_param</ipxact:name>
+                        <ipxact:value>0</ipxact:value>
+                    </ipxact:moduleParameter>
+                </ipxact:moduleParameters>
+                <ipxact:fileSetRef>
+                    <ipxact:localName>SystemCFiles</ipxact:localName>
+                </ipxact:fileSetRef>
+            </ipxact:componentInstantiation>
+        </ipxact:instantiations>
+        <!-- LINK: port: see 6.15.7, Component ports -->
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>target_data</ipxact:name>
+                <!-- LINK: wire: see 6.15.8, Component wire ports -->
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:wireTypeDefs>
+                        <!-- LINK: wireTypeDef: see 6.15.11, Component wireTypeDef -->
+                        <ipxact:wireTypeDef>
+                            <ipxact:typeName>logic</ipxact:typeName>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <!-- Default upper 8 bits since the interface only uses 8 bits -->
+                    <ipxact:drivers>
+                        <!-- LINK: driver: see 6.15.12, Component driver -->
+                        <ipxact:driver>
+                            <ipxact:range>
+                                <ipxact:left>15</ipxact:left>
+                                <ipxact:right>8</ipxact:right>
+                            </ipxact:range>
+                            <ipxact:defaultValue>8'h0</ipxact:defaultValue>
+                        </ipxact:driver>
+                    </ipxact:drivers>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>init_data</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:typeName>logic</ipxact:typeName>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD2</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>target_addr</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:typeName>logic</ipxact:typeName>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:constraintSets>
+                        <!-- LINK: constraintSet: see 6.15.15, Component wire port constraints -->
+                        <ipxact:constraintSet>
+                            <!-- Port driven by high strength sequential cell for synthesis -->
+                            <ipxact:driveConstraint>
+                                <!-- LINK: cellSpecification: see 6.15.17, Load and drive constraint cell specification -->
+                                <ipxact:cellSpecification cellStrength="high">
+                                    <ipxact:cellClass>sequential</ipxact:cellClass>
+                                </ipxact:cellSpecification>
+                            </ipxact:driveConstraint>
+                            <!-- Port timing requirements for synthesis -->
+                            <!-- LINK: timingConstraint: see 6.15.16, Port timing constraints -->
+                            <ipxact:timingConstraint clockName="clk">60</ipxact:timingConstraint>
+                        </ipxact:constraintSet>
+                    </ipxact:constraintSets>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>init_addr</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:typeName>logic</ipxact:typeName>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:constraintSets>
+                        <ipxact:constraintSet constraintSetId="setId">
+                            <!-- Port drives 2 high strength sequential cells for synthesis -->
+                            <ipxact:loadConstraint>
+                                <ipxact:cellSpecification cellStrength="high">
+                                    <ipxact:cellClass>sequential</ipxact:cellClass>
+                                </ipxact:cellSpecification>
+                                <ipxact:count>2</ipxact:count>
+                            </ipxact:loadConstraint>
+                            <!-- Port timing requirements for synthesis -->
+                            <ipxact:timingConstraint clockName="clk">40</ipxact:timingConstraint>
+                        </ipxact:constraintSet>
+                    </ipxact:constraintSets>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD2</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- parity port exists in RTL view with default data type -->
+            <ipxact:port>
+                <ipxact:name>target_parity</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- clock port exists in RTL view with default data type -->
+            <ipxact:port>
+                <ipxact:name>clk</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:drivers>
+                        <ipxact:driver>
+                            <!-- LINK: clockDriver: see 6.15.13, Component driver/clockDriver -->
+                            <ipxact:clockDriver>
+                                <ipxact:clockPeriod>5</ipxact:clockPeriod>
+                                <ipxact:clockPulseOffset>2.5</ipxact:clockPulseOffset>
+                                <ipxact:clockPulseValue>1</ipxact:clockPulseValue>
+                                <ipxact:clockPulseDuration>2.5</ipxact:clockPulseDuration>
+                            </ipxact:clockDriver>
+                        </ipxact:driver>
+                    </ipxact:drivers>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- reset port exists in RTL view with default data type -->
+            <ipxact:port>
+                <ipxact:name>reset</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:wireTypeDefs>
+                        <ipxact:wireTypeDef>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:wireTypeDef>
+                    </ipxact:wireTypeDefs>
+                    <ipxact:drivers>
+                        <ipxact:driver>
+                            <ipxact:singleShotDriver>
+                                <ipxact:singleShotOffset>2</ipxact:singleShotOffset>
+                                <ipxact:singleShotValue>1</ipxact:singleShotValue>
+                                <ipxact:singleShotDuration>5</ipxact:singleShotDuration>
+                            </ipxact:singleShotDriver>
+                        </ipxact:driver>
+                    </ipxact:drivers>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- status port exists in all views with default data type -->
+            <ipxact:port>
+                <ipxact:name>status</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD2</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- anotherPort port exists in all views with default data type -->
+            <ipxact:port>
+                <ipxact:name>anotherPort</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:wire>
+            </ipxact:port>
+            <!-- target_transaction port exists in TLM view only -->
+            <ipxact:port>
+                <ipxact:name>target_transaction</ipxact:name>
+                <!-- LINK: transactional: see 6.15.19, Component transactional port type -->
+                <ipxact:transactional>
+                    <ipxact:initiative>requires</ipxact:initiative>
+                    <ipxact:transTypeDefs>
+                        <!-- LINK: transTypeDef: see 6.15.21, Component transactional port type definition -->
+                        <ipxact:transTypeDef>
+                            <ipxact:typeName>sampleTLMtype</ipxact:typeName>
+                            <ipxact:viewRef>TLMview</ipxact:viewRef>
+                        </ipxact:transTypeDef>
+                    </ipxact:transTypeDefs>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:transactional>
+            </ipxact:port>
+            <!-- init_transaction port exists in TLM view only -->
+            <ipxact:port>
+                <ipxact:name>init_transaction</ipxact:name>
+                <ipxact:transactional>
+                    <ipxact:initiative>provides</ipxact:initiative>
+                    <ipxact:transTypeDefs>
+                        <ipxact:transTypeDef>
+                            <ipxact:typeName>sampleTLMtype</ipxact:typeName>
+                            <ipxact:viewRef>TLMview</ipxact:viewRef>
+                        </ipxact:transTypeDef>
+                    </ipxact:transTypeDefs>
+                    <ipxact:powerConstraints>
+                        <ipxact:powerConstraint>
+                            <ipxact:powerDomainRef>PD2</ipxact:powerDomainRef>
+                        </ipxact:powerConstraint>
+                    </ipxact:powerConstraints>
+                </ipxact:transactional>
+            </ipxact:port>
+            <!-- apb structured port -->
+            <ipxact:port>
+                <ipxact:name>apb</ipxact:name>
+                <!-- Link: structured: see 6.15.21, Component structured port type -->
+                <ipxact:structured>
+                    <ipxact:interface/>
+                    <!-- Link: subPorts: see 6.15.22, Subports -->
+                    <ipxact:subPorts>
+                        <ipxact:subPort>
+                            <ipxact:name>addr</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:vectors>
+                                    <ipxact:vector>
+                                        <ipxact:left>clog2(RANGE_id)-1</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:vector>
+                                </ipxact:vectors>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>prot</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:vectors>
+                                    <ipxact:vector>
+                                        <ipxact:left>2</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:vector>
+                                </ipxact:vectors>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>sel</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>enable</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>write</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>wdata</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:vectors>
+                                    <ipxact:vector>
+                                        <ipxact:left>31</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:vector>
+                                </ipxact:vectors>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>strb</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>in</ipxact:direction>
+                                <ipxact:vectors>
+                                    <ipxact:vector>
+                                        <ipxact:left>3</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:vector>
+                                </ipxact:vectors>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>ready</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>out</ipxact:direction>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>rdata</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>out</ipxact:direction>
+                                <ipxact:vectors>
+                                    <ipxact:vector>
+                                        <ipxact:left>31</ipxact:left>
+                                        <ipxact:right>0</ipxact:right>
+                                    </ipxact:vector>
+                                </ipxact:vectors>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                        <ipxact:subPort>
+                            <ipxact:name>slverr</ipxact:name>
+                            <ipxact:wire>
+                                <ipxact:direction>out</ipxact:direction>
+                                <ipxact:powerConstraints>
+                                    <ipxact:powerConstraint>
+                                        <ipxact:powerDomainRef>PD1</ipxact:powerDomainRef>
+                                    </ipxact:powerConstraint>
+                                </ipxact:powerConstraints>
+                            </ipxact:wire>
+                        </ipxact:subPort>
+                    </ipxact:subPorts>
+                    <ipxact:structPortTypeDefs>
+                        <!-- Link: structPortTypeDef: see 6.15.23 component structPortTypeDef -->
+                        <ipxact:structPortTypeDef>
+                            <ipxact:typeName>apb.t</ipxact:typeName>
+                            <ipxact:typeDefinition>apb.i.sv</ipxact:typeDefinition>
+                            <ipxact:typeParameters>
+                                <ipxact:typeParameter usageType="typed" parameterId="RANGE_id" type="int">
+                                    <ipxact:name>RANGE</ipxact:name>
+                                    <ipxact:value>4096</ipxact:value>
+                                </ipxact:typeParameter>
+                            </ipxact:typeParameters>
+                            <ipxact:role>modport</ipxact:role>
+                            <ipxact:viewRef>RTLview</ipxact:viewRef>
+                        </ipxact:structPortTypeDef>
+                    </ipxact:structPortTypeDefs>
+                </ipxact:structured>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <!-- LINK: componentGenerators: see 6.16, Component generators -->
+    <ipxact:componentGenerators>
+        <ipxact:componentGenerator>
+            <ipxact:name>SimpleComponentGenerator</ipxact:name>
+            <ipxact:description>Simple TGI based component generator</ipxact:description>
+            <ipxact:phase>1</ipxact:phase>
+            <ipxact:parameters>
+                <ipxact:parameter parameterId="genParm1" prompt="Parm 1" type="shortint" resolve="user">
+                    <ipxact:name>genParm1</ipxact:name>
+                    <ipxact:description>First generator parameter.</ipxact:description>
+                    <ipxact:value>1</ipxact:value>
+                </ipxact:parameter>
+                <ipxact:parameter parameterId="genParm2" prompt="Parm 2" type="shortint" resolve="user">
+                    <ipxact:name>genParm2</ipxact:name>
+                    <ipxact:description>Second generator parameter.</ipxact:description>
+                    <ipxact:value>2</ipxact:value>
+                </ipxact:parameter>
+            </ipxact:parameters>
+            <ipxact:apiType>TGI_2022_BASE</ipxact:apiType>
+            <!-- By convention, generator invoked and passed parameters as follows: -->
+            <!-- generator.sh -genParm1 <value> -genParm2 <value> -->
+            <ipxact:generatorExe>../bin/generator.sh</ipxact:generatorExe>
+        </ipxact:componentGenerator>
+    </ipxact:componentGenerators>
+    <!-- LINK: choices: see C.8, Choices -->
+    <ipxact:choices>
+        <ipxact:choice>
+            <ipxact:name>bitsize</ipxact:name>
+            <ipxact:enumeration text="32 bits">32</ipxact:enumeration>
+            <ipxact:enumeration text="64 bits">64</ipxact:enumeration>
+        </ipxact:choice>
+    </ipxact:choices>
+    <!-- LINK: fileSets: see 6.17, File sets -->
+    <ipxact:fileSets>
+        <!-- LINK: fileSet: see 6.17.1, File sets -->
+        <ipxact:fileSet>
+            <ipxact:name>VerilogFiles</ipxact:name>
+            <!-- LINK: file: see 6.17.2, file -->
+            <ipxact:file>
+                <ipxact:name>../src/component.v</ipxact:name>
+                <ipxact:fileType>verilogSource</ipxact:fileType>
+                <ipxact:isStructural>true</ipxact:isStructural>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>../src/component.v</ipxact:name>
+                <ipxact:fileType>verilogSource</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+        <ipxact:fileSet>
+            <ipxact:name>SystemCFiles</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>../src/component.C</ipxact:name>
+                <ipxact:fileType>systemCSource-2.2</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <!-- LINK: clearboxElements: see 6.18, Clear box elements -->
+    <ipxact:clearboxElements>
+        <ipxact:clearboxElement>
+            <ipxact:name>ImportantInternalSignal</ipxact:name>
+            <ipxact:description>Defines access point for forcing sim values</ipxact:description>
+            <ipxact:clearboxType>signal</ipxact:clearboxType>
+            <ipxact:driveable>true</ipxact:driveable>
+        </ipxact:clearboxElement>
+    </ipxact:clearboxElements>
+    <!-- LINK: cpus: see 6.20, CPUs -->
+    <ipxact:cpus>
+        <ipxact:cpu>
+            <ipxact:name>cpuDefn</ipxact:name>
+            <ipxact:range>4*(2**30)</ipxact:range>
+            <ipxact:width>32</ipxact:width>
+            <ipxact:memoryMapRef>cpuDefn_MemoryMap</ipxact:memoryMapRef>
+        </ipxact:cpu>
+    </ipxact:cpus>
+    <!-- LINK: otherClockDrivers: see 6.15.18, Other clock drivers -->
+    <ipxact:otherClockDrivers>
+        <ipxact:otherClockDriver clockName="virtualClock1">
+            <ipxact:clockPeriod>10</ipxact:clockPeriod>
+            <ipxact:clockPulseOffset>5</ipxact:clockPulseOffset>
+            <ipxact:clockPulseValue>1</ipxact:clockPulseValue>
+            <ipxact:clockPulseDuration>5</ipxact:clockPulseDuration>
+        </ipxact:otherClockDriver>
+    </ipxact:otherClockDrivers>
+    <!-- LINK: resetTypes: see 6.21, Reset types -->
+    <ipxact:resetTypes>
+        <ipxact:resetType>
+            <ipxact:name>SOFT</ipxact:name>
+            <ipxact:displayName>Soft Reset</ipxact:displayName>
+        </ipxact:resetType>
+    </ipxact:resetTypes>
+    <!-- LINK: parameters: see C.21, parameters -->
+    <ipxact:parameters>
+        <ipxact:parameter parameterId="comp_dual_mode" prompt="Dual Mode Supported" type="bit" resolve="user">
+            <ipxact:name>comp_dual_mode</ipxact:name>
+            <ipxact:description>Indicates dual mode support is desired.</ipxact:description>
+            <ipxact:value>1</ipxact:value>
+        </ipxact:parameter>
+        <!-- Parameter leveraging an enumeration 'choice' -->
+        <ipxact:parameter parameterId="addrBits" choiceRef="bitsize" prompt="Address Bits" type="shortint" resolve="user">
+            <ipxact:name>addrBits</ipxact:name>
+            <ipxact:value>32</ipxact:value>
+        </ipxact:parameter>
+    </ipxact:parameters>
+    <!-- LINK: assertions: see C.5, assertions -->
+    <ipxact:assertions>
+        <ipxact:assertion>
+            <ipxact:name>ArbitraryAssertion1</ipxact:name>
+            <ipxact:description>Arbitrary assertion to show syntax. Must evaluate to true.</ipxact:description>
+            <ipxact:assert>addrBits == 32 || !comp_dual_mode</ipxact:assert>
+        </ipxact:assertion>
+    </ipxact:assertions>
+    <!-- LINK: vendorExtensions: see C.27, vendorExtensions -->
+    <ipxact:vendorExtensions>
+        <!-- Simple example showing elements from a separate name space added via vendorExtensions. -->
+        <!-- The namespace must be defined (xmlns:<ns>="<URL>") at top or within first usage. -->
+        <sampleNS:extraElement xmlns:sampleNS="http://www.nosuchURL.org/Schema">
+            <sampleNS:anotherElement sampleNS:attributeName="XYZ"/>
+        </sampleNS:extraElement>
+    </ipxact:vendorExtensions>
+</ipxact:component>

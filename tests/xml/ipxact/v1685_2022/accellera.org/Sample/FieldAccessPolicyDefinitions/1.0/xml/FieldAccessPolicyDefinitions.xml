@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!--
+// Example typeDefinitions used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document. These definitions are field access policy
+definitions.
+-->
+<!-- LINK: typeDefinitions: see 9.1, Type definitions -->
+<ipxact:typeDefinitions xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.11, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>FieldAccessPolicyDefinitions</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:displayName>Register Field Access Definitions</ipxact:displayName>
+    <ipxact:shortDescription>Example register field access definitions</ipxact:shortDescription>
+    <ipxact:description>Example field access policy definitions used in the IPXACT standard.</ipxact:description>
+    <ipxact:fieldAccessPolicyDefinitions>
+        <!-- LINK: fieldAccessPolicyDefinition: 9.2, Field access policy definition -->
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>NOACCESS</ipxact:name>
+            <ipxact:access>no-access</ipxact:access>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>RO</ipxact:name>
+            <ipxact:access>read-only</ipxact:access>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>RC</ipxact:name>
+            <ipxact:access>read-only</ipxact:access>
+            <ipxact:readAction>clear</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>RS</ipxact:name>
+            <ipxact:access>read-only</ipxact:access>
+            <ipxact:readAction>set</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WO</ipxact:name>
+            <ipxact:access>write-only</ipxact:access>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WOC</ipxact:name>
+            <ipxact:access>write-only</ipxact:access>
+            <ipxact:modifiedWriteValue>clear</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WOS</ipxact:name>
+            <ipxact:access>write-only</ipxact:access>
+            <ipxact:modifiedWriteValue>set</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WO1</ipxact:name>
+            <ipxact:access>writeOnce</ipxact:access>
+            <ipxact:modifiedWriteValue>set</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>RW</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1C</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1S</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToSet</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1T</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToToggle</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W0C</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>zeroToClear</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1C</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1T</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToToggle</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WC</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>clear</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WS</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>set</ipxact:modifiedWriteValue>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WRC</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:readAction>clear</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1SRC</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToSet</ipxact:modifiedWriteValue>
+            <ipxact:readAction>clear</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W0SRC</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>zeroToSet</ipxact:modifiedWriteValue>
+            <ipxact:readAction>clear</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WSRC</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>set</ipxact:modifiedWriteValue>
+            <ipxact:readAction>clear</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WRS</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:readAction>set</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1CRS</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>oneToClear</ipxact:modifiedWriteValue>
+            <ipxact:readAction>set</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W0CRS</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>zeroToClear</ipxact:modifiedWriteValue>
+            <ipxact:readAction>set</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>WCRS</ipxact:name>
+            <ipxact:access>read-write</ipxact:access>
+            <ipxact:modifiedWriteValue>clear</ipxact:modifiedWriteValue>
+            <ipxact:readAction>set</ipxact:readAction>
+        </ipxact:fieldAccessPolicyDefinition>
+        <ipxact:fieldAccessPolicyDefinition>
+            <ipxact:name>W1</ipxact:name>
+            <ipxact:access>read-writeOnce</ipxact:access>
+        </ipxact:fieldAccessPolicyDefinition>
+    </ipxact:fieldAccessPolicyDefinitions>
+</ipxact:typeDefinitions>

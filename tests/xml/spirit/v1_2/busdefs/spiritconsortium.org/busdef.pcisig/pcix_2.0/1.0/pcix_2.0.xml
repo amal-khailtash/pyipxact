@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// Description : pcix_2.0.xml
+// Original Author : SPIRIT Schema Working Group 
+// Version: 1.0 
+// 
+// Copyright 2006-2013 Accellera Systems Initiative 
+// 
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at 
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software 
+// distributed under the License is distributed on an "AS IS" BASIS, 
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and 
+// limitations under the License.
+-->
+<spirit:busDefinition xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2" 
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+							xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2
+																http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.2/index.xsd">
+
+	<spirit:vendor>spiritconsortium.org</spirit:vendor>
+	<spirit:library>busdef.pcisig</spirit:library>
+	<spirit:name>pcix_2.0</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	
+	<spirit:directConnection>false</spirit:directConnection>
+	<spirit:extends spirit:vendor="spiritconsortium.org" spirit:library="busdef.pcisig" spirit:name="pci_2.3" spirit:version="1.0"/>
+	
+	<spirit:signals>
+		<spirit:signal>
+			<spirit:logicalName>CLK</spirit:logicalName>
+			<spirit:isClock>true</spirit:isClock>
+			<spirit:onSystem>
+				<spirit:group>system_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>RST_n</spirit:logicalName>
+			<spirit:isReset>true</spirit:isReset>
+			<spirit:onSystem>
+				<spirit:group>system_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>AD</spirit:logicalName>
+			<spirit:isAddress>true</spirit:isAddress>
+			<spirit:isData>true</spirit:isData>
+			<spirit:onMaster>
+<!-- Undefined width to support 32 or 64 bit devices -->
+				<!-- spirit:bitWidth>64</spirit:bitWidth -->
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+<!-- Undefined width to support 32 or 64 bit devices -->
+				<!-- spirit:bitWidth>64</spirit:bitWidth -->
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>CBE_n</spirit:logicalName>
+			<spirit:onMaster>
+<!-- Undefined width to support 32 or 64 bit devices -->
+				<!-- spirit:bitWidth>8</spirit:bitWidth -->
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+<!-- Undefined width to support 32 or 64 bit devices -->
+				<!-- spirit:bitWidth>8</spirit:bitWidth -->
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>PAR</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>FRAME_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>IRDY_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>TRDY_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>STOP_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>LOCK_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+		
+		<spirit:signal>
+			<spirit:logicalName>IDSEL_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>idsel_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>DEVSEL_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>REQ_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>arbitration_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:direction>illegal</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>GNT_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>arbitration_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:direction>illegal</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>PERR_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>SERR_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>error_reporting_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>INTA_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>interrupt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>INTB_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>interrupt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>INTC_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>interrupt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>INTD_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>interrupt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>PAR64</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>REQ64_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>ACK64_n</spirit:logicalName>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>CLKRUN_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>system_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>M66EN</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>system_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>PME_n</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>power_mgmt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>Vaux33</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>power_mgmt_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+		
+		<spirit:signal>
+			<spirit:logicalName>SMBCLK</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>system_management_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>out</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>in</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+
+		<spirit:signal>
+			<spirit:logicalName>SMBDAT</spirit:logicalName>
+			<spirit:onSystem>
+				<spirit:group>system_management_group</spirit:group>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSystem>
+			<spirit:onMaster>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onMaster>
+			<spirit:onSlave>
+				<spirit:bitWidth>1</spirit:bitWidth>
+				<spirit:direction>inout</spirit:direction>
+			</spirit:onSlave>
+		</spirit:signal>
+	</spirit:signals>
+</spirit:busDefinition>

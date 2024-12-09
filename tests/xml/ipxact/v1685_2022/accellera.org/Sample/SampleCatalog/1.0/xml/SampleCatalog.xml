@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+// Example catalog used to show schema elements defined by the
+// IP-XACT standard. Links within this file refer to section numbers in
+// the standard definition document
+-->
+<!-- LINK: catalog: see 12.1, catalog -->
+<ipxact:catalog xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2022"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2022 http://www.accellera.org/XMLSchema/IPXACT/1685-2022/index.xsd">
+    <!-- LINK: documentNameGroup: C.10, documentName group -->
+    <ipxact:vendor>accellera.org</ipxact:vendor>
+    <ipxact:library>Sample</ipxact:library>
+    <ipxact:name>SampleCatalog</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:description>Example catalog used in the IP-XACT standard.</ipxact:description>
+    <ipxact:busDefinitions>
+        <!-- LINK: catalog/ipxactFile: see 12.2, ipxactFile -->
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleBusDefinitionBase" version="1.0"/>
+            <ipxact:name>./SampleBusDefinitionBase/1.0/xml/SampleBusDefinitionBase.xml</ipxact:name>
+            <ipxact:description>File included for semantic validation only.</ipxact:description>
+        </ipxact:ipxactFile>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleBusDefinitionExtension" version="1.0"/>
+            <ipxact:name>./SampleBusDefinitionExtension/1.0/xml/SampleBusDefinitionExtension.xml</ipxact:name>
+            <ipxact:description>Sample extended busDefinition</ipxact:description>
+        </ipxact:ipxactFile>
+    </ipxact:busDefinitions>
+    <ipxact:abstractionDefinitions>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_RTL" version="1.0"/>
+            <ipxact:name>./SampleAbstractionDefinition_RTL/1.0/xml/SampleAbstractionDefinition_RTL.xml</ipxact:name>
+        </ipxact:ipxactFile>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleAbstractionDefinition_TLM" version="1.0"/>
+            <ipxact:name>./SampleAbstractionDefinition_TLM/1.0/xml/SampleAbstractionDefinition_TLM.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:abstractionDefinitions>
+    <!-- ipxact:components -->
+    <ipxact:components>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleComponent" version="1.0"/>
+            <ipxact:name>./SampleComponent/1.0/xml/SampleComponent.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:components>
+    <!-- ipxact:abstractors -->
+    <ipxact:abstractors>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleAbstractor" version="1.0"/>
+            <ipxact:name>./SampleAbstractor/1.0/xml/SampleAbstractor.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:abstractors>
+    <!-- ipxact:designs -->
+    <ipxact:designs>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleDesign" version="1.0"/>
+            <ipxact:name>./SampleDesign/1.0/xml/SampleDesign.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:designs>
+    <!-- ipxact:designConfigurations -->
+    <ipxact:designConfigurations>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleDesignConfiguration" version="1.0"/>
+            <ipxact:name>./SampleDesignConfiguration/1.0/xml/SampleDesignConfiguration.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:designConfigurations>
+    <!-- ipxact:generatorChains -->
+    <ipxact:generatorChains>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleGeneratorChain" version="1.0"/>
+            <ipxact:name>./SampleGeneratorChain/1.0/xml/SampleGeneratorChain.xml</ipxact:name>
+        </ipxact:ipxactFile>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleGeneratorChainForReference" version="1.0"/>
+            <ipxact:name>./SampleGeneratorChainForReference/1.0/xml/SampleGeneratorChainForReference.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:generatorChains>
+    <!-- ipxact:typeDefinitions -->
+    <ipxact:typeDefinitions>
+        <ipxact:ipxactFile>
+            <ipxact:vlnv vendor="accellera.org" library="Sample" name="SampleTypeDefinitions" version="1.0"/>
+            <ipxact:name>./SampleTypeDefinitions/1.0/xml/SampleTypeDefinitions.xml</ipxact:name>
+        </ipxact:ipxactFile>
+    </ipxact:typeDefinitions>
+</ipxact:catalog>
