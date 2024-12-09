@@ -14,7 +14,7 @@ from org.accellera.ipxact.v1685_2022.arrays import Arrays
 from org.accellera.ipxact.v1685_2022.description import Description
 from org.accellera.ipxact.v1685_2022.display_name import DisplayName
 from org.accellera.ipxact.v1685_2022.parameters import Parameters
-from org.accellera.ipxact.v1685_2022.port_access_type import PortAccessType
+from org.accellera.ipxact.v1685_2022.port_access_type_1 import PortAccessType1
 from org.accellera.ipxact.v1685_2022.short_description import ShortDescription
 from org.accellera.ipxact.v1685_2022.vendor_extensions import VendorExtensions
 
@@ -105,7 +105,7 @@ class AbstractorPortType:
             "namespace": "http://www.accellera.org/XMLSchema/IPXACT/1685-2022",
         },
     )
-    access: Optional[PortAccessType] = field(
+    access: Optional[PortAccessType1] = field(
         default=None,
         metadata={
             "type": "Element",

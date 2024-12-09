@@ -3,7 +3,7 @@ from typing import Optional
 
 from org.accellera.spirit.v1_5.description import Description
 from org.accellera.spirit.v1_5.display_name import DisplayName
-from org.accellera.spirit.v1_5.port_access_type import PortAccessType
+from org.accellera.spirit.v1_5.port_access_type_1 import PortAccessType1
 from org.accellera.spirit.v1_5.port_transactional_type import (
     PortTransactionalType,
 )
@@ -68,7 +68,7 @@ class PortDeclarationType:
             "namespace": "http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5",
         },
     )
-    access: Optional[PortAccessType] = field(
+    access: Optional[PortAccessType1] = field(
         default=None,
         metadata={
             "type": "Element",

@@ -11,7 +11,7 @@ from org.accellera.ipxact.v1685_2022.display_name import DisplayName
 from org.accellera.ipxact.v1685_2022.extended_vectors_type import (
     ExtendedVectorsType,
 )
-from org.accellera.ipxact.v1685_2022.port_access_type import PortAccessType
+from org.accellera.ipxact.v1685_2022.port_access_type_1 import PortAccessType1
 from org.accellera.ipxact.v1685_2022.port_wire_type import PortWireType
 from org.accellera.ipxact.v1685_2022.short_description import ShortDescription
 from org.accellera.ipxact.v1685_2022.struct_port_type_defs import (
@@ -100,7 +100,7 @@ class SubPortType:
             "namespace": "http://www.accellera.org/XMLSchema/IPXACT/1685-2022",
         },
     )
-    access: Optional[PortAccessType] = field(
+    access: Optional[PortAccessType1] = field(
         default=None,
         metadata={
             "type": "Element",

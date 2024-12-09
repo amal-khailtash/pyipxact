@@ -5,7 +5,7 @@ from org.accellera.ipxact.v1685_2014.arrays import Arrays
 from org.accellera.ipxact.v1685_2014.description import Description
 from org.accellera.ipxact.v1685_2014.display_name import DisplayName
 from org.accellera.ipxact.v1685_2014.is_present import IsPresent
-from org.accellera.ipxact.v1685_2014.port_access_type import PortAccessType
+from org.accellera.ipxact.v1685_2014.port_access_type_1 import PortAccessType1
 from org.accellera.ipxact.v1685_2014.port_transactional_type import (
     PortTransactionalType,
 )
@@ -90,7 +90,7 @@ class PortType:
             "namespace": "http://www.accellera.org/XMLSchema/IPXACT/1685-2014",
         },
     )
-    access: Optional[PortAccessType] = field(
+    access: Optional[PortAccessType1] = field(
         default=None,
         metadata={
             "type": "Element",
