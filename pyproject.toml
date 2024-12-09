@@ -1,19 +1,22 @@
 [project]
 name = "pyipxact"
 version = "0.1.0"
-description = "Accellera Python IP-XACT XSD Bindings"
+description = "Accellera IP-XACT CLI Tool"
 readme = "README.md"
 authors = [
     { name = "Amal Khailtash", email = "amal.khailtash@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "xsdata[cli,lxml]",
 ]
 
 # [tool.setuptools.packages.find]
 
-# [project.scripts]
-# pyipxact = "pyipxact.cli:main"
+[project.scripts]
+# ipxact_validate = "amal.eda.ipxact.cli:main"
+# ipxact_convert = "amal.eda.ipxact.cli:main"
+ipxact = "amal.eda.ipxact_cli.__main__:main"
 
 [tool.hatch.build.targets.sdist]
 # include = []
@@ -24,8 +27,17 @@ exclude = [
     "test-*",
 ]
 
+[tool.ruff]
+line-length = 100
+
+[tool.uv.sources]
+xsdata = { git = "https://github.com/tefra/xsdata" }
+
 [tool.hatch.build.targets.wheel]
-packages = ["src/org"]
+packages = [
+    "src/amal",
+    "src/org"
+]
 
 [build-system]
 requires = ["hatchling"]

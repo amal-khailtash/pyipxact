@@ -227,6 +227,9 @@ wheels = [
 name = "pyipxact"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "xsdata", extra = ["cli", "lxml"] },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -235,11 +238,12 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [{ name = "xsdata", extras = ["cli", "lxml"], git = "https://github.com/tefra/xsdata" }]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "pytest", specifier = ">=8.3.3" },
-    { name = "xsdata", extras = ["cli", "lxml", "soap"], specifier = ">=24.11" },
+    { name = "xsdata", extras = ["cli", "lxml", "soap"], git = "https://github.com/tefra/xsdata" },
 ]
 
 [[package]]
@@ -333,13 +337,9 @@ wheels = [
 [[package]]
 name = "xsdata"
 version = "24.11"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/tefra/xsdata#1f4c42393544037b02d45831fb00d03ed8e19f00" }
 dependencies = [
     { name = "typing-extensions" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/66/68/2c87ceae0788b6468a637d3d63cd6fcc90ca6b6029e8d23b9313d3d9b741/xsdata-24.11.tar.gz", hash = "sha256:011193f775877d832d736b68e8553de3fe35b8447974effce08fc6cc3305d206", size = 340206 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a1/95/5dfb080e293175ed7c490a765bcf382827596b24ce5375aa0e4d785e961a/xsdata-24.11-py3-none-any.whl", hash = "sha256:bb0ba63daab93c190cfc7d8bb3c2392422cc2ad0b7214f3061cf4cde231cce97", size = 229319 },
 ]
 
 [package.optional-dependencies]
