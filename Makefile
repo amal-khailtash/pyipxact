@@ -90,7 +90,7 @@ uv-lock:
 # XSDATA_OPTIONS += --union-type
 # XSDATA_OPTIONS += --compound-fields
 # XSDATA_OPTIONS += --wrapper-fields
-  XSDATA_OPTIONS += --subscriptable-types
+# XSDATA_OPTIONS += --subscriptable-types
   XSDATA_OPTIONS += --generic-collections
 # XSDATA_OPTIONS += --relative-imports
   XSDATA_OPTIONS += --structure-style $(XSDATA_STRUCTURE_STYLE)
@@ -101,7 +101,8 @@ uv-lock:
 
 .PHONY: generate-bindings
 generate-bindings:
-	@rm -rf src/org
+	@rm -rf src/org/accellera/ipxact
+	@rm -rf src/org/accellera/spirit
 #
 	@echo "========================================================================================================================"
 	@echo "Generating SPIRIT/1.0 bindings..."
@@ -136,10 +137,10 @@ generate-bindings:
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009           $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009/index.xsd)
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.tgi       $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009/TGI/TGI.wsdl)
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve        $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/index.xsd)
-	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.ams    $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/index.xsd)
-	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.core   $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/index.xsd)
-	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.pdp    $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/index.xsd)
-	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.power  $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/index.xsd)
+	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.ams    $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/AMS/index.xsd)
+	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.core   $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/CORE/index.xsd)
+	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.pdp    $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/PDP/index.xsd)
+	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.spirit.v1685_2009.ve.power  $(XML_SCHEMAS_ROOT)/SPIRIT/1685-2009-VE-1.0/POWER/index.xsd)
 #
 	@echo "========================================================================================================================"
 	@echo "Generating IPXACT/1685-2014 bindings..."
@@ -152,3 +153,19 @@ generate-bindings:
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.ipxact.v1685_2022           $(XML_SCHEMAS_ROOT)/IPXACT/1685-2022/index.xsd)
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.ipxact.v1685_2022.tgi       $(XML_SCHEMAS_ROOT)/IPXACT/1685-2022/TGI/TGI.wsdl)
 	(cd src; xsdata generate $(XSDATA_OPTIONS) --package org.accellera.ipxact.v1685_2022.ve        $(XML_SCHEMAS_ROOT)/IPXACT/1685-2022-VE-1.0/index.xsd)
+#
+
+# # Adds "compare = False" to "id" fields
+# .PHONY: fix-bindings
+# fix-bindings:
+# 	@find src/org -type f -name "*.py" -exec sed -i 's/id: Optional\[str\] = field(/id: Optional[str] = field(compare = False,/' {} +
+# #	@find src/org -type f -name "*.py" -exec sed -i 's/id: Optional\[str\] = field(/id: Optional[str] = field(compare = False,/' {} +
+# #	"type": "Ignore"
+
+# # id: Optional[str] = field(
+# #     compare=False,
+# #     default=None,
+# #     metadata={
+# #         "type": "Attribute",
+
+# 	@uv run ruff format src/org
